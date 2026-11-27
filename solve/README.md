@@ -1,16 +1,16 @@
-# solve/ — scripts de résolution
+# solve/ - solution scripts
 
-Un dossier par challenge (`solve/<id>/`) contenant les scripts réellement utilisés :
-exploits pwntools, solveurs de crypto, scripts de reverse, one-liners shell, notes de calcul,
-payloads et fichiers de config. Les identifiants renvoient à [`INDEX.md`](../INDEX.md).
+One folder per challenge (`solve/<id>/`) with the scripts actually used: pwntools exploits,
+crypto solvers, reversing helpers, shell one-liners, working notes, payloads and config files.
+IDs map to [`INDEX.md`](../INDEX.md).
 
 ```
 solve/
-├── 55/      # sice_cream : exploit FSOP final + variantes instrumentées
-├── 107/     # Scrambled RSA : solveur par position
-├── 441/     # high frequency troubles : House of Orange + House of Apple 2
-└── …       # 163 dossiers, 1675 fichiers au total
+|-- 55/      # sice_cream: final FSOP exploit + instrumented variants
+|-- 107/     # Scrambled RSA: positional solver
+|-- 441/     # high frequency troubles: House of Orange + House of Apple 2
+`-- ...      # 163 folders, 1675 files in total
 ```
 
-Les chemins sont relatifs au dépôt : plus aucun chemin machine. Chaque fiche de writeup
-renvoie vers son dossier dans une section `## Scripts`.
+All paths are relative to the repo. Every writeup links to its folder in a `## Scripts`
+section.

@@ -1,17 +1,16 @@
-# CyLab Academy — writeups
+# CyLab Academy writeups
 
-Le carnet de bord d'un **petit marathon** : **521 challenges résolus sur 525** sur
-CyLab Academy (re-hosting des challenges picoCTF 2019 → 2026, picoMini, AI Foundations I…),
-avec un writeup pour chacun.
+A personal marathon: **521 challenges solved out of 525** on CyLab Academy (picoCTF 2019 to 2026
+re-hosts, picoMini, AI Foundations I), with a writeup for every single one of them.
 
-- **521 writeups**, un par challenge résolu, rangés par catégorie
-- les scripts de résolution de chaque challenge : [`solve/<id>/`](solve/)
-- index complet : [`INDEX.md`](INDEX.md)
-- structure : `writeups/<categorie>/<id>-<slug>.md`
+- **521 writeups**, one per solved challenge, organised by category
+- **solve scripts** in [`solve/`](solve/), one folder per challenge
+- full index: [`INDEX.md`](INDEX.md)
+- layout: `writeups/<category>/<id>-<slug>.md` for the writeups, `solve/<id>/` for the code
 
-## Sommaire par catégorie
+## Coverage
 
-| catégorie | writeups |
+| category | writeups |
 |---|---:|
 | Reverse Engineering | 101 |
 | Forensics | 86 |
@@ -22,19 +21,20 @@ avec un writeup pour chacun.
 | Artificial Intelligence | 16 |
 | Blockchain | 4 |
 
-## Le mot du jour
+## About
 
-Ce dépôt, c'est le carnet de route du marathon : la recon, les fausses pistes, les scripts
-jetables, les offsets recalculés trois fois, et parfois une nuit entière pour un seul octet.
-Tout est rédigé après coup, avec les commandes réellement tapées et les pièges qui ont coûté
-du temps — c'est souvent là qu'on apprend le plus.
+This repo is the logbook of that marathon: recon, dead ends, throwaway scripts, offsets recomputed
+three times, and sometimes a whole night for a single byte. Everything is written after the fact,
+with the commands that were actually run and the pitfalls that cost the most time.
 
-Chaque fiche suit le même plan : **Énoncé · Analyse · Solution · Pièges · Flag · Scripts**,
-et pointe vers le code correspondant dans [`solve/`](solve/).
+Every writeup follows the same outline: statement, analysis, solution, pitfalls, flag, scripts.
 
-## Contribuer
+Writeups are written in French. Code, payloads and shell commands are language neutral, so they
+stay readable for everyone.
 
-Il me reste quelques challenges que je n'ai pas encore résolus. Si vous avez une solution
-propre — ou même une piste sérieuse — ouvrez une **pull request** : je l'étudierai et je vous
-répondrai.
+## Contributing
 
+A few challenges are still unsolved. If you have a clean solution, or even a serious lead, open a
+**pull request**: I review it and answer every time.
+
+A star helps the repo surface.
