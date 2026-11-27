@@ -1,6 +1,6 @@
 # 766 — Undo
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -103,7 +103,3 @@ printf 'synt{Grfg}' | tr A-Za-z N-ZA-Mn-za-m
 réversibles et en donne le nom. Toute la sécurité repose sur l'ignorance de l'inverse, alors que
 l'inverse est une commande Unix standard d'une ligne. Le challenge teste la familiarité avec les
 filtres de texte, pas la cryptanalyse.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

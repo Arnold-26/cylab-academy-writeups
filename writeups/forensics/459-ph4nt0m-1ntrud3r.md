@@ -73,7 +73,3 @@ Chaque fragment est un Base64 autonome : le message complet est la concaténatio
 - **`sort` sans `-g`** : les horodatages sont triés comme des chaînes et l'ordre est cassé.
 - **Perdre les fins de ligne** : `tr -d '\n'` doit s'appliquer avant `xxd -r -p`, pas après.
 - **Négliger le préfixe** : un message qui ne commence pas par l'en-tête attendu signifie un mauvais ordre, pas un mauvais décodage.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

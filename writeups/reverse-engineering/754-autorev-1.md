@@ -114,7 +114,3 @@ exactement l'opérande que le compilateur a généré, et le format d'envoi corr
   `[rbp-0x4]` et aux `mov eax, 0x…` qui précèdent la comparaison.
 - **Immediat négatif.** Capstone peut afficher `-0x…` : la conversion doit rester en base 0 pour ne
   pas envoyer `0`.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

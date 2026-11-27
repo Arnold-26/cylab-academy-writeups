@@ -85,7 +85,3 @@ pngcheck -v pico_img.png                 # cohérence des chunks
 **Pourquoi ça marche.** Les métadonnées sont des données annexes, stockées en clair dans le fichier
 et transportées telles quelles. Rien ne les efface par défaut : une chaîne ajoutée dans le champ
 `Artist` reste lisible par toute personne qui sait regarder l'en-tête plutôt que l'image.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

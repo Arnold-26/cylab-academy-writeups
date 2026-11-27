@@ -11,7 +11,7 @@
 Méthode : **cpa**.
 
 `traces.zip` contient **100 fichiers** `traceNN.txt`, chacun avec son plaintext et sa
-trace (format : `Plaintext: <hex>` puis `Power trace: [ ... ]`). Aucune requete reseau :
+trace (format : `Plaintext: <hex>` puis `Power trace: [ ... ]`). Aucune requête reseau :
 tout est hors ligne.
 
 100 traces suffisent largement — la CPA sort les 16 octets avec 0,50 a 0,69 de correlation :
@@ -36,7 +36,7 @@ k_gagnant      = argmax_k  max_t |correlation|
 
 C'est le modele classique « Hamming weight de la sortie de S-box ». Le bon octet de clef sort
 avec une correlation de 0,5-0,7 contre 0,25-0,45 pour les suivants : la separation est nette,
-inutile de monter a des milliers de traces.
+inutile de monter à des milliers de traces.
 
 Code (numpy, 20 lignes) :
 

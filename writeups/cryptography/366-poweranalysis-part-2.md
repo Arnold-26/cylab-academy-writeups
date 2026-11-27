@@ -20,7 +20,7 @@ return leak_buf.count(1)
 
 Le serveur renvoie donc **la somme des LSB** des 16 sorties de S-box, soit un entier de 0 a 16.
 
-### Attaque adaptative, ~9 requetes par octet
+### Attaque adaptative, ~9 requêtes par octet
 
 Baseline : plaintext tout a zero -> `t0 = 8`.
 
@@ -33,10 +33,10 @@ valeur `v`, et on regarde `delta = t - t0` :
 | -1 | `Sbox[v^k]&1 = 0` **et** `Sbox[k]&1 = 1` |
 | 0 | `Sbox[v^k]&1 = Sbox[k]&1` |
 
-Chaque requete coupe l'ensemble des 256 candidats en deux : 8 a 11 requetes suffisent pour
+Chaque requête coupe l'ensemble des 256 candidats en deux : 8 a 11 requêtes suffisent pour
 isoler l'octet. Cout total : **~140 connexions**, quelques minutes.
 
-Une seule requete par connexion (le script fait `input()` une fois), et la clef est stable
+Une seule requête par connexion (le script fait `input()` une fois), et la clef est stable
 entre les connexions.
 
 ```
@@ -46,9 +46,9 @@ KEY: 290fda44a3d9bd690a8dba3e760f5a7e
 ### A retenir
 
 - Un oracle qui renvoie **une somme sur 16 octets** n'est pas aveugle : en ne bougeant qu'un
-  octet a la fois, la variation `-1/0/+1` donne un bit sur cet octet.
-- Toujours garder la contrainte *complete* (`f(v,k)` ET `f(0,k)`), sinon on garde des faux
-  candidats : c'est ce qui fait la difference entre 9 requetes et 256.
+  octet à la fois, la variation `-1/0/+1` donne un bit sur cet octet.
+- Toujours garder la contrainte *complète* (`f(v,k)` ET `f(0,k)`), sinon on garde des faux
+  candidats : c'est ce qui fait la différence entre 9 requêtes et 256.
 
 ## Flag
 

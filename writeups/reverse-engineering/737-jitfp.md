@@ -115,7 +115,3 @@ dynamique, on ne reconstruit pas la table : on l'observe.
 - **Ordre des positions** : la permutation est le vrai travail restant ; ne pas soumettre la
   concaténation dans l'ordre des hits sans vérifier.
 - **Longueur** : 33 caractères, un octet de trop (retour à la ligne) fait échouer la validation.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

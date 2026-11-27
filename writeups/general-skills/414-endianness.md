@@ -1,6 +1,12 @@
 # endianness
 
-**Catégorie** : General Skills · **Challenge** : #414 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #414 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> Know of little and big endian?
+>
+> [Source](https://challenge-files.cylabacademy.net/library/d0e5a23c583ee9bba2ad6da69bfd03b5b5204fd956cac139a9a587116e653240/flag.c)
 
 ## Résolution
 

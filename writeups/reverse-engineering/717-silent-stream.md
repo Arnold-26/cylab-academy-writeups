@@ -113,7 +113,3 @@ millisecondes.
   bruitée qui ressemble à un échec d'extraction.
 - **En-tête du JPEG** : si `file` ne reconnaît rien, vérifier les 3 premiers octets décodés. Ce sont
   eux qui valident l'extraction, avant même de regarder l'image.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

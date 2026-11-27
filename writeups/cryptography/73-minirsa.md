@@ -2,6 +2,11 @@
 
 **Catégorie** : Cryptography · **Challenge** : #73 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Let's decrypt this.
+> Can you decrypt this [ciphertext](https://challenge-files.cylabacademy.net/library/eda4bb1f373e93620b8b14221ab1eee5b035609abf646d329514eb7e99f93c03/ciphertext)? Something seems a bit small.
+
 ## Résolution
 
 Méthode : **petit exposant + balayage de k**.

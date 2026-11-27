@@ -1,5 +1,13 @@
 # 451 — Binary Instrumentation 1 — Reverse Engineering
 
+**Catégorie** : Reverse Engineering · **Challenge** : #451 · **Événement** : picoCTF 2025
+
+## Énoncé
+
+> I have been learning to use the Windows API to do cool stuff! Can you wake up my program to get the flag?
+>
+> Download the exe [here](https://challenge-files.cylabacademy.net/library/b707862077450010bce3c050b139b7c00762859eb94eea5db8eded717a6318d0/bininst1.zip). Unzip the archive with the password `academy`
+
 **Flag :** `academy{w4ke_m3_up_w1th_fr1da_f27acc38}`
 **Fichier :** `bininst1.zip` (mdp `academy`) → `bininst1.exe` (PE32+ x86-64, 462 848 o).
 **Énoncé :** *« I have been learning to use the Windows API to do cool stuff! Can you wake up my
@@ -8,8 +16,7 @@ program to get the flag? »* — indices : Frida, `frida-trace`.
 ## Le binaire est packé — et ça se dépacke à la main
 
 Recon : `.text` fait seulement 0x46F0 (18 Ko) et commence par du **code leurre** (appels d'API avec
-des arguments NULL, `GetLastError` comparé à 0x361c), tandis qu'une section **`.ATOM` de 437 Ko** a
-une **entropie de 8.00** (chiffrée/compressée). Les deux challenges 451 et 452 partagent d'ailleurs
+des arguments NULL, `GetLastError` comparé à 0x361c), tandis qu'une section **`.ATOM` de 437 Ko** à une **entropie de 8.00** (chiffrée/compressée). Les deux challenges 451 et 452 partagent d'ailleurs
 un `.text` identique : seule la charge utile diffère.
 
 Le désassemblage de la plus grosse fonction (`0x140002840`, 3464 o) montre le **range coder LZMA**

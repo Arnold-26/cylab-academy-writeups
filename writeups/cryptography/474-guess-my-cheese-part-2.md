@@ -13,23 +13,23 @@ Méthode : **hash salt brute force**.
 Le service (`nc` sur l'instance) affiche un SHA-256 (64 hex), puis demande
 « what's my cheese? » puis « what's my salt? ».
 
-### Le piege : le sel change a chaque connexion
+### Le piege : le sel change à chaque connexion
 
-Chaque nouvelle connexion affiche un hash different. Il faut donc brute-forcer **dans la meme
-connexion** : le serveur attend la reponse, on calcule (~3 s), on repond.
+Chaque nouvelle connexion affiche un hash different. Il faut donc brute-forcer **dans la même
+connexion** : le serveur attend la réponse, on calcule (~3 s), on répond.
 
-### Construction exacte du hash (verifiee par l'experience)
+### Construction exacte du hash (vérifiée par l'experience)
 
 ```
 sha256( cheese.lower() + chr(salt_byte) )
 ```
 
-Attention a trois details qui coutent des heures si on les rate :
+Attention a trois détails qui coutent des heures si on les rate :
 
 1. **le fromage est mis en minuscules** dans le hash (`Butterkase` -> `butterkase`) ;
-2. le sel est **un seul octet brut** (pas une chaine hex) ajoute au nom ;
-3. a la question « what's my salt? » il faut repondre **la representation hexadecimale sur
-   2 caracteres** (`0x54` -> `54`), pas le caractere.
+2. le sel est **un seul octet brut** (pas une chaîne hex) ajoute au nom ;
+3. à la question « what's my salt? » il faut répondre **la representation hexadécimale sur
+   2 caractères** (`0x54` -> `54`), pas le caractère.
 
 ### Script
 
@@ -42,7 +42,7 @@ for c in cheeses:                      # 599 noms de cheese_list.txt
 
 Puis : `g`, le nom **d'origine** (`Butterkase`), puis `"%02x" % sb` (`54`).
 
-Reponse du serveur :
+Réponse du serveur :
 
 ```
    _   _
@@ -53,13 +53,13 @@ academy{cHeEsY1e5a870a}
 
 ### A retenir
 
-- Un hash qui change a chaque connexion n'est pas forcement hors de portee : si l'entropie du
+- Un hash qui change à chaque connexion n'est pas forcement hors de portee : si l'entropie du
   sel est faible (1 octet), l'espace `599 x 256` se parcourt en 3 secondes — mais **il faut
   rester dans la session**.
 - Les animations du service (`munch...`, `BLEHHHHH yuck. THAT'S not my cheese`) sont des
   oracles : « yuck » = fromage faux, `munch` sans verdict = fromage bon mais sel mal formatte.
-  C'est ce qui a revele qu'il fallait envoyer le sel en hex.
-- Verifier la **casse** : le hash utilise `lower()`, la comparaison du nom attend la casse
+  C'est ce qui a révèle qu'il fallait envoyer le sel en hex.
+- Vérifier la **casse** : le hash utilise `lower()`, la comparaison du nom attend la casse
   d'origine.
 
 ## Flag

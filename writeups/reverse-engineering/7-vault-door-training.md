@@ -105,7 +105,3 @@ Le littéral apparaît dans la constante du pool de la classe : le compiler ne p
 l'utilisateur, avec la valeur attendue présente dans le fichier remis. Le canal de livraison du
 programme est aussi celui du secret : toute la protection tient à la supposition que personne ne
 lira le code. Un `grep` suffit à la renverser.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

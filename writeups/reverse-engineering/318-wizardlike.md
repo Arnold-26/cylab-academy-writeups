@@ -1,5 +1,21 @@
 # 318 — Wizardlike — Reverse Engineering
 
+**Catégorie** : Reverse Engineering · **Challenge** : #318 · **Événement** : picoCTF 2022
+
+## Énoncé
+
+> Do you seek your destiny in these deplorable dungeons? If so, you may want to
+> look elsewhere. Many have gone before you and honestly, they've cleared out the
+> place of all monsters, ne'erdowells, bandits and every other sort of evil foe.
+> The dungeons themselves have seen better days too. There's a lot of missing
+> floors and key passages blocked off. You'd have to be a real wizard to make
+> any progress in this sorry excuse for a dungeon!
+> Download the [game](https://challenge-files.cylabacademy.net/library/e0d9f33f4a57a6676c5811f5e6635e4b414d33f335cb313f085056065d978895/game).
+>
+> '`w`', '`a`', '`s`', '`d`' moves your character and '`Q`' quits. You'll need to
+>  improvise some wizardly abilities to find the flag in this dungeon crawl.
+> '`.`' is floor, '`#`' are walls, '``' are stairs down to next level.
+
 **Flag :** `academy{ur_4_w1z4rd_e14455ad}`
 **Binaire :** `_z_game` — ELF x86-64 **statique non-PIE**, 1 203 016 o, **strippé**, sans instance
 réseau (le flag est dérivé du binaire lui-même).

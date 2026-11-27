@@ -2,6 +2,13 @@
 
 **Catégorie** : Cryptography · **Challenge** : #310 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> We have so much faith in RSA we give you not just the product of the primes,
+> but their sum as well!
+> - [gen.py](https://challenge-files.cylabacademy.net/library/81a018042d8d86e3e85dbdcd77f6b6a1cf6f829182e6fee61f938882ddcf03d2/gen.py)
+> - [output.txt](https://challenge-files.cylabacademy.net/library/81a018042d8d86e3e85dbdcd77f6b6a1cf6f829182e6fee61f938882ddcf03d2/output.txt)
+
 ## Résolution
 
 Méthode : **n et p+q -> trinome**.

@@ -1,6 +1,6 @@
 # 710 — MultiCode
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -110,7 +110,3 @@ l'algorithme.
   rien de lisible et fait perdre du temps.
 - **Ne pas confondre les couches** : `%7B` est du percent-encoding, pas du HTML entity ni du base64.
   Chercher un `&` ou un `;` oriente vers la mauvaise piste.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

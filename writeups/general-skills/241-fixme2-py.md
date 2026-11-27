@@ -1,6 +1,6 @@
 # 241 — fixme2.py
 
-**Événement** : Beginner picoMini 2022 · **Catégorie** : General Skills
+**Événement** : Beginner picoMini 2022 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -76,7 +76,3 @@ Le script calcule le flag avant le `if` ; seule la condition est mal écrite. Re
 - **Oublier le second `=`** : une correction partielle (`if flag = ""` → `if flag =""`) laisse la même erreur.
 - **Confondre les deux challenges** : `fixme1.py` est une erreur d'indentation, `fixme2.py` une erreur d'opérateur ; les correctifs ne s'échangent pas.
 - **Sauvegarde dans `nano`** : sans `Ctrl+O` confirmé, on relance l'ancienne version et l'erreur persiste.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

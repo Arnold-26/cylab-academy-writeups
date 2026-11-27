@@ -1,5 +1,11 @@
 # 120 — It's Not My Fault 2 — Cryptography
 
+**Catégorie** : Cryptography · **Challenge** : #120 · **Événement** : picoCTF 2021
+
+## Énoncé
+
+> What do you mean RSA with CRT has an attack that's not a fault attack?
+
 **Flag :** `academy{p0lyn0m14l_4r17hm371c_73chn1qu35_4r3_u53ful_1n_m4ny_f13ld5!!!}`
 **Cible :** `nc chatelaine.cylabacademy.net <port>` + source `not_my_fault_again.py`
 

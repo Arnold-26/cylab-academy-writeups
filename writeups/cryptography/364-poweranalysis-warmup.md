@@ -12,9 +12,9 @@ Méthode : **cpa**.
 
 Le service (`nc chatelaine.cylabacademy.net 42342`) accepte 16 octets de plaintext en
 hex et renvoie une trace de puissance de 2666 points. **Une seule mesure par connexion** :
-il faut rouvrir une socket a chaque trace.
+il faut rouvrir une socket à chaque trace.
 
-Collecte : 300 plaintexts aleatoires (300 connexions, ~6 min), puis CPA.
+Collecte : 300 plaintexts aléatoires (300 connexions, ~6 min), puis CPA.
 Resultat : correlation 0,52-0,60 pour les 16 octets, 0,27 pour les dauphins.
 
 ```
@@ -36,7 +36,7 @@ k_gagnant      = argmax_k  max_t |correlation|
 
 C'est le modele classique « Hamming weight de la sortie de S-box ». Le bon octet de clef sort
 avec une correlation de 0,5-0,7 contre 0,25-0,45 pour les suivants : la separation est nette,
-inutile de monter a des milliers de traces.
+inutile de monter à des milliers de traces.
 
 Code (numpy, 20 lignes) :
 

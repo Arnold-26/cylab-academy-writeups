@@ -103,7 +103,3 @@ La mempool est un espace public : toute transaction non encore minée est lisibl
 - **Le remplacement de transaction.** Réutiliser le même nonce avec un gas price insuffisamment supérieur déclenche `replacement transaction underpriced`. On garde un nonce neuf, ou on augmente franchement le prix.
 - **`transact()` sur un nœud sans compte.** L'erreur `unlock account` est explicite : il faut passer par `sign_transaction` puis `send_raw_transaction`.
 - **Le doublon de pré-image.** La valeur volée dans la mempool est celle du coffre, pas le flag : `getFlag()` renvoie autre chose que l'argument observé dans la transaction du bot.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

@@ -2,6 +2,10 @@
 
 **Catégorie** : Cryptography · **Challenge** : #21 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Theres tapping coming in from the wires.
+
 ## Résolution
 
 Méthode : **morse**.

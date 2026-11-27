@@ -116,7 +116,3 @@ demande de connaître la clé ou l'adresse réelle.
 - **`onEnter` vs `onLeave`** : `sockaddr` en `onEnter`, neutralisation de `lstrcmpA` en `onLeave`.
 - **Ordre de lancement** : le listener écoute avant que le binaire ne se connecte ; le lancer après ne
   sert à rien, et `--no-pause` est nécessaire pour que Frida ne suspende pas le processus.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

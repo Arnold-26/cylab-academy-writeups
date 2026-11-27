@@ -2,6 +2,11 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #381 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> You will find the flag after analysing this apk
+> Download [here](https://challenge-files.cylabacademy.net/library/b31248aec6287cbe220d0dbfa55e216b87e6175b3561d441062bfdd018f3cacc/timer.apk).
+
 ## Résolution
 
 Méthode : **unzip APK + grep dex**.

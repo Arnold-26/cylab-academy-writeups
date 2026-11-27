@@ -1,6 +1,6 @@
 # 724 — bytemancy 2
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -116,7 +116,3 @@ seconde dès qu'on utilise `print`.
 - **CRLF** : `rstrip(b"\n")` ne retire pas le `\r`. Un envoi depuis un terminal Windows laisse un `\r`
   final, et la comparaison échoue pour un octet invisible : hexdumper ce qui part réellement.
 - **Nombre d'octets** : trois, pas quatre. `b'\xff'*4` échoue aussi silencieusement.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

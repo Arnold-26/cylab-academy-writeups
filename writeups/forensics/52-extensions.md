@@ -85,7 +85,3 @@ pngcheck -v flag.png
 lui, lit les octets magiques. Renommer ne modifie pas le contenu, seulement la façon dont les outils
 l'interprètent. La leçon vaut pour tous les formats : c'est la signature qui fait foi, et `file` est
 l'outil qui la lit.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

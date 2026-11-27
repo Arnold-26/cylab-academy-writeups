@@ -117,10 +117,6 @@ signature de fichier).
 - **`http.file_data` vide** : le corps est parfois réassemblé ; utiliser `-z follow,tcp,raw,<n>` sur
   le bon flux et vérifier que `segments.txt` n'est pas vide.
 
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).
-
 ## Scripts
 
 - [`solve.py`](../../solve/714/solve.py)

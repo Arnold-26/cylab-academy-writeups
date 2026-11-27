@@ -1,6 +1,6 @@
 # 764 — MY GIT
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -107,7 +107,3 @@ déclaration du client, transportée telle quelle dans le pack. Le serveur n'a a
 recouper avec un compte, puisqu'aucune authentification par clé n'est exigée ici. Le hook fait donc
 confiance à une donnée non authentifiée : la faille est dans le modèle de confiance, pas dans la
 configuration du serveur.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

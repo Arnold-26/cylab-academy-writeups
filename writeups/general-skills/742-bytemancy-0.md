@@ -1,6 +1,6 @@
 # 742 — bytemancy 0
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -80,7 +80,3 @@ La vérification porte sur la valeur des octets reçus, pas sur leur écriture. 
 - **Les séparateurs.** « side-by-side, no space » est une consigne littérale : une virgule ou une espace fait échouer la comparaison, car `input()` ne fait que retirer le `\n`.
 - **Le `\r` sous Windows.** Un `printf` depuis un terminal mal configuré peut produire `eee\r\n` ; le `\r` reste et casse l'égalité. Vérifier avec `printf 'eee' | xxd`.
 - **Fermer la connexion trop tôt.** `nc` sans `-q` peut couper avant la réponse ; `-q 1` laisse une seconde au serveur pour répondre.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

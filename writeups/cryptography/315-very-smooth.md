@@ -2,6 +2,12 @@
 
 **Catégorie** : Cryptography · **Challenge** : #315 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Forget safe primes... Here, we like to live life dangerously... >:)
+> - [gen.py](https://challenge-files.cylabacademy.net/library/196f6e0d60a026ece6c2713a163cac263c8492aaa0173803ff2a9aace97870d4/gen.py)
+> - [output.txt](https://challenge-files.cylabacademy.net/library/196f6e0d60a026ece6c2713a163cac263c8492aaa0173803ff2a9aace97870d4/output.txt)
+
 ## Résolution
 
 Méthode : **Pollard p-1**.

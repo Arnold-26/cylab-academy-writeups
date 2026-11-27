@@ -1,6 +1,10 @@
 # Glitch Cat
 
-**Catégorie** : General Skills · **Challenge** : #242 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #242 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> Our flag printing service has started glitching!
 
 ## Résolution
 

@@ -2,6 +2,18 @@
 
 **Catégorie** : Forensics · **Challenge** : #456 · **Résolu le** : 2026-11-24
 
+## Énoncé
+
+> One of the employees at your company has their computer infected by malware! Turns out every time they try to switch on the computer, it shuts down right after they log in. The story given by the employee is as follows:
+>
+> 1. They installed software using an installer they downloaded online
+> 2. They ran the installed software but it seemed to do nothing
+> 3. Now every time they bootup and login to their computer, a black command prompt screen quickly opens and closes and their computer shuts down instantly.
+>
+> See if you can find evidence for the each of these events and retrieve the flag (split into 3 pieces) from the correct logs!
+>
+> Download the Windows Log file [here](https://challenge-files.cylabacademy.net/library/ce601bcb71ad064088b71881564ee20ccdc62d9ec1dc7519d06b758a2e1f1efa/Windows_Logs.evtx)
+
 ## Résolution
 
 Méthode : **evtx : fragments base64 dans 3 evenements**.

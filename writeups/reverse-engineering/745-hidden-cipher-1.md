@@ -99,7 +99,3 @@ Le XOR avec une clé courte répétée est un chiffrement de flux élémentaire 
 - **Le fichier de flag en hexadécimal.** Si le fichier commence par des caractères `0-9a-f`, il faut d'abord le décoder (`bytes.fromhex`) avant d'appliquer le XOR, sinon on XOR des codes ASCII de chiffres hexadécimaux.
 - **Un octet de trop.** Un `\n` final dans le fichier chiffré produit un caractère parasite en fin de clair ; ce n'est pas une erreur de clé.
 - **Le mauvais endianness dans Ghidra.** Les six octets peuvent apparaître sous forme d'un entier 64 bits ; on relit octet par octet (`x/6xb` en GDB) plutôt que de recopier la valeur d'un `mov` en bloc.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

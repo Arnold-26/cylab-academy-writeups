@@ -1,5 +1,13 @@
 # 452 — Binary Instrumentation 2 — Reverse Engineering
 
+**Catégorie** : Reverse Engineering · **Challenge** : #452 · **Événement** : picoCTF 2025
+
+## Énoncé
+
+> I've been learning more Windows API functions to do my bidding. Hmm... I swear this program was supposed to create a file and write the flag directly to the file. Can you try and intercept the file writing function to see what went wrong?
+>
+> Download the exe [here](https://challenge-files.cylabacademy.net/library/ce8f745beda824c87d5482c853c90b7758b9a95d9b05db0c74fb2b0678f8115b/bininst2.zip). Unzip the archive with the password `academy`
+
 **Flag :** `academy{fr1da_f0r_b1n_in5trum3nt4tion!_b21aef39}`
 **Fichier :** `bininst2.zip` (mdp `academy`) → `bininst2.exe` (PE32+ x86-64, 462 336 o).
 **Énoncé :** *« I swear this program was supposed to create a file and write the flag directly to

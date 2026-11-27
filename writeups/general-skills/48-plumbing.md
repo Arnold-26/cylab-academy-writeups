@@ -1,6 +1,6 @@
 # 48 — plumbing
 
-**Événement** : picoCTF 2019 · **Catégorie** : General Skills · **Auteur** : Alex Fulton/Danny Tunitits
+**Événement** : picoCTF 2019 · **Catégorie** : Général Skills · **Auteur** : Alex Fulton/Danny Tunitits
 
 ## Énoncé
 
@@ -78,7 +78,3 @@ au motif, sans se soucier de ce que produit le programme en amont. Le tube réal
 au niveau du noyau, sans fichier intermédiaire : le filtrage est donc instantané et indépendant du
 volume. C'est la démonstration qu'un outil de filtrage est plus utile qu'un outil de stockage quand
 l'information est rare dans un flux dense.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

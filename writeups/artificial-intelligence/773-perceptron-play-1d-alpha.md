@@ -2,6 +2,10 @@
 
 **Catégorie** : Artificial Intelligence · **Challenge** : #773 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Play with the weight and bias of a 1D perceptron on a number line. Adjust the parameters until every labeled point is classified correctly and you will earn the flag.
+
 ## Résolution
 
 Méthode : **separateur x>=1**.

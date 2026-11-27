@@ -2,6 +2,10 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #400 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> This service can provide you with a random number, but can it do anything else?
+
 ## Résolution
 
 Méthode : **eval(user_input+'()')**.

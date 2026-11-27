@@ -1,6 +1,11 @@
 # strings it
 
-**Catégorie** : General Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2019
+**Catégorie** : Général Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2019
+
+## Énoncé
+
+> Can you find the flag in [file](https://challenge-files.cylabacademy.net/library/badce1db694f2fe71ecd915ef2eeb78d799c90b1bc230960ce03ef0074573616/strings) without running it?
+
 **Challenge** : #37
 
 ## Résolution

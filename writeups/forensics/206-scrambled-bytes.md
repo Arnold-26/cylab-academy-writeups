@@ -2,6 +2,10 @@
 
 **Catégorie** : Forensics · **Challenge** : #206 · **Résolu le** : 2026-11-24
 
+## Énoncé
+
+> I sent my secret flag over the wires, but the bytes got all mixed up!
+
 ## Résolution
 
 Méthode : **seed PRNG + inversion de shuffle**.

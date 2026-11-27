@@ -65,7 +65,3 @@ tcpdump -r trace.pcap -A -n | grep -A 2 -i pico
 - **Coller des octets parasites** : la chaîne peut être suivie d'octets non imprimables ; on ne garde que le motif jusqu'à l'accolade.
 - **Oublier `-n` avec `tcpdump`** : sans résolution de noms, la sortie reste lisible et rapide.
 - **Confondre charge utile et en-tête** : le filtre porte sur `tcp.payload` ; `tcp contains` cherche dans tout le segment, en-têtes compris.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

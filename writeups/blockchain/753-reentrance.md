@@ -114,7 +114,3 @@ d'elle-même quand la banque n'a plus assez d'ETH, ce qui est exactement l'état
   solde résiduel.
 - **Lire le flag avant le drain.** `getFlag()` exige un solde nul : l'appeler trop tôt ne rend rien.
 - **Confondre le solde du compte et celui du contrat.** C'est `address(bank).balance` qui compte.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

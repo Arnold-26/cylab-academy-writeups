@@ -80,11 +80,7 @@ Chaque ligne est une évaluation du polynôme en un point. Avec `n` points disti
 
 - **Lagrange naïf** : `O(n²)` avec `n` proche de 1,77 million, le calcul ne finit jamais.
 - **Moitiés inversées** : `Z1` et `Z2` échangés donnent un polynôme faux, avec des coefficients hors bornes.
-- **Coefficient final** : le polynôme a un coefficient de plus que le nombre d'octets ; `coeffs[:-1]` le retire.
+- **Coefficient final** : le polynôme à un coefficient de plus que le nombre d'octets ; `coeffs[:-1]` le retire.
 - **Tester en base entière** : sans réduction modulo `p`, les divisions n'ont pas de sens dans le corps.
 - **Oublier d'ouvrir le BMP** : le flag est dessiné dans l'image, pas lisible dans les octets bruts.
 - **Mémoire** : la structure de sous-produits tient en mémoire pour 1,7 million de points, mais seulement si on évite les copies inutiles.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

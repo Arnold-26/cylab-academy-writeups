@@ -68,7 +68,3 @@ Les espaces ne servent qu'à casser les recherches textuelles naïves ; une fois
 - **Lire le mauvais flux** : `follow,tcp,ascii,0` cible le flux 0 ; une capture avec du bruit DNS ou ARP peut en contenir d'autres.
 - **Se fier à `strings` sur une capture fragmentée** : les morceaux apparaissent dans l'ordre du fichier, pas dans l'ordre du flux.
 - **Garder les espaces dans la valeur** : le flag soumis doit être la chaîne recollée, pas la version espacée.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

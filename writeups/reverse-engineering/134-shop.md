@@ -2,6 +2,10 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #134 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Best Stuff - Cheap Stuff, Buy Buy Buy...
+
 ## Résolution
 
 Méthode : **quantite negative**.

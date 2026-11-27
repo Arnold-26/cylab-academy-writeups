@@ -1,12 +1,16 @@
 # HashingJobApp
 
-**Catégorie** : General Skills · **Challenge** : #243 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #243 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> If you want to hash with the best, beat this test!
 
 ## Résolution
 
 Méthode : **service reseau : md5 interactif**.
 
-Le service demande de hasher en MD5 une chaine entre quotes, plusieurs fois de suite. Boucle : lire la chaine, calculer `hashlib.md5().hexdigest()`, repondre.
+Le service demande de hasher en MD5 une chaîne entre quotes, plusieurs fois de suite. Boucle : lire la chaîne, calculer `hashlib.md5().hexdigest()`, répondre.
 
 ## Flag
 

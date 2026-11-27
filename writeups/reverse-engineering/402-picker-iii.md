@@ -2,11 +2,15 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #402 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Can you figure out how this program works to get the flag?
+
 ## Résolution
 
 Méthode : **reecriture de func_table**.
 
-`write_variable` fait `exec('global '+var_name+'; '+var_name+' = '+value)` sans verifier le nom. On ecrit `func_table` avec une valeur de 128 caracteres dont le premier champ est `win` : `'w'+'in'+' '*29+'A'*96`. Ensuite l'option 1 appelle `call_func(0)` -> `eval('win()')`.
+`write_variable` fait `exec('global '+var_name+'; '+var_name+' = '+value)` sans vérifier le nom. On écrit `func_table` avec une valeur de 128 caractères dont le premier champ est `win` : `'w'+'in'+' '*29+'A'*96`. Ensuite l'option 1 appelle `call_func(0)` -> `eval('win()')`.
 
 ## Flag
 

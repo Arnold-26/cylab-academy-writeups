@@ -115,7 +115,3 @@ dans `[0, p[`, ce qui rend ce type d'attaque inopérant.
 - **Poids `W`** : trop petit, les constantes dominent ; trop grand, les variables d'écart noient le
   vecteur court.
 - **Un seul candidat** : plusieurs entrées peuvent tomber dans la plage, il faut toutes les tester.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

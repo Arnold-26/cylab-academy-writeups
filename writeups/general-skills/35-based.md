@@ -1,6 +1,6 @@
 # 35 — Based
 
-**Événement** : picoCTF 2019 · **Catégorie** : General Skills · **Auteur** : Alex Fulton/Daniel Tunitits
+**Événement** : picoCTF 2019 · **Catégorie** : Général Skills · **Auteur** : Alex Fulton/Daniel Tunitits
 
 ## Énoncé
 
@@ -98,7 +98,3 @@ s = socket.create_connection(("<HOST>", 29221))
 **Pourquoi ça marche.** Le service ne teste que le résultat : il choisit une base, encode un mot et
 compare la réponse. Le décodage est une conversion arithmétique déterministe, sans clé. La seule
 contrainte réelle est le temps, et un script de vingt lignes la fait disparaître.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

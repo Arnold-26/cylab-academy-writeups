@@ -1,6 +1,6 @@
 # 741 — Printer Shares 3
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -97,7 +97,3 @@ Le contrôle d'accès SMB ne protège que l'accès **réseau** au partage. Le cr
 - **Écraser sans perdre la structure.** On garde la ligne `echo "Health Check"` du script d'origine : le log reste cohérent et rien ne signale que le script a été remplacé.
 - **Le log périmé.** `cron.log` évolue côté serveur ; il faut le re-télécharger au lieu de relire la copie locale obtenue à l'étape 1.
 - **Les droits du partage.** Si le `put` échoue en `NT_STATUS_ACCESS_DENIED`, c'est que le partage est en lecture seule pour la session nulle : dans ce cas le `put` doit se faire sur le même chemin mais avec un fichier de même nom, et non dans un sous-répertoire.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

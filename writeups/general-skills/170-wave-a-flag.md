@@ -1,6 +1,6 @@
 # Wave a flag
 
-**Catégorie** : General Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2021
+**Catégorie** : Général Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2021
 **Challenge** : #170
 
 ## Énoncé

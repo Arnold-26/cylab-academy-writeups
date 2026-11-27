@@ -1,6 +1,6 @@
 # 240 — fixme1.py
 
-**Événement** : Beginner picoMini 2022 · **Catégorie** : General Skills
+**Événement** : Beginner picoMini 2022 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -78,7 +78,3 @@ Le script calcule déjà le flag ; l'interpréteur s'arrête avant parce que la 
 - **Corriger une autre ligne** : l'interpréteur pointe la ligne 20, mais une ligne voisine peut aussi être mal alignée.
 - **Éditer sans sauvegarder** : dans `nano` sur un webshell, on quitte souvent avec `Ctrl+X` sans confirmer l'écriture.
 - **Recopier le script à la main** : l'apostrophe échappée du message se perd facilement et provoque une nouvelle erreur de syntaxe.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

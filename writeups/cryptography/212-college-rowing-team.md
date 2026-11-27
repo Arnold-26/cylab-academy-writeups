@@ -2,6 +2,10 @@
 
 **Catégorie** : Cryptography · **Challenge** : #212 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> I just joined my college's rowing team! To make a good first impression, I started sending my teammates positive automated messages every day. I even send them flags from time to time!
+
 ## Résolution
 
 Méthode : **petit exposant + racine cubique**.

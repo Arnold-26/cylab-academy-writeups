@@ -2,6 +2,11 @@
 
 **Catégorie** : Forensics · **Challenge** : #348 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Someone might have hidden the password in the trace file.
+> Find the key to unlock [this file](https://challenge-files.cylabacademy.net/library/db0ed8ae315a98a99df76de2bc96c527f6cb36c0ab7497bf10e951576343d560/flag.zip). [This tracefile](https://challenge-files.cylabacademy.net/library/db0ed8ae315a98a99df76de2bc96c527f6cb36c0ab7497bf10e951576343d560/dump.pcap) might be good to analyze.
+
 ## Résolution
 
 Méthode : **pcap -> base64 partiel -> mot de passe zip**.

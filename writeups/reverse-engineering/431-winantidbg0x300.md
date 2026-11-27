@@ -1,5 +1,31 @@
 # 431 — WinAntiDbg0x300 — Reverse Engineering
 
+**Catégorie** : Reverse Engineering · **Challenge** : #431 · **Événement** : picoCTF 2024
+
+## Énoncé
+
+> This challenge is a little bit invasive. It will try to fight your debugger. With that in mind, debug the binary and get the flag!
+>
+> This challenge executable is a GUI application and it requires admin privileges. And remember, the flag might get corrupted if you mess up the process's state.
+>
+> Challenge can be downloaded [here](https://challenge-files.cylabacademy.net/library/74768274a48d84a1781c9f34225b484c3010fd4a2c22b6ff1e67e1cb3eb664c0/WinAntiDbg0x300.zip). Unzip
+> the archive with the password `academy`
+>
+> If you get "VCRUNTIME140D.dll" and "ucrtbased.dll" missing error, then that
+> means the Universal C Runtime library and Visual C++ Debug library are not
+> installed on your Windows machine.
+>
+> The quickest way to fix this is:
+>
+> - Download Visual Studio Community installer from
+>  https://visualstudio.microsoft.com/vs/community/
+>
+> - After the installer starts, first select 'Desktop development with C++' and
+>  then, in the right side column, select 'MSVC v143 - VS 2022 C++ x64/x86 build
+>  tools' and 'Windows 11 SDK' packages.
+>
+> This will take ~30 mins to install any missing DLLs.
+
 **Flag :** `academy{Wind0ws_antid3bg_0x300_f57a6e29}`
 **Artefacts :** `WinAntiDbg0x300.exe` (PE32 **packé UPX**, 26 624 o), `WinAntiDbg0x300.pdb`
 (880 640 o), `config.bin` (86 o) — zip protégé par `academy`.

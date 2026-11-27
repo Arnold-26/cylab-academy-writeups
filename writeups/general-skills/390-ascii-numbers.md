@@ -1,6 +1,6 @@
 # 390 — ASCII Numbers
 
-**Événement** : picoGym / Challenge Library Exclusive · **Catégorie** : General Skills
+**Événement** : picoGym / Challenge Library Exclusive · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -64,7 +64,3 @@ Chaque token est un octet, et un octet ASCII imprimable correspond exactement à
 - **Copier la chaîne avec des retours à la ligne** : ils sont acceptés par la plupart des décodeurs, mais un `tr -d ' \n'` explicite évite les surprises.
 - **Confondre ASCII et UTF-8** : ici tout tient sur un octet par caractère ; sur un texte accentué, `chr` produirait autre chose que `xxd`.
 - **Oublier le dernier `0x7d`** : la chaîne se termine par l'accolade ; une copie partielle donne un flag refusé par la plateforme.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

@@ -1,6 +1,6 @@
 # 757 — ping-cmd
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -95,7 +95,3 @@ un code non nul — contrairement à `&&`.
   connexion ouverte et augmenter le timeout du client plutôt que de relancer en boucle.
 - **Tronquer la sortie.** Le résultat de la commande injectée arrive après les statistiques du ping ;
   un `head` trop court ne montre que le ping.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

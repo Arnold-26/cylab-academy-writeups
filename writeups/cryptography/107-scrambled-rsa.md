@@ -1,5 +1,11 @@
 # 107 — Scrambled: RSA — Cryptography
 
+**Catégorie** : Cryptography · **Challenge** : #107 · **Événement** : picoCTF 2021
+
+## Énoncé
+
+> Hmmm I wonder if you have learned your lesson... Let's see if you understand RSA and how the encryption works.
+
 **Flag :** `academy{bad_1d3a5_73efa9c}`
 **Cible :** `nc chatelaine.cylabacademy.net <port>`
 

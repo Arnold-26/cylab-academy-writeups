@@ -8,9 +8,9 @@
 
 ## Résolution
 
-Méthode : **chiffre de Playfair 6x6 : dechiffrement avec la cle publiee en clair**.
+Méthode : **chiffre de Playfair 6x6 : déchiffrement avec la clé publiée en clair**.
 
-Le service imprime en clair l'**alphabet** (36 caracteres, carre 6x6) qui sert de cle, puis le **message chiffre**, et demande le clair. Le code `playfair.py` fourni montre l'algorithme exact : carre 6x6 construit dans l'ordre de l'alphabet, et `encrypt_pair` decale de +1 en ligne si meme ligne, de +1 en colonne si meme colonne, sinon echange les colonnes. Le dechiffrement est donc le meme algorithme avec **-1** a la place de +1 (et l'echange de colonnes inchange). Detail utile : si la longueur du message est impaire, le chiffrement ajoute `{` en fin de texte — il faut donc retirer ce caractere du clair reconstruit avant de repondre. Le service repond « Congratulations! Here's the flag: ... » avec un flag **sans format standard** (une simple chaine hexadecimale), conformement a l'enonce.
+Le service imprime en clair l'**alphabet** (36 caractères, carré 6x6) qui sert de clé, puis le **message chiffre**, et demande le clair. Le code `playfair.py` fourni montre l'algorithme exact : carré 6x6 construit dans l'ordre de l'alphabet, et `encrypt_pair` décale de +1 en ligne si même ligne, de +1 en colonne si même colonne, sinon échange les colonnes. Le déchiffrement est donc le même algorithme avec **-1** à la place de +1 (et l'échange de colonnes inchangé). Détail utile : si la longueur du message est impaire, le chiffrement ajoute `{` en fin de texte — il faut donc retirer ce caractère du clair reconstruit avant de répondre. Le service répond « Congratulations! Here's the flag: ... » avec un flag **sans format standard** (une simple chaîne hexadécimale), conformément à l'énoncé.
 
 ## Flag
 

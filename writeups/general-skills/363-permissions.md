@@ -1,6 +1,10 @@
 # Permissions
 
-**Catégorie** : General Skills · **Challenge** : #363 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #363 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> Can you read files in the root file?
 
 ## Résolution
 

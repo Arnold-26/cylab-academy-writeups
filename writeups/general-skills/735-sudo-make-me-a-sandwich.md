@@ -1,6 +1,6 @@
 # 735 — SUDO MAKE ME A SANDWICH
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -105,7 +105,3 @@ de fichiers : ce sont tous des binaires qui peuvent en lancer d'autres.
   règle sudo. C'est bien emacs qu'il faut utiliser.
 - **Quitter emacs** : `C-x C-c`. Rester bloqué dans l'éditeur donne l'impression que la session est
   gelée.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

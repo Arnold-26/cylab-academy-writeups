@@ -1,6 +1,6 @@
 # 712 — Password Profiler
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -116,7 +116,3 @@ quelques secondes de calcul.
 - **Casse et séparateurs** : le mot de passe réel est `Aj`, pas `AJ`, et le `_` vient du générateur ;
   si rien ne sort, ajouter séparateurs et suffixes à la main.
 - **Pas de sel** : le hash est nu ; inutile de lancer `hashcat` sur rockyou, le profil est fourni.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

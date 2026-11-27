@@ -68,7 +68,3 @@ Le flag est écrit en clair dans le récit ; aucune transformation ne le protèg
 - **`grep` sans `-a`** : sur un fichier contenant des octets non imprimables, `grep` affiche « binary file matches » au lieu de la ligne.
 - **`grep` sans `-o`** : la ligne entière est recrachée et le flag se perd dans le texte ; `-o` n'affiche que le motif.
 - **Confondre volume et chiffrement** : rien n'est encodé ici ; chercher un décodage fait perdre du temps.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

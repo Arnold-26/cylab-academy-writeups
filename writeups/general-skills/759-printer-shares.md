@@ -1,6 +1,6 @@
 # 759 — Printer Shares
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -93,9 +93,5 @@ lisible par n'importe qui.
 - **Transfert en mode ASCII.** `smbclient` peut traduire les fins de ligne et corrompre le fichier :
   passer en `binary` avant `get` si le contenu semble altéré.
 - **Ne lire que la racine du partage.** Un `recurse ON` coûte une commande et évite un faux négatif.
-- **Confondre avec un challenge voisin.** « Printer Shares 2 » a un autre flag : le nom du challenge
+- **Confondre avec un challenge voisin.** « Printer Shares 2 » à un autre flag : le nom du challenge
   doit correspondre à l'instance interrogée.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

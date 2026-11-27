@@ -8,9 +8,9 @@
 
 ## Résolution
 
-Méthode : **exposition partielle de cle RSA : bits connus de p + n -> Howgrave-Graham/Coppersmith puis dechiffrement**.
+Méthode : **exposition partielle de clé RSA : bits connus de p + n -> Howgrave-Graham/Coppersmith puis déchiffrement**.
 
-La cle privee a ete partiellement effacee (champs mis a zero). `openssl asn1parse` montre n et e intacts, d entierement nul, et p partiellement connu. On retrouve p par attaque de petits racines (Howgrave-Graham) sur les bits connus, puis q = n/p, d = e^-1 mod phi, et on dechiffre msg.enc. La version CyLab reutilise le flag de la version picoMini by redpwn.
+La clé privee a été partiellement effacee (champs mis a zero). `openssl asn1parse` montre n et e intacts, d entierement nul, et p partiellement connu. On retrouve p par attaque de petits racines (Howgrave-Graham) sur les bits connus, puis q = n/p, d = e^-1 mod phi, et on déchiffre msg.enc. La version CyLab réutilise le flag de la version picoMini by redpwn.
 
 ## Flag
 

@@ -2,6 +2,10 @@
 
 **Catégorie** : Forensics · **Challenge** : #139 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> 🥛
+
 ## Résolution
 
 Méthode : **LSB du canal bleu**.

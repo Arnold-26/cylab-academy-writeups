@@ -2,6 +2,10 @@
 
 **Catégorie** : Cryptography · **Challenge** : #2 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> In RSA d is a lot bigger than e, why don't we use d to encrypt instead of e?
+
 ## Résolution
 
 Méthode : **e et d inverses**.

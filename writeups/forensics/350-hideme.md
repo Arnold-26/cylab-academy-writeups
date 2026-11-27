@@ -64,7 +64,3 @@ Deux formats, un seul fichier : c'est le principe de la polyglotte.
 - **Utiliser `-e` sans répertoire de travail propre** : `binwalk` extrait dans `_<nom>.extracted/`, un dossier déjà présent peut mélanger les résultats de plusieurs essais.
 - **Se fier au seul `binwalk`** : la signature peut être décalée ; le recoupement avec `strings` et `exiftool` confirme l'offset.
 - **Réenregistrer l'image depuis un visualiseur** : l'outil réécrit le fichier et perd le trailer, donc l'archive.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

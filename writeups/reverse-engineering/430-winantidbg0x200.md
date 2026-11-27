@@ -1,5 +1,18 @@
 # 430 — WinAntiDbg0x200 — Reverse Engineering
 
+**Catégorie** : Reverse Engineering · **Challenge** : #430 · **Événement** : picoCTF 2024
+
+## Énoncé
+
+> If you have solved WinAntiDbg0x100, you'll discover something new in this one. Debug the executable and find the flag!
+>
+> This challenge executable is a Windows console application, and you can start by running it using Command Prompt on Windows.
+>
+> This executable requires admin privileges. You might want to start Command Prompt or your debugger using the 'Run as administrator' option.
+>
+> Challenge can be downloaded [here](https://challenge-files.cylabacademy.net/library/88b35e5b6d8c4c8c259cb5c00a01a3f0b815986a76621ad70f7b96af6ecf4d59/WinAntiDbg0x200.zip). Unzip
+> the archive with the password `academy`
+
 **Flag :** `academy{0x200_debug_f0r_Win_0d811b88}`
 **Artefacts :** `WinAntiDbg0x200.exe` (PE32, 16 384 o) + `config.bin` (80 o), zip protégé par
 le mot de passe `academy`.

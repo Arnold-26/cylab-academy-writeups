@@ -64,7 +64,3 @@ Toute extraction qui lit la couche texte plutôt que l'image de la page retrouve
 - **Sauter les métadonnées** : `pdfinfo` donne le nombre de pages et la version du format, utile pour savoir si l'extraction a bien couvert tout le document.
 - **Négliger l'encodage** : si `pdftotext` sort des caractères bizarres, un `-enc UTF-8` explicite règle le problème.
 - **Valider sur une seule occurrence** : plusieurs chaînes du rapport ressemblent à des identifiants, seule celle qui porte le format du flag est la bonne.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

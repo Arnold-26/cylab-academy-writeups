@@ -2,6 +2,10 @@
 
 **Catégorie** : Cryptography · **Challenge** : #209 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> To get the flag, you must break RSA not once, but three times!
+
 ## Résolution
 
 Méthode : **gcd des modules partages**.

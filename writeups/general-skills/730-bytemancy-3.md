@@ -1,6 +1,6 @@
 # 730 — bytemancy 3
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -116,7 +116,3 @@ adresse n'est pas un texte mais quatre octets, et que leur ordre est normé par 
   recherche de sous-chaîne est plus robuste qu'un `recvuntil(nom)` sur un nom inconnu.
 - **Ordre aléatoire** : le serveur tire trois des quatre fonctions. Coder une boucle qui réagit au nom
   annoncé, jamais une séquence figée.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

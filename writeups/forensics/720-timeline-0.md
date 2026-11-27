@@ -103,7 +103,3 @@ l'invitation, pas la cachette.
   fait un multiple de 3 octets).
 - **Le flag n'est pas complet** : ne pas soumettre la chaîne décodée telle quelle, l'envelopper dans
   le format demandé.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

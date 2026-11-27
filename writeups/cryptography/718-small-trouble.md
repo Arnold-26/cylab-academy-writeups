@@ -2,6 +2,11 @@
 
 **Catégorie** : Cryptography · **Challenge** : #718 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Everything seems secure; strong numbers, familiar parameters but something small might ruin it all. Can you recover the message?
+> Download the [message](https://challenge-files.cylabacademy.net/library/f38c357a8331785ca63ae8e6e36d20e6f8160839a03dc3bdb28e6dcaee33e15f/message.txt). And source [code](https://challenge-files.cylabacademy.net/library/f38c357a8331785ca63ae8e6e36d20e6f8160839a03dc3bdb28e6dcaee33e15f/encryption.py)
+
 ## Résolution
 
 Méthode : **d petit -> Wiener**.

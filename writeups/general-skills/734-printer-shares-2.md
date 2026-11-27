@@ -1,6 +1,6 @@
 # 734 — Printer Shares 2
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -102,7 +102,7 @@ cat flag.txt
 
 ### Pourquoi ça marche
 SMB distingue deux couches : l'**authentification** (identité) et l'**autorisation** (droit de lire
-ce partage). Le challenge durcit la première en exigeant un compte, mais celui-ci a un mot de
+ce partage). Le challenge durcit la première en exigeant un compte, mais celui-ci à un mot de
 passe trivial. La protection réelle d'un partage ne dépend donc pas de la présence d'un login, mais
 de la robustesse du secret derrière — et un mot du dictionnaire, non modifié, ne résiste pas à
 rockyou en quelques secondes. Le leurre des fichiers parasites, lui, ne protège rien : il exploite
@@ -115,7 +115,3 @@ seulement le temps de l'analyste.
 - **`--ignore-pw-decoding`** : sans cette option, certains candidats sont altérés avant l'envoi, ce
   qui produit des faux négatifs impossibles à diagnostiquer.
 - **Port** : toujours `-p <PORT>` avec `smbclient` (et `--port` avec `nxc`), sinon on part sur le 445.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

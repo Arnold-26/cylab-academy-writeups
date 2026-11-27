@@ -1,6 +1,6 @@
 # Lets Warm Up
 
-**Catégorie** : General Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2019
+**Catégorie** : Général Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2019
 **Challenge** : #22
 
 ## Énoncé

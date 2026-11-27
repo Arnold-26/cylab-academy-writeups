@@ -10,7 +10,7 @@
 
 Méthode : **challenge Unity : le flag se trouve dans le binaire/les ressources du jeu**.
 
-Jeu Unity fourni ; en explorant les fichiers (assets, Assembly-CSharp.dll) ou en cherchant dans les chaines du binaire on retrouve le flag. Flag de la version picoCTF 2023.
+Jeu Unity fourni ; en explorant les fichiers (assets, Assembly-CSharp.dll) ou en cherchant dans les chaînes du binaire on retrouve le flag. Flag de la version picoCTF 2023.
 
 ## Flag
 

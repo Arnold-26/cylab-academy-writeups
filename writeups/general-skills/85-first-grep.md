@@ -1,6 +1,6 @@
 # First Grep
 
-**Catégorie** : General Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2019
+**Catégorie** : Général Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2019
 **Challenge** : #85
 
 ## Énoncé

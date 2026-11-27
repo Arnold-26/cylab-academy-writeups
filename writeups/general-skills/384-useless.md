@@ -1,6 +1,10 @@
 # useless
 
-**Catégorie** : General Skills · **Challenge** : #384 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #384 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> There's an interesting script in the user's home directory
 
 ## Résolution
 

@@ -1,6 +1,6 @@
 # Tab, Tab, Attack
 
-**Catégorie** : General Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2021
+**Catégorie** : Général Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2021
 **Challenge** : #176
 
 ## Énoncé

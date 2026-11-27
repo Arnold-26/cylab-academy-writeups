@@ -113,7 +113,3 @@ Le programme valide alors le hash et affiche le flag.
 et il affiche lui-même une partie de son buffer. Le XOR `0xAA` n'est pas un chiffrement : c'est un
 masquage qui tombe dès qu'on lit les octets. La vérification côté client d'un hash calculé à partir
 d'une constante du binaire n'apporte aucune sécurité.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

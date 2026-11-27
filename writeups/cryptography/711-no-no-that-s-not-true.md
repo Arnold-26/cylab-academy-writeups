@@ -2,6 +2,12 @@
 
 **Catégorie** : Cryptography · **Challenge** : #711 · **Résolu le** : 2026-11-24
 
+## Énoncé
+
+> no. no. that's Not TRUe. that's impossible!
+>
+> Download [encryption script](https://challenge-files.cylabacademy.net/library/bf8aba3877c02751332b4ac7689f2ee42a142af38a7753e8173ccddc403e4360/encrypt.py) and [public info](https://challenge-files.cylabacademy.net/library/bf8aba3877c02751332b4ac7689f2ee42a142af38a7753e8173ccddc403e4360/public.txt).
+
 ## Résolution
 
 Méthode : **attaque en treillis NTRU (fpylll)**.

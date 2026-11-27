@@ -2,11 +2,16 @@
 
 **Catégorie** : Forensics · **Challenge** : #264 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Download this packet capture and find the flag.
+> - [Download packet capture](https://challenge-files.cylabacademy.net/library/c977944192b56a1ea682a56c80d1b9622b72b63a3750b24b7a597d9726edbc9d/capture.flag.pcap)
+
 ## Résolution
 
 Méthode : **pcap -> mot de passe -> openssl des3**.
 
-Le pcap contient une conversation en clair ou un utilisateur donne la commande `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`. Le fichier `file.des3` se trouve dans un autre flux TCP (signature `Salted__`) : on l'extrait et on le dechiffre avec ce mot de passe.
+Le pcap contient une conversation en clair ou un utilisateur donne la commande `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`. Le fichier `file.des3` se trouve dans un autre flux TCP (signature `Salted__`) : on l'extrait et on le déchiffre avec ce mot de passe.
 
 ## Flag
 

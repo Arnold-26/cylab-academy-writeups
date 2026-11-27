@@ -1,6 +1,6 @@
 # 49 — flag_shop
 
-**Événement** : picoCTF 2019 · **Catégorie** : General Skills · **Auteur** : Danny
+**Événement** : picoCTF 2019 · **Catégorie** : Général Skills · **Auteur** : Danny
 
 ## Énoncé
 
@@ -105,7 +105,3 @@ multiplication qui dépasse la capacité produit un motif binaire valide mais in
 nombre négatif. Le contrôle de solde, écrit du point de vue « le coût est positif », se retourne
 alors en crédit. La correction tiendrait en un contrôle de plage avant la multiplication, ou en un
 type non signé avec vérification de borne.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

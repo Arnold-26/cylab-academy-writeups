@@ -1,12 +1,16 @@
 # binhexa
 
-**Catégorie** : General Skills · **Challenge** : #404 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #404 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> How well can you perfom basic binary operations?
 
 ## Résolution
 
-Méthode : **operations binaires interactives**.
+Méthode : **opérations binaires interactives**.
 
-Service nc : deux nombres binaires, 6 operations. Pour les decalages la phrase dit **quel** nombre est decale. Apres les 6 operations, le service demande le resultat final **en hexadecimal** — une 7e reponse a ne pas oublier.
+Service nc : deux nombres binaires, 6 opérations. Pour les decalages la phrase dit **quel** nombre est décale. Après les 6 opérations, le service demande le resultat final **en hexadécimal** — une 7e réponse a ne pas oublier.
 
 ## Flag
 

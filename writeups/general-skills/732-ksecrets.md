@@ -1,6 +1,6 @@
 # 732 — KSECRETS
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -104,7 +104,3 @@ difficulté est de **savoir où regarder** — un namespace précis, avec un nom
   en base64. Confondre les deux fait décoder du texte déjà lisible.
 - **Nom variable** : `ctf-secrets` ou `ctf-secret` d'une instance à l'autre. Un `grep -i ctf` sur la liste
   évite de supposer.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

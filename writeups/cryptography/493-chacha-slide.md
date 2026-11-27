@@ -69,7 +69,3 @@ Le tag authentifie un message sous une clé qui dépend du nonce ; réutiliser l
 - **Ne pas filtrer par le clamp** : plusieurs racines existent, une seule correspond à un `r` valide.
 - **Se tromper d'endianness** : le nonce et le tag se concatènent en little-endian dans cette implémentation ; on vérifie sur les blobs reçus.
 - **Chiffrer un message trop long** : le keystream n'est récupérable que sur la longueur des messages connus ; la phrase objectif est plus courte, donc sans problème.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

@@ -92,7 +92,3 @@ modifie la valeur de 1 sur 256, en dessous du seuil de perception. Sur un format
 valeur est préservée à l'identique jusqu'au décodeur, qui peut donc la relire. La stéganographie ne
 chiffre pas le message, elle le cache : un outil qui essaie les combinaisons systématiques le
 retrouve.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

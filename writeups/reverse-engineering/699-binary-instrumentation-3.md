@@ -111,7 +111,3 @@ déclenche l'effacement, on prend la copie une instruction trop tôt.
   conclut à tort que le dump a échoué.
 - **Bitness de Frida** : `frida` doit être en 64 bits pour instrumenter un PE x64 ; une installation
   Python 32 bits produit une erreur d'attachement peu explicite.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

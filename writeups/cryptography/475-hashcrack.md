@@ -2,6 +2,10 @@
 
 **Catégorie** : Cryptography · **Challenge** : #475 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> A company stored a secret message on a server which got breached due to the admin using weakly hashed passwords. Can you gain access to the secret stored within the server?
+
 ## Résolution
 
 Méthode : **craquage MD5/SHA1/SHA256**.

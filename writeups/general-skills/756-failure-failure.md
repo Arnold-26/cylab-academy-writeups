@@ -1,6 +1,6 @@
 # 756 — Failure Failure
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -107,7 +107,3 @@ composants.
   /dev/null` sur la dernière requête ferait perdre le résultat.
 - **Négliger la persistance de connexion.** Un client en keep-alive peut rester collé au même
   backend ; le `curl` final doit être une requête indépendante.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

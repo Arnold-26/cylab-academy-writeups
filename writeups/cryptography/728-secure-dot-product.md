@@ -116,7 +116,3 @@ précisément pour rendre cette attaque inopérante
   fréquente : message forgé syntaxiquement correct, MAC invalide.
 - **Parser qui filtre** : si le serveur rejette le message forgé, vérifier son traitement des octets
   non numériques. Ici il les supprime, ce qui rend le padding inoffensif.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

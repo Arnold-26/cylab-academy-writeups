@@ -113,7 +113,3 @@ mauvaise pratique, car la longueur de la représentation ne borne pas la valeur.
   vérifier la présence de `\n` insérés tous les 4 caractères et les supprimer.
 - **Flag incomplet** : la valeur complète n'a pas été conservée de notre côté ; seule la méthode de
   récupération est reproductible.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

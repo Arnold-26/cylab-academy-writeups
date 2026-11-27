@@ -16,7 +16,7 @@ Le site de l'instance sert un APK (`/download/pico-bank.apk`) et une API
 ### 1. Decompiler l'APK
 
 `apktool d` (ou `jadx`) donne les classes `Login`, `OTP`, `MainActivity`, `Transaction`.
-Les ressources contiennent deja un secret :
+Les ressources contiennent déjà un secret :
 
 ```xml
 <string name="otp_value">9673</string>
@@ -24,7 +24,7 @@ Les ressources contiennent deja un secret :
 
 ### 2. Le flag est coupe en deux
 
-`POST /verify-otp` avec `{"otp": "9673"}` repond :
+`POST /verify-otp` avec `{"otp": "9673"}` répond :
 
 ```json
 {"success":true, "message":"OTP verified successfully",
@@ -32,7 +32,7 @@ Les ressources contiennent deja un secret :
  "hint":"The other part of the flag is hidden in the app"}
 ```
 
-La seconde moitie vient du serveur ; la premiere est dans l'app.
+La seconde moitie vient du serveur ; la première est dans l'app.
 
 ### 3. Decoder les montants binaires
 
@@ -47,7 +47,7 @@ $ 1111011 -> 123 -> {
 $ 1011111 -> 95  -> _
 ```
 
-Piege : le compilateur DEX **reutilise les registres**. Certaines transactions n'ont pas de
+Piege : le compilateur DEX **réutilise les registres**. Certaines transactions n'ont pas de
 `const-string` de montant juste avant, elles referencent un registre encore rempli plus haut
 (`v9`, `v10`, `v11`, `v12`). Il faut donc simuler l'affectation registre par registre en
 parcourant le smali lineairement :
@@ -75,8 +75,8 @@ academy{1_l13d_4b0ut_b31ng_s3cur3d_m0b1l3_l0g1n_7f1dd571}
 ### A retenir
 
 - Un APK expose ses constantes : `strings.xml` pour l'OTP, smali pour les montants.
-- Quand un `invoke` reference un registre sans `const-string` proche, c'est une **reutilisation
-  de registre** : il faut tracer le flux, pas seulement grepper les chaines.
+- Quand un `invoke` référence un registre sans `const-string` proche, c'est une **réutilisation
+  de registre** : il faut tracer le flux, pas seulement grepper les chaînes.
 - Ici la difficulte n'etait pas l'endpoint (`/verify-otp` est evident) mais l'**ordre** des
   transactions : trier par date decroissante donne un texte lisible, l'ordre du fichier smali
   ne suffit pas.

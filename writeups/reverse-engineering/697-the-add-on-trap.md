@@ -108,7 +108,3 @@ l'intérieur de ce code.
   (`b'...'`), pas comme une chaîne dont on aurait normalisé les caractères.
 - **Version de `cryptography`** : l'API `Fernet(key).decrypt(token)` est stable, mais un jeton
   expiré ou un `ttl` mal placé lève une exception — ici on n'active pas de TTL, le jeton est ancien.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

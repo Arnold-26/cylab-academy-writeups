@@ -10,7 +10,7 @@
 
 Méthode : **svg-tspan**.
 
-Le fichier `drawing.flag.svg` est un SVG (XML). Le flag n'est pas dans les metadonnees mais dans le texte vectoriel : chaque caractere est un `<tspan>` separe. Extraire tous les `<tspan>` et les concatener dans l'ordre du document donne le flag.
+Le fichier `drawing.flag.svg` est un SVG (XML). Le flag n'est pas dans les metadonnees mais dans le texte vectoriel : chaque caractère est un `<tspan>` sépare. Extraire tous les `<tspan>` et les concaténer dans l'ordre du document donne le flag.
 
 ## Flag
 

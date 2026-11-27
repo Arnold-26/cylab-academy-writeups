@@ -1,6 +1,6 @@
 # 748 — ABSOLUTE NANO
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -90,7 +90,3 @@ La règle prend effet immédiatement, sans redémarrage ni reconnexion : `sudo` 
 - **`Ctrl+O` sans valider le nom.** `nano` demande confirmation du fichier ; valider par `Entrée`, sinon rien n'est écrit.
 - **Le terminal.** Avec un `TERM` inconnu, `nano` peut refuser de démarrer (`Error opening terminal`) ; `export TERM=xterm` corrige.
 - **Croire que la règle est immédiate mais pas globale.** La règle s'applique au compte courant ; une session `sudo -i` ouverte avant l'édition peut conserver l'ancienne politique en cache, d'où l'intérêt de relancer `sudo -l`.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

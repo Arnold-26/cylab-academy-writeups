@@ -1,6 +1,14 @@
 # PW Crack 2
 
-**Catégorie** : General Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2022
+**Catégorie** : Général Skills · **Difficulté** : Easy · **Épreuve** : picoCTF 2022
+
+## Énoncé
+
+> Can you crack the password to get the flag?
+> Download the password checker [here](https://challenge-files.cylabacademy.net/library/227623e9501e3a811cdf5b1c7a2079f75b2e9ab243364a38830e0a4a2943ce2e/level2.py) and you'll
+> need the encrypted [flag](https://challenge-files.cylabacademy.net/library/227623e9501e3a811cdf5b1c7a2079f75b2e9ab243364a38830e0a4a2943ce2e/level2.flag.txt.enc) in the same directory
+> too.
+
 **Challenge** : #246
 
 ## Résolution

@@ -109,7 +109,3 @@ constante.
   vérifier le format de lecture dans le décompilé avant de conclure que le mot de passe est faux.
 - **Passer le mot de passe en argument du shell.** Les guillemets sont nécessaires :
   `./bypassme.bin` puis saisie interactive reste le plus sûr.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

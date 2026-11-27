@@ -2,11 +2,15 @@
 
 **Catégorie** : Cryptography · **Challenge** : #3 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> I found this cipher in an old book.
+
 ## Résolution
 
-Méthode : **vigenere avec cle derivee du clair connu**.
+Méthode : **vigenere avec clé derivee du clair connu**.
 
-Le message est chiffre en Vigenere. On connait un fragment de clair probable : `Brftsk ip Volpnexj` = `Blaise de Vigenere`. En calculant (chiffre - clair) mod 26 on obtient la sequence `a,g,f,l,a,g,f,l...` -> la cle est **`flag`** avec un decalage de 3 dans le message. Dechiffre, le texte parle de Bellaso et du chiffre de Vigenere, et le flag est a la fin.
+Le message est chiffré en Vigenere. On connait un fragment de clair probable : `Brftsk ip Volpnexj` = `Blaise de Vigenere`. En calculant (chiffre - clair) mod 26 on obtient la sequence `a,g,f,l,a,g,f,l...` -> la clé est **`flag`** avec un décalage de 3 dans le message. Déchiffre, le texte parle de Bellaso et du chiffre de Vigenere, et le flag est à la fin.
 
 ## Flag
 

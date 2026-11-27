@@ -84,7 +84,3 @@ print(''.join(chr(int(n) + 64) if n.isdigit() else n for n in enc))
 lettre dans l'alphabet est une information publique. La structure du flag (accolades, longueur)
 révèle immédiatement la nature du codage, et le décodage se fait en une ligne. Aucune cryptanalyse
 n'est nécessaire, seulement l'attention au décalage d'indice.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

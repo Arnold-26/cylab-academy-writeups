@@ -112,7 +112,3 @@ Dès que la fonction est lue, l'encodage n'offre plus aucune résistance.
   particulier à traiter, la même division fonctionne.
 - **`encode_flag()` inlinée.** Le compilateur peut avoir replié la fonction dans `main()` : chercher
   l'instruction `imul` appliquée au tableau plutôt que le nom du symbole.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

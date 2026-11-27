@@ -1,6 +1,10 @@
 # Super SSH
 
-**Catégorie** : General Skills · **Challenge** : #424 · **Résolu le** : 2026-11-23
+**Catégorie** : Général Skills · **Challenge** : #424 · **Résolu le** : 2026-11-23
+
+## Énoncé
+
+> Using a Secure Shell (SSH) is going to be pretty important.
 
 ## Résolution
 

@@ -1,6 +1,6 @@
 # 762 — bytemancy 1
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -97,7 +97,3 @@ client légitime.
   chaînes.** Passer par Python évite toute ambiguïté de quoting.
 - **Tronquer la sortie.** La réponse du serveur arrive après la bannière : lire assez d'octets ou
   boucler jusqu'à la fermeture.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

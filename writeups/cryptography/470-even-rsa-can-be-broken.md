@@ -2,11 +2,15 @@
 
 **Catégorie** : Cryptography · **Challenge** : #470 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> This service provides you an encrypted flag. Can you decrypt it with just N & e?
+
 ## Résolution
 
 Méthode : **N pair -> p=2**.
 
-Le service donne N, e et le chiffre. **N est pair** : donc p=2 et q=N/2. `phi=(2-1)(q-1)`, `d=e^-1 mod phi`, `m=c^d mod N`. Aucune factorisation necessaire.
+Le service donne N, e et le chiffre. **N est pair** : donc p=2 et q=N/2. `phi=(2-1)(q-1)`, `d=e^-1 mod phi`, `m=c^d mod N`. Aucune factorisation nécessaire.
 
 ## Flag
 

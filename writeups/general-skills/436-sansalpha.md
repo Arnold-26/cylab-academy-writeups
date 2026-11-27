@@ -1,12 +1,18 @@
 # SansAlpha
 
-**Catégorie** : General Skills · **Challenge** : #436 · **Résolu le** : 2026-11-24
+**Catégorie** : Général Skills · **Challenge** : #436 · **Résolu le** : 2026-11-24
+
+## Énoncé
+
+> The Multiverse is within your grasp! Unfortunately, the server that contains
+> the secrets of the multiverse is in a universe where keyboards only have
+> numbers and (most) symbols.
 
 ## Résolution
 
 Méthode : **shell sans lettres : globbing + expansion**.
 
-Le shell n'accepte que les symboles. Techniques : `*` execute le premier fichier avec les autres en arguments (ce qui renseigne `$_`, le dernier argument = `on-calastran.txt`) ; `$-` donne les options du shell (lettres disponibles) ; l'expansion `${_:3:2}${_:8:1}` extrait `ca` + `t` de `on-calastran.txt` -> commande `cat`. Payload final : `*` puis `*; ${_:3:2}${_:8:1} */????.???` qui fait `cat blargh/flag.txt`.
+Le shell n'accepte que les symboles. Techniques : `*` exécute le premier fichier avec les autres en arguments (ce qui renseigne `$_`, le dernier argument = `on-calastran.txt`) ; `$-` donne les options du shell (lettres disponibles) ; l'expansion `${_:3:2}${_:8:1}` extrait `ca` + `t` de `on-calastran.txt` -> commande `cat`. Payload final : `*` puis `*; ${_:3:2}${_:8:1} */????.???` qui fait `cat blargh/flag.txt`.
 
 ## Flag
 

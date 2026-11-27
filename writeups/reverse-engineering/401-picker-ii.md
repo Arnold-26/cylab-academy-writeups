@@ -2,11 +2,15 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #401 · **Résolu le** : 2026-11-23
 
+## Énoncé
+
+> Can you figure out how this program works to get the flag?
+
 ## Résolution
 
-Méthode : **contournement du filtre par concatenation**.
+Méthode : **contournement du filtre par concaténation**.
 
-Le filtre `if 'win' in user_input` bloque le littoral. On passe `globals()['w'+'in']` : la chaine 'win' n'apparait jamais dans l'entree, mais l'evaluation produit bien `win()`.
+Le filtre `if 'win' in user_input` bloque le littoral. On passe `globals()['w'+'in']` : la chaîne 'win' n'apparait jamais dans l'entrée, mais l'evaluation produit bien `win()`.
 
 ## Flag
 

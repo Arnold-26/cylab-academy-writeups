@@ -22,7 +22,7 @@ char codedChar(int idx, char value, char pixel) {
 }
 ```
 
-8 octets par caractere, `j = 0..7`, et le caractere stocke est `flag[i] - 5`.
+8 octets par caractère, `j = 0..7`, et le caractère stocke est `flag[i] - 5`.
 Decodage :
 
 ```python
@@ -33,7 +33,7 @@ for i in range(len(flag)):
     flag += chr((5 + v) & 0xff)
 ```
 
-Resultat : `academy{n3xt_0n30000000000000000000000000c4bf77ad}` (50 caracteres).
+Resultat : `academy{n3xt_0n30000000000000000000000000c4bf77ad}` (50 caractères).
 Les octets au-dela du `}` sont du bruit de pile (le buffer de 50 octets n'est pas
 initialise) : couper au premier `}`.
 

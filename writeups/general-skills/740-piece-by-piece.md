@@ -1,6 +1,6 @@
 # 740 — Piece by Piece
 
-**Événement** : picoCTF 2026 · **Catégorie** : General Skills
+**Événement** : picoCTF 2026 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -76,7 +76,3 @@ Un ZIP est un format conteneur : son en-tête et son répertoire central se trou
 - **La concaténation en mode texte.** Un éditeur ou un copier-coller peut altérer les octets binaires ; `cat` en shell est sûr. On évite les redirections dans le désordre et les `cat` partiels suivis d'un `>>`.
 - **Le mot de passe tapé à la main.** `supersecret` est simple, mais un `unzip` interactif redemande en cas de faute ; `-P` rend l'opération non interactive.
 - **Le `flag.txt` déjà présent.** Vérifier qu'après extraction on lit bien le fichier produit par `unzip`, et pas un homonyme resté dans le répertoire.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).

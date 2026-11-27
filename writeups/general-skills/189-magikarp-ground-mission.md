@@ -1,6 +1,6 @@
 # 189 — Magikarp Ground Mission
 
-**Événement** : picoCTF 2021 · **Catégorie** : General Skills
+**Événement** : picoCTF 2021 · **Catégorie** : Général Skills
 
 ## Énoncé
 
@@ -86,7 +86,3 @@ Chaque fragment est un fichier texte ordinaire, et les instructions disent où a
 - **Échappements du fragment 2** : les barres obliques inversées font partie du flag ; un `echo` les mange.
 - **Concaténation avec `cat`** : les sauts de ligne entre fichiers s'insèrent dans la valeur ; il faut recopier les morceaux à la main ou utiliser `tr -d '\n'`.
 - **Port SSH** : sans `-p`, on tape sur le 22 du conteneur et la connexion est refusée.
-
-## Flag
-
-Flag validé sur la plateforme (valeur non conservée).
