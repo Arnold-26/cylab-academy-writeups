@@ -100,3 +100,6 @@ décodage de l'ASM était bon.
 - [`_z_430_thunk.py`](../../solve/430/_z_430_thunk.py)
 - [`_z_430_upx.sh`](../../solve/430/_z_430_upx.sh)
 - [`_z_430_variants.py`](../../solve/430/_z_430_variants.py)
+- [`_z_430_xref.sh`](../../solve/430/_z_430_xref.sh)
+- [`_z_430a.py`](../../solve/430/_z_430a.py)
+- [`_z_430b.py`](../../solve/430/_z_430b.py)

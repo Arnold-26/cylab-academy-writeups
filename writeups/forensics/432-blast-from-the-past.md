@@ -44,3 +44,6 @@ academy{71m3_7r4v311ng_p1c7ur3_9490a52b}
 - [`_z_432q.py`](../../solve/432/_z_432q.py)
 - [`_z_432r.py`](../../solve/432/_z_432r.py)
 - [`_z_432s.sh`](../../solve/432/_z_432s.sh)
+- [`_z_432t.py`](../../solve/432/_z_432t.py)
+- [`_z_432u.py`](../../solve/432/_z_432u.py)
+- [`_z_432v.py`](../../solve/432/_z_432v.py)

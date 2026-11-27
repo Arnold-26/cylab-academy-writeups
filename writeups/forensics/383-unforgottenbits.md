@@ -44,3 +44,5 @@ steghide exige une passphrase : elle est souvent dans les metadonnees.
 - [`_z_383m.py`](../../solve/383/_z_383m.py)
 - [`_z_383n.py`](../../solve/383/_z_383n.py)
 - [`_z_383o.py`](../../solve/383/_z_383o.py)
+- [`_z_383p.py`](../../solve/383/_z_383p.py)
+- [`_z_383q.py`](../../solve/383/_z_383q.py)

@@ -44,3 +44,7 @@ picoCTF{beep_boop_im_in_space}
 - [`_z_26i.sh`](../../solve/26/_z_26i.sh)
 - [`_z_26j.py`](../../solve/26/_z_26j.py)
 - [`_z_26j.sh`](../../solve/26/_z_26j.sh)
+- [`_z_26k.py`](../../solve/26/_z_26k.py)
+- [`_z_26k.sh`](../../solve/26/_z_26k.sh)
+- [`_z_26l.py`](../../solve/26/_z_26l.py)
+- [`_z_26l.sh`](../../solve/26/_z_26l.sh)

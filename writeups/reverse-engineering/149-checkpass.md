@@ -99,3 +99,4 @@ academy{t1mingS1deChann3l_c55b1a90e29d2f}
 - [`_z_149n.py`](../../solve/149/_z_149n.py)
 - [`_z_149o.py`](../../solve/149/_z_149o.py)
 - [`_z_149p.py`](../../solve/149/_z_149p.py)
+- [`_z_149q.py`](../../solve/149/_z_149q.py)

@@ -44,3 +44,4 @@ academy{ubuntu-19.10-desktop-amd64.iso}
 - [`_z_311j.sh`](../../solve/311/_z_311j.sh)
 - [`_z_311k.sh`](../../solve/311/_z_311k.sh)
 - [`_z_311l.sh`](../../solve/311/_z_311l.sh)
+- [`_z_311m.sh`](../../solve/311/_z_311m.sh)

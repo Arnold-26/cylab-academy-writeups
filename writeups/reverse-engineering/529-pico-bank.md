@@ -113,3 +113,7 @@ academy{1_l13d_4b0ut_b31ng_s3cur3d_m0b1l3_l0g1n_7f1dd571}
 - [`_z_529q.py`](../../solve/529/_z_529q.py)
 - [`_z_529r.sh`](../../solve/529/_z_529r.sh)
 - [`_z_529s.py`](../../solve/529/_z_529s.py)
+- [`_z_529t.sh`](../../solve/529/_z_529t.sh)
+- [`_z_529u.py`](../../solve/529/_z_529u.py)
+- [`_z_529v.py`](../../solve/529/_z_529v.py)
+- [`_z_529w.sh`](../../solve/529/_z_529w.sh)

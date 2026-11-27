@@ -86,3 +86,7 @@ academy{bad_1d3a5_73efa9c}
 - [`_z_107_pad.py`](../../solve/107/_z_107_pad.py)
 - [`_z_107_probe.py`](../../solve/107/_z_107_probe.py)
 - [`_z_107_probe1.py`](../../solve/107/_z_107_probe1.py)
+- [`_z_107_probe2.py`](../../solve/107/_z_107_probe2.py)
+- [`_z_107_probe3.py`](../../solve/107/_z_107_probe3.py)
+- [`_z_107_probe4.py`](../../solve/107/_z_107_probe4.py)
+- [`_z_107_probe5.py`](../../solve/107/_z_107_probe5.py)
