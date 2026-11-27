@@ -21,3 +21,17 @@ t1m3f1i3500000000000a8bbc8ed
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_36a.py`](../../solve/36/_z_36a.py)
+- [`_z_36b.sh`](../../solve/36/_z_36b.sh)
+- [`_z_36c.sh`](../../solve/36/_z_36c.sh)
+- [`_z_36d.sh`](../../solve/36/_z_36d.sh)
+- [`_z_36e.sh`](../../solve/36/_z_36e.sh)
+- [`_z_36f.py`](../../solve/36/_z_36f.py)
+- [`_z_36g.py`](../../solve/36/_z_36g.py)
+- [`_z_36h.py`](../../solve/36/_z_36h.py)
+- [`_z_36i.py`](../../solve/36/_z_36i.py)
+- [`_z_36j.py`](../../solve/36/_z_36j.py)
+- [`_z_36k.py`](../../solve/36/_z_36k.py)

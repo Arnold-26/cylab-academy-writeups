@@ -21,3 +21,11 @@ academy{468293b06253c715005873e333d98dbc}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_148a.py`](../../solve/148/_z_148a.py)
+- [`_z_148b.py`](../../solve/148/_z_148b.py)
+- [`_z_148c.py`](../../solve/148/_z_148c.py)
+- [`_z_148d.py`](../../solve/148/_z_148d.py)
+- [`_z_148e.py`](../../solve/148/_z_148e.py)

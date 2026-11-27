@@ -21,3 +21,12 @@ picoCTF{VnDB2LUf1VFJkdfDJtdYtFlMexPxXS6X}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_220a.sh`](../../solve/220/_z_220a.sh)
+- [`_z_220b.py`](../../solve/220/_z_220b.py)
+- [`_z_220c.py`](../../solve/220/_z_220c.py)
+- [`_z_220d.py`](../../solve/220/_z_220d.py)
+- [`_z_220e.py`](../../solve/220/_z_220e.py)
+- [`_z_220f.py`](../../solve/220/_z_220f.py)

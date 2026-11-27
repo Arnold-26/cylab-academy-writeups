@@ -21,3 +21,8 @@ academy{n3v3r_z1p_2_h1d3_2f899900}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_507a.sh`](../../solve/507/_z_507a.sh)
+- [`_z_507b.py`](../../solve/507/_z_507b.py)

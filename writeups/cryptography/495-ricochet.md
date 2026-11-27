@@ -78,7 +78,7 @@ Le robot consomme la file dans l'ordre, glisse de case en case et s'arrête sur 
 
 ## 4. Scripts
 
-* `D:\ctf-index\_z_495src\` — sources copiées de `/tmp/r495`.
+* `_z_495src\` — sources copiées de `/tmp/r495`.
 * `_z_495_lib.py` — API radio + crypto exacte (`pymonocypher`), `Z = bytes(32)`.
 * `_z_495_atk.py` — `phaseA` (MITM + capture du run légitime → table de MACs),
   `phaseB` (passes d'oracle), `phaseC` (exécution), `launch()` (démarre l'instance).
@@ -95,3 +95,21 @@ Le robot consomme la file dans l'ordre, glisse de case en case et s'arrête sur 
   (passes + exécution ≈ 40 s), la table de MACs étant sauvée sur disque entre les essais.
 * `/stop` + `/start` réinitialise les nonces des DEUX appareils (vérifié : la boucle de
   démo rejoue à l'identique).
+
+## Scripts
+
+- [`_z_495_atk.py`](../../solve/495/_z_495_atk.py)
+- [`_z_495_dl.sh`](../../solve/495/_z_495_dl.sh)
+- [`_z_495_fin2.py`](../../solve/495/_z_495_fin2.py)
+- [`_z_495_final.py`](../../solve/495/_z_495_final.py)
+- [`_z_495_install.sh`](../../solve/495/_z_495_install.sh)
+- [`_z_495_lib.py`](../../solve/495/_z_495_lib.py)
+- [`_z_495_macs.json`](../../solve/495/_z_495_macs.json)
+- [`_z_495_path.py`](../../solve/495/_z_495_path.py)
+- [`_z_495_path2.py`](../../solve/495/_z_495_path2.py)
+- [`_z_495_probe.py`](../../solve/495/_z_495_probe.py)
+- [`_z_495_test1.py`](../../solve/495/_z_495_test1.py)
+- [`crypto.py`](../../solve/495/crypto.py)
+- [`radio_interface.py`](../../solve/495/radio_interface.py)
+- [`robot.py`](../../solve/495/robot.py)
+- [`robotcontroller.py`](../../solve/495/robotcontroller.py)

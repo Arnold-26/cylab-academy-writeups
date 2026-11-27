@@ -21,3 +21,26 @@ academy{71m3_7r4v311ng_p1c7ur3_9490a52b}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_432a.sh`](../../solve/432/_z_432a.sh)
+- [`_z_432b.sh`](../../solve/432/_z_432b.sh)
+- [`_z_432c.sh`](../../solve/432/_z_432c.sh)
+- [`_z_432d.py`](../../solve/432/_z_432d.py)
+- [`_z_432desc.txt`](../../solve/432/_z_432desc.txt)
+- [`_z_432e.py`](../../solve/432/_z_432e.py)
+- [`_z_432f.py`](../../solve/432/_z_432f.py)
+- [`_z_432g.sh`](../../solve/432/_z_432g.sh)
+- [`_z_432h.py`](../../solve/432/_z_432h.py)
+- [`_z_432i.py`](../../solve/432/_z_432i.py)
+- [`_z_432j.py`](../../solve/432/_z_432j.py)
+- [`_z_432k.sh`](../../solve/432/_z_432k.sh)
+- [`_z_432l.sh`](../../solve/432/_z_432l.sh)
+- [`_z_432m.py`](../../solve/432/_z_432m.py)
+- [`_z_432n.py`](../../solve/432/_z_432n.py)
+- [`_z_432o.py`](../../solve/432/_z_432o.py)
+- [`_z_432p.sh`](../../solve/432/_z_432p.sh)
+- [`_z_432q.py`](../../solve/432/_z_432q.py)
+- [`_z_432r.py`](../../solve/432/_z_432r.py)
+- [`_z_432s.sh`](../../solve/432/_z_432s.sh)

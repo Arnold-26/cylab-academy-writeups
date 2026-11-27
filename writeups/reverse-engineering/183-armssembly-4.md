@@ -21,3 +21,7 @@ academy{3988daab}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_183a.py`](../../solve/183/_z_183a.py)

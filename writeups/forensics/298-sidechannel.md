@@ -21,3 +21,12 @@ academy{t1m1ng_4tt4ck_55dcfc0f}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_298a.py`](../../solve/298/_z_298a.py)
+- [`_z_298b.sh`](../../solve/298/_z_298b.sh)
+- [`_z_298c.sh`](../../solve/298/_z_298c.sh)
+- [`_z_298d.py`](../../solve/298/_z_298d.py)
+- [`_z_298e.py`](../../solve/298/_z_298e.py)
+- [`_z_298f.py`](../../solve/298/_z_298f.py)

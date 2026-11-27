@@ -21,3 +21,7 @@ academy{not.particularly.silly}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_17a.py`](../../solve/17/_z_17a.py)

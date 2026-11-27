@@ -21,3 +21,13 @@ academy{UseSecure#$_Random@j3n3r@T0rs02d049c1}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_468a.py`](../../solve/468/_z_468a.py)
+- [`_z_468b.py`](../../solve/468/_z_468b.py)
+- [`_z_468c.py`](../../solve/468/_z_468c.py)
+- [`_z_468d.py`](../../solve/468/_z_468d.py)
+- [`_z_468e.py`](../../solve/468/_z_468e.py)
+- [`_z_468f.py`](../../solve/468/_z_468f.py)
+- [`_z_468flag.txt`](../../solve/468/_z_468flag.txt)

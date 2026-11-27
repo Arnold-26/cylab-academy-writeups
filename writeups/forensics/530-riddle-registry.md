@@ -21,3 +21,7 @@ academy{puzzl3d_m3tadata_f0und!_3cc7cea9}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_530.py`](../../solve/530/_z_530.py)

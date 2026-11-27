@@ -21,3 +21,12 @@ picoCTF{4ny0n3_g0t_r1scv_h4rdw4r3?_LGUfwl8xyMUlpgvz}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_219a.sh`](../../solve/219/_z_219a.sh)
+- [`_z_219b.sh`](../../solve/219/_z_219b.sh)
+- [`_z_219c.sh`](../../solve/219/_z_219c.sh)
+- [`_z_219d.sh`](../../solve/219/_z_219d.sh)
+- [`_z_219e.py`](../../solve/219/_z_219e.py)
+- [`_z_219f.py`](../../solve/219/_z_219f.py)

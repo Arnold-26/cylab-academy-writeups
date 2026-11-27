@@ -64,5 +64,17 @@ python3 _z_136_solve.py selftest 2048                  # 8 graines OK
 python3 _z_136_solve.py <host> <port> 2048             # instance réelle (~2 min)
 ```
 
-Script : `D:\ctf-index\_z_136_solve.py` (contient aussi un serveur local `--server` pour tester
+Script : `_z_136_solve.py` (contient aussi un serveur local `--server` pour tester
 le protocole de bout en bout, et `local` pour le test complet).
+
+## Scripts
+
+- [`_z_136_crack.py`](../../solve/136/_z_136_crack.py)
+- [`_z_136_dbg.py`](../../solve/136/_z_136_dbg.py)
+- [`_z_136_diag.py`](../../solve/136/_z_136_diag.py)
+- [`_z_136_localtest.sh`](../../solve/136/_z_136_localtest.sh)
+- [`_z_136_solve.py`](../../solve/136/_z_136_solve.py)
+- [`_z_136_src.py`](../../solve/136/_z_136_src.py)
+- [`_z_136_test.sh`](../../solve/136/_z_136_test.sh)
+- [`_z_136_test2.sh`](../../solve/136/_z_136_test2.sh)
+- [`_z_136url.txt`](../../solve/136/_z_136url.txt)

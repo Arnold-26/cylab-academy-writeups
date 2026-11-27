@@ -21,3 +21,15 @@ picoCTF{n0_t1m3_t0_w4st3_5hufflin9_ar0und}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_206a.py`](../../solve/206/_z_206a.py)
+- [`_z_206b.py`](../../solve/206/_z_206b.py)
+- [`_z_206c.py`](../../solve/206/_z_206c.py)
+- [`_z_206d.py`](../../solve/206/_z_206d.py)
+- [`_z_206e.py`](../../solve/206/_z_206e.py)
+- [`_z_206f.py`](../../solve/206/_z_206f.py)
+- [`_z_206g.py`](../../solve/206/_z_206g.py)
+- [`_z_206h.py`](../../solve/206/_z_206h.py)
+- [`_z_206i.py`](../../solve/206/_z_206i.py)

@@ -118,3 +118,18 @@ signature de fichier).
 ## Flag
 
 Flag validé sur la plateforme (valeur non conservée).
+
+## Scripts
+
+- [`_z_714a.sh`](../../solve/714/_z_714a.sh)
+- [`_z_714b.sh`](../../solve/714/_z_714b.sh)
+- [`_z_714c.py`](../../solve/714/_z_714c.py)
+- [`_z_714d.py`](../../solve/714/_z_714d.py)
+- [`_z_714e.py`](../../solve/714/_z_714e.py)
+- [`_z_714f.py`](../../solve/714/_z_714f.py)
+- [`_z_714g.py`](../../solve/714/_z_714g.py)
+- [`_z_714h.sh`](../../solve/714/_z_714h.sh)
+- [`_z_714i.sh`](../../solve/714/_z_714i.sh)
+- [`_z_714j.sh`](../../solve/714/_z_714j.sh)
+- [`_z_714k.py`](../../solve/714/_z_714k.py)
+- [`_z_714l.py`](../../solve/714/_z_714l.py)

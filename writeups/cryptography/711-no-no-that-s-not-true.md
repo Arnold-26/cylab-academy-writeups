@@ -21,3 +21,13 @@ academy{th4ts_s0_N0t_TRU3_f5e1dd98}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_711a.py`](../../solve/711/_z_711a.py)
+- [`_z_711b.py`](../../solve/711/_z_711b.py)
+- [`_z_711c.py`](../../solve/711/_z_711c.py)
+- [`_z_711d.py`](../../solve/711/_z_711d.py)
+- [`_z_711e.py`](../../solve/711/_z_711e.py)
+- [`_z_711f.py`](../../solve/711/_z_711f.py)
+- [`_z_711g.py`](../../solve/711/_z_711g.py)

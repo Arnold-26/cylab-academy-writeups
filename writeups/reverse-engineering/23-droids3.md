@@ -21,3 +21,7 @@ academy{tis.but.a.scratch}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_23a.py`](../../solve/23/_z_23a.py)

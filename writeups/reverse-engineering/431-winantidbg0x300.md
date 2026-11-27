@@ -75,6 +75,4 @@ Le même émulateur valide `0x200` (même code, autres adresses de globales).
 
 ## Scripts
 
-- `D:\ctf-index\_z_430_emu.py` — émulateur Unicorn PE32 (mutate + DecryptFlag).
-- `D:\ctf-index\_z_430_scanN.py` — balayage de N pour les deux `config.bin`.
-- `D:\ctf-index\_z_430_key.py` — dérivation de la clé attendue depuis le préfixe `academy{`.
+- [`_z_431a.py`](../../solve/431/_z_431a.py)

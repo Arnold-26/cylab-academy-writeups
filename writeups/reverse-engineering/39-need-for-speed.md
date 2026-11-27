@@ -21,3 +21,14 @@ academy{Good job keeping bus #31326f14 speeding along!}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_39a.py`](../../solve/39/_z_39a.py)
+- [`_z_39b.sh`](../../solve/39/_z_39b.sh)
+- [`_z_39c.sh`](../../solve/39/_z_39c.sh)
+- [`_z_39d.sh`](../../solve/39/_z_39d.sh)
+- [`_z_39e.sh`](../../solve/39/_z_39e.sh)
+- [`_z_39f.sh`](../../solve/39/_z_39f.sh)
+- [`_z_39g.sh`](../../solve/39/_z_39g.sh)
+- [`_z_39h.py`](../../solve/39/_z_39h.py)

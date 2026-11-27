@@ -21,3 +21,11 @@ academy{m0r3_g34r5_3g4d_c3dc2830}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_386a.py`](../../solve/386/_z_386a.py)
+- [`_z_386b.py`](../../solve/386/_z_386b.py)
+- [`_z_386c.py`](../../solve/386/_z_386c.py)
+- [`_z_386d.py`](../../solve/386/_z_386d.py)
+- [`_z_386e.py`](../../solve/386/_z_386e.py)

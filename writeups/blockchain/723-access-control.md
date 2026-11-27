@@ -21,3 +21,8 @@ academy{i_c4n_b3_0wn3r_7a45d669}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_723b.py`](../../solve/723/_z_723b.py)
+- [`_z_723solve.py`](../../solve/723/_z_723solve.py)

@@ -1,0 +1,38 @@
+import sys, json
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.path.insert(0, r"D:\ctf-index")
+from cylab2 import CyLab
+import wu
+
+cy = CyLab(delay=1.0)
+cy.login()
+f = "academy{p4ch1nk0_f146_0n3_e947b9d7}"
+st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 494, "flag": f})
+try:
+    ok = json.loads(b).get("correct")
+except Exception:
+    ok = None
+print("494 Pachinko ->", ok)
+if ok:
+    extra = (
+        "Challenge en deux flags (le second, 478 « Pachinko Revisited », se resout en retrouvant les "
+        "artefacts). Le serveur (`server.tar.gz`) expose `POST /check` qui prend un **circuit de portes "
+        "NAND** sous forme de liste `{input1, input2, output}` et le fait evaluer par un CPU synthetise en "
+        "Verilog (`cpu.wasm`, netlist `cpu.json` absent du tarball). `serializeCircuit` (utils.js) construit "
+        "la memoire : programme `nand_checker.bin` a 0x0, etat de sortie attendu a 0x1000, etat d'entree a "
+        "0x2000, circuit a 0x3000 (3 uint16 par porte). `index.js` genere aleatoirement 4 mots de 16 bits "
+        "valant 0x0000 ou 0xffff, et pose comme sortie attendue leur **complement** "
+        "(`outputState[i] = inputState[i] === 0xffff ? 0x0000 : 0xffff`), puis `runCPU` execute le programme "
+        "et renvoie FLAG1 si `memory[0x1000] | memory[0x1001]<<8 == 0x1337`, FLAG2 si le signal `flag` du CPU "
+        "est leve. Il faut donc construire un inverseur en portes NAND. **La decouverte cle** : les "
+        "`input1/input2/output` ne sont PAS des adresses memoire mais des **identifiants de noeuds** du "
+        "simulateur — 1..4 pour les entrees, 5..8 pour les sorties — convention visible dans le client "
+        "(`nodes.find(n => n.id === nandNode.dataset.input1)`). Ma premiere tentative en offsets d'octets "
+        "(0x200A, 0x1004) renvoyait « wrong answer :( », et les variantes en indices de bits (0x200A*8) "
+        "etaient rejetees en 400 car `checkInt` plafonne a 0xFFFF. Le circuit gagnant est "
+        "`[{input1:i, input2:i, output:i-4} for i in 5..8]` : chaque sortie est le NAND d'une entree avec "
+        "elle-meme, soit un NOT, ce qui produit exactement le complement attendu.")
+    print("writeup:", wu.write(494, "Pachinko", "Web Exploitation",
+                               "server.tar.gz (Express + WASM Verilog)",
+                               "circuit NAND : IDs de noeuds 1-4 entrees, 5-8 sorties ; NOT = NAND(x,x)",
+                               f, extra))

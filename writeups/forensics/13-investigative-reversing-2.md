@@ -46,3 +46,16 @@ academy{n3xt_0n30000000000000000000000000c4bf77ad}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_13a.sh`](../../solve/13/_z_13a.sh)
+- [`_z_13b.sh`](../../solve/13/_z_13b.sh)
+- [`_z_13c.sh`](../../solve/13/_z_13c.sh)
+- [`_z_13d.py`](../../solve/13/_z_13d.py)
+- [`_z_13e.py`](../../solve/13/_z_13e.py)
+- [`_z_13f.sh`](../../solve/13/_z_13f.sh)
+- [`_z_13g.py`](../../solve/13/_z_13g.py)
+- [`_z_13h.py`](../../solve/13/_z_13h.py)
+- [`_z_13i.py`](../../solve/13/_z_13i.py)
+- [`_z_13j.sh`](../../solve/13/_z_13j.sh)

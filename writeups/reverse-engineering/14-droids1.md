@@ -21,3 +21,7 @@ academy{pining.for.the.fjords}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_14a.py`](../../solve/14/_z_14a.py)

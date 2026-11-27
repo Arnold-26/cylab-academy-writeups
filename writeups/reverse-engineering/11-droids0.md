@@ -21,3 +21,7 @@ academy{a.moose.once.bit.my.sister}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_11a.py`](../../solve/11/_z_11a.py)

@@ -21,3 +21,9 @@ academy{g34r5_0f_m0r3_c95d6542}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_385a.py`](../../solve/385/_z_385a.py)
+- [`_z_385b.py`](../../solve/385/_z_385b.py)
+- [`_z_385c.py`](../../solve/385/_z_385c.py)

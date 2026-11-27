@@ -21,3 +21,10 @@ academy{d3l_d0n7_h1d3_w3ll_9748d144}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_704a.sh`](../../solve/704/_z_704a.sh)
+- [`_z_704b.sh`](../../solve/704/_z_704b.sh)
+- [`_z_704c.sh`](../../solve/704/_z_704c.sh)
+- [`_z_704d.py`](../../solve/704/_z_704d.py)

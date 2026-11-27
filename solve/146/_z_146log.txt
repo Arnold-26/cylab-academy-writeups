@@ -1,0 +1,4 @@
+cible: xebec.cylabacademy.net 10756
+=== phase 1 : slot tcache (valeur 0x00), offsets multiples de 8 ===
+  ... 40 essais (30s)
+  ... 80 essais (60s)

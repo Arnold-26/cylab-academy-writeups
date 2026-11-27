@@ -21,3 +21,10 @@ picoCTF{d741543f172970457e6a9aaa890935b8}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_207a.py`](../../solve/207/_z_207a.py)
+- [`_z_207b.py`](../../solve/207/_z_207b.py)
+- [`_z_207c.py`](../../solve/207/_z_207c.py)
+- [`_z_207d.sh`](../../solve/207/_z_207d.sh)

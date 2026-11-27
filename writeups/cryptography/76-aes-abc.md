@@ -21,3 +21,12 @@ academy{d0Nt_r0ll_yoUr_0wN_aES}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_76a.py`](../../solve/76/_z_76a.py)
+- [`_z_76b.py`](../../solve/76/_z_76b.py)
+- [`_z_76c.py`](../../solve/76/_z_76c.py)
+- [`_z_76d.py`](../../solve/76/_z_76d.py)
+- [`_z_76e.py`](../../solve/76/_z_76e.py)
+- [`_z_76f.py`](../../solve/76/_z_76f.py)

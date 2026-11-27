@@ -21,3 +21,12 @@ academy{N1c3_R3ver51ng_5k1115_000000000002e911fb5}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_54a.sh`](../../solve/54/_z_54a.sh)
+- [`_z_54b.sh`](../../solve/54/_z_54b.sh)
+- [`_z_54c.py`](../../solve/54/_z_54c.py)
+- [`_z_54d.py`](../../solve/54/_z_54d.py)
+- [`_z_54e.py`](../../solve/54/_z_54e.py)
+- [`_z_8354a.py`](../../solve/54/_z_8354a.py)

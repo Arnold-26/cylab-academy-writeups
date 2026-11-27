@@ -71,3 +71,20 @@ academy{cHeEsY1e5a870a}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_474a.py`](../../solve/474/_z_474a.py)
+- [`_z_474b.py`](../../solve/474/_z_474b.py)
+- [`_z_474c.py`](../../solve/474/_z_474c.py)
+- [`_z_474d.py`](../../solve/474/_z_474d.py)
+- [`_z_474e.py`](../../solve/474/_z_474e.py)
+- [`_z_474f.py`](../../solve/474/_z_474f.py)
+- [`_z_474g.py`](../../solve/474/_z_474g.py)
+- [`_z_474h.py`](../../solve/474/_z_474h.py)
+- [`_z_474i.py`](../../solve/474/_z_474i.py)
+- [`_z_474j.py`](../../solve/474/_z_474j.py)
+- [`_z_474k.py`](../../solve/474/_z_474k.py)
+- [`_z_474l.py`](../../solve/474/_z_474l.py)
+- [`_z_474m.py`](../../solve/474/_z_474m.py)
+- [`_z_474n.py`](../../solve/474/_z_474n.py)

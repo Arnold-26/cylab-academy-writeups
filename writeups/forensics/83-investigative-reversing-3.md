@@ -21,3 +21,15 @@ academy{4n0th3r_L5b_pr0bl3m_00000000000001eb97d9c}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_8354a.py`](../../solve/83/_z_8354a.py)
+- [`_z_83a.sh`](../../solve/83/_z_83a.sh)
+- [`_z_83b.py`](../../solve/83/_z_83b.py)
+- [`_z_83c.py`](../../solve/83/_z_83c.py)
+- [`_z_83d.sh`](../../solve/83/_z_83d.sh)
+- [`_z_83e.py`](../../solve/83/_z_83e.py)
+- [`_z_83f.sh`](../../solve/83/_z_83f.sh)
+- [`_z_83g.py`](../../solve/83/_z_83g.py)
+- [`_z_83h.py`](../../solve/83/_z_83h.py)

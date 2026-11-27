@@ -21,3 +21,13 @@ academy{fl4g_h45_fl4ga947c25f}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_481a.py`](../../solve/481/_z_481a.py)
+- [`_z_481b.py`](../../solve/481/_z_481b.py)
+- [`_z_481c.py`](../../solve/481/_z_481c.py)
+- [`_z_481d.py`](../../solve/481/_z_481d.py)
+- [`_z_481e.py`](../../solve/481/_z_481e.py)
+- [`_z_481f.py`](../../solve/481/_z_481f.py)
+- [`_z_481g.py`](../../solve/481/_z_481g.py)

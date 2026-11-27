@@ -21,3 +21,19 @@ academy{p1kap1ka_p1c018269cc6}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_171a.py`](../../solve/171/_z_171a.py)
+- [`_z_171a.sh`](../../solve/171/_z_171a.sh)
+- [`_z_171b.sh`](../../solve/171/_z_171b.sh)
+- [`_z_171c.py`](../../solve/171/_z_171c.py)
+- [`_z_171d.py`](../../solve/171/_z_171d.py)
+- [`_z_171e.py`](../../solve/171/_z_171e.py)
+- [`_z_171f.sh`](../../solve/171/_z_171f.sh)
+- [`_z_171g.sh`](../../solve/171/_z_171g.sh)
+- [`_z_171h.py`](../../solve/171/_z_171h.py)
+- [`_z_171i.sh`](../../solve/171/_z_171i.sh)
+- [`_z_171j.sh`](../../solve/171/_z_171j.sh)
+- [`_z_171k.py`](../../solve/171/_z_171k.py)
+- [`_z_171l.py`](../../solve/171/_z_171l.py)

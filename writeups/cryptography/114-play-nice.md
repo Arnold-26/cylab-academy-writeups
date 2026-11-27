@@ -21,3 +21,8 @@ Le service imprime en clair l'**alphabet** (36 caracteres, carre 6x6) qui sert d
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_114a.py`](../../solve/114/_z_114a.py)
+- [`_z_114b.py`](../../solve/114/_z_114b.py)

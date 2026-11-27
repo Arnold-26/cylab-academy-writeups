@@ -21,3 +21,14 @@ academy{2018highw@y_2_pow3r$hel!}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_119a.py`](../../solve/119/_z_119a.py)
+- [`_z_119b.py`](../../solve/119/_z_119b.py)
+- [`_z_119c.py`](../../solve/119/_z_119c.py)
+- [`_z_119d.py`](../../solve/119/_z_119d.py)
+- [`_z_119e.py`](../../solve/119/_z_119e.py)
+- [`_z_119f.py`](../../solve/119/_z_119f.py)
+- [`_z_119g.py`](../../solve/119/_z_119g.py)
+- [`_z_119h.py`](../../solve/119/_z_119h.py)

@@ -21,3 +21,8 @@ academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_415a.py`](../../solve/415/_z_415a.py)
+- [`_z_415b.py`](../../solve/415/_z_415b.py)

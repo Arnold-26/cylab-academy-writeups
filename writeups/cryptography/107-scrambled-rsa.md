@@ -64,7 +64,25 @@ Résultat (207 requêtes, 82 s) :
 academy{bad_1d3a5_73efa9c}
 ```
 
-## Script
+## Scripts
 
-`D:\ctf-index\_z_107_solve3.py` (`Conn` + boucle ci-dessus ; lit `_z_107url.txt`,
-gère les timeouts par re-essai).
+- [`_z_107_banner.txt`](../../solve/107/_z_107_banner.txt)
+- [`_z_107_brute.py`](../../solve/107/_z_107_brute.py)
+- [`_z_107_data1.json`](../../solve/107/_z_107_data1.json)
+- [`_z_107_data1.txt`](../../solve/107/_z_107_data1.txt)
+- [`_z_107_data2.json`](../../solve/107/_z_107_data2.json)
+- [`_z_107_data4.json`](../../solve/107/_z_107_data4.json)
+- [`_z_107_dec.py`](../../solve/107/_z_107_dec.py)
+- [`_z_107_diag.py`](../../solve/107/_z_107_diag.py)
+- [`_z_107_fixed.py`](../../solve/107/_z_107_fixed.py)
+- [`_z_107_flag.txt`](../../solve/107/_z_107_flag.txt)
+- [`_z_107_join.py`](../../solve/107/_z_107_join.py)
+- [`_z_107_join2.py`](../../solve/107/_z_107_join2.py)
+- [`_z_107_join3.py`](../../solve/107/_z_107_join3.py)
+- [`_z_107_join4.py`](../../solve/107/_z_107_join4.py)
+- [`_z_107_limit.py`](../../solve/107/_z_107_limit.py)
+- [`_z_107_map.py`](../../solve/107/_z_107_map.py)
+- [`_z_107_oracle.py`](../../solve/107/_z_107_oracle.py)
+- [`_z_107_pad.py`](../../solve/107/_z_107_pad.py)
+- [`_z_107_probe.py`](../../solve/107/_z_107_probe.py)
+- [`_z_107_probe1.py`](../../solve/107/_z_107_probe1.py)

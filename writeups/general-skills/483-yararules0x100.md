@@ -21,3 +21,18 @@ academy{yara_rul35_r0ckzzz_790c7af6}
 ## Ce qu'il faut retenir
 
 —
+
+## Scripts
+
+- [`_z_483a.py`](../../solve/483/_z_483a.py)
+- [`_z_483b.sh`](../../solve/483/_z_483b.sh)
+- [`_z_483c.sh`](../../solve/483/_z_483c.sh)
+- [`_z_483d.py`](../../solve/483/_z_483d.py)
+- [`_z_483d.sh`](../../solve/483/_z_483d.sh)
+- [`_z_483e.py`](../../solve/483/_z_483e.py)
+- [`_z_483f.py`](../../solve/483/_z_483f.py)
+- [`_z_483g.py`](../../solve/483/_z_483g.py)
+- [`_z_483h.py`](../../solve/483/_z_483h.py)
+- [`_z_483i.py`](../../solve/483/_z_483i.py)
+- [`_z_483j.py`](../../solve/483/_z_483j.py)
+- [`_z_483k.py`](../../solve/483/_z_483k.py)

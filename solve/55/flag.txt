@@ -1,0 +1,1 @@
+FLAGTEST{local_ok}n

@@ -51,6 +51,4 @@ sol, le fragment suivant du flag **rastérisé en glyphes `#`** avec une police 
 
 ## Scripts
 
-`/tmp/wl/_z_wl_dump3.py`, `_z_wl_render.py`, `_z_wl_allglyphs.py`, `_z_wl_dis.txt` (désassemblage).
-Méthode générale réutilisable : `strings` d'abord, puis **rendre les blocs `.data` en ASCII** quand
-le binaire ne contient aucune chaîne de flag.
+- [`_z_318a.sh`](../../solve/318/_z_318a.sh)
