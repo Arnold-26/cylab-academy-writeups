@@ -25,4 +25,4 @@ picoCTF{beep_boop_im_in_space}
 ## Scripts
 
 - [`solve.py`](../../solve/26/solve.py)
-- *23 variantes intermediaires dans `solve/26/archive/`*
+- *31 variantes intermediaires dans `solve/26/archive/`*

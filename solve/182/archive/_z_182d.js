@@ -1,8 +1,3 @@
-// 182 - Some Assembly Required 4  (Web Exploitation, picoCTF 2021)
-// Flag: academy{e69e121eab55f85293c89b9082255ed7}
-// Write-up: ../../../writeups/web-exploitation/182-some-assembly-required-4.md
-// This is the script that produced the flag; historical variants are in archive/.
-//
 const fs = require('fs');
 const buf = fs.readFileSync('/tmp/cylab_eps/182_ZoRd23o0wd.wasm');
 (async () => {

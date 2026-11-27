@@ -6,7 +6,7 @@
 #
 # sice_cream (CyLab 55) — FSOP final
 #
-# Primitives (all measured):
+# Primitives (toutes mesurées) :
 #   * fastbin dup -> creams[] = arbitrary pointers -> arbitrary free
 #   * fake unsorted chunk in name[] -> libc leak (main_arena+0x58)
 #   * unsorted bin attack -> global_max_fast = unsorted_chunks (huge)

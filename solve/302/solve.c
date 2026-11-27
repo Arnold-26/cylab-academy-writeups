@@ -5,16 +5,23 @@
 //
 // solfire exploit - picoCTF 2022 (CyLab Academy 302)
 //
-// Method (from the public writeup, verified by measurement):
-//   1. create a *zero-length* account owned by solfire.so whose address is a PDA
-//      of OUR program (empty seed + bump), so the account "ledger" satisfies
-//      handle_withdraw's owner check while holding no data at all;
-//   2. call solfire handle_withdraw with index 0x280 -> the ledger read at
-//      data + 0x280*0x10 = data + 0x2800 lands past the account's padding inside
-//      the single MM_INPUT region, yielding a large u64 as "deposits";
-//   3. the vault (1000000 lamports) pays out.
+// Cible : programme eBPF solfire.so (Solana), la vault vaut 1 000 000 lamports
+// Dépendances : clang -target bpf -mcpu=v1, le linker maison mklink.py, build.sh, client.py
+// Usage : ./build.sh puis python3 client.py <host> <port>
 //
-// instruction data layout:
+// Chaine d'attaque (toutes les distances mesurees) :
+//   1. on cree un compte de taille ZERO, owner = solfire.so, a une adresse PDA de NOTRE
+//      programme (graine vide + bump) : le controle d'owner de handle_withdraw passe,
+//      alors que le compte ne contient aucune donnee
+//   2. handle_withdraw borne input[1] <= 0x280 INCLUSIVEMENT et lit le ledger a
+//      data + input[1]*0x10 : avec l'index 0x280 on lit data + 0x2800, soit un cran
+//      apres le padding du compte
+//   3. cette lecture ne faulte pas : le runtime mappe tout le buffer d'entrees comme
+//      une seule region MM_INPUT, donc on lit du garbage non nul interprete comme des
+//      "depots" enormes
+//   4. la vault paie, le solde du user depasse TARGET_AMT et le service rend le flag
+//
+// disposition des donnees d'instruction :
 //   [0]    ledger nonce (PDA bump of our program, empty seed)
 //   [1]    vault nonce  (PDA bump of solfire, seed "vault")
 //   [2..6] amount u32 LE

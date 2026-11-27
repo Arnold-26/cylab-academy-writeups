@@ -1,12 +1,20 @@
-# 496 - secure-email-service  (Web Exploitation, picoCTF 2025)
+#!/usr/bin/env python3
+# 496 - secure-email-service  (Web Exploitation, picoCTF 2024)
 # Flag: academy{always_a_step_ahead_fb2a1a8c}
 # Write-up: ../../../writeups/web-exploitation/496-secure-email-service.md
 # This is the script that produced the flag; historical variants are in archive/.
 #
-"""Final run: fresh instance -> warmup -> crack -> self-align -> exploit -> 2 bots -> harvest.
-Payload: make_D(B1, B2) with
-  B1 = reply's inner multipart/mixed boundary   (MT call N+1)
-  B2 = reply's outer multipart/signed boundary  (MT call N+2)
+"""496 secure-email-service : run complet.
+
+Instance neuve -> warmup (700 mails pour collecter les boundaries) -> crack MT19937 ->
+recalage -> mail piege -> 2 passages du bot -> recolte.
+
+Payload : make_D(B1, B2) avec
+  B1 = boundary interne multipart/mixed de la reponse (tirage MT N+1)
+  B2 = boundary externe multipart/signed de la reponse (tirage MT N+2)
+
+Usage : python3 solve.py <base_url> [nb_warmup]
+Dependances : _z_496_spec.py et _z_496_crack2.py (dans ce dossier)
 """
 import sys, os, json, re, time, subprocess, http.client
 from urllib.parse import urlparse

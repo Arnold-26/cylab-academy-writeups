@@ -1,16 +1,20 @@
-# 495 - Ricochet  (Cryptography, picoCTF 2025)
+#!/usr/bin/env python3
+# 495 - Ricochet  (Cryptography, picoCTF 2022)
 # Flag: academy{r1gh7_84ck_47_y4_38227532}
 # Write-up: ../../../writeups/cryptography/495-ricochet.md
 # This is the script that produced the flag; historical variants are in archive/.
 #
-"""495 Ricochet - fast one-shot exploit.
+"""495 Ricochet : exploit one-shot.
 
-The MAC table (_z_495_macs.json) is static across instances (keys.py is fixed),
-so we only need:
-  * oracle passes to obtain direction MACs at the nonces we need (the robot's
-    controller is a MAC oracle for "", east, south, west, north),
-  * then impersonate the controller and blast the whole curated dialogue at once
-    into the robot's receive buffer (wait_message does not check src).
+La table de MAC (_z_495_macs.json) est statique d'une instance a l'autre (la cle du
+serveur est fixe), il suffit donc de :
+  * faire quelques passes d'oracle pour obtenir les MAC des directions aux nonces voulus
+    (le controller du robot est un oracle de MAC pour "", east, south, west, north),
+  * puis usurper le controller et injecter tout le dialogue d'un coup dans le buffer de
+    reception du robot (wait_message ne verifie pas src).
+
+Usage : python3 solve.py <host> <port>
+Dependances : _z_495_atk.py, _z_495_lib.py, _z_495_macs.json (dans ce dossier)
 """
 import sys, json, time
 sys.path.insert(0, r".")

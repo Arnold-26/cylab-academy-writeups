@@ -95,4 +95,4 @@ academy{1_l13d_4b0ut_b31ng_s3cur3d_m0b1l3_l0g1n_7f1dd571}
 
 - [`solve.py`](../../solve/529/solve.py)
 - [`_z_529base.txt`](../../solve/529/_z_529base.txt)
-- *22 variantes intermediaires dans `solve/529/archive/`*
+- *24 variantes intermediaires dans `solve/529/archive/`*

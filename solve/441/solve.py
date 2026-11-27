@@ -6,20 +6,21 @@
 #
 # CyLab Academy #441 "high frequency troubles" (glibc 2.35-0ubuntu3.3) exploit
 #
-# Chain:
-#   1. House of Orange: shrink top chunk -> oversized malloc frees the old top
-#      into the unsorted bin   (no free() in binary)
-#   2. take a 0x20 chunk out of it and ECHO -> heap leak (heap+0x2d0)
-#   3. write a fake tcache_perthread_struct into the freshly malloc'ed 0x1000 chunk
-#   4. malloc(0x30001) -> mmap'ed region lands directly below the static TLS
-#      block; overflow it to overwrite the TLS `tcache` pointer (fs_base-0x48)
-#   5. malloc from the forged tcache -> arbitrary aligned allocation
-#      -> read the unsorted/large-bin fd (libc leak)
-#   6. build fake wide_data + w-vtable in the orphaned heap hole
-#   7. overwrite _IO_2_1_stderr_ with a fake FILE (vtable = _IO_wfile_jumps)
-#   8. corrupt top size -> __malloc_assert -> stderr flush ->
+# Chaîne d'attaque :
+#   1. House of Orange : on rétrécit le top chunk, un malloc surdimensionné fait donc
+#      libérer l'ancien top dans l'unsorted bin (le binaire n'a aucun free())
+#   2. on reprend 0x20 octets de ce chunk et on ECHO : le prev_size du remainder donne
+#      une fuite de tas (heap + 0x2d0)
+#   3. on écrit un faux tcache_perthread_struct dans le chunk de 0x1000 fraîchement alloué
+#   4. malloc(0x30001) : la zone mmap se pose juste sous le bloc TLS statique, on la
+#      déborde pour écraser le pointeur tcache du TLS (fs_base - 0x48)
+#   5. un malloc qui vient du faux tcache rend une allocation arbitraire alignée,
+#      on y lit le fd de l'unsorted/large bin (fuite libc)
+#   6. on construit un faux wide_data et une fausse w-vtable dans le trou de tas orphelin
+#   7. on écrase _IO_2_1_stderr_ par un faux FILE (vtable = _IO_wfile_jumps)
+#   8. on corrompt la taille du top : __malloc_assert, flush de stderr, puis
 #      _IO_wfile_xsputn -> _IO_wfile_overflow -> _IO_wdoallocbuf -> __doallocate
-#      = one_gadget execve("/bin/sh")
+#      soit un one_gadget execve("/bin/sh")
 import os, sys
 from pwn import *
 context.log_level = os.environ.get('LOG', 'info')

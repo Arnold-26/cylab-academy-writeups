@@ -67,6 +67,5 @@ academy{bad_1d3a5_73efa9c}
 ## Scripts
 
 - [`solve.py`](../../solve/107/solve.py)
-- [`_z_107_data1.json`](../../solve/107/_z_107_data1.json)
-- [`_z_107_data1.txt`](../../solve/107/_z_107_data1.txt)
-- *21 variantes intermediaires dans `solve/107/archive/`*
+- [`_z_107_flag.txt`](../../solve/107/_z_107_flag.txt)
+- *48 variantes intermediaires dans `solve/107/archive/`*

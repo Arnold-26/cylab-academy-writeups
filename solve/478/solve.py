@@ -3,22 +3,24 @@
 # Write-up: ../../../writeups/web-exploitation/478-pachinko.md
 # This is the script that produced the flag; historical variants are in archive/.
 #
-"""478 Pachinko Revisited — exploit.
+"""478 Pachinko Revisited : exploit.
 
-Reconstructed from the measured ISA (see writeup) and the public picoCTF 2025
-writeup by unvariant:
+L'ISA du CPU Verilog a ete mesuree sur le .wasm (voir le writeup). Le point cle :
 
-  nand_checker.bin stores its NAND result at  0x2000 + 2*out_node (mod 0x10000)
-  so a circuit gate whose out node is 0xf000 writes to address 0x0000-relative
-  code: 0xf000+38 -> 0x4c, 0xf000+39 -> 0x4e, ...
+  nand_checker.bin ecrit son resultat NAND a  0x2000 + 2*out_node (mod 0x10000)
 
-  Plan: use the nand circuit's own store primitive to plant flag.bin's ten
-  16-bit words at 0x4c..0x5e, i.e. at the instructions that the program runs
-  right after the gate-processing loop.  Those words are
-      load_imm r0,0x6f73 / r1,0x6563 / r2,0x2e69 / r3,0x6f00
-      flag_magic
-      halt
-  which raises the CPU's `flag` output -> /check answers with FLAG2.
+donc une porte dont le noeud de sortie vaut 0xf000 ecrit a l'adresse 0x0000-relative
+du programme, soit : 0xf000+38 -> 0x4c, 0xf000+39 -> 0x4e, et ainsi de suite.
+
+Plan : on detourne cette primitive de store du circuit NAND pour planter les dix mots
+de flag.bin a 0x4c..0x5e, c'est-a-dire sur les instructions executees juste apres la
+boucle de traitement des portes :
+    load_imm r0,0x6f73 / r1,0x6563 / r2,0x2e69 / r3,0x6f00
+    flag_magic
+    halt
+ces mots levent la sortie `flag` du CPU, donc /check repond FLAG2.
+
+Usage : python3 solve.py <host> <port>
 """
 import sys, json, requests
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

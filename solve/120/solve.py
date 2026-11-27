@@ -3,7 +3,7 @@
 # Write-up: ../../../writeups/cryptography/120-its-not-my-fault-2.md
 # This is the script that produced the flag; historical variants are in archive/.
 #
-﻿import socket, sys, time, re, hashlib, random, os
+import socket, sys, time, re, hashlib, random, os
 import multiprocessing as mp
 from flint import fmpz_mod_poly_ctx
 from Crypto.Util.number import GCD

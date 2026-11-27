@@ -99,5 +99,7 @@ Le robot consomme la file dans l'ordre, glisse de case en case et s'arrête sur 
 ## Scripts
 
 - [`solve.py`](../../solve/495/solve.py)
+- [`_z_495_atk.py`](../../solve/495/_z_495_atk.py)
+- [`_z_495_lib.py`](../../solve/495/_z_495_lib.py)
 - [`_z_495_macs.json`](../../solve/495/_z_495_macs.json)
-- *13 variantes intermediaires dans `solve/495/archive/`*
+- *11 variantes intermediaires dans `solve/495/archive/`*

@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
 # 136 - Clouds  (Cryptography, picoCTF 2021)
-# Flag: not archived
+# Flag: 0b48d5adb3074b90  (ce challenge n'utilise pas l'enveloppe academy{})
 # Write-up: ../../../writeups/cryptography/136-clouds.md
 # This is the script that produced the flag; historical variants are in archive/.
 #
-# 136 Clouds — differential cryptanalysis of Nimbus (Furman delta = 2^63-2)
+# Cible : service TCP "Clouds" (notes chiffrees par le chiffre Nimbus), 5 tours, blocs de 8 octets
+# Dépendances : stdlib uniquement (maths entieres), z3 non requis
+# Usage : python3 solve.py <host> <port> [nb_paires]   ou   python3 solve.py local [nb_paires]
 #
-# round i:   y = g(x ^ k_i) * (k_i | 1)  mod 2^64        (g = 64-bit bit reversal)
+# Chiffre Nimbus, un tour : y = g(x ^ k_i) * (k_i | 1) mod 2^64, g = inversion des 64 bits
 #
-# (1) k5..k2  : pairs with x ^ x' = DELTA.  If the difference reaches the multiplication
-#               then (Lemma 1, a,a' even)  a+a' = DELTA  =>  y+y' = DELTA*o_i  =>
-#               o_i mod 2^63 = ((y+y')/2) * inv(DELTA/2) mod 2^63.  The mode over
-#               thousands of pairs is the answer; surviving fraction is 2^-(i-1).
-# (2) k1      : the DELTA difference always survives round 1 (probability 1), so the sum
-#               equation degenerates to o1 = 1.  Use instead plaintexts P and P ^ 2^63:
-#               u = g(P^k1) and u^1, so  y' - y = +-o1  exactly  =>  o1 = +-d.
+# Chaîne d'attaque (cryptanalyse différentielle, delta de Furman = 2^63 - 2) :
+#   1. on collecte des paires de clairs P et P ^ DELTA, et on lit leurs chiffrés
+#   2. pour chaque paire dont la différence atteint la multiplication du tour i, on a
+#      a ^ a' = DELTA donc (Lemma 1, a et a' pairs) a + a' = DELTA, d'où
+#      y + y' = DELTA * o_i et donc  o_i mod 2^63 = ((y+y')/2) * inv(DELTA/2) mod 2^63
+#   3. le mode de cette valeur sur des milliers de paires donne o_i (la différence
+#      survit à chaque tour avec probabilité 1/2, donc 2^-(i-1) paires restent utiles)
+#   4. on descend tour par tour (5 puis 4 puis 3 puis 2) en déchiffrant avec les candidats
+#      o_i (bit de poids fort et bit 0 inconnus, soit 4 branches par tour)
+#   5. le tour 1 est dégénéré (P + P' = DELTA par construction, donc o_1 = 1) : on
+#      récupère k_1 avec deux clairs P et P ^ 2^63, car u' = u ^ 1 donne y' - y = +-o_1
+#   6. on vérifie la clé sur des blocs generiques repartis, puis on dechiffre la note 0
 import os, sys, random, struct, time
 
 MASK64 = (1 << 64) - 1

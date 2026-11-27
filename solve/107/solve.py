@@ -3,67 +3,121 @@
 # Write-up: ../../../writeups/cryptography/107-scrambled-rsa.md
 # This is the script that produced the flag; historical variants are in archive/.
 #
-import socket, sys, time, re
+import socket, sys, time, re, json, string
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 host, port = open(r"./_z_107url.txt").read().split()
 port = int(port)
-s = socket.create_connection((host, port), timeout=20)
-s.settimeout(2.5)
 
-def readall(t=1.5):
-    out = b""
-    end = time.time() + t
-    while time.time() < end:
-        try:
-            d = s.recv(65536)
-        except socket.timeout:
+KNOWN_PREFIX = "academy{bad_1d3a5"
+CHARS = (string.ascii_lowercase + string.digits + "_}{" +
+         string.ascii_uppercase + "!@#$%^&*()-+=[]:;,./?|~`")
+
+
+class Conn:
+    def __init__(self):
+        self.s = socket.create_connection((host, port), timeout=30)
+        self.s.settimeout(10)
+        self.buf = b""
+        self.nq = 0
+        txt = self._banner()
+        self.flag = self.n = self.e = None
+        for ln in txt.split("\n"):
+            if ln.startswith("flag: "):
+                self.flag = ln[6:].strip()
+            elif ln.startswith("n: "):
+                self.n = int(ln[3:].strip())
+            elif ln.startswith("e: "):
+                self.e = int(ln[3:].strip())
+        self.work = self.flag
+        self.known = []
+        self.plain = ""
+
+    def _banner(self):
+        out = b""
+        end = time.time() + 12
+        while time.time() < end:
+            try:
+                d = self.s.recv(65536)
+            except socket.timeout:
+                break
+            if not d:
+                break
+            out += d
+            if b"give me: " in out:
+                break
+        if b"give me: " in out:
+            head, tail = out.split(b"give me: ", 1)
+            self.buf = tail
+            return head.decode("latin-1")
+        self.buf = b""
+        return out.decode("latin-1")
+
+    def query(self, q, retries=4):
+        for att in range(retries):
+            self.s.sendall(q.encode("latin-1") + b"\n")
+            self.nq += 1
+            end = time.time() + 12
+            while time.time() < end:
+                m = re.search(rb"Here you go: (\d+)\n", self.buf)
+                if m:
+                    res = m.group(1).decode()
+                    self.buf = self.buf[m.end():]
+                    return res
+                try:
+                    d = self.s.recv(65536)
+                except socket.timeout:
+                    break
+                if not d:
+                    raise EOFError("closed")
+                self.buf += d
+            print("   (timeout, retry %d)" % att, flush=True)
+        raise EOFError("timeout x%d" % retries)
+
+
+def main():
+    c = Conn()
+    print("flag=%d chiffres, n=%d chiffres, e=%d" % (len(c.flag), len(str(c.n)), c.e), flush=True)
+    t0 = time.time()
+    # 1) etablir les blocs du prefixe connu
+    for i in range(len(KNOWN_PREFIX)):
+        prefix = KNOWN_PREFIX[:i + 1]
+        enc = c.query(prefix)
+        for k in c.known:
+            enc = enc.replace(k, "")
+        if not enc:
+            print("!! bloc introuvable pour la position", i, flush=True)
+            return
+        c.known.append(enc)
+        c.work = c.work.replace(enc, "", 1)
+        c.plain = prefix
+        print("prefixe %-30s bloc=%d (work reste %d chiffres)" % (prefix, len(enc), len(c.work)), flush=True)
+    # 2) chercher la suite
+    while not c.plain.endswith("}"):
+        found = False
+        for ch in CHARS:
+            try:
+                enc = c.query(c.plain + ch)
+            except EOFError as ex:
+                print("!! %r apres %d requetes ; plain=%r" % (ex, c.nq, c.plain), flush=True)
+                json.dump({"plain": c.plain}, open(r"./_z_107_partial.json", "w"))
+                return
+            for k in c.known:
+                enc = enc.replace(k, "")
+            if enc and enc in c.work:
+                c.work = c.work.replace(enc, "", 1)
+                c.known.append(enc)
+                c.plain += ch
+                found = True
+                print("%-45s (%d req, %.0fs)" % (c.plain, c.nq, time.time() - t0), flush=True)
+                break
+        if not found:
+            print("!! aucun candidat a la position %d ; work=%r" % (len(c.plain), c.work[:120]), flush=True)
             break
-        if not d:
-            break
-        out += d
-    return out
+    print()
+    print("FLAG:", c.plain)
+    print("requetes:", c.nq, "temps: %.0fs" % (time.time() - t0))
+    if c.plain.endswith("}"):
+        open(r"./_z_107_flag.txt", "w").write(c.plain)
 
-bt = readall(3.0).decode("latin-1")
-flag_ct = n = e = None
-for ln in bt.split("\n"):
-    if ln.startswith("flag: "):
-        flag_ct = ln[6:].strip()
-    elif ln.startswith("n: "):
-        n = int(ln[3:].strip())
-    elif ln.startswith("e: "):
-        e = int(ln[3:].strip())
-print("len(flag_ct)=%d len(n)=%d e=%d" % (len(flag_ct), len(str(n)), e))
 
-def enc(q):
-    s.sendall(q.encode() + b"\n")
-    r = readall(1.5).decode("latin-1")
-    m = re.search(r"Here you go: (\d+)", r)
-    return m.group(1) if m else None
-
-tbl = {}
-for q in ["a", "b", "1", "aa", "ab", "ba", "academy{"]:
-    ct = enc(q)
-    tbl[q] = ct
-    print("enc(%r) len=%d" % (q, len(ct)))
-
-# verification RSA textbook
-print()
-print("pow(97,e,n) len:", len(str(pow(ord('a'), e, n))), " == enc('a') ?", str(pow(ord('a'), e, n)) == tbl['a'])
-print("pow(98,e,n)  == enc('b') ?", str(pow(ord('b'), e, n)) == tbl['b'])
-print("pow(49,e,n)  == enc('1') ?", str(pow(ord('1'), e, n)) == tbl['1'])
-print()
-print("enc('aa') == a||a ?", tbl['aa'] == tbl['a'] + tbl['a'])
-print("enc('ab') == a||b ?", tbl['ab'] == tbl['a'] + tbl['b'])
-print("enc('ab') == b||a ?", tbl['ab'] == tbl['b'] + tbl['a'])
-print("enc('ba') == a||b ?", tbl['ba'] == tbl['a'] + tbl['b'])
-print("enc('ba') == b||a ?", tbl['ba'] == tbl['b'] + tbl['a'])
-print()
-print("enc('academy{') prefix tests:")
-t = tbl['academy{']
-print("  startswith enc('a')?", t.startswith(tbl['a']))
-print("  startswith enc('ac')?", t[:len(enc('ac'))] if False else '-')
-print("  len:", len(t))
-open(r"./_z_107_data1.txt", "w").write("%s\n%d\n%d\n" % (flag_ct, n, e))
-import json
-json.dump({"flag_ct": flag_ct, "n": str(n), "e": e, "tbl": tbl}, open(r"./_z_107_data1.json", "w"))
-s.close()
+main()
