@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #315 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **Pollard p-1**.
@@ -17,7 +13,3 @@ Méthode : **Pollard p-1**.
 ```
 academy{p0ll4rd_f4ct0r1z4at10n_FTW_25bd8a39}
 ```
-
-## Ce qu'il faut retenir
-
-—

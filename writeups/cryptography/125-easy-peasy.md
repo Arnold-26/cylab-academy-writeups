@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #125 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **OTP a compteur : retour a zero du keystream**.
@@ -17,7 +13,3 @@ Méthode : **OTP a compteur : retour a zero du keystream**.
 ```
 academy{5d2ed61216151a1c485ee5b4651c64cf}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 « We have a kubernetes cluster setup and the flag is in the secrets. You think you can get it? »
 
 Après lancement de l'instance, un fichier `kubeconfig.yaml` est fourni : il contient les
@@ -91,6 +92,7 @@ difficulté est de **savoir où regarder** — un namespace précis, avec un nom
 `-A` transforme une recherche aveugle en énumération exhaustive.
 
 ## Pièges
+
 - **Oublier `-A`** : le namespace `default` ne contient rien. C'est le piège principal, et il fait
   perdre beaucoup de temps si l'on ne sait pas que Kubernetes cloisonne par namespace.
 - **`kubectl get secrets` sans `-n`** : idem, on reste sur le namespace courant du contexte.

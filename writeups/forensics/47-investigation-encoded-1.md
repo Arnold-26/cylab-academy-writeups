@@ -18,10 +18,6 @@ Binaire `mystery` non strippe : `nm`/`readelf` donnent `secret` (0x2020, **37 oc
 encodedofvzaojsrs
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/47/solve.py)

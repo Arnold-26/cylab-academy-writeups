@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #129 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **images imbriquees (ZIP)**.
@@ -17,7 +13,3 @@ Le fichier `dolls.jpg` est en fait un PNG avec un **ZIP ajoute** a l'offset 2724
 ```
 academy{ZNTyvSDXRNO1d0xCkBRMhAoiafpCTvgW}
 ```
-
-## Ce qu'il faut retenir
-
-—

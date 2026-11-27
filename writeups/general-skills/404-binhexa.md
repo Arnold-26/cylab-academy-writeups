@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #404 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **operations binaires interactives**.
@@ -17,7 +13,3 @@ Service nc : deux nombres binaires, 6 operations. Pour les decalages la phrase d
 ```
 academy{b1tw^3se_0p3eR@tI0n_su33essFuL_31a516a2}
 ```
-
-## Ce qu'il faut retenir
-
-—

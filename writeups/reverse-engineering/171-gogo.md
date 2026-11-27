@@ -18,10 +18,6 @@ Binaire **Go statique 32 bits** avec ses symboles : `main.main`, `main.checkPass
 academy{p1kap1ka_p1c018269cc6}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/171/solve.py)

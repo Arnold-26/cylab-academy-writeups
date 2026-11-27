@@ -17,7 +17,3 @@ Le mot de passe BitLocker est volontairement long et complexe, donc le cassage e
 ```
 academy{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
 ```
-
-## Ce qu'il faut retenir
-
-—

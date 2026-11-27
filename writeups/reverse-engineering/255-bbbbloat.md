@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #255 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **cmp immediat dans le desassemblage**.
@@ -17,7 +13,3 @@ Le binaire demande un nombre. En desassemblant apres le `scanf`, on trouve `cmp 
 ```
 academy{cu7_7h3_bl047_d67f6a67}
 ```
-
-## Ce qu'il faut retenir
-
-—

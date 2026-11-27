@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 « Can you conjure the right bytes? »
 
 Le source `app.py` est fourni, ainsi qu'un service distant. Il faut lui envoyer l'entrée exacte
@@ -106,6 +107,7 @@ opérations différentes, et la plupart des langages de haut niveau choisissent 
 seconde dès qu'on utilise `print`.
 
 ## Pièges
+
 - **`print(bytes)`** : envoie la représentation, pas les octets. C'est le piège principal de ce
   challenge.
 - **`print('\xff')`** : encode en UTF-8 (`c3 bf`), donc six octets au lieu de trois.

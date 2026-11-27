@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #121 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **sha256 tronque**.
@@ -17,7 +13,3 @@ Le flag est `academy{1n_7h3_kk3y_of_` + 8 caracteres + `}`. `check_key` compare 
 ```
 academy{1n_7h3_kk3y_of_9edf443b}
 ```
-
-## Ce qu'il faut retenir
-
-—

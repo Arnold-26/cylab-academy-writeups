@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #119 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion d'une permutation + chaine XOR PowerShell**.
@@ -17,10 +13,6 @@ Le script PowerShell lit `input.txt` (9245 octets = **5 lignes** de 264 champs d
 ```
 academy{2018highw@y_2_pow3r$hel!}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

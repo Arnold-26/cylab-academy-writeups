@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #23 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **deobfuscation native : XOR répétitif dans sumac()**.
@@ -17,10 +13,6 @@ APK decompile avec apktool ; `FlagstaffHill.cilantro(String)` est natif et renvo
 ```
 academy{tis.but.a.scratch}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

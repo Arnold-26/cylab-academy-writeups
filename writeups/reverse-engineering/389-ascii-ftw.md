@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #389 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **desassemblage (mov immediats)**.
@@ -17,7 +13,3 @@ Méthode : **desassemblage (mov immediats)**.
 ```
 academy{ASCII_IS_EASY_AC3E0C8C}
 ```
-
-## Ce qu'il faut retenir
-
-—

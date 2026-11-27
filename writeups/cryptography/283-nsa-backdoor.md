@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #283 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **Pollard p-1 + Pohlig-Hellman + ordre de 3**.
@@ -17,7 +13,3 @@ Primes **smooth** (p-1 en facteurs de 16 bits) : Pollard p-1 avec B = 2^16 donne
 ```
 academy{b3w4r3_0f_c0mp0s1t3_m0dul1_975c2a44}
 ```
-
-## Ce qu'il faut retenir
-
-—

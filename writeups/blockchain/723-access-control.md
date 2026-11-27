@@ -18,10 +18,6 @@ Contrat Solidity 0.8 avec une fonction `changeOwner(address)` declaree **`public
 academy{i_c4n_b3_0wn3r_7a45d669}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/723/solve.py)

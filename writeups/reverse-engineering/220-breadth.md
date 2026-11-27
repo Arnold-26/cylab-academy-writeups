@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #220 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **diff de deux binaires (v1/v2)**.
@@ -17,10 +13,6 @@ Méthode : **diff de deux binaires (v1/v2)**.
 ```
 picoCTF{VnDB2LUf1VFJkdfDJtdYtFlMexPxXS6X}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #284 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **cle SSH dans l'image disque**.
@@ -17,7 +13,3 @@ Image a deux partitions. Dans la 2e (offset 206848), `/root/.ash_history` montre
 ```
 academy{k3y_5l3u7h_127b8b44}
 ```
-
-## Ce qu'il faut retenir
-
-—

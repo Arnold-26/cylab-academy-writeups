@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #428 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **bytecode Python -> XOR**.
@@ -17,7 +13,3 @@ Le fichier `snake` est un **disassemblee de bytecode Python**. On y lit `input_l
 ```
 academy{N0t_sO_coNfus1ng_sn@ke_0ed60894}
 ```
-
-## Ce qu'il faut retenir
-
-—

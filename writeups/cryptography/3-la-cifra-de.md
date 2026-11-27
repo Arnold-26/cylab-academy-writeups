@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #3 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **vigenere avec cle derivee du clair connu**.
@@ -17,7 +13,3 @@ Le message est chiffre en Vigenere. On connait un fragment de clair probable : `
 ```
 academy{b311a50_0r_v1gn3r3_c1ph3r36311a0a}
 ```
-
-## Ce qu'il faut retenir
-
-—

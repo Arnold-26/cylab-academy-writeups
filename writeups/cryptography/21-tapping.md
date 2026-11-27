@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #21 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **morse**.
@@ -17,7 +13,3 @@ Le service envoie du morse. La table doit couvrir A-Z **et 0-9** (les chiffres s
 ```
 academy{M0RS3C0D31SFUNA3B0BAF8}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -18,10 +18,6 @@ Image disque ext3 (Tiny Core Linux, 32 Mo). `fls -r -p` montre un fichier **`sus
 academy{b3_5t111_mL|_<3_d18a1e1e}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/87/solve.py)

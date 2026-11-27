@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #53 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **reparation manuelle d'un PNG**.
@@ -17,7 +13,3 @@ Le fichier a la **signature PNG** et le type `IHDR` corrompus, plus l'en-tete du
 ```
 academy{c0rrupt10n_1847995}
 ```
-
-## Ce qu'il faut retenir
-
-—

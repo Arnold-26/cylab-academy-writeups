@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #76 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion du chainage ABC (addition mod 2^128)**.
@@ -17,10 +13,6 @@ Le mode custom ajoute le bloc chiffre precedent au bloc courant (mod 2^128). On 
 ```
 academy{d0Nt_r0ll_yoUr_0wN_aES}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

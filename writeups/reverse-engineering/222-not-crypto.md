@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #222 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **hook LD_PRELOAD sur memcmp**.
@@ -17,10 +13,6 @@ Le binaire chiffre l'input (AES) puis compare avec `memcmp` au flag dechiffre pr
 ```
 picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

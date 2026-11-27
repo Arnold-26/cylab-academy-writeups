@@ -18,10 +18,6 @@ Méthode : **hexadecimal encode dans les echantillons audio (2 derniers chiffres
 academy{mU21C_1s_1337_63f2299a}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/117/solve.py)

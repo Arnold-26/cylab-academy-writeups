@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Forensics
 
 ## Énoncé
+
 « A suspicious cell tower has been detected. »
 
 La capture `rogue_tower.pcap` doit permettre d'identifier la tour pirate et de récupérer les données
@@ -104,6 +105,7 @@ technique générale, applicable dès qu'un protocole impose un en-tête fixe (m
 signature de fichier).
 
 ## Pièges
+
 - **Ordre des segments** : concaténer dans l'ordre de capture des paquets ne fonctionne que si le
   fichier est déjà trié. Trier explicitement par numéro de trame (`frame.number`) est la seule
   méthode fiable.

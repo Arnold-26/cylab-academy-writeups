@@ -18,10 +18,6 @@ Meme principe que VM0 mais avec un **train d'engrenages bevel a 3 etages** : le 
 academy{m0r3_g34r5_3g4d_c3dc2830}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/386/solve.py)

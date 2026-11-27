@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #405 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **git log -p (historique complet)**.
@@ -17,7 +13,3 @@ Le depot a des dizaines de commits 'important business work'. Le flag n'est pas 
 ```
 academy{@sk_th3_1nt3rn_43769efb}
 ```
-
-## Ce qu'il faut retenir
-
-—

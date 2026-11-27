@@ -18,10 +18,6 @@ L'enonce demande d'uploader **deux PDF valides, differents, mais de meme SHA-1**
 academy{h4ppy_b1rthd4y_2_m3_8248ffdd}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/169/solve.py)

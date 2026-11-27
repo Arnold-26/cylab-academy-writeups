@@ -65,10 +65,6 @@ c'est le genre de detail qu'il faut implementer exactement, pas "a peu pres".
 academy{I_5D3_A11DA7_f73c8ead}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/122/solve.py)

@@ -18,10 +18,6 @@ Le service lance un combat **CoreWars** (RedCode) : il faut fournir un warrior q
 academy{d3m0n_3xpung3r_36e6efa4}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/370/solve.py)

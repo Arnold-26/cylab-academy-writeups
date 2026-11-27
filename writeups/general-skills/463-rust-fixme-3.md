@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #463 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **correction Rust + compilation**.
@@ -17,7 +13,3 @@ Le source Rust est casse expres. Corrections selon le niveau : `;` manquant apre
 ```
 academy{n0w_y0uv3_f1x3d_1h3m_411}
 ```
-
-## Ce qu'il faut retenir
-
-—

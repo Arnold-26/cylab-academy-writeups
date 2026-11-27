@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #65 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **depacking des 8 ints**.
@@ -17,7 +13,3 @@ Technique : depacking des 8 ints.
 ```
 academy{A_b1t_0f_b1t_sh1fTiNg_1fe72a78be}
 ```
-
-## Ce qu'il faut retenir
-
-—

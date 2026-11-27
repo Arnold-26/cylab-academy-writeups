@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #425 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **git log**.
@@ -17,7 +13,3 @@ Le zip contient un depot git (`drop-in/`). Le flag n'est PAS dans les fichiers d
 ```
 academy{t1m3m@ch1n3_b260a551}
 ```
-
-## Ce qu'il faut retenir
-
-—

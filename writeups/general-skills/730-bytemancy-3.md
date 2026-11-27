@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 « Can you conjure the right bytes? »
 
 Deux fichiers : `app.py` et le binaire `spellbook`. Il faut reconstituer la charge utile exacte
@@ -104,6 +105,7 @@ le pointeur reçu. Le challenge est donc un exercice de passage de données bina
 adresse n'est pas un texte mais quatre octets, et que leur ordre est normé par l'architecture.
 
 ## Pièges
+
 - **`sendline` au lieu de `send`** : le `\n` supplémentaire décale la lecture. Le premier tour peut
   passer, les suivants échouent.
 - **Mauvais endianness** : `p32(addr, endian='big')` ou `pack('>I', addr)` envoie les octets à

@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #436 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **shell sans lettres : globbing + expansion**.
@@ -17,10 +13,6 @@ Le shell n'accepte que les symboles. Techniques : `*` execute le premier fichier
 ```
 academy{7h15_mu171v3r53_15_m4dn355_0abcd64b}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

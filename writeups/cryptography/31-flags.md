@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #31 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **drapeaux de signalisation maritime (ICS)**.
@@ -17,7 +13,3 @@ L'image contient 20 drapeaux du **Code International de Signaux** plus `{` et `}
 ```
 PICOCTF{F1AG5AND5TUFF}
 ```
-
-## Ce qu'il faut retenir
-
-—

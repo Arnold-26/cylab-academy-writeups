@@ -18,10 +18,6 @@ Méthode : **recuperation de cle RSA : n et e intacts, d nul, p partiellement ef
 picoCTF{d741543f172970457e6a9aaa890935b8}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/207/solve.py)

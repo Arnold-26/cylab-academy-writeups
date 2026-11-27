@@ -73,10 +73,6 @@ seul le wrapper a change.
 academy{These are the access codes to the vault: 1063340}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.sh`](../../solve/57/solve.sh)

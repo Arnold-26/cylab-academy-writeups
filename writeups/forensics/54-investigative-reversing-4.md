@@ -18,10 +18,6 @@ Le binaire `investigative-reversing-4-mystery` lit `Item01.bmp`..`Item05.bmp` et
 academy{N1c3_R3ver51ng_5k1115_000000000002e911fb5}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/54/solve.py)

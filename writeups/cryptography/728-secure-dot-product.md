@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Cryptography
 
 ## Énoncé
+
 Un service calcule des produits scalaires en impliquant du matériel de clé AES, et son concepteur
 suppose la construction sûre. Le source `remote.py` est fourni : il faut retrouver la clé que le
 service divulgue, puis déchiffrer le flag.
@@ -110,6 +111,7 @@ précisément pour rendre cette attaque inopérante
 (`H(K⊕opad || H(K⊕ipad || m))`). Le nom du challenge — « secure » — est l'ironie du sujet.
 
 ## Pièges
+
 - **Longueur du secret** : `secret_length` doit valoir exactement 32. C'est la cause d'échec la plus
   fréquente : message forgé syntaxiquement correct, MAC invalide.
 - **Parser qui filtre** : si le serveur rejette le message forgé, vérifier son traitement des octets

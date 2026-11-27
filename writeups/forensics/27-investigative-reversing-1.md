@@ -43,10 +43,6 @@ Reconstruction : `academy{An0tha_1_1730fa2f}`.
 academy{An0tha_1_1730fa2f}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.sh`](../../solve/27/solve.sh)

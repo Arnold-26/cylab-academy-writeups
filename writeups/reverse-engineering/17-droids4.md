@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #17 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **emulation du StringBuilder + XOR natif**.
@@ -17,10 +13,6 @@ Méthode : **emulation du StringBuilder + XOR natif**.
 ```
 academy{not.particularly.silly}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #183 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **interpretation a la main d'un .S ARM**.
@@ -17,10 +13,6 @@ Le source ARM64 `chall_4.S` : `main` appelle `func1(atoi(argv[1]))` avec a=96527
 ```
 academy{3988daab}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

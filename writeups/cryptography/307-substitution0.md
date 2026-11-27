@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #307 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **substitution monoalphabetique**.
@@ -17,7 +13,3 @@ La premiere ligne du fichier est l'alphabet de substitution (26 lettres) : A->D,
 ```
 academy{5UB5717U710N_3V0LU710N_6A8C4822}
 ```
-
-## Ce qu'il faut retenir
-
-—

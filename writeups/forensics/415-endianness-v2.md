@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #415 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion d'endianness par blocs de 4**.
@@ -17,10 +13,6 @@ Le fichier provient d'un systeme 32 bits qui a organise les octets a l'envers : 
 ```
 academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

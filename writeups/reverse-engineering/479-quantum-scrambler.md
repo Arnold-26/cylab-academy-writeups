@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #479 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion tracee du scramble**.
@@ -17,7 +13,3 @@ Méthode : **inversion tracee du scramble**.
 ```
 academy{python_is_weirdade7472a}
 ```
-
-## Ce qu'il faut retenir
-
-—

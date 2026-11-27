@@ -73,10 +73,6 @@ Le binaire repond `Success`. 30 lignes de Python contre une session de debugger.
 academy{t1mingS1deChann3l_c55b1a90e29d2f}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/149/solve.py)

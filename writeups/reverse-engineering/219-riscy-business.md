@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #219 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **RC4 avec cle = les 8 premiers octets de l'entree**.
@@ -17,10 +13,6 @@ Binaire **RISC-V** statique stripped, execute avec `qemu-riscv64`. Le desassembl
 ```
 picoCTF{4ny0n3_g0t_r1scv_h4rdw4r3?_LGUfwl8xyMUlpgvz}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

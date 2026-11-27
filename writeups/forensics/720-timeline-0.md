@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Forensics
 
 ## Énoncé
+
 « Can you find the flag in this disk image? Wrap what you find in the picoCTF flag format. »
 
 L'image fournie est `partition4.img.gz`, une image disque compressée. Il faut y retrouver le flag,
@@ -88,6 +89,7 @@ que l'anomalie saute aux yeux d'une chronologie triée : la manipulation d'horod
 l'invitation, pas la cachette.
 
 ## Pièges
+
 - **Timezone** : `mactime` affiche en UTC par défaut. Utiliser `-z` (ou fixer `TZ`) avant de conclure
   qu'une date « ne colle pas » — un décalage de quelques heures n'est pas une anomalie, un écart de
   36 ans oui.

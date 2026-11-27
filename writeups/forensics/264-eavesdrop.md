@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #264 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **pcap -> mot de passe -> openssl des3**.

@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #112 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **reparation d'entete BMP (hauteur)**.
@@ -17,7 +13,3 @@ Méthode : **reparation d'entete BMP (hauteur)**.
 ```
 academy{qu1t3_a_v13w_2020}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -18,10 +18,6 @@ Image disque ext4 (489 Mo apres gunzip de `timeline-1-partition4.img.gz`). L'eno
 academy{573417h13r_7h4n_7h3_1457_58527bb222}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/721/solve.py)

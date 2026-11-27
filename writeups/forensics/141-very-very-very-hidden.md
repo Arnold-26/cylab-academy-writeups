@@ -18,10 +18,6 @@ Le pcap contient du TLS et du HTTP en clair ; `tshark --export-objects http` en 
 academy{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/141/solve.py)

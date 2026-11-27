@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Reverse Engineering
 
 ## Énoncé
+
 « The executable was designed to send the flag to someone. Are you that someone? »
 
 `bin-ins4.zip` (mot de passe `picoctf`) livre `bin-ins4.exe`, qui prétend envoyer le flag à un
@@ -107,6 +108,7 @@ contre zéro, on remplace la valeur, donc le test réussit quel que soit l'entr�
 demande de connaître la clé ou l'adresse réelle.
 
 ## Pièges
+
 - **Structure `sockaddr_in`** : famille `u16`, port `u16` **réseau**, adresse sur 4 octets, puis 8
   octets de zéro. Un offset faux décale tout.
 - **Endianness du port** : l'erreur la plus fréquente. `writeU16(9867)` écrit en little-endian et

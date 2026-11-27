@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #348 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **pcap -> base64 partiel -> mot de passe zip**.

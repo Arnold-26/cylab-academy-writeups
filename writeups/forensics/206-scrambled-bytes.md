@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #206 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **seed PRNG + inversion de shuffle**.
@@ -17,10 +13,6 @@ Méthode : **seed PRNG + inversion de shuffle**.
 ```
 picoCTF{n0_t1m3_t0_w4st3_5hufflin9_ar0und}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

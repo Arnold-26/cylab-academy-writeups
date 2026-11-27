@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #416 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **evaluation statique des append conditionnels**.
@@ -17,7 +13,3 @@ Le binaire C++ construit le flag par une serie de `std::string::operator+=`, don
 ```
 academy{wELF_d0N3_mate_194ca125}
 ```
-
-## Ce qu'il faut retenir
-
-—

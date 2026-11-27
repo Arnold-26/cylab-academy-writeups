@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #422 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **oracle RSA + blindage + openssl**.
@@ -17,7 +13,3 @@ L'oracle expose E (chiffrer) et D (dechiffrer) mais **refuse** le chiffre du mot
 ```
 academy{su((3ss_(r@ck1ng_r3@_20373ec2}
 ```
-
-## Ce qu'il faut retenir
-
-—

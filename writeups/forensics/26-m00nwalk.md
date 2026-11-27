@@ -18,10 +18,6 @@ Technique : sstv (SSTV decoder) sur le wav fourni, puis lecture de l'image.
 picoCTF{beep_boop_im_in_space}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/26/solve.py)

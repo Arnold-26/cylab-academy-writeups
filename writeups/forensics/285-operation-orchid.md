@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #285 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **sleuthkit + openssl aes256**.
@@ -17,7 +13,3 @@ Image disque avec 3 partitions. Dans la 3e (offset 411648), `/root/.ash_history`
 ```
 academy{h4un71ng_p457_0b36d810}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #466 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **dechiffrement XOR du blockchain**.
@@ -17,7 +13,3 @@ Méthode : **dechiffrement XOR du blockchain**.
 ```
 academy{block_3SRhViRbT1qcX_XUjM0r49cH_qCzmJZzBK_d61a533f}
 ```
-
-## Ce qu'il faut retenir
-
-—

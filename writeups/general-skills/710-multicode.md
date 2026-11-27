@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 « We intercepted a suspiciously encoded message, but it's clearly hiding a flag. No encryption, just
 multiple layers of obfuscation. Can you peel back the layers and reveal the truth? »
 
@@ -98,6 +99,7 @@ C'est la différence de fond avec un chiffrement, où la clé est indispensable 
 l'algorithme.
 
 ## Pièges
+
 - **Le délimiteur de `From Hex`** : en laissant la valeur par défaut (espace), CyberChef ne décode
   qu'une partie de la chaîne, ou rien. Il faut `None`.
 - **Le `=` final** : c'est du padding base64, pas un caractère du message. Le conserver lors des

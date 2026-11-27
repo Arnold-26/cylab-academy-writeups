@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #522 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **racine e-ieme exacte**.
@@ -17,7 +13,3 @@ Méthode : **racine e-ieme exacte**.
 ```
 academy{t1ny_e_0afbc467}
 ```
-
-## Ce qu'il faut retenir
-
-—

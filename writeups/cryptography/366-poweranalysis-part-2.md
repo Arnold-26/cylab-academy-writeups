@@ -50,13 +50,8 @@ KEY: 290fda44a3d9bd690a8dba3e760f5a7e
 - Toujours garder la contrainte *complete* (`f(v,k)` ET `f(0,k)`), sinon on garde des faux
   candidats : c'est ce qui fait la difference entre 9 requetes et 256.
 
-
 ## Flag
 
 ```
 academy{290fda44a3d9bd690a8dba3e760f5a7e}
 ```
-
-## Ce qu'il faut retenir
-
-—

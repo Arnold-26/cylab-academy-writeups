@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Reverse Engineering
 
 ## Énoncé
+
 « The executable was designed to write the flag but it seems like a few things went wrong. Can you
 find a way to get it to work? »
 
@@ -100,6 +101,7 @@ outils : il ne détruit pas la charge utile, il invalide sa description. En hook
 déclenche l'effacement, on prend la copie une instruction trop tôt.
 
 ## Pièges
+
 - **Dumper trop tard** : après le transfert, l'en-tête est à zéro et le dump inutilisable. Le hook va
   sur la routine d'effacement, en `onEnter`.
 - **Dumper trop court** : sans `SizeOfImage`, on copie une taille arbitraire et on tronque la dernière

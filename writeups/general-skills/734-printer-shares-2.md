@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 « A Secure Printer is now in use. I'm confident no one can leak the message again... or can you? »
 
 Suite de *Printer Shares* : le service expose du partage de fichiers SMB, et il faut retrouver le
@@ -108,6 +109,7 @@ rockyou en quelques secondes. Le leurre des fichiers parasites, lui, ne protège
 seulement le temps de l'analyste.
 
 ## Pièges
+
 - **S'acharner avec `hydra`** : une erreur de protocole et non un refus d'authentification signale un
   problème de version SMB, pas un mauvais mot de passe. Basculer sur NetExec ou `smbclient`.
 - **`--ignore-pw-decoding`** : sans cette option, certains candidats sont altérés avant l'envoi, ce

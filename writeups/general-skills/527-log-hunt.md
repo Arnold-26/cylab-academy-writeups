@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #527 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **fragments de log**.
@@ -17,7 +13,3 @@ Le fichier `server.log` contient 27 lignes `FLAGPART:` mais seulement **4 fragme
 ```
 academy{us3_y0urlinux_sk1lls_cedfa5fb}
 ```
-
-## Ce qu'il faut retenir
-
-—

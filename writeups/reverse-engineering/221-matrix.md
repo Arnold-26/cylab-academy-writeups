@@ -18,10 +18,6 @@ Le binaire est une **VM a pile** faite main : un dispatch sur un octet d'opcode,
 picoCTF{y0uv3_3sc4p3d_th3_m4ze...f0r_n0w-hYkq2D9PmrA5GpEq}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/221/solve.py)

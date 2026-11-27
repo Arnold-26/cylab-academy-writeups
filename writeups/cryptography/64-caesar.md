@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #64 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **caesar : brute force + score**.
@@ -17,7 +13,3 @@ Le fichier contient DEJA la forme `academy{...}` — mais l'interieur est le tex
 ```
 academy{crossingtherubiconulqcojpd}
 ```
-
-## Ce qu'il faut retenir
-
-—

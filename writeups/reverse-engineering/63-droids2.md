@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #63 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **reassemblage smali + XOR natif (helper oregano)**.
@@ -17,7 +13,3 @@ Méthode : **reassemblage smali + XOR natif (helper oregano)**.
 ```
 academy{what.is.your.favourite.colour}
 ```
-
-## Ce qu'il faut retenir
-
-—

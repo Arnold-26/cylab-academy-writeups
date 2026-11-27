@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #322 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **grep recursif dans une archive**.
@@ -17,7 +13,3 @@ L'archive contient 8 732 fichiers `.txt` repartis dans des dossiers aux noms ale
 ```
 academy{gr3p_15_m4g1c_ef8790dc}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -49,13 +49,8 @@ for i in range(16):
     key[i] = corr.max(axis=1).argmax()
 ```
 
-
 ## Flag
 
 ```
 academy{ec1e6ecea34de3c3d1c81789bf49e482}
 ```
-
-## Ce qu'il faut retenir
-
-—

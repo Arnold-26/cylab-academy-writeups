@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #294 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **base64 dans la source Java**.
@@ -17,7 +13,3 @@ Technique : base64 dans la source Java.
 ```
 academy{pl3as3_l3t_m3_1nt0_th3_saf3}
 ```
-
-## Ce qu'il faut retenir
-
-—

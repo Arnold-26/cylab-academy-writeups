@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #14 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **XOR répétitif clé=mot de passe dans la lib native**.
@@ -17,10 +13,6 @@ Le mot de passe est la ressource `password` = **`opossum`**. `fenugreek(input)` 
 ```
 academy{pining.for.the.fjords}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

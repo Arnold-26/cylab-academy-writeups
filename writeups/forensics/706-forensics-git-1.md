@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #706 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **objet git supprime (historique)**.
@@ -17,10 +13,6 @@ Image disque de 1 Go (racine a l'offset 1140736). Le depot git contient 5 objets
 ```
 academy{g17_r3m3mb3r5_d4ddf904}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

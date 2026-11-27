@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #127 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **oracle de compression (CRIME)**.
@@ -17,7 +13,3 @@ Le service compresse (`zlib`) le flag concatene a notre entree puis chiffre en A
 ```
 academy{sheriff_you_solved_the_crime}
 ```
-
-## Ce qu'il faut retenir
-
-—

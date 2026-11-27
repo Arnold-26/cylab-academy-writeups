@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #51 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **stegano par espaces Unicode**.
@@ -17,7 +13,3 @@ Le fichier ne contient que deux caracteres : l'espace normal (U+0020) et l'espac
 ```
 academy{not_all_spaces_are_created_equal_d4c2f3dcae81af992c8e86ddecdf2dd5}
 ```
-
-## Ce qu'il faut retenir
-
-—

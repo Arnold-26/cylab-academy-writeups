@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 « Can you read the flag? I think you can! »
 
 Accès SSH à la machine du challenge, avec un `flag.txt` dans le répertoire de l'utilisateur. Le titre
@@ -93,6 +94,7 @@ accorde donc, en pratique, un accès root complet. C'est la raison pour laquelle
 de fichiers : ce sont tous des binaires qui peuvent en lancer d'autres.
 
 ## Pièges
+
 - **`sudo emacs` sans chemin** : la règle porte sur `/bin/emacs`. Si le `PATH` résout `emacs` vers un
   autre binaire, `sudo` refuse. Utiliser le chemin exact.
 - **Pas de PTY** : `sudo emacs` en mode interactif échoue avec « terminal is not fully functional ».

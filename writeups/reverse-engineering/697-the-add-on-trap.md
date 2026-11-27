@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Reverse Engineering
 
 ## Énoncé
+
 « What kind of information can an Add/On reach? Is it possible to exfiltrate them without you
 noticing? »
 
@@ -94,6 +95,7 @@ sécurité d'un add-on repose sur la confiance dans le code livré, jamais sur u
 l'intérieur de ce code.
 
 ## Pièges
+
 - **Ne pas s'arrêter au premier `unzip`** : le `.xpi` est une archive imbriquée. Sans la seconde
   extraction, on n'a qu'un blob et on passe à côté des sources.
 - **Le faux flag** : la constante base64 décodée ressemble à une réponse complète. Sa longueur de

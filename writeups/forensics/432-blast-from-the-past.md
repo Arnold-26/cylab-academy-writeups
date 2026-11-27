@@ -18,10 +18,6 @@ Challenge interactif : il faut soumettre une image MODIFIEE. `nc -w 2 <host> 112
 academy{71m3_7r4v311ng_p1c7ur3_9490a52b}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/432/solve.py)

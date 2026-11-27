@@ -18,10 +18,6 @@ Meme famille que 13 : le binaire `investigative-reversing-3-mystery` (PIE, non s
 academy{4n0th3r_L5b_pr0bl3m_00000000000001eb97d9c}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/83/solve.py)

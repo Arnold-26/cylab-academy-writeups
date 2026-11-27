@@ -18,10 +18,6 @@ Le pcap fourni (64 Mo, format pcapng) ne contient **aucun trafic BitTorrent en c
 academy{ubuntu-19.10-desktop-amd64.iso}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/311/solve.py)

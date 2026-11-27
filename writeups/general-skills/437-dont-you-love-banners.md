@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #437 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **symlink sur le banner root**.
@@ -17,7 +13,3 @@ Le port SSH fuit le mot de passe dans sa banniere (`My_Passw@rd_@1234`). Le port
 ```
 academy{b4nn3r_gr4bb1n9_su((3sfu11y_5f2334f1}
 ```
-
-## Ce qu'il faut retenir
-
-—

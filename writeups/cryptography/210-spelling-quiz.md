@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #210 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **substitution + vote majoritaire**.
@@ -17,7 +13,3 @@ Méthode : **substitution + vote majoritaire**.
 ```
 picoCTF{perhaps_the_dog_jumped_over_was_just_tired}
 ```
-
-## Ce qu'il faut retenir
-
-—

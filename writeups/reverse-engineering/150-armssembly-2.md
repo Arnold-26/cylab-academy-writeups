@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #150 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **lecture d'assemblee ARM**.
@@ -17,7 +13,3 @@ Méthode : **lecture d'assemblee ARM**.
 ```
 academy{e815ef32}
 ```
-
-## Ce qu'il faut retenir
-
-—

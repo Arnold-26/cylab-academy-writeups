@@ -18,10 +18,6 @@ Executable Windows 32 bits protege par zip, mot de passe **`academy`** (donne da
 academy{d3bug_f0r_th3_Win_0x100_411bc019}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/429/solve.py)

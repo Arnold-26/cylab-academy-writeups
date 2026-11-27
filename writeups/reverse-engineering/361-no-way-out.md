@@ -17,7 +17,3 @@ Jeu Unity fourni ; en explorant les fichiers (assets, Assembly-CSharp.dll) ou en
 ```
 academy{WELCOME_TO_UNITY!!}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #110 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **exfiltration DNS base64**.
@@ -17,7 +13,3 @@ Le pcap contient une **exfiltration DNS** : chaque requete vers `<base64>.reddsh
 ```
 academy{dns_3xf1l_ftw_deadbeef}
 ```
-
-## Ce qu'il faut retenir
-
-—

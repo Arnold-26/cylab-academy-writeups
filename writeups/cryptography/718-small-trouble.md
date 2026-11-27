@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #718 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **d petit -> Wiener**.
@@ -17,7 +13,3 @@ Méthode : **d petit -> Wiener**.
 ```
 academy{sm4ll_d_c0409804}
 ```
-
-## Ce qu'il faut retenir
-
-—

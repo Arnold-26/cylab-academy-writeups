@@ -18,10 +18,6 @@ Binaire 64 bits non-PIE, 16 Ko. `main` lit un mot de passe avec `fgets` puis app
 academy{0n3_bi7_4t_a_7im3}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/458/solve.py)

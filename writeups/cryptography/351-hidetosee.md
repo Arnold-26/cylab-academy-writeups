@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #351 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **steghide + atbash**.

@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #242 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **eval de l'expression Python**.
@@ -17,7 +13,3 @@ Le service renvoie `'academy{gl17ch_m3_n07_' + chr(0x63) + ... + '}'` : ce n'est
 ```
 academy{gl17ch_m3_n07_cbc18a24}
 ```
-
-## Ce qu'il faut retenir
-
-—

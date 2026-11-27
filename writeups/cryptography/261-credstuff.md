@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #261 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **index parallele + ROT13**.
@@ -17,7 +13,3 @@ Méthode : **index parallele + ROT13**.
 ```
 academy{C7r1F_54V35_71M3}
 ```
-
-## Ce qu'il faut retenir
-
-—

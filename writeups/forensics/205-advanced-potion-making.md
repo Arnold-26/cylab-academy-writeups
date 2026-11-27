@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #205 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **en-tete PNG + plan LSB**.
@@ -17,7 +13,3 @@ Le fichier a un en-tete PNG corrompu (`89 50 42 11 ...` au lieu de `89 50 4E 47 
 ```
 picoCTF{w1z4rdry}
 ```
-
-## Ce qu'il faut retenir
-
-—

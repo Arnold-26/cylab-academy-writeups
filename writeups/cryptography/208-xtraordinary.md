@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #208 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **XOR avec chaines connues + cle repetee**.
@@ -17,7 +13,3 @@ Le flag est XORe avec une cle secrete, puis avec 10 chaines connues un nombre al
 ```
 picoCTF{w41t_s0_1_d1dnt_1nv3nt_x0r???}
 ```
-
-## Ce qu'il faut retenir
-
-—

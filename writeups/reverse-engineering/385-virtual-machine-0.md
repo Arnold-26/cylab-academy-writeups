@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #385 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **ratio d'engrenages LEGO -> hex -> ASCII**.
@@ -17,10 +13,6 @@ Le zip contient `Virtual-Machine-0.dae`, un modele **COLLADA** d'un train d'engr
 ```
 academy{g34r5_0f_m0r3_c95d6542}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

@@ -18,10 +18,6 @@ Le generateur fourni (`token_generator.py`, 45 lignes) fait `random.seed(int(tim
 academy{UseSecure#$_Random@j3n3r@T0rs02d049c1}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/468/solve.py)

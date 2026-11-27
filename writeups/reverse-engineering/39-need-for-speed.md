@@ -18,10 +18,6 @@ Binaire ELF 64 bits PIE de 16,5 Ko, sans service : le flag est **dans le binaire
 academy{Good job keeping bus #31326f14 speeding along!}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/39/solve.py)

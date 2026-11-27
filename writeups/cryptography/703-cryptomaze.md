@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #703 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **LFSR -> cle AES**.
@@ -17,7 +13,3 @@ L'LFSR 64 bits (taps 63/61/60/58) est initialise avec l'etat donne. En generant 
 ```
 academy{scr8mbledt_flvg_b9b9bd42}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #271 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **charAt extraits du bytecode**.
@@ -17,7 +13,3 @@ Méthode : **charAt extraits du bytecode**.
 ```
 academy{700l1ng_r3qu1r3d_5e462060}
 ```
-
-## Ce qu'il faut retenir
-
-—

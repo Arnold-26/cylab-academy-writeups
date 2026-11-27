@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #316 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **vigenere cle CYLAB**.
@@ -17,7 +13,3 @@ Le fichier `cipher.txt` contient `caldfow{...}` et l'enonce donne la cle **CYLAB
 ```
 academy{D0NT_US3_V1G3N3R3_C1PH3R_42ccuf9c}
 ```
-
-## Ce qu'il faut retenir
-
-—

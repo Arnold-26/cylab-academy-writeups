@@ -17,7 +17,3 @@ RSA avec un exposant d'chiffrement faible et un message court : le chiffre peut 
 ```
 academy{1_c4n'7_b3l13v3_17'5_n07_f4ul7_4774ck!!!}
 ```
-
-## Ce qu'il faut retenir
-
-—

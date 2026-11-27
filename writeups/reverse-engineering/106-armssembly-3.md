@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #106 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **lecture d'assemblee ARM**.
@@ -17,7 +13,3 @@ Méthode : **lecture d'assemblee ARM**.
 ```
 academy{00000024}
 ```
-
-## Ce qu'il faut retenir
-
-—

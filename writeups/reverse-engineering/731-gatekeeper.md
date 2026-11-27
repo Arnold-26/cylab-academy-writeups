@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Reverse Engineering
 
 ## Énoncé
+
 « What's behind the numeric gate? You only get access if you enter the right kind of number. »
 
 Le binaire `gatekeeper` est fourni. Il faut inverser ses contrôles numériques et fournir la valeur
@@ -101,6 +102,7 @@ simultanément. C'est un cas d'école : valider la longueur d'une entrée avant 
 mauvaise pratique, car la longueur de la représentation ne borne pas la valeur.
 
 ## Pièges
+
 - **Penser décimal** : la première impasse consiste à chercher un nombre à trois chiffres supérieur à
   999. Il n'en existe pas — c'est le signal qu'il faut changer de base, pas de valeur.
 - **`0x3e8`** : avec le préfixe, on dépasse la longueur de 3. Le format doit être nu.

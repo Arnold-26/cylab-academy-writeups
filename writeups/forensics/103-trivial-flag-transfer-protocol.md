@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #103 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **export TFTP + ROT13 + steghide**.
@@ -17,7 +13,3 @@ Le pcap contient du **TFTP**. `tshark --export-objects tftp` sort `plan`, `progr
 ```
 academy{h1dd3n_1n_pLa1n_51GHT_18375919}
 ```
-
-## Ce qu'il faut retenir
-
-—

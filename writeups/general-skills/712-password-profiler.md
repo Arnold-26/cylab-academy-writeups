@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : General Skills
 
 ## Énoncé
+
 Le fichier intercepté ne contient que le **SHA-1** d'un mot de passe — inexploitable directement,
 puisqu'un hash est à sens unique. Le challenge livre aussi des informations personnelles sur la
 cible. Trois fichiers : `userinfo.txt`, `hash.txt` et `check_password.py`. Il faut générer une
@@ -109,6 +110,7 @@ réduit par les informations personnelles. La wordlist ciblée transforme une re
 quelques secondes de calcul.
 
 ## Pièges
+
 - **Format de la date** : `DDMMYYYY` sans séparateur, sinon la wordlist ne contient pas le candidat.
 - **Nom du fichier** : `check_password.py` lit `passwords.txt`, pas `alice.txt`.
 - **Casse et séparateurs** : le mot de passe réel est `Aj`, pas `AJ`, et le `_` vient du générateur ;

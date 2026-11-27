@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #705 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **objets git decompresses (message de commit)**.
@@ -17,10 +13,6 @@ Image disque de 1 Go (3 partitions, racine a l'offset 1140736). Un depot git dan
 ```
 academy{g17_1n_7h3_d15k_041217d8}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

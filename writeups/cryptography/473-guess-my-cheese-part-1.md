@@ -18,10 +18,6 @@ Le service affiche un fromage secret chiffre et propose deux commandes : `g` (de
 academy{ChEeSy8b0897b1}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/473/solve.py)

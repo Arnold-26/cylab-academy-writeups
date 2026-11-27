@@ -18,10 +18,6 @@ Méthode : **attaque temporelle sur un PIN a 8 chiffres**.
 academy{t1m1ng_4tt4ck_55dcfc0f}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/298/solve.py)

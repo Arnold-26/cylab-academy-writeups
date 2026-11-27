@@ -18,10 +18,6 @@ Le zip (mot de passe `picoctf`) contient `suspicious.exe`, un PE32 **compresse U
 academy{yara_rul35_r0ckzzz_790c7af6}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/483/solve.py)

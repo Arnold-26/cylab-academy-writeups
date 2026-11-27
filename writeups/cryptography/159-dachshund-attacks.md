@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #159 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **attaque de Wiener sur petit d**.
@@ -17,7 +13,3 @@ Méthode : **attaque de Wiener sur petit d**.
 ```
 academy{proving_wiener_ffef507}
 ```
-
-## Ce qu'il faut retenir
-
-—

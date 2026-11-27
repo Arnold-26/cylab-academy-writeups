@@ -18,10 +18,6 @@ Image disque de 1 Go (MBR, 3 partitions : boot, swap, racine Alpine). Ma premier
 academy{1_533_n4m35_a1eed517}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/413/solve.py)

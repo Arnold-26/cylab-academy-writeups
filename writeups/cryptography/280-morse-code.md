@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #280 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **morse audio (enveloppe d'energie)**.
@@ -17,7 +13,3 @@ Le fichier est un WAV de 28,9 s. `multimon-ng -a MORSE_CW` donne un resultat bru
 ```
 academy{wh47_h47h_90d_w20u9h7}
 ```
-
-## Ce qu'il faut retenir
-
-—

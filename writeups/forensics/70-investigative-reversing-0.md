@@ -43,10 +43,6 @@ l'instance : il faut le decoder soi-meme, jamais recopier un writeup.
 academy{f0und_1t_924af30d}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/70/solve.py)

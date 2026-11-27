@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #42 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **TLS RSA decrypte (ssldump) + extraction JPEG**.
@@ -17,7 +13,3 @@ TLS 1.2 RSA (`TLS_RSA_WITH_AES_256_GCM_SHA384`). tshark 4.6 a supprime la liste 
 ```
 academy{honey.roasted.peanuts}
 ```
-
-## Ce qu'il faut retenir
-
-—

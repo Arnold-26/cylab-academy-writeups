@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #268 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **chaine de 10 formats imbriques**.
@@ -17,7 +13,3 @@ Méthode : **chaine de 10 formats imbriques**.
 ```
 academy{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_35957b68}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #409 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion d'un Caesar par position**.
@@ -17,7 +13,3 @@ Le binaire construit une chaine cible (movabs) puis applique 3 fois une transfor
 ```
 academy{s0lv3_angry_symb0ls_08254898}
 ```
-
-## Ce qu'il faut retenir
-
-—

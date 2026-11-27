@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #92 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion de jumble + XOR**.
@@ -17,7 +13,3 @@ Méthode : **inversion de jumble + XOR**.
 ```
 academy{cust0m_jumbl3s_4r3nt_4_g0Od_1d3A_731cd140}
 ```
-
-## Ce qu'il faut retenir
-
-—

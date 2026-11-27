@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #472 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **injection au prompt Crowd**.
@@ -17,7 +13,3 @@ Le lecteur de paroles remplace la ligne CROWD par `'Crowd: ' + input` puis la re
 ```
 academy{70637h3r_f0r3v3r_697ad4d5}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #134 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **quantite negative**.
@@ -17,7 +13,3 @@ Boutique : on a 40 coins, le flag coute 100. En achetant une **quantite negative
 ```
 academy{b4d_brogrammer_0ca0fc368}
 ```
-
-## Ce qu'il faut retenir
-
-—

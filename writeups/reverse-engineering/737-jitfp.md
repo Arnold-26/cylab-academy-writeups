@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Reverse Engineering
 
 ## Énoncé
+
 « If we can crack the password checker on this remote host, we will be able to infiltrate deeper
 into this criminal organization. The catch is it only functions properly on the host on which we
 found it. »
@@ -105,6 +106,7 @@ indirect, on obtient la réponse à « lequel ? » au moment où elle est posée
 dynamique, on ne reconstruit pas la table : on l'observe.
 
 ## Pièges
+
 - **Analyser en local** : le binaire ne se comporte pas pareil ailleurs ; c'est l'énoncé qui le dit.
 - **Oublier la base PIE** : les pointeurs lus sont absolus et randomisés à chaque run ; les offsets se
   calculent par soustraction de la base.

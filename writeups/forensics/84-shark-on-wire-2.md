@@ -18,10 +18,6 @@ La capture contient 614 paquets UDP. Le piege est de chercher le flag dans les *
 academy{p1LLf3r3d_data_v1a_st3g0}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/84/solve.py)

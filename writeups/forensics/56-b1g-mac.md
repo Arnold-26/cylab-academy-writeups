@@ -18,10 +18,6 @@ L'archive contient `main.exe` (PE32 inutile ici, il lit un flag.txt absent du de
 academy{M4cTim35!}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/56/solve.py)

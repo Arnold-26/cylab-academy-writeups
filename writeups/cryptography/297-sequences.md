@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #297 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **exponentiation matricielle**.
@@ -17,10 +13,6 @@ La fonction est une **recurrence lineaire d'ordre 4** ; calculer m(2e7) par memo
 ```
 academy{b1g_numb3rs_f5b03a75}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

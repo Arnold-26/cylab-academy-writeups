@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #719 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **cle privee cachee dans l'EXIF**.
@@ -17,7 +13,3 @@ Méthode : **cle privee cachee dans l'EXIF**.
 ```
 academy{rs4_k3y_1n_1mg_d97b7bfb}
 ```
-
-## Ce qu'il faut retenir
-
-—

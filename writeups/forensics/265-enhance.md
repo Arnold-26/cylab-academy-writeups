@@ -17,7 +17,3 @@ Le fichier `drawing.flag.svg` est un SVG (XML). Le flag n'est pas dans les metad
 ```
 academy{3nh4nc3d_5b5e6f18}
 ```
-
-## Ce qu'il faut retenir
-
-—

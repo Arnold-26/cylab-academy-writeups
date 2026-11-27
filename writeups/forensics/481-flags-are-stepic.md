@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #481 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **steganographie avec l'outil stepic**.
@@ -17,10 +13,6 @@ Le site liste 246 drapeaux de pays. L'un d'eux (`upz.png`) contient un message c
 ```
 academy{fl4g_h45_fl4ga947c25f}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

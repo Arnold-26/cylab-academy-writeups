@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #61 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **quiz RSA interactif**.
@@ -17,7 +13,3 @@ Service nc qui pose 8 questions RSA. Il faut repondre Y/N puis la valeur : `n = 
 ```
 academy{wA8_th4t$_ill3aGal..oCFc4DC2a}
 ```
-
-## Ce qu'il faut retenir
-
-—

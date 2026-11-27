@@ -18,10 +18,6 @@ Binaire PIE 64 bits avec `secret` (0x1300, 71 octets) et **`indexTable`** (0x136
 t1m3f1i3500000000000a8bbc8ed
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/36/solve.py)

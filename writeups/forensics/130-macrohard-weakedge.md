@@ -2,10 +2,6 @@
 
 **Catégorie** : Forensics · **Challenge** : #130 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **fichier cache dans l'archive OOXML**.
@@ -17,7 +13,3 @@ Un `.pptm` est une archive ZIP. Le VBA (`ppt/vbaProject.bin`) contient un **leur
 ```
 academy{D1d_u_kn0w_ppts_r_z1p5}
 ```
-
-## Ce qu'il faut retenir
-
-—

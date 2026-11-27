@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #212 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **petit exposant + racine cubique**.
@@ -17,7 +13,3 @@ Méthode : **petit exposant + racine cubique**.
 ```
 picoCTF{1_gu3ss_p30pl3_p4d_m3ss4g3s_f0r_4_r34s0n}
 ```
-
-## Ce qu'il faut retenir
-
-—

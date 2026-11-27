@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Cryptography
 
 ## Énoncé
+
 `chall.py` et `output.txt` sont fournis. Le script implémente un schéma de partage de secret présenté
 comme une variante de Shamir — un « modified Shamir » — et `MASTER_KEY` chiffre le flag en AES-CBC.
 
@@ -105,6 +106,7 @@ le nombre de points publiés, mais l'absence d'uniformité des coefficients : un
 dans `[0, p[`, ce qui rend ce type d'attaque inopérant.
 
 ## Pièges
+
 - **Re-hacher la clé** : `MASTER_KEY` est **déjà** un digest SHA-256. Un `sha256()` de plus donne un
   clair aléatoire. C'est l'erreur la plus coûteuse en temps.
 - **Endianness** : entier → octets en big-endian, sur exactement 32 octets.

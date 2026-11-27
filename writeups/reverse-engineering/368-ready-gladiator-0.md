@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #368 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **warrior suicide**.
@@ -17,7 +13,3 @@ CoreWars : l'adversaire est l'Imp. Pour perdre a coup sur sans match nul, on sou
 ```
 academy{h3r0_t0_z3r0_4m1r1gh7_327705a1}
 ```
-
-## Ce qu'il faut retenir
-
-—

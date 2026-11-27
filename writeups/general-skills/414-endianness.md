@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #414 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **conversion little/big endian**.
@@ -17,7 +13,3 @@ Service nc : il donne un mot de 5 lettres, demande sa representation **little en
 ```
 academy{3ndi4n_sw4p_su33ess_5da2acc3}
 ```
-
-## Ce qu'il faut retenir
-
-—

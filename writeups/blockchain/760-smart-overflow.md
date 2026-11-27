@@ -18,10 +18,6 @@ Contrat `IntOverflowBank` en **Solidity `^0.6.12`** : avant 0.8, les operations 
 academy{Sm4r7_OverFL0ws_ExI5t_bfaa16cd}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/760/solve.py)

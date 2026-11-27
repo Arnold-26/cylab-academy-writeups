@@ -68,10 +68,6 @@ academy{cHeEsY1e5a870a}
 academy{cHeEsY1e5a870a}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/474/solve.py)

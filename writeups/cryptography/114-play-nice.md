@@ -18,10 +18,6 @@ Le service imprime en clair l'**alphabet** (36 caracteres, carre 6x6) qui sert d
 8fc275985377ab6a0d9aa40eeaa7dd29
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/114/solve.py)

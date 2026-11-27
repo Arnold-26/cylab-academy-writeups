@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #410 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **branches git**.
@@ -17,7 +13,3 @@ Le depot a trois branches `feature/part-1/2/3`. Chacune contient un morceau du f
 ```
 academy{t3@mw0rk_m@k3s_th3_dr3@m_w0rk_f92d3827}
 ```
-
-## Ce qu'il faut retenir
-
-—

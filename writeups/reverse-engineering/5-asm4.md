@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #5 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **lecture d'assemblee**.
@@ -17,7 +13,3 @@ Méthode : **lecture d'assemblee**.
 ```
 0x244
 ```
-
-## Ce qu'il faut retenir
-
-—

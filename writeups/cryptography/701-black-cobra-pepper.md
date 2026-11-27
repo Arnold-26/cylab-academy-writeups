@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #701 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **AES lineaire -> algebre GF(2)**.
@@ -17,7 +13,3 @@ Dans `chall.py`, `sub_bytes` et `rcon` sont des **identites** : le chiffrement d
 ```
 academy{spi1cy!}
 ```
-
-## Ce qu'il faut retenir
-
-—

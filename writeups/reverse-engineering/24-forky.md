@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #24 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **analyse de fork + mmap partage**.
@@ -17,10 +13,6 @@ Le programme `mmap` une zone **partagee** initialisee a 0x3B9ACA00 (1000000000),
 ```
 academy{-721750240}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

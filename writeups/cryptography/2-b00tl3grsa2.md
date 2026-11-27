@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #2 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **e et d inverses**.
@@ -17,7 +13,3 @@ Le service affiche un `e` de 1024 bits : c'est en realite **d**. Le vrai exposan
 ```
 academy{bad_1d3a5_1972548}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -43,10 +43,6 @@ initialise) : couper au premier `}`.
 academy{n3xt_0n30000000000000000000000000c4bf77ad}
 ```
 
-## Ce qu'il faut retenir
-
-—
-
 ## Scripts
 
 - [`solve.py`](../../solve/13/solve.py)

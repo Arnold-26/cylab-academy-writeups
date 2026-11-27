@@ -11,8 +11,6 @@
 
 Méthode : **strings**.
 
-
-
 ## Flag
 
 ```

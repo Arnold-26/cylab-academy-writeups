@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #10 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **inversion des swaps de bits**.
@@ -17,7 +13,3 @@ Technique : inversion des swaps de bits.
 ```
 academy{s0m3_m0r3_b1t_sh1fTiNg_610868aba}
 ```
-
-## Ce qu'il faut retenir
-
-—

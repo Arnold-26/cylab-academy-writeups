@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #276 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **extraction de la chaine attendue par gdb**.
@@ -17,10 +13,6 @@ Méthode : **extraction de la chaine attendue par gdb**.
 ```
 academy{br1ng_y0ur_0wn_k3y_bb724f88}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

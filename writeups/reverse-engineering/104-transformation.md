@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #104 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **decodage 16 bits**.
@@ -17,7 +13,3 @@ Le fichier `enc` contient un caractere par paire d'octets du flag : `chr((ord(fl
 ```
 academy{16_bits_inst34d_of_8_790ba37e}
 ```
-
-## Ce qu'il faut retenir
-
-—

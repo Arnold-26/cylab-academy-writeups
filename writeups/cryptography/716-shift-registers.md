@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #716 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **bruteforce LFSR 8 bits**.
@@ -17,7 +13,3 @@ Méthode : **bruteforce LFSR 8 bits**.
 ```
 academy{l1n3ar_f33dback_sh1ft_r3g}
 ```
-
-## Ce qu'il faut retenir
-
-—

@@ -2,10 +2,6 @@
 
 **Catégorie** : Reverse Engineering · **Challenge** : #111 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **resolution algebrique de l'assembleur ARM**.
@@ -17,7 +13,3 @@ Méthode : **resolution algebrique de l'assembleur ARM**.
 ```
 academy{00000014}
 ```
-
-## Ce qu'il faut retenir
-
-—

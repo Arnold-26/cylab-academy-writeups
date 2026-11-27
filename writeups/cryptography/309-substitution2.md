@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #309 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **hill-climbing quadgrammes + alignement**.
@@ -17,7 +13,3 @@ Substitution monoalphabetique sans ponctuation. J'ai ecrit un solveur par hill-c
 ```
 academy{N6R4M_4N41Y515_15_73D10U5_9F106B2E}
 ```
-
-## Ce qu'il faut retenir
-
-—

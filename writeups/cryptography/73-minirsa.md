@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #73 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **petit exposant + balayage de k**.
@@ -17,7 +13,3 @@ Méthode : **petit exposant + balayage de k**.
 ```
 academy{n33d_a_lArg3r_e_1106c382}
 ```
-
-## Ce qu'il faut retenir
-
-—

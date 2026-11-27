@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #40 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **geolocalisation -> initiales**.
@@ -17,7 +13,3 @@ Le fichier contient 12 paires de coordonnees. Chacune correspond a une ville ; l
 ```
 academy{KODIAK_ALASKA}
 ```
-
-## Ce qu'il faut retenir
-
-—

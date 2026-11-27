@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #6 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **factorisation RSA (Pollard rho)**.
@@ -17,7 +13,3 @@ Le certificat X.509 a un module RSA de **53 bits** seulement (`4966306421059967`
 ```
 academy{73176001,67867967}
 ```
-
-## Ce qu'il faut retenir
-
-—

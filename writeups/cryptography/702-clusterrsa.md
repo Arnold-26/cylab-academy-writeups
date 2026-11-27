@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #702 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **RSA multiprime (4 facteurs)**.
@@ -17,7 +13,3 @@ Le module `n` a **4 facteurs premiers** (RSA multiprime). factordb les donne, on
 ```
 academy{mul71_rsa_411fc267}
 ```
-
-## Ce qu'il faut retenir
-
-—

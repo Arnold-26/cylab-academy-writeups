@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #475 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **craquage MD5/SHA1/SHA256**.
@@ -17,7 +13,3 @@ Le service demande de casser trois hashes successifs : MD5 `482c811da5d5b4bc6d49
 ```
 academy{UseStr0nG_h@shEs_&PaSswDs!_062c2b77}
 ```
-
-## Ce qu'il faut retenir
-
-—

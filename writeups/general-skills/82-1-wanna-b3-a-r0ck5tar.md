@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #82 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **programme Rockstar -> ASCII**.
@@ -17,7 +13,3 @@ Second programme **Rockstar** deguise en paroles ; l'execution donne le mot BONJ
 ```
 academy{BONJOVI}
 ```
-
-## Ce qu'il faut retenir
-
-—

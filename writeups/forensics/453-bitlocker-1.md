@@ -17,7 +17,3 @@ Image disque BitLocker de 100 Mo. `cryptsetup bitlkDump` lit les metadonnees san
 ```
 academy{us3_b3tt3r_p4ssw0rd5_pl5!_3242adb1}
 ```
-
-## Ce qu'il faut retenir
-
-—

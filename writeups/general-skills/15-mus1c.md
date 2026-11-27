@@ -2,10 +2,6 @@
 
 **Catégorie** : General Skills · **Challenge** : #15 · **Résolu le** : 2026-11-23
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **programme Rockstar -> ASCII**.
@@ -17,7 +13,3 @@ Les paroles sont un programme **Rockstar** : execute, il emet une suite de nombr
 ```
 academy{rrrocknrn0113r}
 ```
-
-## Ce qu'il faut retenir
-
-—

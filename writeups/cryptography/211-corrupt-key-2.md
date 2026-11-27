@@ -17,7 +17,3 @@ La cle privee a ete partiellement effacee (champs mis a zero). `openssl asn1pars
 ```
 picoCTF{1d68da1447328c3f11541d076c9c613957d86566}
 ```
-
-## Ce qu'il faut retenir
-
-—

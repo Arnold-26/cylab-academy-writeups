@@ -2,10 +2,6 @@
 
 **Catégorie** : Cryptography · **Challenge** : #148 · **Résolu le** : 2026-11-24
 
-## Énoncé
-
-> —
-
 ## Résolution
 
 Méthode : **cryptanalyse par contraintes de format**.
@@ -17,10 +13,6 @@ Chiffrement = **b16** (chaque octet encode en deux caracteres parmi 16) puis **V
 ```
 academy{468293b06253c715005873e333d98dbc}
 ```
-
-## Ce qu'il faut retenir
-
-—
 
 ## Scripts
 

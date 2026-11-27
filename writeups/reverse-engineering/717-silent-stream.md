@@ -3,6 +3,7 @@
 **Événement** : picoCTF 2026 · **Catégorie** : Reverse Engineering
 
 ## Énoncé
+
 « We recovered a suspicious packet capture file that seems to contain a transferred file. The sender
 was kind enough to also share the script they used to encode and send it. Can you reconstruct the
 original file? »
@@ -100,6 +101,7 @@ chiffrements à décalage : l'espace de clés est minuscule et vérifiable par f
 millisecondes.
 
 ## Pièges
+
 - **Ne pas dumper tout le PCAP** : les flux s'entremêlent et le résultat n'est pas un fichier. Il
   faut isoler un flux avant d'extraire les données.
 - **Affichage ASCII** : `Follow → TCP Stream` doit être en `Raw`. En ASCII, les octets non
