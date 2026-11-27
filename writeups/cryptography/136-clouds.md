@@ -1,4 +1,4 @@
-# 136 — Clouds (Cryptography)
+# Clouds
 
 **Catégorie** : Cryptography · **Challenge** : #136 · **Événement** : picoCTF 2021
 
@@ -6,7 +6,13 @@
 
 > Cloud watching is a lot of fun! There are so many different shapes you see in them, and so many different types. They even inspired me to dig up an old cipher I once found to store notes about them. See if you can decrypt them!
 
-Flag : `0b48d5adb3074b90` (le challenge précise : **pas** d'enveloppe `academy{}`)
+## Flag
+
+```
+0b48d5adb3074b90
+```
+
+(le challenge précise : **pas** d'enveloppe `academy{}`)
 
 ## Le chiffre : Nimbus (Furman)
 

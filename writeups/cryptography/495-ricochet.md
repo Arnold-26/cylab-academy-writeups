@@ -6,7 +6,13 @@
 
 > I bought this robot to help me locate flags, but the controller is stuck in a demo loop where the robot just goes in circles. Can you exploit the encryption between the controller to navigate the robot to the flag?
 
-Flag : `academy{r1gh7_84ck_47_y4_38227532}` (soumis, `correct=True`)
+## Flag
+
+```
+academy{r1gh7_84ck_47_y4_38227532}
+```
+
+(soumis, `correct=True`)
 
 Instance : `PUT /api/challenges/495/instance/` donne une URL HTTP avec `/radio_rx` (GET,
 **consomme** les messages), `/radio_tx` (POST), `/start`, `/stop`, `/state`.
