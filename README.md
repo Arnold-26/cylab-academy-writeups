@@ -5,7 +5,6 @@ CyLab Academy (re-hosting des challenges picoCTF 2019 → 2026, picoMini, AI Fou
 avec un writeup pour chacun.
 
 - **521 writeups**, un par challenge résolu, rangés par catégorie
-- les scripts de résolution de chaque challenge : [`solve/<id>/`](solve/)
 - index complet : [`INDEX.md`](INDEX.md)
 - structure : `writeups/<categorie>/<id>-<slug>.md`
 
@@ -29,8 +28,7 @@ jetables, les offsets recalculés trois fois, et parfois une nuit entière pour 
 Tout est rédigé après coup, avec les commandes réellement tapées et les pièges qui ont coûté
 du temps — c'est souvent là qu'on apprend le plus.
 
-Chaque fiche suit le même plan : **Énoncé · Analyse · Solution · Pièges · Flag · Scripts**,
-et pointe vers le code correspondant dans [`solve/`](solve/).
+Chaque fiche suit le même plan : **Énoncé · Analyse · Solution · Pièges · Flag**.
 
 ## Contribuer
 

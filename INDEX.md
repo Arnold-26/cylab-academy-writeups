@@ -1,6 +1,6 @@
 # Index des writeups
 
-`521` writeups pour `521` challenges résolus (CyLab Academy) · `solve/` contient les scripts de résolution.
+`521` writeups pour `521` challenges résolus (CyLab Academy).
 
 | id | challenge | catégorie | événement d'origine | writeup | code |
 |---:|---|---|---|---|---|
@@ -199,8 +199,8 @@
 | 220 | breadth | Reverse Engineering | picoMini by redpwn | [lire](writeups/reverse-engineering/220-breadth.md) | [6 fichier(s)](solve/220/) |
 | 221 | MATRIX | Reverse Engineering | picoMini by redpwn | [lire](writeups/reverse-engineering/221-matrix.md) | [4 fichier(s)](solve/221/) |
 | 222 | not crypto | Reverse Engineering | picoMini by redpwn | [lire](writeups/reverse-engineering/222-not-crypto.md) | [7 fichier(s)](solve/222/) |
-| 236 | JAuth | Web Exploitation | None | [lire](writeups/web-exploitation/236-jauth.md) | [7 fichier(s)](solve/236/) |
-| 237 | WPA-ing Out | Forensics | None | [lire](writeups/forensics/237-wpa-ing-out.md) | — |
+| 236 | JAuth | Web Exploitation |  | [lire](writeups/web-exploitation/236-jauth.md) | [7 fichier(s)](solve/236/) |
+| 237 | WPA-ing Out | Forensics |  | [lire](writeups/forensics/237-wpa-ing-out.md) | — |
 | 238 | Codebook | General Skills | Beginner picoMini 2022 | [lire](writeups/general-skills/238-codebook.md) | — |
 | 239 | convertme.py | General Skills | Beginner picoMini 2022 | [lire](writeups/general-skills/239-convertme.py.md) | — |
 | 240 | fixme1.py | General Skills | Beginner picoMini 2022 | [lire](writeups/general-skills/240-fixme1-py.md) | — |
@@ -278,8 +278,8 @@
 | 317 | wine | Binary Exploitation | picoCTF 2022 | [lire](writeups/binary-exploitation/317-wine.md) | [9 fichier(s)](solve/317/) |
 | 318 | Wizardlike | Reverse Engineering | picoCTF 2022 | [lire](writeups/reverse-engineering/318-wizardlike.md) | [1 fichier(s)](solve/318/) |
 | 319 | x-sixty-what | Binary Exploitation | picoCTF 2022 | [lire](writeups/binary-exploitation/319-x-sixty-what.md) | [3 fichier(s)](solve/319/) |
-| 320 | First Find | General Skills | None | [lire](writeups/general-skills/320-first-find.md) | — |
-| 322 | Big Zip | General Skills | None | [lire](writeups/general-skills/322-big-zip.md) | — |
+| 320 | First Find | General Skills |  | [lire](writeups/general-skills/320-first-find.md) | — |
+| 322 | Big Zip | General Skills |  | [lire](writeups/general-skills/322-big-zip.md) | — |
 | 345 | babygame01 | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/345-babygame01.md) | [10 fichier(s)](solve/345/) |
 | 346 | babygame02 | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/346-babygame02.md) | [19 fichier(s)](solve/346/) |
 | 347 | chrono | General Skills | picoCTF 2023 | [lire](writeups/general-skills/347-chrono.md) | — |
@@ -321,21 +321,21 @@
 | 385 | Virtual Machine 0 | Reverse Engineering | picoCTF 2023 | [lire](writeups/reverse-engineering/385-virtual-machine-0.md) | [3 fichier(s)](solve/385/) |
 | 386 | Virtual Machine 1 | Reverse Engineering | picoCTF 2023 | [lire](writeups/reverse-engineering/386-virtual-machine-1.md) | [5 fichier(s)](solve/386/) |
 | 387 | VNE | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/387-vne.md) | [7 fichier(s)](solve/387/) |
-| 389 | ASCII FTW | Reverse Engineering | None | [lire](writeups/reverse-engineering/389-ascii-ftw.md) | — |
-| 390 | ASCII Numbers | General Skills | None | [lire](writeups/general-skills/390-ascii-numbers.md) | — |
-| 391 | Bit-O-Asm-1 | Reverse Engineering | None | [lire](writeups/reverse-engineering/391-bit-o-asm-1.md) | — |
-| 392 | Bit-O-Asm-2 | Reverse Engineering | None | [lire](writeups/reverse-engineering/392-bit-o-asm-2.md) | — |
-| 393 | Bit-O-Asm-3 | Reverse Engineering | None | [lire](writeups/reverse-engineering/393-bit-o-asm-3.md) | — |
-| 394 | Bit-O-Asm-4 | Reverse Engineering | None | [lire](writeups/reverse-engineering/394-bit-o-asm-4.md) | — |
-| 395 | GDB baby step 1 | Reverse Engineering | None | [lire](writeups/reverse-engineering/395-gdb-baby-step-1.md) | — |
-| 396 | GDB baby step 2 | Reverse Engineering | None | [lire](writeups/reverse-engineering/396-gdb-baby-step-2.md) | — |
-| 397 | GDB baby step 3 | Reverse Engineering | None | [lire](writeups/reverse-engineering/397-gdb-baby-step-3.md) | — |
-| 398 | GDB baby step 4 | Reverse Engineering | None | [lire](writeups/reverse-engineering/398-gdb-baby-step-4.md) | — |
-| 399 | Local Target | Binary Exploitation | None | [lire](writeups/binary-exploitation/399-local-target.md) | — |
-| 400 | Picker I | Reverse Engineering | None | [lire](writeups/reverse-engineering/400-picker-i.md) | — |
-| 401 | Picker II | Reverse Engineering | None | [lire](writeups/reverse-engineering/401-picker-ii.md) | — |
-| 402 | Picker III | Reverse Engineering | None | [lire](writeups/reverse-engineering/402-picker-iii.md) | — |
-| 403 | Picker IV | Binary Exploitation | None | [lire](writeups/binary-exploitation/403-picker-iv.md) | — |
+| 389 | ASCII FTW | Reverse Engineering |  | [lire](writeups/reverse-engineering/389-ascii-ftw.md) | — |
+| 390 | ASCII Numbers | General Skills |  | [lire](writeups/general-skills/390-ascii-numbers.md) | — |
+| 391 | Bit-O-Asm-1 | Reverse Engineering |  | [lire](writeups/reverse-engineering/391-bit-o-asm-1.md) | — |
+| 392 | Bit-O-Asm-2 | Reverse Engineering |  | [lire](writeups/reverse-engineering/392-bit-o-asm-2.md) | — |
+| 393 | Bit-O-Asm-3 | Reverse Engineering |  | [lire](writeups/reverse-engineering/393-bit-o-asm-3.md) | — |
+| 394 | Bit-O-Asm-4 | Reverse Engineering |  | [lire](writeups/reverse-engineering/394-bit-o-asm-4.md) | — |
+| 395 | GDB baby step 1 | Reverse Engineering |  | [lire](writeups/reverse-engineering/395-gdb-baby-step-1.md) | — |
+| 396 | GDB baby step 2 | Reverse Engineering |  | [lire](writeups/reverse-engineering/396-gdb-baby-step-2.md) | — |
+| 397 | GDB baby step 3 | Reverse Engineering |  | [lire](writeups/reverse-engineering/397-gdb-baby-step-3.md) | — |
+| 398 | GDB baby step 4 | Reverse Engineering |  | [lire](writeups/reverse-engineering/398-gdb-baby-step-4.md) | — |
+| 399 | Local Target | Binary Exploitation |  | [lire](writeups/binary-exploitation/399-local-target.md) | — |
+| 400 | Picker I | Reverse Engineering |  | [lire](writeups/reverse-engineering/400-picker-i.md) | — |
+| 401 | Picker II | Reverse Engineering |  | [lire](writeups/reverse-engineering/401-picker-ii.md) | — |
+| 402 | Picker III | Reverse Engineering |  | [lire](writeups/reverse-engineering/402-picker-iii.md) | — |
+| 403 | Picker IV | Binary Exploitation |  | [lire](writeups/binary-exploitation/403-picker-iv.md) | — |
 | 404 | binhexa | General Skills | picoCTF 2024 | [lire](writeups/general-skills/404-binhexa.md) | — |
 | 405 | Blame Game | General Skills | picoCTF 2024 | [lire](writeups/general-skills/405-blame-game.md) | — |
 | 406 | Bookmarklet | Web Exploitation | picoCTF 2024 | [lire](writeups/web-exploitation/406-bookmarklet.md) | — |
@@ -424,9 +424,9 @@
 | 494 | Pachinko | Web Exploitation | picoCTF 2025 | [lire](writeups/web-exploitation/494-pachinko.md) | [13 fichier(s)](solve/494/) |
 | 495 | Ricochet | Cryptography | picoCTF 2025 | [lire](writeups/cryptography/495-ricochet.md) | [15 fichier(s)](solve/495/) |
 | 496 | secure-email-service | Web Exploitation | picoCTF 2025 | [lire](writeups/web-exploitation/496-secure-email-service.md) | [20 fichier(s)](solve/496/) |
-| 505 | DISKO 1 | Forensics | None | [lire](writeups/forensics/505-disko-1.md) | — |
-| 506 | DISKO 2 | Forensics | None | [lire](writeups/forensics/506-disko-2.md) | — |
-| 507 | DISKO 3 | Forensics | None | [lire](writeups/forensics/507-disko-3.md) | [2 fichier(s)](solve/507/) |
+| 505 | DISKO 1 | Forensics |  | [lire](writeups/forensics/505-disko-1.md) | — |
+| 506 | DISKO 2 | Forensics |  | [lire](writeups/forensics/506-disko-2.md) | — |
+| 507 | DISKO 3 | Forensics |  | [lire](writeups/forensics/507-disko-3.md) | [2 fichier(s)](solve/507/) |
 | 518 | byp4ss3d | Web Exploitation | picoMini by CMU-Africa | [lire](writeups/web-exploitation/518-byp4ss3d.md) | [8 fichier(s)](solve/518/) |
 | 519 | Corrupted file | Forensics | picoMini by CMU-Africa | [lire](writeups/forensics/519-corrupted-file.md) | — |
 | 520 | Crack the Gate 1 | Web Exploitation | picoMini by CMU-Africa | [lire](writeups/web-exploitation/520-crack-the-gate-1.md) | [6 fichier(s)](solve/520/) |
