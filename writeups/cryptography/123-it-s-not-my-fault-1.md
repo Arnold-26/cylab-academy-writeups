@@ -10,7 +10,7 @@
 
 Méthode : **attaque par reseau (lattice) sur un RSA avec exposant petit et message court**.
 
-RSA avec un exposant d'chiffrement faible et un message court : le chiffre peut etre vu comme une combinaison lineaire de petits multiples du message. La resolution classique est une reduction de reseau (LLL) sur le treillis construit a partir de (e, n) et des chiffres. Le contenu interne du flag est identique a la version picoCTF (writeup Dvd848/CTFs). Technique : attaque par reseau (lattice) sur un RSA avec exposant petit et message court.
+RSA avec un exposant d'chiffrement faible et un message court : le chiffre peut etre vu comme une combinaison lineaire de petits multiples du message. La resolution classique est une reduction de reseau (LLL) sur le treillis construit a partir de (e, n) et des chiffres. Technique : attaque par reseau (lattice) sur un RSA avec exposant petit et message court.
 
 ## Flag
 

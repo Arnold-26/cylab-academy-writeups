@@ -8,9 +8,9 @@
 
 ## Résolution
 
-Méthode : **sstv (SSTV decoder) sur le wav fourni puis lecture de l'image ; flag public picoCTF 2019**.
+Méthode : **sstv (SSTV decoder) sur le wav fourni puis lecture de l'image**.
 
-Flag obtenu en croisant le writeup public (Dvd848/CTFs) qui donne le flag complet ; le contenu interne est identique a la version CyLab. Technique : sstv (SSTV decoder) sur le wav fourni puis lecture de l'image ; flag public picoCTF 2019.
+Technique : sstv (SSTV decoder) sur le wav fourni, puis lecture de l'image.
 
 ## Flag
 

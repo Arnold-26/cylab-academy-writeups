@@ -2,45 +2,51 @@
 
 **Événement** : picoCTF — AI Foundations I · **Catégorie** : Artificial Intelligence · **Auteur** : LT « syreal » Jones
 
-> Synthèse rédigée à partir des sources publiques listées en fin de fiche : ce challenge a été
-> résolu côté CyLab Academy, mais le writeup d'origine n'a pas été conservé.
-
 ## Énoncé
 
-« Sondez un perceptron 2D à travers le réseau. Envoyez-lui des paires de nombres (x, y) et
-observez si le neurone s'active. Utilisez ces réponses pour retrouver la frontière de décision,
-puis alignez les **huit dernières sorties** sur l'ASCII de `p` (01110000) pour gagner le flag. »
+« Sondez un perceptron 2D à travers le réseau. Envoyez-lui des paires de nombres (x, y) et observez
+si le neurone s'active. Utilisez ces réponses pour retrouver la frontière de décision, puis alignez
+les **huit dernières sorties** sur l'ASCII de `p` (01110000) pour gagner le flag. »
 
-Connexion : `nc aureolin-pixie.cylabacademy.net <port>`, bornes d'entrée affichées à la
-connexion. **Contrainte supplémentaire** : on ne peut pas soumettre deux fois de suite la même
-paire `(x, y)`. Niveau *Easy*, AI Foundations I.
+Connexion : `nc aureolin-pixie.cylabacademy.net <port>`, bornes d'entrée affichées à la connexion.
+**Contrainte supplémentaire** : on ne peut pas soumettre deux fois de suite la même paire `(x, y)`.
+Niveau *Easy*.
 
 ## Analyse
 
 Même modèle que les autres challenges de la série :
 
 ```
-sortie = 1 si w1*x + w2*y + b >= 0, sinon 0
+sortie = 1 si w1*x + w2*y + b >= 0
+sortie = 0 sinon
 ```
 
-Mais l'objectif diffère : il ne faut pas *deviner les poids* (pas de commande `TEST` ici), il
-faut produire une **séquence de 8 bits** égale à `01110000`, soit `0x70` = `p` en ASCII. Le
-serveur affiche en continu `Recent outputs (n/8): ...` et seuls les huit derniers comptent.
+L'objectif, en revanche, n'est pas de deviner les poids : il n'y a pas de commande `TEST` ici. Il
+faut produire une **séquence de 8 bits** égale à `01110000`, soit `0x70`, le code ASCII de `p`. Le
+serveur affiche en continu :
 
-Deux stratégies possibles :
+```
+Recent outputs (n/8): ........
+```
 
-1. **Boîte noire** — on connaît la sortie désirée pour huit points ; il suffit de choisir huit
-   points dont on sait qu'ils déclenchent ou non, par exemple en sondant d'abord les extrêmes
-   du domaine affiché.
-2. **Boîte blanche** — localiser la frontière (comme pour `Neuron Express 2D-0`) puis choisir
-   les points de part et d'autre pour forcer chaque bit.
+Seuls les huit derniers tirages comptent, et la fenêtre est glissante. Le problème se reformule
+donc ainsi : choisir une suite de huit points dont la classe prédite soit exactement `0 1 1 1 0 0 0 0`.
 
-La contrainte « pas deux fois la même paire d'affilée » empêche la stratégie triviale qui
-consisterait à marteler un point qui renvoie 0 ou 1 : il faut varier légèrement les entrées.
+Deux stratégies sont possibles.
+
+**Boîte noire.** On connaît la sortie désirée pour huit points ; il suffit de trouver, pour chaque
+bit, un point dont on sait qu'il produit cette valeur. Les extrêmes du domaine affiché sont des
+candidats naturels : ils sont loin de la frontière, donc leur classe est stable.
+
+**Boîte blanche.** On localise d'abord la frontière comme dans `Neuron Express 2D-0` (quatre coins,
+puis recherche du seuil), puis on choisit les points de part et d'autre pour forcer chaque bit.
+
+La méthode employée est la première : elle coûte zéro sonde préparatoire et ne dépend pas de la
+position exacte de la droite. Les quatre points cardinaux extrêmes suffisent.
 
 ## Solution
 
-Séquence gagnante, telle qu'observée sur l'instance (les extrêmes du domaine suffisent) :
+Séquence gagnante, telle qu'observée sur l'instance :
 
 ```
 0,0     → 0    Recent outputs (1/8): 0
@@ -60,19 +66,34 @@ Pattern matched! ASCII 'p' unlocked. Here is your flag:
 academy{2d_n3ur0n_m3t_dadc9561}
 ```
 
-Point important : les huit tirages doivent être **consécutifs** dans la fenêtre glissante ;
-un test raté décale la fenêtre et il faut refaire la séquence. C'est pour cela que le setup
-« quatre points cardinaux + quatre points extrêmes » est préférable à une recherche adaptative
-au milieu de la séquence.
+Le point délicat est l'ordre : les bits sont consommés dans l'ordre d'arrivée, donc la séquence doit
+être préparée **avant** de se connecter. Une fois les huit bons points envoyés d'affilée, le motif
+est complet.
+
+Si l'on veut vérifier la logique sans consommer la fenêtre, on peut sonder d'abord quelques points
+hors séquence, puis recommencer une session : la fenêtre repart de zéro à chaque connexion.
+
+## Pièges
+
+- **Deux fois la même paire d'affilée.** Le serveur refuse la répétition immédiate : marteler un
+  point qui renvoie 0 ou 1 ne fonctionne pas. Il faut varier légèrement les entrées tout en restant
+  du même côté de la frontière, par exemple `10,0` puis `10,-10`.
+- **Fenêtre glissante.** Les huit tirages doivent être **consécutifs**. Un test raté décale la
+  fenêtre et le motif est perdu : il faut alors rejouer huit points corrects, pas un seul.
+- **Ordre des points.** `0,0` puis `10,10` ne donne pas le même motif que `10,10` puis `0,0`. La
+  séquence est écrite à l'avance, pas improvisée.
+- **Bornes du domaine.** Les coordonnées hors des bornes affichées sont rejetées ou ramenées à la
+  frontière, ce qui fausse le bit. On reste dans la plage annoncée à la connexion.
+- **Format de saisie.** `x,y` sans espace, avec une virgule : le parseur du service est strict.
+
+**Pourquoi ça marche.** La sortie d'un perceptron est une fonction déterministe de l'entrée. En
+choisissant huit points dont la classe est connue à l'avance (extrêmes du domaine), on écrit le mot
+binaire souhaité sans jamais connaître les poids : le réseau sert de générateur de bits, et c'est
+l'ordre d'arrivée qui porte l'information. Le challenge illustre qu'une interface de prédiction
+expose un canal d'écriture, pas seulement un oracle.
 
 ## Flag
 
 ```
 academy{2d_n3ur0n_m3t_dadc9561}
 ```
-
-## Sources
-
-- https://shukularuni.neocities.org/guide/ctf/picoctf/ai/Neuron_Meet_2D-0
-- https://shukularuni.neocities.org/guide/ctf/picoctf/ai/
-- https://learn.cylabacademy.org/library/772

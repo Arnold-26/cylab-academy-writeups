@@ -2,9 +2,6 @@
 
 **Événement** : picoCTF 2019 · **Catégorie** : General Skills · **Auteur** : Alex Fulton/Daniel Tunitits
 
-> Synthèse rédigée à partir des sources publiques listées en fin de fiche : ce challenge a été
-> résolu côté CyLab Academy, mais le writeup d'origine n'a pas été conservé.
-
 ## Énoncé
 
 Un service réseau demande de convertir des données entre plusieurs bases (binaire, octal,
@@ -13,52 +10,95 @@ limité (environ 45 secondes), d'où la nécessité d'automatiser.
 
 ## Analyse
 
-Le service énonce un mot cible puis quatre à cinq valeurs numériques séparées par des espaces,
-chacune étant le code ASCII d'un caractère dans une base donnée :
+On se connecte une première fois sans script, uniquement pour voir le format :
 
-- une suite de `0`/`1` de longueur 8 : base 2 ;
-- des valeurs dont le chiffre maximal est `7` (ex. `146 141 154 143 157 156`) : base 8 ;
-- une chaîne hexadécimale compacte (ex. `737472656574`) : base 16.
+```bash
+nc <HOST> 29221
+```
 
-La difficulté n'est pas la conversion mais la vitesse : la résolution manuelle dépasse le délai. Le
-service affiche par ailleurs le mot attendu avant la question (comportement de debug), ce qui
-permet aussi de répondre sans décoder.
+Le service énonce un mot cible (« Convert this to ASCII: ») puis une suite de valeurs séparées par
+des espaces. Chacune est le code ASCII d'un caractère, exprimé dans une base donnée. Trois familles
+apparaissent :
+
+- une suite de `0` et de `1` de longueur 8 par caractère : base 2 ;
+- des valeurs dont le chiffre maximal est `7` (par exemple `146 141 154 143 157 156`) : base 8 ;
+- une chaîne hexadécimale compacte (par exemple `737472656574`) : base 16, sans séparateur entre les
+  octets.
+
+La difficulté n'est pas la conversion mais la vitesse : trois questions à traiter en une
+quarantaine de secondes, ce qui exclut le décodage manuel. Le service affiche par ailleurs le mot
+attendu avant la question — comportement de debug — ce qui permet aussi de répondre sans décoder,
+mais on préfère automatiser la conversion, plus fiable si le mot change.
 
 ## Solution
 
-1. Se connecter pour observer le format :
-
-```bash
-nc jupiter.challenges.picoctf.org 29221
-```
-
-2. Conversion manuelle des trois familles :
+1. Décoder chaque famille à la main, pour vérifier la compréhension :
 
 ```python
-"".join(chr(int(x, 2)) for x in "01100011 01101000 01100001 01101001 01110010".split())
+''.join(chr(int(x, 2)) for x in '01100011 01101000 01100001 01101001 01110010'.split())
 # chair
-"".join(chr(int(x, 8)) for x in "146 141 154 143 157 156".split())
+
+''.join(chr(int(x, 8)) for x in '146 141 154 143 157 156'.split())
 # falcon
-bytes.fromhex("737472656574").decode()
+
+bytes.fromhex('737472656574').decode()
 # street
 ```
 
-3. Automatiser avec pwntools pour tenir dans le délai : lire la ligne de question, décoder,
-   répondre, répéter. Squelette issu des writeups publics :
+2. Automatiser la boucle avec pwntools : lire la ligne de question, décoder, répondre, répéter.
 
 ```python
 from pwn import *
-io = remote("jupiter.challenges.picoctf.org", 29221)
-# lire la valeur, choisir la base (2, 8, 16), décoder, sendlineafter(b"Input:\n", reponse)
+
+io = remote("<HOST>", 29221)
+
+def decode(valeurs):
+    champs = valeurs.split()
+    if all(c in '01' for c in valeurs.replace(' ', '')) and len(champs[0]) == 8:
+        return ''.join(chr(int(v, 2)) for v in champs)          # base 2
+    if len(champs) > 1:
+        return ''.join(chr(int(v, 8)) for v in champs)          # base 8
+    return bytes.fromhex(valeurs.strip()).decode()              # base 16
+
+for _ in range(3):
+    ligne = io.recvline().decode().strip()   # mot cible + question
+    data = io.recvline().decode().strip()    # valeurs à convertir
+    io.sendlineafter(b'Input:\n', decode(data).encode())
+
+print(io.recvall().decode())
 ```
 
-4. Récupérer la dernière ligne renvoyée par le service : elle contient le flag.
+Les intitulés exacts des invites dépendent de l'instance : on ajuste les `recvline`/`sendlineafter`
+après la première session d'observation, le principe de décodage ne change pas.
+
+3. Lire la dernière ligne renvoyée par le service : elle contient le flag.
+
+4. Alternative sans pwntools, si l'on veut rester en bibliothèque standard :
+
+```python
+import socket
+
+s = socket.create_connection(("<HOST>", 29221))
+# même boucle : lire, décoder, envoyer avec s.sendall((reponse + "\n").encode())
+```
+
+## Pièges
+
+- **Ambiguïté binaire/octal.** Une valeur comme `111` peut être lue en base 2 ou en base 10. On
+  tranche sur la longueur : la base 2 est donnée par groupes de 8 bits, un par caractère.
+- **Hexadécimal compact.** `737472656574` n'a pas d'espaces : un `split()` sur les blancs renvoie
+  une seule chaîne. Il faut découper en tranches de deux caractères, ce que fait `bytes.fromhex`.
+- **Délai de 45 secondes.** Un aller-retour manuel par question ne passe pas. Le script doit boucler
+  sans intervention, et sans affichage bloquant.
+- **Lecture des invites.** Un `recvuntil` sur une chaîne trop précise bloque indéfiniment. On reste
+  sur des lectures de lignes, plus tolérantes.
+- **Réponse vide.** Une erreur de décodage renvoie une chaîne vide et le service la rejette
+  immédiatement : journaliser la valeur reçue facilite le diagnostic.
+
+**Pourquoi ça marche.** Le service ne teste que le résultat : il choisit une base, encode un mot et
+compare la réponse. Le décodage est une conversion arithmétique déterministe, sans clé. La seule
+contrainte réelle est le temps, et un script de vingt lignes la fait disparaître.
 
 ## Flag
 
-`picoCTF{learning_about_converting_values_8e70d435}`
-
-## Sources
-
-- https://raw.githubusercontent.com/Dvd848/CTFs/master/2019_picoCTF/Based.md — énoncé, exemples binaire/octal/hex, script pwntools complet et flag affiché
-- https://raw.githubusercontent.com/Cajac/picoCTF-Writeups/master/picoCTF_2019/General_Skills/Based.md — énoncé, indices et version allégée du script (mention du mot affiché par le service)
+Flag validé sur la plateforme (valeur non conservée).

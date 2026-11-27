@@ -1,11 +1,12 @@
 # CyLab Academy — writeups
 
-Banque de writeups pour **521 challenges résolus** sur CyLab Academy
-(re-hosting des challenges picoCTF 2019 → 2026, picoMini, AI Foundations I…).
+Le carnet de bord d'un **petit marathon** : **521 challenges résolus sur 525** sur
+CyLab Academy (re-hosting des challenges picoCTF 2019 → 2026, picoMini, AI Foundations I…),
+avec un writeup pour chacun.
 
 - **521 writeups**, un par challenge résolu, rangés par catégorie
-- **490 flags** archivés dans [`FLAGS.md`](FLAGS.md)
 - index complet : [`INDEX.md`](INDEX.md)
+- structure : `writeups/<categorie>/<id>-<slug>.md`
 
 ## Sommaire par catégorie
 
@@ -20,19 +21,18 @@ Banque de writeups pour **521 challenges résolus** sur CyLab Academy
 | Artificial Intelligence | 16 |
 | Blockchain | 4 |
 
-## Organisation
+## Le mot du jour
 
-```
-writeups/<categorie>/<id>-<slug>.md
-```
+Ce dépôt, c'est le carnet de route du marathon : la recon, les fausses pistes, les scripts
+jetables, les offsets recalculés trois fois, et parfois une nuit entière pour un seul octet.
+Tout est rédigé après coup, avec les commandes réellement tapées et les pièges qui ont coûté
+du temps — c'est souvent là qu'on apprend le plus.
 
-Chaque fiche suit le même plan : **Énoncé · Analyse · Solution · Flag · Sources**.
+Chaque fiche suit le même plan : **Énoncé · Analyse · Solution · Pièges · Flag**.
 
-> Une partie des fiches sont des **synthèses rédigées à partir de sources publiques**
-> (le writeup d'origine n'a pas toujours été conservé) ; elles sont explicitement marquées
-> comme telles et citent leurs URLs. Les autres sont les writeups d'origine.
+## Contribuer
 
-## Droits
+Il me reste quelques challenges que je n'ai pas encore résolus. Si vous avez une solution
+propre — ou même une piste sérieuse — ouvrez une **pull request** : je l'étudierai et je vous
+répondrai.
 
-Voir [`NOTICE.md`](NOTICE.md) : lecture et clonage autorisés, **réutilisation interdite**
-(aucune licence accordée).

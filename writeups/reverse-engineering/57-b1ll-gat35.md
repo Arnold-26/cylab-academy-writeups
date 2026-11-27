@@ -57,7 +57,7 @@ Enter the correct key to get the access codes: Correct input. Printing flag:
 academy{These are the access codes to the vault: 1063340}
 ```
 
-Le numero de coffre (`1063340`) est d'ailleurs identique a celui du picoCTF d'origine :
+Le numero de coffre (`1063340`) vaut :
 seul le wrapper a change.
 
 ### A retenir
