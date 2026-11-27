@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 cp -f 432_original.jpg 432_modified.jpg
 exiftool -overwrite_original \
   -ModifyDate="1970:01:01 00:00:00" \

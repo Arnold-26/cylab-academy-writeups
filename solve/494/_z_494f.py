@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\pachinko\server\public\index.html"
+p = r"/tmp/cylab_eps\pachinko\server\public\index.html"
 t = open(p, encoding="utf-8", errors="replace").read()
 print("taille:", len(t))
 for kw in ("opcode", "instruction", "ISA", "nand", "circuit", "input1", "0x2000", "0x1000", "0x3000", "flag"):

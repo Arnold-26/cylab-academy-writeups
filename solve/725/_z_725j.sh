@@ -1,5 +1,5 @@
 #!/bin/bash
-U=$(cat /mnt/d/ctf-index/_z_725url.txt)
+U=$(cat ./_z_725url.txt)
 echo "URL=$U"
 echo "=== pays de l'exit Tor ==="
 curl -s -m 40 --socks5-hostname 127.0.0.1:9050 "http://ip-api.com/json/?fields=status,country,countryCode,query" | head -c 300

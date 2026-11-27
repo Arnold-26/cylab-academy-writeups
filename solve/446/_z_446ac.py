@@ -1,7 +1,7 @@
 import sys, json, re, time, socket
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from collections import deque
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 MOVES = {"s": (1, 0), "w": (-1, 0), "d": (0, 1), "a": (0, -1)}

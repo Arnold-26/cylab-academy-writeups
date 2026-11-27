@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_original.jpg"
+p = r"/tmp/cylab_eps\432_original.jpg"
 d = open(p, "rb").read()
 print("taille:", len(d))
 for pat in (rb"2023:11:20 15:46:23", rb"2023:11:20 21:46:21", rb"703", rb"TimeStamp", rb"2023"):

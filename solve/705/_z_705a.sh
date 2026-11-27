@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_git/705"
+D="/tmp/cylab_git/705"
 cd "$D" || exit 1
 OUT=/tmp/repo705
 rm -rf "$OUT" && mkdir -p "$OUT"

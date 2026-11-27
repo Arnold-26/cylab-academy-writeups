@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== PLT ==="
 objdump -d -j .plt -Mintel 222_not-crypto 2>/dev/null | head -25
 echo "=== relocations ==="

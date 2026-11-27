@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 OFF=731136
 for INO in 2386 2365 2366 2408; do
   echo "########## inode $INO ##########"

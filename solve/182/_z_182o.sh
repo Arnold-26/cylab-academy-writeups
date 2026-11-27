@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 cat > /tmp/t182solver.js <<'EOF'
 const fs = require('fs');
-const buf = fs.readFileSync('/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/182_wasm.bin');
+const buf = fs.readFileSync('/tmp/cylab_eps/182_wasm.bin');
 const CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_{}-!?#';
 (async () => {
   const { instance } = await WebAssembly.instantiate(buf, {});

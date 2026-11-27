@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 215_chall
 file 215_chall | cut -c1-110
 readelf -h 215_chall | grep Type

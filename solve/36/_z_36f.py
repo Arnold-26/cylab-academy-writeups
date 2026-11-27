@@ -1,10 +1,10 @@
 import sys, subprocess, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-BIN = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\36_no_auth_mistery"
-OUT = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\36_investigation-encoded-2-output"
+BIN = r"/tmp/cylab_eps\36_no_auth_mistery"
+OUT = r"/tmp/cylab_eps\36_investigation-encoded-2-output"
 d = open(BIN, "rb").read()
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "readelf", "-SW",
-                      "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/36_no_auth_mistery"],
+                      "/tmp/cylab_eps/36_no_auth_mistery"],
                      capture_output=True, text=True).stdout
 ro = None
 for line in out.splitlines():

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 cat > /tmp/g458.gdb <<'EOF'
 set pagination off
 break *0x4011be

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 133_gauntlet
 file 133_gauntlet | cut -c1-110
 echo "=== symboles ==="

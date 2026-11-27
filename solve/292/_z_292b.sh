@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== vuln : offset du buffer ==="
 objdump -d -Mintel 292_vuln 2>/dev/null | sed -n '/<vuln>:/,/^$/p' | head -20
 echo "=== .bss / writable ==="

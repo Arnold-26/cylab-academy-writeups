@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/pb529/dec || exit 1
+cd /tmp/cylab_eps/pb529/dec || exit 1
 echo "=== URLs http dans tout le decode (hors libs) ==="
 grep -rhoE 'const-string[^,]*, "https?://[^"]*"' smali_classes3/ smali_classes2/ 2>/dev/null | sed 's/.*, //' | sort -u | head -20
 echo "=== 'your server url' contexte ==="

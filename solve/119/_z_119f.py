@@ -1,7 +1,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from PIL import Image
-out = [int(x) for x in open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/119_output.txt").read().split()]
+out = [int(x) for x in open("/tmp/cylab_eps/119_output.txt").read().split()]
 N = len(out)
 randoms = [((i * 327) % 681 + 344) % 313 for i in range(1, N + 1)]
 seeds = [(i * 127) % 500 for i in range(1, N + 1)]
@@ -44,7 +44,7 @@ px = img.load()
 for y in range(30):
     for x in range(N):
         px[x, y] = 1 if rows[y][x] == "1" else 0
-img.convert("L").resize((N * 5, 30 * 5), Image.NEAREST).save("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/119_grid.png")
+img.convert("L").resize((N * 5, 30 * 5), Image.NEAREST).save("/tmp/cylab_eps/119_grid.png")
 print("ecrit 119_grid.png")
 # compte les transitions par ligne (indice de motif)
 for y in range(30):

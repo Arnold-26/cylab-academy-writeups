@@ -1,7 +1,7 @@
 import sys, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-BIN = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\47_investigation-encoded-1-mystery"
-OUT = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\47_investigation-encoded-1-output"
+BIN = r"/tmp/cylab_eps\47_investigation-encoded-1-mystery"
+OUT = r"/tmp/cylab_eps\47_investigation-encoded-1-output"
 d = open(BIN, "rb").read()
 # .rodata : vaddr 0x2000 == file offset 0x2000
 secret = d[0x2020:0x2020 + 37]

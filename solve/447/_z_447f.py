@@ -1,7 +1,7 @@
 import sys, re, json, base64, pathlib
 from collections import deque
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_el\static\index.js")
+p = pathlib.Path(r"/tmp/cylab_el\static\index.js")
 t = p.read_text(encoding="utf-8", errors="replace")
 m = re.search(r"const recipes = \[(.*?)\];", t, re.S)
 recipes = re.findall(r'\["([^"]*)","([^"]*)","([^"]*)"\]', m.group(1))

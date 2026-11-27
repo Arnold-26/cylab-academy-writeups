@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 objdump -d -Mintel 151_remote 2>/dev/null | sed -n '/<_start>:/,/^$/p' | grep -E "lea|call" | head -4
 echo "=== fonctions detectees ==="
 objdump -d -Mintel 151_remote 2>/dev/null | grep -E "^[0-9a-f]+ <" | head -20

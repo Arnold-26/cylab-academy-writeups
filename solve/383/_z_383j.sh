@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/g383 || exit 1
+cd /tmp/cylab_eps/g383 || exit 1
 for P in chizazerite guldulheen yasuoaatrox yasuoaatrox?; do
   for F in 1.bmp 2.bmp 3.bmp 7.bmp; do
     OUT="try_${P}_${F}.bin"

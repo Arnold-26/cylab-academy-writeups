@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 printf '1\n2\nfizz\n' > /tmp/in181.txt
 cat > /tmp/g181.py <<'PYEOF'
 import gdb

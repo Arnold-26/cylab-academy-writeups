@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/pb529/dec || exit 1
+cd /tmp/cylab_eps/pb529/dec || exit 1
 echo "=== constructeur Transaction ==="
 grep -A8 "method public constructor <init>" smali_classes3/com/example/picobank/Transaction.smali | head -20
 echo "=== un appel new-instance Transaction dans MainActivity (contexte) ==="

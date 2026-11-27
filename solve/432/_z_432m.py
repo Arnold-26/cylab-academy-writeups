@@ -1,7 +1,7 @@
 import sys, socket, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 HOST = "xebec.cylabacademy.net"
-IMG = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_modified.jpg"
+IMG = r"/tmp/cylab_eps\432_modified.jpg"
 data = open(IMG, "rb").read()
 print("image:", len(data), "octets")
 for port in (11287, 11534):

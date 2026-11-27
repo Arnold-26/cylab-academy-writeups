@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 python3 -c "open('/tmp/in458.txt','w').write('A'*26+'\n')"
 cat > /tmp/g458.gdb <<'EOF'
 set pagination off

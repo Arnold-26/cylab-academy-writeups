@@ -1,12 +1,12 @@
 import sys, requests, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 requests.packages.urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 files = {
     "468_token_generator.py": "https://challenge-files.cylabacademy.net/library/db1105bfec855172",
 }
 # recuperer l'URL exacte depuis la description
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 import json, re
 cy = CyLab(delay=0.7)

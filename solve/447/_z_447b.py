@@ -4,7 +4,7 @@ urllib3.disable_warnings()
 base = "http://xebec.cylabacademy.net:33257/"
 # on relit l'instance pour l'URL exacte (elle change) -- on suppose que 447 vient d'etre cree
 import json as J
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 cy = CyLab(delay=0.4)
 cy.login()

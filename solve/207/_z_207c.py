@@ -37,7 +37,7 @@ def parse_key(path):
 
 
 for cid in (207, 211):
-    k = parse_key(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\pm_%d\private.key" % cid)
+    k = parse_key(r"/tmp/cylab_eps\pm_%d\private.key" % cid)
     print("=== %d ===" % cid)
     print("  n bits:", k["n"].bit_length(), "| e:", k["e"])
     print("  p*q == n ?", k["p"] * k["q"] == k["n"])

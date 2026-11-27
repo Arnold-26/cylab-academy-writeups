@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_git/707"
+D="/tmp/cylab_git/707"
 cd "$D" || exit 1
 rm -rf recovered && mkdir recovered
 timeout 600 tsk_recover -o 1140736 disk.img recovered 2>&1 | tail -2

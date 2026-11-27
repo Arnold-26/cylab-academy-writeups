@@ -1,6 +1,6 @@
 // 478 Pachinko — with a candidate clock, sample the three 16-bit buses each edge.
 // A PC shows up as a bus that advances by a constant step every edge.
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 const N = 100000;
 

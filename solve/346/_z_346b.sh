@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 mkdir -p t346 && cd t346 || exit 1
 cp ../346_game .
 echo "academy{LOCAL_TEST_346}" > flag.txt

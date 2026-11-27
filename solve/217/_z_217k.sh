@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo 'academy{TESTLOCAL123}' > flag.txt
 t() {
   printf '%s\n' "$1" > /tmp/bef.txt

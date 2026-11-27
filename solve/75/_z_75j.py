@@ -1,7 +1,7 @@
 import sys, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "nm -D libc.so.6 2>/dev/null | grep -E ' (system|free|puts|printf|__libc_start_main)@@'"],
                      capture_output=True, text=True).stdout
 print(out)

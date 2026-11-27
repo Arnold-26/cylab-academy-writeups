@@ -1,6 +1,6 @@
 import sys, tarfile, pathlib, io
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 t = tarfile.open(B / "204_notepad.tar")
 names = t.getnames()
 print("fichiers:", names[:30])

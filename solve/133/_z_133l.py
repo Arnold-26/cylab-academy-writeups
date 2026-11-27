@@ -1,7 +1,7 @@
 import sys, re, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "nm -D --defined-only libc-2.27.so 2>/dev/null | awk '$2 ~ /[TWi]/ {print $1, $3}'"],
                      capture_output=True, text=True).stdout
 cands = []

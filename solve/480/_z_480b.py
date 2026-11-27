@@ -10,7 +10,7 @@ for j in js:
     rr = requests.get(base + "/" + j.lstrip("/"), timeout=15, verify=False)
     alljs += f"\n/* {j} */\n" + (rr.text or "")
 inline = "\n".join(re.findall(r"<script[^>]*>(.*?)</script>", html, re.S))
-open(r"C:\Users\arnol\AppData\Local\Temp\cylab_bin\480_all.js", "w", encoding="utf-8").write(alljs + "\n" + inline)
+open(r"/tmp/cylab_bin\480_all.js", "w", encoding="utf-8").write(alljs + "\n" + inline)
 print("taille js:", len(alljs), "inline:", len(inline))
 for kw in ("WebSocket", "socket", "onmessage", "send(", "eval", "score", "flag", "mate"):
     for m in re.finditer(re.escape(kw), alljs + inline):

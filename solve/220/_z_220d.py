@@ -1,7 +1,7 @@
 import sys, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p1 = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v1"
-p2 = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v2"
+p1 = "/tmp/cylab_eps/220_breadth.v1"
+p2 = "/tmp/cylab_eps/220_breadth.v2"
 
 
 def read_cstr(path, fo, n=200):

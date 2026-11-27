@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== chaines .rodata ==="
 python3 - <<'EOF'
 d = open('146_heapedit','rb').read()

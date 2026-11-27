@@ -1,9 +1,9 @@
 import sys, re, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\57_win-exec-1.exe"
+p = r"/tmp/cylab_eps\57_win-exec-1.exe"
 d = open(p, "rb").read()
 needle = b"academy{"
 i = d.find(needle)

@@ -1,7 +1,7 @@
 import sys, re, requests, urllib3, pathlib, tarfile, io
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 u = "https://challenge-files.cylabacademy.net/library/3c9da3abf15f369ce7add72b013b737dd8dcd20d0839d3e87901cb6319ffd70c/bundle.tar.gz"
 dest = B / "277_bundle.tar.gz"
 if not dest.exists() or dest.stat().st_size < 100:

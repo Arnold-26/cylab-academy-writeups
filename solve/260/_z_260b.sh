@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 260_vuln
 echo "=== type ==="
 file 260_vuln | cut -c1-110

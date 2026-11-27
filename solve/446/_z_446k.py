@@ -1,7 +1,7 @@
 import sys, re, time, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from collections import deque
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t446"
+CWD = "/tmp/cylab_eps/t446"
 
 
 class P:

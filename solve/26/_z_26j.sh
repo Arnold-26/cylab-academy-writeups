@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 python3 - <<'PYEOF'
 import sstv, traceback, wave
-src = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_message.wav"
+src = "/tmp/cylab_eps/26_message.wav"
 try:
     img, mode = sstv.decode_from_wav(src, mode=sstv.Mode.SCOTTIE_1)
     print("ok", img.size)

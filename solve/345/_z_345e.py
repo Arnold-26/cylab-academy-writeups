@@ -1,6 +1,6 @@
 import subprocess, re, sys, os
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps"
+CWD = "/tmp/cylab_eps"
 os.makedirs(CWD + "/t345", exist_ok=True)
 subprocess.run(["cp", "-f", CWD + "/345_game", CWD + "/t345/game"], check=False)
 open(CWD + "/t345/flag.txt", "w").write("academy{TEST345}\n")

@@ -1,6 +1,6 @@
 #!/bin/bash
-B=$(cat /mnt/d/ctf-index/_z_529base.txt)
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+B=$(cat ./_z_529base.txt)
+cd /tmp/cylab_eps || exit 1
 U="$B/download/pico-bank.apk"
 echo "URL: $U"
 rm -f 529_pico-bank.apk

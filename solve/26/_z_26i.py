@@ -3,7 +3,7 @@ import sys, wave
 import numpy as np
 from PIL import Image
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-P = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_message.wav"
+P = "/tmp/cylab_eps/26_message.wav"
 w = wave.open(P, "rb")
 rate = w.getframerate()
 x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
@@ -74,5 +74,5 @@ for li, st in enumerate(starts[:256]):
     if ok:
         rows += 1
 print("lignes:", rows)
-Image.fromarray(img[:rows]).save("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_manual2.png")
+Image.fromarray(img[:rows]).save("/tmp/cylab_eps/26_manual2.png")
 print("ecrit 26_manual2.png")

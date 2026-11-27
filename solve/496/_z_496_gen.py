@@ -1,7 +1,7 @@
 """Reproduce exactly how the reply's header block is serialized by the server's
 Python email generator, for the new payload D (leading blank line)."""
 import sys
-sys.path.insert(0, r'D:\ctf-index')
+sys.path.insert(0, r'.')
 import email, email.generator as G
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart

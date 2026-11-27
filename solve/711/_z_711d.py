@@ -2,7 +2,7 @@ import sys, re, ast, itertools
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from fpylll import IntegerMatrix, LLL, BKZ
 
-txt = open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_711/public.txt").read()
+txt = open("/tmp/cylab_711/public.txt").read()
 N = int(re.search(r"N = (\d+)", txt).group(1))
 p = int(re.search(r"p = (\d+)", txt).group(1))
 q = int(re.search(r"q = (\d+)", txt).group(1))

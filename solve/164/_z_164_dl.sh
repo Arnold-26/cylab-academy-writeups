@@ -9,8 +9,8 @@ ls -la
 echo "=== md5 plateforme ==="
 md5sum vuln vuln.c Makefile.share
 echo "=== md5 copie locale ==="
-md5sum /mnt/d/ctf-index/_z_164/vuln /mnt/d/ctf-index/_z_164/vuln.c /mnt/d/ctf-index/_z_164/Makefile.share
+md5sum ./_z_164/vuln ./_z_164/vuln.c ./_z_164/Makefile.share
 echo "=== diff vuln.c ==="
-diff vuln.c /mnt/d/ctf-index/_z_164/vuln.c && echo IDENTIQUE_vuln.c
+diff vuln.c ./_z_164/vuln.c && echo IDENTIQUE_vuln.c
 echo "=== diff Makefile ==="
-diff Makefile.share /mnt/d/ctf-index/_z_164/Makefile.share && echo IDENTIQUE_makefile
+diff Makefile.share ./_z_164/Makefile.share && echo IDENTIQUE_makefile

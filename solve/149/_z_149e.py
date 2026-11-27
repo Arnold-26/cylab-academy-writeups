@@ -1,5 +1,5 @@
 import subprocess, sys, time, os
-BIN = r"/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/149_checkpass"
+BIN = r"/tmp/cylab_eps/149_checkpass"
 WSL = ["wsl", "-d", "kali-linux", "--"]
 
 

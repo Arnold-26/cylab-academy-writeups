@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== packed ? ==="
 upx -l 149_checkpass 2>&1 | head -5
 readelf -SW 149_checkpass 2>/dev/null | awk '{print $2, $6, $7}' | head -22

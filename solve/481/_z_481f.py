@@ -1,6 +1,6 @@
 import sys, pathlib, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-BASE = pathlib.Path("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_z/481")
+BASE = pathlib.Path("/tmp/cylab_z/481")
 files = sorted(BASE.glob("*.png"))
 print("fichiers:", len(files), flush=True)
 import re

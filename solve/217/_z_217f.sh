@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo 'academy{TESTLOCAL123}' > flag.txt
 cat > /tmp/bef.txt <<'EOF'
 0!:+:+::**00p00g00!:v

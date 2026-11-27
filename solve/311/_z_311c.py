@@ -1,7 +1,7 @@
 import sys, subprocess, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "tshark -r 311_torrent.pcap -Y 'bt-dht' -T fields -e frame.number -e data.data 2>/dev/null"],
                      capture_output=True, text=True).stdout
 lines = out.splitlines()

@@ -1,6 +1,6 @@
 import sys, re, time, socket, struct, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 POP_RDI, RET, SYSTEM, BINSH, LM = 0x2164f, 0x2139f, 0x4f420, 0x1b3d88, 0x21c87

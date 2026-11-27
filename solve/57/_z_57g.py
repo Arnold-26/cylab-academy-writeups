@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\57_win-exec-1.exe"
+p = r"/tmp/cylab_eps\57_win-exec-1.exe"
 d = open(p, "rb").read()
 seen = []
 for m in re.finditer(rb"[ -~]{4,120}", d):

@@ -14,5 +14,5 @@ op(0x10, b"\x00"*8)
 op(0x10, b"\x01" + b"\x00"*7)
 
 data = b"".join(ops)
-open('/mnt/d/ctf-index/_z_441/input1.bin','wb').write(data)
+open('./_z_441/input1.bin','wb').write(data)
 print(len(data), data.hex())

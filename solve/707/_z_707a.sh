@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_git/707"
+D="/tmp/cylab_git/707"
 cd "$D" || exit 1
 IMG=disk.img
 echo "=== fls partition (2048) ==="

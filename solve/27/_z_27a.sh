@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 27_investigative-reversing-1-mystery 2>/dev/null
 echo "=== images : taille et octets apres IEND ==="
 for F in 27_investigative-reversing-1-mystery.png 27_investigative-reversing-1-mystery2.png 27_investigative-reversing-1-mystery3.png; do

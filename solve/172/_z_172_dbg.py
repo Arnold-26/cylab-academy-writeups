@@ -1,11 +1,11 @@
 import sys, re, struct
-sys.path.insert(0, "/mnt/d/ctf-index")
+sys.path.insert(0, ".")
 from pwn import context, process
 context.log_level = "error"
 
 sys.argv = ["x", "local"]
 import importlib.util
-spec = importlib.util.spec_from_file_location("ex", "/mnt/d/ctf-index/_z_172_exploit.py")
+spec = importlib.util.spec_from_file_location("ex", "./_z_172_exploit.py")
 ex = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(ex)
 

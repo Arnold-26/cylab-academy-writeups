@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 printf 'academy{LOCAL_TEST}\n' > flag.txt
 cat > /tmp/g146.gdb <<'EOF'
 set pagination off

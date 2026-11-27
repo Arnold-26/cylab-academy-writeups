@@ -1,7 +1,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p1 = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v1"
-p2 = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v2"
+p1 = "/tmp/cylab_eps/220_breadth.v1"
+p2 = "/tmp/cylab_eps/220_breadth.v2"
 d1 = open(p1, "rb").read()
 d2 = open(p2, "rb").read()
 for fo in (0x155ec8, 0x155ef8):

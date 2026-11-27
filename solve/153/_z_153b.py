@@ -1,7 +1,7 @@
 import sys, re, requests, urllib3, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 BASE = "http://chatelaine.cylabacademy.net:25859/"
 r = requests.get(BASE + "index.html", timeout=20)
 print("index:", r.status_code, len(r.text))

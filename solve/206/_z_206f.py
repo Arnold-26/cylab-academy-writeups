@@ -1,7 +1,7 @@
 import sys, subprocess, random
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-PCAP = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_206/capture.pcapng"
+PCAP = "/tmp/cylab_206/capture.pcapng"
 r = subprocess.run(["tshark", "-r", PCAP, "-Y", "udp", "-T", "fields",
                     "-e", "frame.time_epoch", "-e", "udp.srcport", "-e", "udp.payload"],
                    capture_output=True, text=True, timeout=900)

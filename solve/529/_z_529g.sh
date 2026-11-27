@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 U="http://chatelaine.cylabacademy.net:48796/download/pico-bank.apk"
 echo "=== HEAD ==="
 curl -s -I -m 30 "$U" | head -10

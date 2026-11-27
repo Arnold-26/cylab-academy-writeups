@@ -1,6 +1,6 @@
 import sys, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-P = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/276_keygenme"
+P = "/tmp/cylab_eps/276_keygenme"
 r = subprocess.run(["objdump", "-d", "-Mintel", P], capture_output=True, text=True).stdout
 lines = r.split("\n")
 print("instructions:", len(lines))

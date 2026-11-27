@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
-which apktool >/dev/null 2>&1 || { echo "apktool absent"; echo arnold | sudo -S apt-get install -y -qq apktool 2>&1 | tail -2; }
+cd /tmp/cylab_eps || exit 1
+which apktool >/dev/null 2>&1 || { echo "apktool absent"; echo userd | sudo -S apt-get install -y -qq apktool 2>&1 | tail -2; }
 rm -rf m528 && mkdir -p m528 && cd m528 || exit 1
 apktool d -f -q ../528_minions.apk >/dev/null 2>&1
 echo "=== arborescence (hors smali) ==="

@@ -5,7 +5,7 @@ try:
 except ImportError:
     print("pefile absent")
     pefile = None
-P = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win429\WinAntiDbg0x100.exe"
+P = r"/tmp/cylab_eps\win429\WinAntiDbg0x100.exe"
 if pefile:
     pe = pefile.PE(P)
     print("machine:", hex(pe.FILE_HEADER.Machine), "| imagebase:", hex(pe.OPTIONAL_HEADER.ImageBase))

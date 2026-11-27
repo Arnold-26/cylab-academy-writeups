@@ -1,5 +1,5 @@
 #!/bin/bash
-U=$(cat /mnt/d/ctf-index/_z_725url.txt)
+U=$(cat ./_z_725url.txt)
 echo "URL=$U"
 echo "=== direct (doit dire 'No flag in this region') ==="
 curl -s -m 25 -i "$U/" | head -12

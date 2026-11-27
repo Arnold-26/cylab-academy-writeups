@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin || exit 1
+cd /tmp/cylab_bin || exit 1
 ls -la 456_Windows_Logs.evtx
 python3 -c "import Evtx; print('python-evtx ok')" 2>&1 | tail -1
 which evtx_dump 2>/dev/null

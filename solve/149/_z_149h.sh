@@ -1,10 +1,10 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== chaines autour du controle ==="
 strings -n 4 -t x 149_checkpass | grep -aiE "invalid|length|correct|wrong|flag|password|academy|great|nice|good" | head -15
 echo "=== references aux chaines dans le code ==="
 python3 - <<'PYEOF'
-d = open('/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/149_checkpass','rb').read()
+d = open('/tmp/cylab_eps/149_checkpass','rb').read()
 for pat in (b'Invalid length', b'correct', b'flag', b'password'):
     i = d.find(pat)
     print(pat, "-> offset fichier", hex(i) if i >= 0 else None)

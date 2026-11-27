@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\57_win-exec-1.exe"
+p = r"/tmp/cylab_eps\57_win-exec-1.exe"
 d = open(p, "rb").read()
 i = d.find(b"academy{")
 print("=== zone autour du prefixe (1200 octets) ===")

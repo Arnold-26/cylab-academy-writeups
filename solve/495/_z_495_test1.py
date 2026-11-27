@@ -1,7 +1,7 @@
 """495 Ricochet - step 1: MITM handshake with low-order DH point (shared = 0^32)
 and test whether shared_hmac_key == authenticity_key (decrypted MAC vs validate oracle)."""
 import sys, json, time
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from _z_495_lib import *
 
 B = sys.argv[1] if len(sys.argv) > 1 else "http://chatelaine.cylabacademy.net:40516"

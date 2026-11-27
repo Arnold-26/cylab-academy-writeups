@@ -1,5 +1,5 @@
 #!/bin/bash
-P="/mnt/c/Users/arnol/.dsh/attachments/v1/files/43/43be60629ba01766c6880b834d378edabe78a4874cd919efc69631cf32fa932e/torrent.pcap"
+P="~/.dsh/attachments/v1/files/43/43be60629ba01766c6880b834d378edabe78a4874cd919efc69631cf32fa932e/torrent.pcap"
 echo "=== taille ==="
 ls -la "$P" | awk '{print $5}'
 echo "=== recherche .iso en clair ==="

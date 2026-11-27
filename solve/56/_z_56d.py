@@ -1,6 +1,6 @@
 import sys, os, hashlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-D = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/b1g/test"
+D = "/tmp/cylab_eps/b1g/test"
 files = sorted(os.listdir(D))
 print("fichiers:", len(files))
 for f in files:

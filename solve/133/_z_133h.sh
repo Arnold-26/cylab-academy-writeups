@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== gadgets ==="
 objdump -d -Mintel 133_gauntlet 2>/dev/null | grep -E "pop +rdi" -A1 | head -8
 echo "=== ret simple ==="

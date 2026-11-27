@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf pb529 && mkdir -p pb529 && cd pb529 || exit 1
 apktool d -f -q ../529_pico-bank.apk -o dec >/dev/null 2>&1
 echo "=== recherche de flag en clair dans le decode ==="

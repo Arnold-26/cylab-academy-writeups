@@ -23,7 +23,7 @@ def build(D, name):
              '\n'
              '--' + B2 + '\n' + inner + '\n' + sig_part)
     open(name, 'w').write(outer)
-    p = subprocess.run(['node', '/mnt/d/ctf-index/_z_496_parse.js', '/mnt/d/ctf-index/_z_496_emls/' + name],
+    p = subprocess.run(['node', './_z_496_parse.js', './_z_496_emls/' + name],
                        capture_output=True, text=True)
     print('===', name, 'outer parse ===')
     print(p.stdout[:300])
@@ -31,8 +31,8 @@ def build(D, name):
                        capture_output=True, text=True)
     print('verify rc', r.returncode, r.stderr.strip()[:150])
     if r.returncode == 0:
-        subprocess.run(['cp', name + '.out', '/mnt/d/ctf-index/_z_496_emls/' + name + '.out'])
-        p2 = subprocess.run(['node', '/mnt/d/ctf-index/_z_496_parse.js', '/mnt/d/ctf-index/_z_496_emls/' + name + '.out'],
+        subprocess.run(['cp', name + '.out', './_z_496_emls/' + name + '.out'])
+        p2 = subprocess.run(['node', './_z_496_parse.js', './_z_496_emls/' + name + '.out'],
                             capture_output=True, text=True)
         print('verified-content parse:', p2.stdout[:300])
 

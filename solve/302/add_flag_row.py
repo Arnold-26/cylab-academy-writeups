@@ -1,6 +1,6 @@
 import io, sys
 
-p = r"C:\Users\arnol\CTF\flags.md"
+p = r".\flags.md"
 raw = open(p, "rb").read()
 text = raw.decode("utf-8")
 lines = text.split("\n")

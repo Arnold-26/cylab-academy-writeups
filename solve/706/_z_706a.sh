@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_git/706"
+D="/tmp/cylab_git/706"
 cd "$D" || exit 1
 gunzip -kf disk.img.gz 2>&1 | tail -1
 ls -la disk.img 2>/dev/null

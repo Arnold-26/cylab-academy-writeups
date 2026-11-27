@@ -3,7 +3,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
 BASE = "http://xebec.cylabacademy.net:36284/"
 SENT = "right path"
-LOG = open(r"D:\ctf-index\_z_185log.txt", "w", encoding="utf-8", buffering=1)
+LOG = open(r"./_z_185log.txt", "w", encoding="utf-8", buffering=1)
 
 
 def log(*a):

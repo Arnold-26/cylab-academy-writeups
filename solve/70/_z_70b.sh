@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 70_investigative-reversing-0-mystery
 echo "=== binaire ==="
 file 70_investigative-reversing-0-mystery | cut -c1-110

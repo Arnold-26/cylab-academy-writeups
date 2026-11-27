@@ -8,7 +8,7 @@ so we only need:
     into the robot's receive buffer (wait_message does not check src).
 """
 import sys, json, time
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 import _z_495_atk as A
 from _z_495_lib import *
 

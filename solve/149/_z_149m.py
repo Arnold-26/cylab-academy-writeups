@@ -1,5 +1,5 @@
 import subprocess
-BIN = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/149_checkpass"
+BIN = "/tmp/cylab_eps/149_checkpass"
 pw = "academy{" + "A"*32 + "}"
 r = subprocess.run(["valgrind", "--tool=cachegrind", "--cachegrind-out-file=/dev/null", BIN, pw],
                    capture_output=True, text=True)

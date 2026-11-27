@@ -1,7 +1,7 @@
 import sys, re, requests, urllib3, pathlib, tarfile
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 u = "https://challenge-files.cylabacademy.net/library/05811f9f3ba7253920faabd5a8b2308ee44ade0e89a016380957f654cb168262/server.tar.gz"
 dest = B / "494_server.tar.gz"
 r = requests.get(u, timeout=90, verify=False)

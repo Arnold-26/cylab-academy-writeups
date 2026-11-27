@@ -1,7 +1,7 @@
 import sys, os, time, requests, urllib3
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
-B = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
+B = r"/tmp/cylab_eps"
 dest = os.path.join(B, "413_full.img.gz")
 u = "https://challenge-files.cylabacademy.net/library/a25bb84ce58309d7ba5cfe01dd4d6d2ce05e5d4cfd5307216cec07d1eab3267c/disk.flag.img.gz"
 for attempt in range(8):

@@ -1,10 +1,10 @@
 import sys, tarfile, re, json, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 print("=== contenu complet du tarball 494 ===")
-with tarfile.open(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\494_server.tar.gz") as t:
+with tarfile.open(r"/tmp/cylab_eps\494_server.tar.gz") as t:
     for m in t.getmembers():
         print("  %-60s %s %d" % (m.name[:60], "D" if m.isdir() else "F", m.size))
 

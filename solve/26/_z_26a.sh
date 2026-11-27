@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 pip3 install --quiet sstv 2>&1 | tail -3
 python3 -c "import sstv; print('sstv ok', sstv.__file__)" 2>&1 | tail -2
 echo "=== decode ==="

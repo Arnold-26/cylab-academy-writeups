@@ -1,6 +1,6 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-out = [int(x) for x in open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/119_output.txt").read().split()]
+out = [int(x) for x in open("/tmp/cylab_eps/119_output.txt").read().split()]
 N = len(out)
 randoms = [((i * 327) % 681 + 344) % 313 for i in range(1, N + 1)]
 seeds = [(i * 127) % 500 for i in range(1, N + 1)]

@@ -1,5 +1,5 @@
 import sys, time
-sys.path.insert(0, "/mnt/d/ctf-index")
+sys.path.insert(0, ".")
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from ethlight import RPC, sign_tx, priv_to_address, selector, enc_addr, dec_string
 

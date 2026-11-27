@@ -1,7 +1,7 @@
 import sys, shutil, os, ctypes, ctypes.wintypes as wt, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-SRC = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win429\WinAntiDbg0x100.exe"
-DST = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win429\patched.exe"
+SRC = r"/tmp/cylab_eps\win429\WinAntiDbg0x100.exe"
+DST = r"/tmp/cylab_eps\win429\patched.exe"
 d = bytearray(open(SRC, "rb").read())
 pat = b"\xff\x15\x14\x30\x40\x00"
 new = b"\x31\xc0\x90\x90\x90\x90"

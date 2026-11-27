@@ -1,6 +1,6 @@
 set pagination off
 set confirm off
-file /mnt/d/ctf-index/_z_55/sice55
+file ./_z_55/sice55
 break *0x400c14
 run
 set $base = (unsigned long)((char*)&__malloc_hook - 0x3c4b10)

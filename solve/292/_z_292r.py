@@ -1,6 +1,6 @@
 import sys, re, time, subprocess, struct, os
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps"
+CWD = "/tmp/cylab_eps"
 EAX3, ADD2, ADD3 = 0x0809dae0, 0x0809da87, 0x0809daa0
 POP_EBX, POP_ECX, POP_EDX = 0x0804901e, 0x08049a31, 0x0805848e
 INT80, XOR_EDX, BSS = 0x0805e4b0, 0x08093fd3, 0x080e5000

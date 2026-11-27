@@ -5,11 +5,11 @@ phase B: use the controller as a MAC oracle to collect direction MACs at chosen 
 phase C: impersonate the controller, feed the robot the slide sequence, land on the flag
 """
 import sys, json, time, os, re
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from _z_495_lib import *
 
 Z = bytes(32)
-TBLF = r"D:\ctf-index\_z_495_macs.json"
+TBLF = r"./_z_495_macs.json"
 TBL = {}
 if os.path.exists(TBLF):
     TBL = {tuple(json.loads(k)): v for k, v in json.load(open(TBLF)).items()}

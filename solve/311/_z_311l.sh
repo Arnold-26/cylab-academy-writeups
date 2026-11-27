@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== un paquet du stream 4 : champs disponibles ==="
 tshark -r 311_torrent.pcap -Y "tcp.stream==4" -c 3 2>/dev/null | head -10
 echo

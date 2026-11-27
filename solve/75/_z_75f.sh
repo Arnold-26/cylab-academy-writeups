@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== relocations GOT ==="
 readelf -rW 75_zero_to_hero 2>/dev/null | head -25
 echo "=== adresse 0x601fe8 ==="

@@ -1,7 +1,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import pefile
-P = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\wine317\vuln.exe"
+P = r"/tmp/cylab_eps\wine317\vuln.exe"
 pe = pefile.PE(P)
 print("protege ASLR:", bool(pe.OPTIONAL_HEADER.DllCharacteristics & 0x40))
 # symboles

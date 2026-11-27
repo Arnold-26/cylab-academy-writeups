@@ -1,6 +1,6 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-data = open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/217_homework", "rb").read()
+data = open("/tmp/cylab_eps/217_homework", "rb").read()
 # le fichier est un ELF : vaddr 0x5260 -> offset fichier
 import struct
 phoff = struct.unpack_from("<Q", data, 0x20)[0]

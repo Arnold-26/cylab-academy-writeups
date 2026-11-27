@@ -1,6 +1,6 @@
 import sys, hashlib, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 TARGET = "a0dbf9a811f074dd0697566da46543f1725fd8561ec3f4c422696dc846caea86"
 names = [l.rstrip("\n") for l in (B / "474_cheese_list.txt").read_text(errors="replace").splitlines() if l.strip()]
 

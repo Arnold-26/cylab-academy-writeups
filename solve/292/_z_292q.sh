@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
-python3 /mnt/d/ctf-index/_z_292p.py
+cd /tmp/cylab_eps || exit 1
+python3 ./_z_292p.py
 cat > /tmp/g292.gdb <<'EOF'
 set pagination off
 run < in292.bin

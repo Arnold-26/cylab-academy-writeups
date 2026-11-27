@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 272_vuln
 nm 272_vuln 2>/dev/null | grep -E "easy_checker|hard_checker| check$| fun$"
 echo "--- desassemblage des adresses ---"

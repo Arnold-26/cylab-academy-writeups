@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin || exit 1
+cd /tmp/cylab_bin || exit 1
 echo "=== gadgets ==="
 ROPgadget --binary 179_vuln --only "pop|ret" 2>/dev/null | grep -E "pop rdi ; ret" | head -3
 echo "=== ret ==="

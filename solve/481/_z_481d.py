@@ -6,7 +6,7 @@ try:
 except Exception as e:
     print("err", e)
     sys.exit(1)
-BASE = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_z\481")
+BASE = pathlib.Path(r"/tmp/cylab_z\481")
 FLAG = re.compile(rb"(?:academy|picoCTF|PICOCTF)\{[^}]*\}")
 files = sorted(BASE.glob("*.png"))
 print("fichiers:", len(files))

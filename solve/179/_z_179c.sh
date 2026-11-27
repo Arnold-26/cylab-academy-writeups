@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin || exit 1
+cd /tmp/cylab_bin || exit 1
 python3 - <<'EOF'
 data = open('179_vuln','rb').read()
 # le .text commence a 0x400540 environ ; on cherche l'offset fichier

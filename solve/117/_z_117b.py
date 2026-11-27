@@ -1,7 +1,7 @@
 import sys, wave
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\117_main.wav"
+p = r"/tmp/cylab_eps\117_main.wav"
 w = wave.open(p, "rb")
 print("channels:", w.getnchannels(), "| width:", w.getsampwidth(), "| rate:", w.getframerate(),
       "| frames:", w.getnframes(), "| duree:", w.getnframes() / w.getframerate())

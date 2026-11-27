@@ -1,7 +1,7 @@
 import sys, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
-setup = ("cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+CWD = r"/tmp/cylab_eps"
+setup = ("cd /tmp/cylab_eps && "
          "cp -f 75_ld-2.29.so ld-2.29.so && cp -f 75_libc.so.6 libc.so.6 && "
          "chmod +x ld-2.29.so && ls -la ld-2.29.so libc.so.6")
 print(subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c", setup],
@@ -16,7 +16,7 @@ quit
 """
 open(CWD + r"\g75b.gdb", "w").write(gdb)
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "gdb -nx -q -batch -x g75b.gdb ./75_zero_to_hero 2>&1 | head -26"],
                      capture_output=True, text=True).stdout
 print(out[:2200])

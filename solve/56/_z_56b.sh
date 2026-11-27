@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 mkdir -p b1g && cd b1g || exit 1
 unzip -o -q ../56_b1g_mac.zip 2>/dev/null
 ls -la | head -10

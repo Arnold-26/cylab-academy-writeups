@@ -1,6 +1,6 @@
 import subprocess, string, sys, json, os
 
-BIN = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/149_checkpass"
+BIN = "/tmp/cylab_eps/149_checkpass"
 CHARS = [c for c in string.printable if c not in "\t\n\r\x0b\x0c"]
 PREFIX = sys.argv[1] if len(sys.argv) > 1 else "academy{"
 LOG = "/tmp/checkpass_progress.txt"

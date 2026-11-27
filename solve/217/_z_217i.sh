@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 print_flag="academy{TESTLOCAL123}"
 echo "$print_flag" > flag.txt
 run() {

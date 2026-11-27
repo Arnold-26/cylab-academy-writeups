@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf y483 && mkdir -p y483 && cd y483 || exit 1
 unzip -o -P picoctf ../483_suspicious.zip >/dev/null 2>&1
 ls -la

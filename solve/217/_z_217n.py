@@ -1,6 +1,6 @@
 import sys, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/217_homework"
+p = "/tmp/cylab_eps/217_homework"
 d = open(p, "rb").read()
 phoff = struct.unpack_from("<Q", d, 0x20)[0]
 phentsize = struct.unpack_from("<H", d, 0x36)[0]

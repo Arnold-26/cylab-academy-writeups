@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-P = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_message.wav"
+P = "/tmp/cylab_eps/26_message.wav"
 w = wave.open(P, "rb")
 rate = w.getframerate()
 raw = w.readframes(w.getnframes())
@@ -78,5 +78,5 @@ for st in starts:
             img[line, px, chan] = int(max(0, min(255, v)))
     line += 1
 print("lignes decodees:", line)
-Image.fromarray(img).save("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_manual.png")
+Image.fromarray(img).save("/tmp/cylab_eps/26_manual.png")
 print("ecrit 26_manual.png")

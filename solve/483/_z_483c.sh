@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/y483 || exit 1
-which upx || (echo arnold | sudo -S apt-get install -y -qq upx-ucl 2>&1 | tail -2; which upx)
+cd /tmp/cylab_eps/y483 || exit 1
+which upx || (echo userd | sudo -S apt-get install -y -qq upx-ucl 2>&1 | tail -2; which upx)
 if which upx >/dev/null 2>&1; then
   cp suspicious.exe un.exe
   upx -d un.exe 2>&1 | tail -4

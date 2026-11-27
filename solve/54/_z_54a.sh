@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 54_investigative-reversing-4-mystery
 strings -n 4 54_investigative-reversing-4-mystery | grep -aiE "bmp|flag|txt|Item|encoded|original" | head -12
 echo "=== boucle principale (constantes) ==="

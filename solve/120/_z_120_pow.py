@@ -1,7 +1,7 @@
 import socket, sys, time, re, hashlib, os
 import multiprocessing as mp
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-HOST, PORT = open(r"/mnt/d/ctf-index/_z_120url.txt").read().split()
+HOST, PORT = open(r"./_z_120url.txt").read().split()
 PORT = int(PORT)
 print("cible:", HOST, PORT)
 
@@ -62,6 +62,6 @@ print("apres PoW:", txt[:600])
 mn = re.search(r"Public Modulus :\s+(\d+)", txt)
 me = re.search(r"Clue :\s+(\d+)", txt)
 if mn and me:
-    open("/mnt/d/ctf-index/_z_120_ne.txt", "w").write(mn.group(1) + "\n" + me.group(1) + "\n")
+    open("./_z_120_ne.txt", "w").write(mn.group(1) + "\n" + me.group(1) + "\n")
     print("n et e sauves ; n bits =", len(mn.group(1)))
 s.close()

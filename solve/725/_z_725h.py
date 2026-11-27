@@ -1,6 +1,6 @@
 import sys, json, re, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 cy = CyLab(delay=0.8)
@@ -17,4 +17,4 @@ for _ in range(12):
             url = m.group(0)
             break
 print("URL:", url)
-open(r"D:\ctf-index\_z_725url.txt", "w").write(url or "")
+open(r"./_z_725url.txt", "w").write(url or "")

@@ -1,8 +1,8 @@
 import sys, re, time, socket
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-host, port = open(r"D:\ctf-index\_z_146url.txt").read().split()
+host, port = open(r"./_z_146url.txt").read().split()
 port = int(port)
-LOG = open(r"D:\ctf-index\_z_146log.txt", "w", encoding="utf-8", buffering=1)
+LOG = open(r"./_z_146log.txt", "w", encoding="utf-8", buffering=1)
 
 
 def log(*a):

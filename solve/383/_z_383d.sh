@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/g383 || exit 1
+cd /tmp/cylab_eps/g383 || exit 1
 echo "=== flag dans les textes dechiffres ==="
 grep -aoE "academy\{[^}]*\}|picoCTF\{[^}]*\}" p1.txt p2.txt p3.txt 2>/dev/null | head
 grep -aoE "academy\{[^}]*\}|picoCTF\{[^}]*\}" *.txt *.bin 2>/dev/null | head

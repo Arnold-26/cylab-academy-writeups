@@ -16,7 +16,7 @@ libc = ELF(LIBC, checksec=False)
 
 def start(remote=False):
     if remote:
-        host, port = open('/mnt/d/ctf-index/_z_55url.txt').read().split()
+        host, port = open('./_z_55url.txt').read().split()
         return remote if False else tubes.remote(host, int(port))
     return process(['./ld-2.23.so', '--library-path', '.', BIN])
 

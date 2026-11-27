@@ -1,7 +1,7 @@
 import sys, requests, json, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 requests.packages.urllib3.disable_warnings()
-base = open(r"D:\ctf-index\_z_529base.txt").read().strip()
+base = open(r"./_z_529base.txt").read().strip()
 U = base + "/verify-otp"
 cands = [
     "academy{1_l3d4b0utng", "1_l3d4b0utng", "1100001110001111000011100100",

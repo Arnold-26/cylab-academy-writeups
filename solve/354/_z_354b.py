@@ -2,7 +2,7 @@ import sys, pathlib, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from PIL import Image
 import numpy as np
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_iw/output.bmp"
+p = "/tmp/cylab_iw/output.bmp"
 im = Image.open(p).convert("RGB")
 a = np.array(im)
 print("shape:", a.shape)

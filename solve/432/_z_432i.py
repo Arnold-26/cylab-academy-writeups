@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_modified.jpg"
+p = r"/tmp/cylab_eps\432_modified.jpg"
 d = open(p, "rb").read()
 print("taille:", len(d))
 idxs = [m.start() for m in re.finditer(rb"2023", d)]

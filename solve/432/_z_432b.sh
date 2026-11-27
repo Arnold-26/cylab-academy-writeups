@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== tous les tags (noms) ==="
 exiftool -a -u -g1 432_original.jpg 2>/dev/null | awk -F: '{print $1}' | sort -u | head -60
 echo

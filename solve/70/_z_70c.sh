@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== symboles ==="
 nm 70_investigative-reversing-0-mystery 2>/dev/null | grep -E " T | t " | head -15
 echo "=== fonctions : insert / main ==="

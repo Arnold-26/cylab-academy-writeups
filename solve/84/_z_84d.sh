@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== UDP data frames (extrait) ==="
 tshark -r 84_shark-on-wire-2-capture.pcap -Y "udp.length>0" -T fields -e frame.number -e ip.src -e udp.srcport -e udp.dstport -e data.data 2>/dev/null | head -25
 echo "=== longueurs de trame des paquets TCP portant des donnees ==="

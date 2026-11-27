@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin || exit 1
+cd /tmp/cylab_bin || exit 1
 python3 - <<'EOF'
 import struct
 data = open('179_vuln','rb').read()

@@ -2,7 +2,7 @@ import sys, wave, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
 
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\117_main.wav"
+p = r"/tmp/cylab_eps\117_main.wav"
 w = wave.open(p, "rb")
 a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(int)
 w.close()

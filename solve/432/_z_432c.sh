@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 exiftool -b -ThumbnailImage 432_original.jpg > 432_thumb.jpg 2>/dev/null
 ls -la 432_thumb.jpg
 file 432_thumb.jpg

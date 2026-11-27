@@ -76,7 +76,7 @@
 | 72 | asm3 | Reverse Engineering | picoCTF 2019 | [lire](writeups/reverse-engineering/72-asm3.md) | — |
 | 73 | miniRSA | Cryptography | picoCTF 2019 | [lire](writeups/cryptography/73-minirsa.md) | — |
 | 74 | What Lies Within | Forensics | picoCTF 2019 | [lire](writeups/forensics/74-what-lies-within.md) | — |
-| 75 | zero_to_hero | Binary Exploitation | picoCTF 2019 | [lire](writeups/binary-exploitation/75-zero-to-hero.md) | [13 fichier(s)](solve/75/) |
+| 75 | zero_to_hero | Binary Exploitation | picoCTF 2019 | [lire](writeups/binary-exploitation/75-zero-to-hero.md) | [14 fichier(s)](solve/75/) |
 | 76 | AES-ABC | Cryptography | picoCTF 2019 | [lire](writeups/cryptography/76-aes-abc.md) | [6 fichier(s)](solve/76/) |
 | 77 | vault-door-5 | Reverse Engineering | picoCTF 2019 | [lire](writeups/reverse-engineering/77-vault-door-5.md) | — |
 | 78 | b00tl3gRSA3 | Cryptography | picoCTF 2019 | [lire](writeups/cryptography/78-b00tl3grsa3.md) | — |
@@ -127,8 +127,8 @@
 | 132 | GET aHEAD | Web Exploitation | picoCTF 2021 | [lire](writeups/web-exploitation/132-get-ahead.md) | — |
 | 133 | Binary Gauntlet 3 | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/133-binary-gauntlet-3.md) | [18 fichier(s)](solve/133/) |
 | 134 | Shop | Reverse Engineering | picoCTF 2021 | [lire](writeups/reverse-engineering/134-shop.md) | — |
-| 135 | Download Horsepower | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/135-168-178-v8-trio.md) | [3 fichier(s)](solve/135/) |
-| 136 | Clouds | Cryptography | picoCTF 2021 | [lire](writeups/cryptography/136-clouds.md) | [9 fichier(s)](solve/136/) |
+| 135 | Download Horsepower | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/135-168-178-v8-trio.md) | [21 fichier(s)](solve/135/) |
+| 136 | Clouds | Cryptography | picoCTF 2021 | [lire](writeups/cryptography/136-clouds.md) | [10 fichier(s)](solve/136/) |
 | 137 | Disk, disk, sleuth! II | Forensics | picoCTF 2021 | [lire](writeups/forensics/137-disk-disk-sleuth-ii.md) | — |
 | 138 | What's your input? | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/138-what-s-your-input.md) | [2 fichier(s)](solve/138/) |
 | 139 | Milkslap | Forensics | picoCTF 2021 | [lire](writeups/forensics/139-milkslap.md) | — |
@@ -155,7 +155,7 @@
 | 164 | Stonk Market | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/164-stonk-market.md) | [24 fichier(s)](solve/164/) |
 | 166 | Python Wrangling | General Skills | picoCTF 2021 | [lire](writeups/general-skills/166-python-wrangling.md) | — |
 | 167 | Binary Gauntlet 0 | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/167-binary-gauntlet-0.md) | [2 fichier(s)](solve/167/) |
-| 168 | Kit Engine | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/168-kit-engine.md) | [1 fichier(s)](solve/168/) |
+| 168 | Kit Engine | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/168-kit-engine.md) | [19 fichier(s)](solve/168/) |
 | 169 | It is my Birthday 2 | Cryptography | picoCTF 2021 | [lire](writeups/cryptography/169-it-is-my-birthday-2.md) | [11 fichier(s)](solve/169/) |
 | 170 | Wave a flag | General Skills | picoCTF 2021 | [lire](writeups/general-skills/170-wave-a-flag.md) | — |
 | 171 | gogo | Reverse Engineering | picoCTF 2021 | [lire](writeups/reverse-engineering/171-gogo.md) | [13 fichier(s)](solve/171/) |
@@ -165,10 +165,10 @@
 | 175 | crackme-py | Reverse Engineering | picoCTF 2021 | [lire](writeups/reverse-engineering/175-crackme-py.md) | — |
 | 176 | Tab, Tab, Attack | General Skills | picoCTF 2021 | [lire](writeups/general-skills/176-tab-tab-attack.md) | — |
 | 177 | Most Cookies | Web Exploitation | picoCTF 2021 | [lire](writeups/web-exploitation/177-most-cookies.md) | — |
-| 178 | Turboflan | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/178-turboflan.md) | — |
+| 178 | Turboflan | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/178-turboflan.md) | [18 fichier(s)](solve/178/) |
 | 179 | Here's a LIBC | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/179-here-s-a-libc.md) | [8 fichier(s)](solve/179/) |
 | 180 | Super Serial | Web Exploitation | picoCTF 2021 | [lire](writeups/web-exploitation/180-super-serial.md) | [9 fichier(s)](solve/180/) |
-| 181 | Bizz Fuzz | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/181-bizz-fuzz.md) | [20 fichier(s)](solve/181/) |
+| 181 | Bizz Fuzz | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/181-bizz-fuzz.md) | [24 fichier(s)](solve/181/) |
 | 182 | Some Assembly Required 4 | Web Exploitation | picoCTF 2021 | [lire](writeups/web-exploitation/182-some-assembly-required-4.md) | [24 fichier(s)](solve/182/) |
 | 183 | ARMssembly 4 | Reverse Engineering | picoCTF 2021 | [lire](writeups/reverse-engineering/183-armssembly-4.md) | [1 fichier(s)](solve/183/) |
 | 184 | filtered-shellcode | Binary Exploitation | picoCTF 2021 | [lire](writeups/binary-exploitation/184-filtered-shellcode.md) | [17 fichier(s)](solve/184/) |
@@ -281,14 +281,14 @@
 | 320 | First Find | General Skills | None | [lire](writeups/general-skills/320-first-find.md) | — |
 | 322 | Big Zip | General Skills | None | [lire](writeups/general-skills/322-big-zip.md) | — |
 | 345 | babygame01 | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/345-babygame01.md) | [10 fichier(s)](solve/345/) |
-| 346 | babygame02 | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/346-babygame02.md) | [19 fichier(s)](solve/346/) |
+| 346 | babygame02 | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/346-babygame02.md) | [24 fichier(s)](solve/346/) |
 | 347 | chrono | General Skills | picoCTF 2023 | [lire](writeups/general-skills/347-chrono.md) | — |
 | 348 | FindAndOpen | Forensics | picoCTF 2023 | [lire](writeups/forensics/348-findandopen.md) | — |
 | 349 | findme | Web Exploitation | picoCTF 2023 | [lire](writeups/web-exploitation/349-findme.md) | — |
 | 350 | hideme | Forensics | picoCTF 2023 | [lire](writeups/forensics/350-hideme.md) | — |
 | 351 | HideToSee | Cryptography | picoCTF 2023 | [lire](writeups/cryptography/351-hidetosee.md) | — |
 | 352 | hijacking | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/352-hijacking.md) | [10 fichier(s)](solve/352/) |
-| 353 | Horsetrack | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/353-horsetrack.md) | — |
+| 353 | Horsetrack | Binary Exploitation | picoCTF 2023 | [lire](writeups/binary-exploitation/353-horsetrack.md) | [2 fichier(s)](solve/353/) |
 | 354 | Invisible WORDs | Forensics | picoCTF 2023 | [lire](writeups/forensics/354-invisible-words.md) | [11 fichier(s)](solve/354/) |
 | 355 | Java Code Analysis!?! | Web Exploitation | picoCTF 2023 | [lire](writeups/web-exploitation/355-java-code-analysis.md) | — |
 | 356 | MatchTheRegex | Web Exploitation | picoCTF 2023 | [lire](writeups/web-exploitation/356-matchtheregex.md) | — |
@@ -383,8 +383,8 @@
 | 448 | format string 2 | Binary Exploitation | picoCTF 2024 | [lire](writeups/binary-exploitation/448-format-string-2.md) | [3 fichier(s)](solve/448/) |
 | 449 | format string 3 | Binary Exploitation | picoCTF 2024 | [lire](writeups/binary-exploitation/449-format-string-3.md) | [8 fichier(s)](solve/449/) |
 | 450 | Verify | Forensics | picoCTF 2024 | [lire](writeups/forensics/450-verify.md) | — |
-| 451 | Binary Instrumentation 1 | Reverse Engineering | picoCTF 2025 | [lire](writeups/reverse-engineering/451-binary-instrumentation-1.md) | — |
-| 452 | Binary Instrumentation 2 | Reverse Engineering | picoCTF 2025 | [lire](writeups/reverse-engineering/452-binary-instrumentation-2.md) | — |
+| 451 | Binary Instrumentation 1 | Reverse Engineering | picoCTF 2025 | [lire](writeups/reverse-engineering/451-binary-instrumentation-1.md) | [8 fichier(s)](solve/451/) |
+| 452 | Binary Instrumentation 2 | Reverse Engineering | picoCTF 2025 | [lire](writeups/reverse-engineering/452-binary-instrumentation-2.md) | [8 fichier(s)](solve/452/) |
 | 453 | Bitlocker-1 | Forensics | picoCTF 2025 | [lire](writeups/forensics/453-bitlocker-1.md) | — |
 | 454 | Bitlocker-2 | Forensics | picoCTF 2025 | [lire](writeups/forensics/454-bitlocker-2.md) | — |
 | 456 | Event-Viewing | Forensics | picoCTF 2025 | [lire](writeups/forensics/456-event-viewing.md) | [13 fichier(s)](solve/456/) |

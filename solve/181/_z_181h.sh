@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 181_vuln 2>/dev/null
 echo "=== essai : 1, 2, fizz, 4, buzz ==="
 printf '1\n2\nfizz\n4\nbuzz\n' | timeout 5 ./181_vuln 2>&1 | head -12

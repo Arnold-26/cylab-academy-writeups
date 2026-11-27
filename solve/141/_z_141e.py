@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 for name in ("evil_duck.png", "duck.png"):
-    p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\o141" + "\\" + name
+    p = r"/tmp/cylab_eps\o141" + "\\" + name
     im = Image.open(p).convert("RGB")
     a = np.asarray(im)
     print("=====", name, a.shape, "=====")

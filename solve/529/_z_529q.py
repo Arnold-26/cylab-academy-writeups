@@ -1,7 +1,7 @@
 import sys, requests, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 requests.packages.urllib3.disable_warnings()
-base = open(r"D:\ctf-index\_z_529base.txt").read().strip()
+base = open(r"./_z_529base.txt").read().strip()
 print("base:", base)
 for path in ("/verify-otp", "/", "/download/"):
     try:

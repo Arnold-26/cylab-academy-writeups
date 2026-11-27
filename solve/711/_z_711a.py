@@ -1,12 +1,12 @@
 import sys, json, re, time, pathlib, requests
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 requests.packages.urllib3.disable_warnings()
 cy = CyLab(delay=1.2)
 cy.login()
-BASE = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_711")
+BASE = pathlib.Path(r"/tmp/cylab_711")
 BASE.mkdir(exist_ok=True)
 st, b = cy.req("GET", "/api/challenges/711/instance/")
 d = json.loads(b) if b.startswith("{") else {}

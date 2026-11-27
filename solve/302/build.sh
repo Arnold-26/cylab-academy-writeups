@@ -1,7 +1,7 @@
 #!/bin/bash
 # Build + link the eBPF solver (clang -> ET_REL, mklink.py -> ET_DYN for rbpf)
 set -e
-cd /mnt/d/ctf-index/_z_302
+cd ./_z_302
 CC=${CC:-/usr/bin/clang-21}
 echo "clang: $($CC --version | head -1)"
 # NOTE: -mcpu=v1 is mandatory. clang's default (v3) emits JMP32 (opcode 0x56),

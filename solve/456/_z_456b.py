@@ -7,7 +7,7 @@ except Exception as e:
     print("err import:", e)
     sys.exit(1)
 
-path = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin/456_Windows_Logs.evtx"
+path = "/tmp/cylab_bin/456_Windows_Logs.evtx"
 records = []
 with Evtx(path) as log:
     for rec in log.records():

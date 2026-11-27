@@ -1,5 +1,5 @@
 #!/bin/bash
-IMG=/mnt/c/Users/arnol/Downloads/partition4.img
+IMG=~/Downloads/partition4.img
 timeout 600 fls -r -p -m "/" "$IMG" > /tmp/tl721.txt 2>/dev/null
 echo "lignes: $(wc -l < /tmp/tl721.txt)"
 echo "=== 25 entrees les plus recentes ==="

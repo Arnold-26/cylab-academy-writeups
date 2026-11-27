@@ -1,6 +1,6 @@
 import sys, struct, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_iw\output.bmp")
+p = pathlib.Path(r"/tmp/cylab_iw\output.bmp")
 d = p.read_bytes()
 print("taille:", len(d))
 print("signature:", d[:2])

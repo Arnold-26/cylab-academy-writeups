@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf t83 && mkdir t83 && cd t83 || exit 1
 cp ../83_investigative-reversing-3-encoded.bmp original.bmp
 python3 -c "open('flag.txt','w').write('academy{' + 'A'*42)"

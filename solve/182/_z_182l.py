@@ -33,7 +33,7 @@ except Exception:
     pass
 
 # soumission
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 import wu
 txt = s.decode("latin-1")

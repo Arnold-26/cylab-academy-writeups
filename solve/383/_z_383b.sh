@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== artefacts 383 ==="
 ls -la 383* 2>/dev/null | head -10
 echo "=== dossier g383 ==="

@@ -29,8 +29,8 @@ def build(name, ct_line):
              + B2 + '"\nMIME-Version: 1.0\nFrom: admin@ses\nTo: admin@ses\nSubject: Re: ' + D_outer + '\n'
              '\nThis is an S/MIME signed message\n\n--' + B2 + '\n' + inner + '\n' + sig_part)
     open(name, 'w').write(outer)
-    subprocess.run(['cp', name, '/mnt/d/ctf-index/_z_496_emls/' + name])
-    p = subprocess.run(['node', '/mnt/d/ctf-index/_z_496_parse.js', '/mnt/d/ctf-index/_z_496_emls/' + name],
+    subprocess.run(['cp', name, './_z_496_emls/' + name])
+    p = subprocess.run(['node', './_z_496_parse.js', './_z_496_emls/' + name],
                        capture_output=True, text=True)
     print('===', name, 'rc', p.returncode, '===')
     print(p.stdout[:250] or p.stderr[:250])
@@ -38,8 +38,8 @@ def build(name, ct_line):
                        capture_output=True, text=True)
     print('verify rc', r.returncode, r.stderr.strip()[:120])
     if r.returncode == 0:
-        subprocess.run(['cp', name + '.out', '/mnt/d/ctf-index/_z_496_emls/' + name + '.out'])
-        p2 = subprocess.run(['node', '/mnt/d/ctf-index/_z_496_parse.js', '/mnt/d/ctf-index/_z_496_emls/' + name + '.out'],
+        subprocess.run(['cp', name + '.out', './_z_496_emls/' + name + '.out'])
+        p2 = subprocess.run(['node', './_z_496_parse.js', './_z_496_emls/' + name + '.out'],
                             capture_output=True, text=True)
         print('signed-content parse:', p2.stdout[:250])
 

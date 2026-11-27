@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/b56 || exit 1
+cd /tmp/cylab_eps/b56 || exit 1
 echo "=== signatures packaging ==="
 strings main.exe | grep -aiE "pyinstaller|PYZ|MEI|python3|nuitka|py2exe|_MEIPASS" | head -10
 echo "=== sections PE ==="

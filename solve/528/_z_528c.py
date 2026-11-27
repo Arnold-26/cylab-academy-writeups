@@ -1,6 +1,6 @@
 import sys, zipfile, re, pathlib, base64
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\528_minions.apk")
+B = pathlib.Path(r"/tmp/cylab_eps\528_minions.apk")
 z = zipfile.ZipFile(B)
 pat = re.compile(rb"academy\{[^}\x00]{0,120}\}")
 hits = []

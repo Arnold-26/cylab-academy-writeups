@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/g383 || exit 1
+cd /tmp/cylab_eps/g383 || exit 1
 echo "=== steghide 7.bmp avec le mot de passe LoL ==="
 rm -f s7.bin finallyReleased.txt
 steghide extract -sf 7.bmp -p "yasuoaatroxashecassiopeia" -xf s7.bin -f 2>&1 | tail -3

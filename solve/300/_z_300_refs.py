@@ -1,8 +1,8 @@
 import struct, re, sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"D:\ctf-index\_z_wad300u\WinAntiDbg0x300.exe"
+p = r"./_z_wad300u\WinAntiDbg0x300.exe"
 d = open(p, "rb").read()
-asm = open(r"D:\ctf-index\_z_wad300u\_300.asm", encoding="utf-8", errors="replace").read()
+asm = open(r"./_z_wad300u\_300.asm", encoding="utf-8", errors="replace").read()
 
 for va in (0x408d94, 0x408e50, 0x408dc0):
     pat = struct.pack("<I", va)

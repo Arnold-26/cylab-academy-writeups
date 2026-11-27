@@ -1,7 +1,7 @@
 import sys, re, requests, urllib3, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 base = "http://xebec.cylabacademy.net:33257/"
 r = requests.get(base + "ZoRd23o0wd", timeout=20)
 p = B / "182_wasm.bin"

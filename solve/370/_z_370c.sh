@@ -1,5 +1,5 @@
 #!/bin/bash
-which pmars || (echo arnold | sudo -S apt-get install -y -qq pmars 2>&1 | tail -2; which pmars)
+which pmars || (echo userd | sudo -S apt-get install -y -qq pmars 2>&1 | tail -2; which pmars)
 mkdir -p /tmp/cw && cd /tmp/cw || exit 1
 printf ';redcode\n;name Imp\n;assert 1\nmov 0, 1\nend\n' > imp.red
 cat > herem.red <<'EOF'

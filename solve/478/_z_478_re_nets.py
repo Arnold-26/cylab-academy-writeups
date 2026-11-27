@@ -43,4 +43,4 @@ print('output runs:', runs(outputs))
 json.dump({'inputs': inputs, 'outputs': outputs,
            'read': {k: v for k, v in read.items()},
            'written': {k: v for k, v in written.items()}},
-          open('/mnt/d/ctf-index/_z_pachinko/_z_nets.json', 'w'))
+          open('./_z_pachinko/_z_nets.json', 'w'))

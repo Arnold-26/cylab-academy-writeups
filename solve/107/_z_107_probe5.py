@@ -1,6 +1,6 @@
 import socket, sys, time, re, json, itertools, collections
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-host, port = open(r"D:\ctf-index\_z_107url.txt").read().split()
+host, port = open(r"./_z_107url.txt").read().split()
 port = int(port)
 s = socket.create_connection((host, port), timeout=20)
 s.settimeout(2.5)
@@ -69,5 +69,5 @@ for q in ["ax", "xa", "aa", "xx"]:
     print("%r : %d decoupages possibles" % (q, len(sp)))
     for x in sp:
         print("   ", x[0][:16], "... |", x[1][:16], "...")
-json.dump(data, open(r"D:\ctf-index\_z_107_data2.json", "w"))
+json.dump(data, open(r"./_z_107_data2.json", "w"))
 s.close()

@@ -2,7 +2,7 @@ import sys, pathlib, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from PIL import Image
 import numpy as np
-BASE = pathlib.Path("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_z/481")
+BASE = pathlib.Path("/tmp/cylab_z/481")
 FLAG = re.compile(rb"(?:academy|picoCTF|PICOCTF)\{[^}]*\}")
 files = sorted(BASE.glob("*.png"))
 print("fichiers:", len(files))

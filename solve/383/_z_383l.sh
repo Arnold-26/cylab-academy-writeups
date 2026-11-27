@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 OFF=731136
 echo "=== istat inode 2365 (1.txt) ==="
 istat -o $OFF 383_disk.img 2365 2>/dev/null | head -20

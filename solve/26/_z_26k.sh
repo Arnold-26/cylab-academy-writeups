@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/sstvall || exit 1
+cd /tmp/cylab_eps/sstvall || exit 1
 python3 - <<'PYEOF'
 import sstv, wave, numpy as np
-src = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_message.wav"
+src = "/tmp/cylab_eps/26_message.wav"
 w = wave.open(src, 'rb')
 sr = w.getframerate()
 data = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(float)

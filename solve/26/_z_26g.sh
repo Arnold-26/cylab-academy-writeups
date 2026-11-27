@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 python3 - <<'PYEOF'
 import inspect, sstv
 print("decode:", inspect.signature(sstv.decode))
@@ -10,11 +10,11 @@ echo "=== decodage tous modes ==="
 mkdir -p sstvall && cd sstvall || exit 1
 python3 - <<'PYEOF'
 import sstv, os
-src = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_message.wav"
+src = "/tmp/cylab_eps/26_message.wav"
 for m in sstv.Mode:
     try:
         img, mode = sstv.decode_from_wav(src, m)
-        out = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/sstvall/%s.png" % m.name.replace(" ", "_")
+        out = "/tmp/cylab_eps/sstvall/%s.png" % m.name.replace(" ", "_")
         img.save(out)
         print("%-14s -> %s %s" % (m.name, img.size, out))
     except Exception as e:

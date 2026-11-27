@@ -1,5 +1,5 @@
 import sys, re
-exec(open('/mnt/d/ctf-index/_z_136_solve.py').read().split('# ------------------------------------------------------------------ client')[0])
+exec(open('./_z_136_solve.py').read().split('# ------------------------------------------------------------------ client')[0])
 log = open('/tmp/c136/log.txt').read()
 m = re.search(r'flag ciphertext: ([0-9a-f]+)', log)
 hx = m.group(1)

@@ -1,6 +1,6 @@
 import sys, zipfile, struct, pathlib, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 z = zipfile.ZipFile(B / "56_b1g_mac.zip")
 
 

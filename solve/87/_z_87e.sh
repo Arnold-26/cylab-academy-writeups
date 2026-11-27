@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== /root ==="
 fls -p 87_suspicious.dd.sda1 2009 2>/dev/null | head -5
 fls -r -p 87_suspicious.dd.sda1 2>/dev/null | grep -iE "root|flag|secret|\.txt" | head -15

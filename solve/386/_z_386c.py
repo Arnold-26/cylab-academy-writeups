@@ -13,7 +13,7 @@ print("=== SERVICE ===")
 print(out.decode("utf-8", "replace")[:1200])
 s.close()
 # 2) le modele
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 z = zipfile.ZipFile(B / "386_Virtual-Machine-1.zip")
 name = z.namelist()[0]
 data = z.read(name).decode("utf-8", "replace")

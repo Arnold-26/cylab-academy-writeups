@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
+B = r"/tmp/cylab_eps"
 START, STRIDE, PER = 2019, 12, 10
 out = []
 for i in range(1, 6):

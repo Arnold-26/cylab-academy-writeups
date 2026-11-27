@@ -1,7 +1,7 @@
 import sys, ctypes, ctypes.wintypes as wt, subprocess, os, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 k32 = ctypes.WinDLL("kernel32", use_last_error=True)
-EXE = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win429\WinAntiDbg0x100.exe"
+EXE = r"/tmp/cylab_eps\win429\WinAntiDbg0x100.exe"
 DEBUG_ONLY_THIS_PROCESS = 0x00000002
 CREATE_NEW_CONSOLE = 0x00000010
 DBG_CONTINUE = 0x00010002

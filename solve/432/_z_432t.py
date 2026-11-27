@@ -1,7 +1,7 @@
 import sys, socket, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 HOST = "xebec.cylabacademy.net"
-IMG = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_patched.jpg"
+IMG = r"/tmp/cylab_eps\432_patched.jpg"
 data = open(IMG, "rb").read()
 for port in (11534, 11287):
     print("\n=== port %d ===" % port)

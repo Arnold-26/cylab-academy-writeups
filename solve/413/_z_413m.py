@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t413_dummy"
+p = r"/tmp/cylab_eps/t413_dummy"
 img = "/tmp/t413.img"
 d = open(img, "rb").read()
 needle = b"innocuous-file.txt"

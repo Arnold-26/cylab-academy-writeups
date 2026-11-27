@@ -22,7 +22,7 @@ row = ("| 2026-11-27 | secure-email-service (496) | web/s-mime | "
        "Valide sur une VRAIE reponse capturee (instance sacrifiee avec `From :user@ses`) avec `parser.wasm` + "
        "`openssl.wasm` + le vrai CA : html==payload, `CMS Verification successful`. |\n")
 
-p = r'C:\Users\arnol\CTF\flags.md'
+p = r'.\flags.md'
 with open(p, 'ab') as f:
     f.write(row.encode('utf-8'))
 print('appended', len(row), 'chars')

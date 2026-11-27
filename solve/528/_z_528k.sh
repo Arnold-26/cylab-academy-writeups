@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/m528/528_minions || exit 1
+cd /tmp/cylab_eps/m528/528_minions || exit 1
 echo "=== layouts ==="
 ls res/layout* 2>/dev/null | head
 echo "=== activity_main.xml ==="

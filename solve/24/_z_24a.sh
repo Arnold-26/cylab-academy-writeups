@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_re || exit 1
+cd /tmp/cylab_re || exit 1
 cat > /tmp/gdb24.txt <<'EOF'
 set pagination off
 break doNothing

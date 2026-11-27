@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/pm_215 || exit 1
+cd /tmp/cylab_eps/pm_215 || exit 1
 chmod +x chall
 file chall | cut -c1-120
 echo "=== checksec-like ==="

@@ -1,6 +1,6 @@
 import sys, re, base64
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-IMG = "/mnt/c/Users/arnol/Downloads/partition4.img"
+IMG = "~/Downloads/partition4.img"
 b64re = re.compile(rb"[A-Za-z0-9+/]{24,}={0,2}")
 b32re = re.compile(rb"[A-Z2-7]{24,}={0,6}")
 NEEDLES = (b"academy{", b"picoCTF{", b"academy", b"picoCTF")

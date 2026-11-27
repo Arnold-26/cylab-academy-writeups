@@ -2,7 +2,7 @@ import os, sys
 from pwn import *
 context.log_level = 'debug'
 context.arch = 'amd64'
-HERE = '/mnt/d/ctf-index/_z_441'
+HERE = './_z_441'
 io = process(os.path.join(HERE, 'hft'))
 
 def alloc(size, data=b''):

@@ -2,7 +2,7 @@ import subprocess, sys, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import sympy
 
-ct, dval = [int(x) for x in open("/mnt/d/ctf-index/_z_379_data.txt").read().split()]
+ct, dval = [int(x) for x in open("./_z_379_data.txt").read().split()]
 K = 65537 * dval - 1
 print("K bits:", K.bit_length())
 
@@ -49,4 +49,4 @@ print("reste:", rem, "bits", rem.bit_length() if rem > 1 else 0)
 for p, e in sorted(found.items()):
     print("   %d^%d  (%d bits)" % (p, e, p.bit_length()))
 import json
-json.dump({"factors": {str(p): e for p, e in found.items()}, "rest": str(rem)}, open("/mnt/d/ctf-index/_z_379_fac.json", "w"))
+json.dump({"factors": {str(p): e for p, e in found.items()}, "rest": str(rem)}, open("./_z_379_fac.json", "w"))

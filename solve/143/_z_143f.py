@@ -1,6 +1,6 @@
 import sys, socket, time, re, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps"
+CWD = "/tmp/cylab_eps"
 # entree : format string puis ligne bidon
 fmt = ".".join(["%p"] * 40)
 with open(CWD + "/in143.txt", "w") as f:
@@ -16,7 +16,7 @@ quit
 """
 open(CWD + "/g143.gdb", "w").write(gdb_script)
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "chmod +x 143_gauntlet && gdb -nx -q -batch -x g143.gdb ./143_gauntlet 2>&1 | head -30"],
                      capture_output=True, text=True).stdout
 print(out)

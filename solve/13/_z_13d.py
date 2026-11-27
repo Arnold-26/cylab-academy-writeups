@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\13_investigative-reversing-2-encoded.bmp"
+p = r"/tmp/cylab_eps\13_investigative-reversing-2-encoded.bmp"
 d = open(p, "rb").read()
 bits = [b & 1 for b in d[:49 * 7]]
 print("bits:", len(bits), "premiers:", bits[:21])

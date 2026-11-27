@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 file 57_win-exec-1.exe | cut -c1-150
 echo "=== .NET ? ==="
 strings -n 6 57_win-exec-1.exe | grep -aiE "^\.NET|mscoree|System\.|mscorlib|dnlib|Confuser" | head -10
@@ -8,7 +8,7 @@ strings -n 5 57_win-exec-1.exe | grep -aiE "picoCTF|academy|flag|password|correc
 echo "=== taille / sections ==="
 python3 - <<'PYEOF'
 import struct
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/57_win-exec-1.exe"
+p = "/tmp/cylab_eps/57_win-exec-1.exe"
 d = open(p,'rb').read()
 print("taille:", len(d), "| MZ:", d[:2])
 off = struct.unpack('<I', d[0x3c:0x40])[0]

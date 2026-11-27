@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t346 || exit 1
+cd /tmp/cylab_eps/t346 || exit 1
 echo "=== local : w*4 + a*8 + p ==="
 python3 -c "print('w'*4 + 'a'*8 + 'p')" > exp.txt
 timeout 15 ./346_game < exp.txt 2>&1 | tail -6

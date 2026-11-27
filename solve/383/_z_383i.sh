@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/g383 || exit 1
+cd /tmp/cylab_eps/g383 || exit 1
 KEY=58593a7522257f2a95cce9a68886ff78546784ad7db4473dbd91aecd9eefd508
 IV=7a12fd4dc1898efcd997a1b9496e7591
 for F in out_1.bmp.bin out_2.bmp.bin out_3.bmp.bin; do

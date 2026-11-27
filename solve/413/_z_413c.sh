@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /tmp || exit 1
-SRC=/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/413_disk.flag.img.gz
+SRC=/tmp/cylab_eps/413_disk.flag.img.gz
 if [ ! -f t413.img ]; then
   echo "=== decompression ==="
   gunzip -c "$SRC" > t413.img 2>/dev/null || cp "$SRC" t413.img.gz

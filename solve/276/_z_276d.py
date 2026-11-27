@@ -1,6 +1,6 @@
 import sys, subprocess, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-P = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/276_keygenme"
+P = "/tmp/cylab_eps/276_keygenme"
 d = open(P, "rb").read()
 # trouver les adresses des morceaux
 for s in (b"academy{H", b"br1ng_y0H", b"g_y0ur_0H", b"wn_k3y_", b"dH"):

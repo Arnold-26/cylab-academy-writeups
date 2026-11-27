@@ -74,7 +74,7 @@ def start(mode='local', host=None, port=None):
         p = remote(host, int(port)); pid = None
     else:
         p = process(['./ld-2.23.so', '--library-path', '.', './sice_cream'],
-                    cwd=os.environ.get('WD', '/mnt/d/ctf-index/_z_55'),
+                    cwd=os.environ.get('WD', './_z_55'),
                     stderr=process.STDOUT)
         pid = p.pid
 

@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\182_wasm.bin"
+p = r"/tmp/cylab_eps\182_wasm.bin"
 d = open(p, "rb").read()
 print("taille:", len(d))
 # le flag attendu est souvent construit char par char (XOR/add) ; chercher les gros blocs de donnees

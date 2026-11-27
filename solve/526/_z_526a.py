@@ -1,6 +1,6 @@
 import sys, subprocess, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-D = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_v")
+D = pathlib.Path(r"/tmp/cylab_v")
 
 
 def mnt(p):

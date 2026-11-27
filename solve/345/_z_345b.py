@@ -1,7 +1,7 @@
 import sys, re, requests, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 requests.packages.urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 for url, name in (
     ("https://challenge-files.cylabacademy.net/library/8fde883b8eb340c0eb1a1b754cbcb89e4ac5793b2db335218dadb6e750e58060/game", "345_game"),
     ("https://challenge-files.cylabacademy.net/library/a58b5ad9d6b7d25c303b279a792b7cc78780fc93b11734c87c45b6fa256809f3/game", "346_game"),

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 printf 'test123\n' > /tmp/in.txt
 gdb -nx -q -batch \
   -ex 'set pagination off' \

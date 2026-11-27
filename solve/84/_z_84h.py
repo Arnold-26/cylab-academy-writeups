@@ -2,7 +2,7 @@ import sys, collections
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import subprocess
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-c",
-                      "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && "
+                      "cd /tmp/cylab_eps && "
                       "tshark -r 84_shark-on-wire-2-capture.pcap -Y udp -T fields "
                       "-e frame.number -e ip.src -e udp.srcport -e udp.dstport 2>/dev/null"],
                      capture_output=True, text=True).stdout

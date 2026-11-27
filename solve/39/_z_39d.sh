@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 cp 39_need-for-speed 39_patched
 python3 - <<'PYEOF'
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/39_patched"
+p = "/tmp/cylab_eps/39_patched"
 d = bytearray(open(p,'rb').read())
 off = 0x1314
 print("avant:", d[off:off+5].hex())

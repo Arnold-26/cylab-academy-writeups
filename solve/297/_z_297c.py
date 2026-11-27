@@ -1,6 +1,6 @@
 import sys, json, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 import wu
 
@@ -19,7 +19,7 @@ if ok and not already:
              "rapide modulo 10^10000 (O(log n) multiplications). Le MD5 du resultat valide la reponse, "
              "puis la cle SHA-256 dechiffre le flag.")
 # afficher le script 148
-p = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_cr\new_vignere.py")
+p = pathlib.Path(r"/tmp/cylab_cr\new_vignere.py")
 if p.exists():
     print("\n=== 148 new_vignere.py ===")
     print(p.read_text(encoding="utf-8", errors="replace")[:1500])

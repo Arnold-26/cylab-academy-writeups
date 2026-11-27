@@ -1,6 +1,6 @@
 import sys, re, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\pb529\dec\smali_classes3\com\example\picobank\MainActivity.smali")
+p = pathlib.Path(r"/tmp/cylab_eps\pb529\dec\smali_classes3\com\example\picobank\MainActivity.smali")
 txt = p.read_text(errors="replace")
 vals = re.findall(r'\$ ([01]{5,9})', txt)
 print("valeurs:", len(vals))

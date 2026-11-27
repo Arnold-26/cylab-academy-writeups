@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 F=529_pico-bank.apk
 U="http://chatelaine.cylabacademy.net:48796/download/pico-bank.apk"
 for i in 1 2 3 4 5 6; do

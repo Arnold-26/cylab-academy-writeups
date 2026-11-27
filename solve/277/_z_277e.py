@@ -1,6 +1,6 @@
 import sys, json, re, time, requests, urllib3, urllib.parse
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 urllib3.disable_warnings()
 UUID = "3a136222-2f46-4372-9236-90095ca2eb4d"

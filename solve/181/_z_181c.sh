@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== _start pour trouver main ==="
 objdump -d -Mintel --start-address=0x8049000 --stop-address=0x8049090 181_vuln 2>/dev/null | grep -E "mov +edi|call" | head -6
 echo "=== zone 0x80491f0 - 0x80492d0 ==="

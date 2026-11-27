@@ -1,6 +1,6 @@
 import subprocess, string, sys, re
 
-BIN = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/149_checkpass"
+BIN = "/tmp/cylab_eps/149_checkpass"
 CHARS = string.ascii_lowercase + string.digits + "_" + string.ascii_uppercase
 PREFIX = sys.argv[1] if len(sys.argv) > 1 else "academy{"
 LOG = "/tmp/checkpass_progress.txt"

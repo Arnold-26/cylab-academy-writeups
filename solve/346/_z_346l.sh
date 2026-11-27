@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t346 || exit 1
+cd /tmp/cylab_eps/t346 || exit 1
 echo "=== 20 deplacements 'w' (un par ligne) ==="
 python3 -c "print('\n'.join(['w']*20))" > n1.txt
 timeout 15 ./346_game < n1.txt 2>&1 | grep -E "Player position" | tail -3

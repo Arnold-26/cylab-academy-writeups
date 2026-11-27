@@ -1,6 +1,6 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-out = [int(x) for x in open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/119_output.txt").read().split()]
+out = [int(x) for x in open("/tmp/cylab_eps/119_output.txt").read().split()]
 N = len(out)
 randoms = [((i * 327) % 681 + 344) % 313 for i in range(1, N + 1)]
 seeds = [(i * 127) % 500 for i in range(1, N + 1)]
@@ -53,6 +53,6 @@ for w, h, name in ((1584, 5, "a"), (264, 30, "b"), (132, 60, "c"), (99, 80, "d")
     for y in range(h):
         for x in range(w):
             px[x, y] = 1 if b[y * w + x] == "1" else 0
-    out_path = f"/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/119_{name}.png"
+    out_path = f"/tmp/cylab_eps/119_{name}.png"
     img.convert("L").resize((min(w * 8, 1600), min(h * 8, 1600)), Image.NEAREST).save(out_path)
     print("ecrit", out_path, w, h)

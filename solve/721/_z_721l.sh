@@ -1,5 +1,5 @@
 #!/bin/bash
-IMG=/mnt/c/Users/arnol/Downloads/partition4.img
+IMG=~/Downloads/partition4.img
 timeout 600 fls -rd -p -m "/" "$IMG" > /tmp/tl721d.txt 2>/dev/null
 wc -l /tmp/tl721d.txt
 echo "=== entrees supprimees de taille 40-60 octets ==="

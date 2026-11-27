@@ -1,10 +1,10 @@
 // 478 Pachinko — find the clock bit: toggle each candidate input and count how many
 // state bits evolve over several edges (a real clock makes the CPU's registers move).
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 const fs = require('fs');
 const N = 100000;
-const data = JSON.parse(fs.readFileSync('D:\\ctf-index\\_z_pachinko\\_z_rev_inputs.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('./_z_pachinko\\_z_rev_inputs.json', 'utf8'));
 
 // inputs that actually affect logic, excluding the three 16-bit buses 19..66
 const buses = new Set();
@@ -37,4 +37,4 @@ const results = cands.map(c => ({ bit: c, ev: evolveCount(c, 6) }))
   .sort((a, b) => b.ev - a.ev);
 console.log('top 25 by evolving bits:');
 for (const r of results.slice(0, 25)) console.log('  bit', r.bit, 'evolving', r.ev);
-fs.writeFileSync('D:\\ctf-index\\_z_pachinko\\_z_clock_scan.json', JSON.stringify(results));
+fs.writeFileSync('./_z_pachinko\\_z_clock_scan.json', JSON.stringify(results));

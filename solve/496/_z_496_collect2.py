@@ -3,7 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 BASE = sys.argv[1].rstrip('/')
 N = int(sys.argv[2]) if len(sys.argv) > 2 else 850
-OUT = r'D:\ctf-index\_z_496_bounds.json'
+OUT = r'./_z_496_bounds.json'
 
 def req(method, path, obj=None, token=None):
     data = json.dumps(obj).encode() if obj is not None else None
@@ -16,7 +16,7 @@ def req(method, path, obj=None, token=None):
         return json.loads(f.read().decode())
 
 try:
-    cfg = json.load(open(r'D:\ctf-index\_z_496_remote.json'))
+    cfg = json.load(open(r'./_z_496_remote.json'))
 except Exception:
     cfg = {}
 if cfg.get('base') == BASE and cfg.get('tok'):
@@ -25,7 +25,7 @@ if cfg.get('base') == BASE and cfg.get('tok'):
 else:
     pw = req('GET', '/api/password')
     tok = req('POST', '/api/login', {'username': 'user@ses', 'password': pw})
-    json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'D:\ctf-index\_z_496_remote.json', 'w'))
+    json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'./_z_496_remote.json', 'w'))
 print('tok', tok[:12], 'pw', pw)
 
 ids = []

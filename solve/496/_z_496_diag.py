@@ -12,9 +12,9 @@ def req(method, path, obj=None, token=None):
     with urllib.request.urlopen(r, timeout=120) as f:
         return json.loads(f.read().decode())
 
-cfg = json.load(open(r'D:\ctf-index\_z_496_remote.json'))
+cfg = json.load(open(r'./_z_496_remote.json'))
 tok = cfg['tok']
-preds = json.load(open(r'D:\ctf-index\_z_496_pred.json'))
+preds = json.load(open(r'./_z_496_pred.json'))
 pid = req('POST', '/api/send', {'to': 'user@ses', 'subject': 'diag', 'body': 'b'}, tok)
 em = req('GET', '/api/email/' + pid, None, tok)
 got = int(re.search(r'boundary="=+(\d+)=+"', em['data']).group(1))

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/o141 || exit 1
+cd /tmp/cylab_eps/o141 || exit 1
 for F in duck.png evil_duck.png; do
   echo "########## $F ##########"
   file "$F"

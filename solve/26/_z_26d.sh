@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf sstvout && mkdir sstvout && cd sstvout || exit 1
 cp ../26_message.wav .
 echo "=== decodage auto ==="

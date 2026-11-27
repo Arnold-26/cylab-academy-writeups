@@ -1,5 +1,5 @@
 import sys, re, time
-sys.path.insert(0, '/mnt/d/ctf-index/_z_446')
+sys.path.insert(0, './_z_446')
 from _z_446_solve import SEQ, run_remote
 
 for attempt in (1, 2):

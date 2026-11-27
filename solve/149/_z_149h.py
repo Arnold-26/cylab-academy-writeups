@@ -1,7 +1,7 @@
 import sys, subprocess, re, string
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 BIN = "./149_checkpass"
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_re"
+CWD = "/tmp/cylab_re"
 PREFIX = "academy{"
 SUFFIX = "}"
 

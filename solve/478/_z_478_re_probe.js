@@ -1,7 +1,7 @@
 // 478 Pachinko — reverse the Verilog CPU netlist from the compiled wasm.
 // Step 1: partition state[] into gate outputs vs netlist inputs.
 const path = require('path');
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 
 const N = 100000;

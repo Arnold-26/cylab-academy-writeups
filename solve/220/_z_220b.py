@@ -1,7 +1,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-a = open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v1", "rb").read()
-b = open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v2", "rb").read()
+a = open("/tmp/cylab_eps/220_breadth.v1", "rb").read()
+b = open("/tmp/cylab_eps/220_breadth.v2", "rb").read()
 print("tailles:", len(a), len(b))
 diffs = []
 n = min(len(a), len(b))

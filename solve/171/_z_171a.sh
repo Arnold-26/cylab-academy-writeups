@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 171_enter_password
 file 171_enter_password | cut -c1-120
 echo "=== chaines interessantes ==="

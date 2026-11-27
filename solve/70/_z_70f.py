@@ -1,6 +1,6 @@
 import sys, struct, zlib, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\70_investigative-reversing-0-mystery.png"
+p = r"/tmp/cylab_eps\70_investigative-reversing-0-mystery.png"
 d = open(p, "rb").read()
 print("taille:", len(d))
 j = 8

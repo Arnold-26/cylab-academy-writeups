@@ -2,7 +2,7 @@ import sys, requests, urllib3, hashlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
 base = "https://raw.githubusercontent.com/corkami/collisions/master/examples/free/"
-B = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
+B = r"/tmp/cylab_eps"
 got = {}
 for n in ("poeMD5_A.pdf", "poeMD5_B.pdf"):
     r = requests.get(base + n, timeout=30, verify=False)

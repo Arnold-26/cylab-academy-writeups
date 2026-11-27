@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== gadgets verifies ==="
 for a in 0x400c03 0x400c01 0x400828 0x400b96 0x400750; do
   echo "--- $a ---"

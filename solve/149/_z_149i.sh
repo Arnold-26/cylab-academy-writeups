@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf cg2 && mkdir cg2 && cd cg2 || exit 1
 for n in 8 10 11 12 13 14 15 16 20 24 32 40; do
   p=$(python3 -c "print('A'*$n)")

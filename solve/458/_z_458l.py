@@ -1,6 +1,6 @@
 import subprocess, sys, os
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps"
+CWD = "/tmp/cylab_eps"
 base = b"academy{0n3_bi7_4t_a_7im3}"
 print("len base:", len(base))
 found = None

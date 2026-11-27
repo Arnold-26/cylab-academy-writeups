@@ -1,12 +1,12 @@
 import sys, json, re, time, requests, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 requests.packages.urllib3.disable_warnings()
 cy = CyLab(delay=0.5)
 cy.login()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 cy.req("PUT", "/api/challenges/87/instance/?source=library")
 desc = ""
 for _ in range(10):

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 for pfx in "academy{" "picoCTF{"; do
   p="${pfx}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA}"
   echo "--- $pfx (${#p} caracteres) ---"

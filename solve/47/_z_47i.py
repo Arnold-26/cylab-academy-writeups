@@ -1,9 +1,9 @@
 import sys, struct, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
-BIN = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\47_investigation-encoded-1-mystery"
-OUT = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\47_investigation-encoded-1-output"
+BIN = r"/tmp/cylab_eps\47_investigation-encoded-1-mystery"
+OUT = r"/tmp/cylab_eps\47_investigation-encoded-1-output"
 d = open(BIN, "rb").read()
 secret = d[0x2020:0x2020 + 37]
 matrix = struct.unpack("<54i", d[0x2060:0x2060 + 216])

@@ -1,6 +1,6 @@
 import sys, zlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_iw/b3.bin"
+p = "/tmp/cylab_iw/b3.bin"
 d = open(p, "rb").read()
 print("taille:", len(d), "debut:", d[:8].hex())
 for i in range(min(128, len(d))):

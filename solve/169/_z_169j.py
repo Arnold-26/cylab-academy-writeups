@@ -1,9 +1,9 @@
 import sys, re, json, time, requests, urllib3, hashlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 urllib3.disable_warnings()
-B = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
+B = r"/tmp/cylab_eps"
 inv = open(B + r"\169_invite.pdf", "rb").read()
 tail = inv[-1000:]
 print("queue invite:", len(tail), hashlib.sha1(tail).hexdigest()[:16])

@@ -20,5 +20,5 @@ if len(found) >= 2:
     print("md5 A:", hashlib.md5(a).hexdigest())
     print("md5 B:", hashlib.md5(b).hexdigest())
     print("identiques ?", a == b)
-    open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/169_a.pdf", "wb").write(a)
-    open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/169_b.pdf", "wb").write(b)
+    open("/tmp/cylab_eps/169_a.pdf", "wb").write(a)
+    open("/tmp/cylab_eps/169_b.pdf", "wb").write(b)

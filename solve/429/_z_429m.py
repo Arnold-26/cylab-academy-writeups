@@ -1,7 +1,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import pefile
-P = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win429\WinAntiDbg0x100.exe"
+P = r"/tmp/cylab_eps\win429\WinAntiDbg0x100.exe"
 pe = pefile.PE(P)
 for entry in pe.DIRECTORY_ENTRY_IMPORT:
     dll = entry.dll.decode()

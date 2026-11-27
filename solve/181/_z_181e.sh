@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== formats / chaines proches ==="
 strings -t x -n 3 181_vuln | grep -iE "^.*(%[0-9]*s|%[0-9]*d|fizz|buzz|flag|enter|number|correct|wrong)" | head -15
 echo "=== suite de main ==="

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== _start ==="
 objdump -d -Mintel 13_investigative-reversing-2-mystery 2>/dev/null | sed -n '/<_start>:/,/^$/p' | head -12
 echo "=== main : boucle principale ==="

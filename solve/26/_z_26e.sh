@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== deja installe ? ==="
 python3 -c "import sstv; print('sstv module OK', sstv.__file__)" 2>&1 | head -2
 which sstv 2>/dev/null

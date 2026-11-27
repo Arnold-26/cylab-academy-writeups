@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 ls -la 149_checkpass 2>/dev/null
 file 149_checkpass | cut -c1-110
 echo "=== strings interessantes ==="

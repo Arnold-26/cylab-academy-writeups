@@ -1,5 +1,5 @@
 #!/bin/bash
-SRC="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/413_full.img.gz"
+SRC="/tmp/cylab_eps/413_full.img.gz"
 ls -la "$SRC"
 echo "=== integrite ==="
 gzip -t "$SRC" 2>&1 && echo "GZ OK" || echo "GZ INCOMPLET"

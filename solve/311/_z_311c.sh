@@ -1,5 +1,5 @@
 #!/bin/bash
-P="/mnt/c/Users/arnol/.dsh/attachments/v1/files/43/43be60629ba01766c6880b834d378edabe78a4874cd919efc69631cf32fa932e/torrent.pcap"
+P="~/.dsh/attachments/v1/files/43/43be60629ba01766c6880b834d378edabe78a4874cd919efc69631cf32fa932e/torrent.pcap"
 cd /tmp || exit 1
 timeout 600 tshark -r "$P" -Y "tcp.len>0" -T fields -e data.data 2>/dev/null > tcpdata.hex
 wc -l tcpdata.hex

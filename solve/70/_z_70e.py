@@ -3,7 +3,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
 from PIL import Image
 
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\70_investigative-reversing-0-mystery.png"
+p = r"/tmp/cylab_eps\70_investigative-reversing-0-mystery.png"
 a = np.asarray(Image.open(p).convert("RGB")).astype(np.uint8)
 print("shape:", a.shape)
 found = []

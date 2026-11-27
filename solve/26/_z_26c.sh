@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 python3 - <<'EOF' 2>&1 | tail -25
 import sstv
 img = sstv.decode_from_wav("26_message.wav")

@@ -2,7 +2,7 @@
 // Test: baseline all-zero; then set exactly one index to 255 and re-run.
 // If state[i] survives as 255, no gate writes bit i => i is a primary input (or unused).
 // If the run differs elsewhere too, bit i actually feeds logic.
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 const fs = require('fs');
 const N = 100000;
@@ -27,7 +27,7 @@ for (let i = 0; i < LIMIT; i++) {
 }
 const survivors = rows.filter(r => r.survives);
 const inputs = survivors.filter(r => r.diff > 0);
-fs.writeFileSync('D:\\ctf-index\\_z_pachinko\\_z_rev_inputs.json', JSON.stringify({ rows, survivors, inputs }, null, 0));
+fs.writeFileSync('./_z_pachinko\\_z_rev_inputs.json', JSON.stringify({ rows, survivors, inputs }, null, 0));
 console.log('tested', LIMIT);
 console.log('survivors (not overwritten):', survivors.length);
 console.log('of which affect logic:', inputs.length);

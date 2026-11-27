@@ -1,6 +1,6 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_modified.jpg"
+p = r"/tmp/cylab_eps\432_modified.jpg"
 d = open(p, "rb").read()
 old = b"2023:11:20 21:46:21.420+01:00"
 new = b"1970:01:01 00:00:00.001+00:00"

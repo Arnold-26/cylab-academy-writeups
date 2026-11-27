@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 for C in 207 211; do
   echo "=== $C ==="
   openssl rsa -in pm_$C/private.key -check -noout 2>&1 | head -8

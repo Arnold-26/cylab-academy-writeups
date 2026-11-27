@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/d/ctf-index/_z_55
+cd ./_z_55
 echo "=== adresse de la chaine (out)"
 strings -a -t x libc.so.6 | grep -n "double free or corruption" | head
 echo "=== recherche dans le code"

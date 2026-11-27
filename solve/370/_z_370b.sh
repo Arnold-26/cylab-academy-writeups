@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== imp.red ==="
 cat 370_imp.red
 echo "=== 141 try_me.pcap : protocoles ==="

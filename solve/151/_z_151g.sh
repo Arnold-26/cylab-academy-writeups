@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 readelf -h 151_remote 2>/dev/null | grep -i entry
 cat > /tmp/g151b.py <<'PYEOF'
 import gdb

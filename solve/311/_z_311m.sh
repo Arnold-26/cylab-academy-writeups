@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 tshark -r 311_torrent.pcap -Y "tcp.stream==4" -w /tmp/s4.pcap 2>/dev/null
 ls -la /tmp/s4.pcap
 echo "=== strings sur le pcap filtre ==="

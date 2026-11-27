@@ -1,6 +1,6 @@
 import sys, re, json, time, requests, urllib3, string, threading, queue
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 urllib3.disable_warnings()
 
@@ -20,7 +20,7 @@ print("base:", base)
 if not base:
     sys.exit(1)
 SENT = "right path"
-LOG = open(r"D:\ctf-index\_z_185log2.txt", "w", encoding="utf-8", buffering=1)
+LOG = open(r"./_z_185log2.txt", "w", encoding="utf-8", buffering=1)
 
 
 def log(*a):

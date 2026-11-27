@@ -2,7 +2,7 @@
 // Discovered so far: clock = 2, reset = 68, PC/addr = bits 51..66 (advances by 2/cycle).
 // Unknowns: which bus is inp_val vs out_val (19..34 / 35..50), and the
 // single-bit control nets write_enable / halted / flag.
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 const fs = require('fs');
 const N = 100000;
@@ -45,7 +45,7 @@ function hotBits(s, base) {
   return out;
 }
 
-const flagBin = fs.readFileSync('D:\\ctf-index\\_z_pachinko\\server\\programs\\flag.bin');
+const flagBin = fs.readFileSync('./_z_pachinko\\server\\programs\\flag.bin');
 const cfg = { addr: range(51), inp: range(19), out: range(35), we: null, halted: null, flag: null };
 const memEmpty = new Uint8Array(65536);
 const r0 = runCPU(memEmpty, cfg, 60);

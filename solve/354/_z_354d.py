@@ -1,7 +1,7 @@
 import sys, struct, pathlib, re
 import numpy as np
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_iw\output.bmp")
+p = pathlib.Path(r"/tmp/cylab_iw\output.bmp")
 d = p.read_bytes()
 offset = struct.unpack_from("<I", d, 10)[0]
 w, h = 960, 540

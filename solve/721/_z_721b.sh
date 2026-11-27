@@ -1,5 +1,5 @@
 #!/bin/bash
-IMG=/mnt/c/Users/arnol/Downloads/partition4.img
+IMG=~/Downloads/partition4.img
 echo "=== recherche brute du motif academy{ ==="
 timeout 300 grep -aob "academy{" "$IMG" | head -10
 echo "=== fls (racine) ==="

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/pm_213 || exit 1
+cd /tmp/cylab_eps/pm_213 || exit 1
 chmod +x chall
 readelf -h chall | grep -E "Type"
 echo "=== symboles flag ==="

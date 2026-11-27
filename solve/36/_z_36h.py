@@ -1,7 +1,7 @@
 import sys, subprocess, struct, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-BIN = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\36_no_auth_mistery"
-OUT = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\36_investigation-encoded-2-output"
+BIN = r"/tmp/cylab_eps\36_no_auth_mistery"
+OUT = r"/tmp/cylab_eps\36_investigation-encoded-2-output"
 d = open(BIN, "rb").read()
 va, off = 0x12e0, 0x12e0
 secret = d[off + (0x1300 - va):off + (0x1300 - va) + 71]

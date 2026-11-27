@@ -1,6 +1,6 @@
 """495 Ricochet - finishing move: one oracle pass for east@5, then serve the dialogue."""
 import sys, json, time
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 import _z_495_atk as A
 from _z_495_lib import *
 

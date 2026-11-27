@@ -1,9 +1,9 @@
 import sys, json, time
-sys.path.insert(0, "/mnt/d/ctf-index")
+sys.path.insert(0, ".")
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from ethlight import RPC, sign_tx, priv_to_address, selector, enc_uint, dec_string
 
-info = json.load(open("/mnt/d/ctf-index/_z_760info.json"))
+info = json.load(open("./_z_760info.json"))
 rpc = RPC(info["eth"])
 PK = info["pk"]
 CONTRACT = info["contract"]

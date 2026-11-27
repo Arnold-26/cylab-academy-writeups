@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\83_investigative-reversing-3-encoded.bmp"
+p = r"/tmp/cylab_eps\83_investigative-reversing-3-encoded.bmp"
 d = open(p, "rb").read()
 print("taille:", len(d), "| pixel offset:", int.from_bytes(d[10:14], "little"))
 

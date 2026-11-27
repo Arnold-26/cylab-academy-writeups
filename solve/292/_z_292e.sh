@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 for A in 0x80498ca 0x8049a96 0x8049ad1 0x8049cd3; do
   echo "=== gadget autour de $A ==="
   objdump -d -Mintel --start-address=$((A)) --stop-address=$((A+16)) 292_vuln 2>/dev/null | tail -8

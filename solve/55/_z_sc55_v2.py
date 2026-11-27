@@ -51,7 +51,7 @@ def start(mode='local', host=None, port=None):
         pid = None
     else:
         p = process(['./ld-2.23.so', '--library-path', '.', './sice_cream'],
-                    cwd='/mnt/d/ctf-index/_z_55', stderr=process.STDOUT)
+                    cwd='./_z_55', stderr=process.STDOUT)
         pid = p.pid
     _s = p.send
     def _tee(d, *a, **k):

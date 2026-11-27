@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 mkdir -p o141 && rm -f o141/*
 echo "=== objets HTTP ==="
 timeout 300 tshark -r 141_try_me.pcap --export-objects http,o141 -q 2>/dev/null

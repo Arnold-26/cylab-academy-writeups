@@ -2,7 +2,7 @@ import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from pathlib import Path
 for cid in (207, 211):
-    d = Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\pm_%d" % cid)
+    d = Path(r"/tmp/cylab_eps\pm_%d" % cid)
     key = (d / "private.key").read_text(errors="replace")
     enc = (d / "msg.enc").read_bytes()
     print("=== %d ===" % cid)

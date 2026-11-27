@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/d/ctf-index/_z_55
+cd ./_z_55
 cat > t_aslr.py <<'PY'
 import sys, time
 from pwn import *

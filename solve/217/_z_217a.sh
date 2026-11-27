@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== file/mitigations ==="
 file 217_homework | cut -c1-120
 readelf -l 217_homework 2>/dev/null | grep -E 'GNU_RELRO|GNU_STACK'

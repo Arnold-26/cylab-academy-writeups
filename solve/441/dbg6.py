@@ -1,7 +1,7 @@
 import os, struct
 from pwn import *
 context.log_level = 'error'
-HERE = '/mnt/d/ctf-index/_z_441'
+HERE = './_z_441'
 io = process(os.path.join(HERE, 'hft'), env={})
 
 def rd(addr, n):

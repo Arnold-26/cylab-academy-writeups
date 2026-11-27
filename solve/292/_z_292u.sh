@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 for A in 0x08093fd3 0x0804c325; do
   echo "=== octets a $A ==="
   python3 - "$A" <<'EOF'

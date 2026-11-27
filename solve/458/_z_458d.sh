@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 which gdb >/dev/null 2>&1 || { echo "gdb absent"; exit 0; }
 cat > /tmp/g458.gdb <<'EOF'
 set pagination off

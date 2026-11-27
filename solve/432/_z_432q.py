@@ -1,7 +1,7 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-src = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_original.jpg"
-dst = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_patched.jpg"
+src = r"/tmp/cylab_eps\432_original.jpg"
+dst = r"/tmp/cylab_eps\432_patched.jpg"
 d = bytearray(open(src, "rb").read())
 print("taille:", len(d))
 # 1) les 3 dates principales

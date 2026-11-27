@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/y483 || exit 1
+cd /tmp/cylab_eps/y483 || exit 1
 echo "=== ASCII (n>=5) : 40 premieres ==="
 strings -n 5 un.exe | head -40
 echo "=== UTF-16 (l) ==="

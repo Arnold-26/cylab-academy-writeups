@@ -1,6 +1,6 @@
 import sys, json, time, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 cy = CyLab(delay=1.5)

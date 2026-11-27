@@ -68,7 +68,7 @@ print("exploit vies:", len(seq_static), "coups")
 
 # test local
 p = subprocess.Popen(["./game"], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-                     cwd="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t446")
+                     cwd="/tmp/cylab_eps/t446")
 
 class P:
     def __init__(self, proc):

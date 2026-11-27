@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 346_game 446_game 2>/dev/null
 file 346_game | cut -c1-100
 echo "=== strings 346 ==="

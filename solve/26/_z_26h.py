@@ -2,7 +2,7 @@
 import sys, wave
 import numpy as np
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-P = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/26_message.wav"
+P = "/tmp/cylab_eps/26_message.wav"
 w = wave.open(P, "rb")
 rate = w.getframerate()
 x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0

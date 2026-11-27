@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 tshark -r 311_torrent.pcap -q -z follow,tcp,raw,4 2>/dev/null > /tmp/s4.txt
 wc -l /tmp/s4.txt
 # reconstituer les octets : les lignes du follow contiennent l'hexa

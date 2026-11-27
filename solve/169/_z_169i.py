@@ -1,7 +1,7 @@
 import sys, re, requests, urllib3, hashlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 urllib3.disable_warnings()
-B = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps"
+B = r"/tmp/cylab_eps"
 # 1) verifier si l'app propose invite.pdf
 for base in ("http://xebec.cylabacademy.net:32679/",):
     try:

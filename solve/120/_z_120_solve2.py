@@ -4,9 +4,9 @@ from flint import fmpz_mod_poly_ctx
 from Crypto.Util.number import GCD
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-HOST, PORT = open(r"/mnt/d/ctf-index/_z_120url.txt").read().split()
+HOST, PORT = open(r"./_z_120url.txt").read().split()
 PORT = int(PORT)
-LOG = open("/mnt/d/ctf-index/_z_120_log.txt", "w", buffering=1)
+LOG = open("./_z_120_log.txt", "w", buffering=1)
 
 
 def log(*a):
@@ -123,7 +123,7 @@ def main():
     log("reponse:", out[-300:])
     if mm:
         log("FLAG:", mm.group(0))
-        open("/mnt/d/ctf-index/_z_120_flag.txt", "w").write(mm.group(0))
+        open("./_z_120_flag.txt", "w").write(mm.group(0))
     s.close()
 
 

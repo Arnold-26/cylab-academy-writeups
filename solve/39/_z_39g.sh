@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 cp 39_need-for-speed 39_fast
 python3 - <<'PYEOF'
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/39_fast"
+p = "/tmp/cylab_eps/39_fast"
 d = bytearray(open(p,'rb').read())
 off = 0x1265
 orig = bytes.fromhex("554889e5c745f87b05afe7c745fc00000000eb18")

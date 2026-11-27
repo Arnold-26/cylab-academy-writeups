@@ -1,6 +1,6 @@
 import sys, json, re, time, socket
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 # sequence : w*4 -> (0,4) ; a*11 -> (0,-7) ; d*3 -> (0,-4) ; d*4 -> (0,0) ; s*29 -> (29,0) ; d*89 -> (29,89)
@@ -24,6 +24,6 @@ def run(sock, data):
 # test local d'abord
 import subprocess
 p = subprocess.run(["./446_game"], input=seq + "\n", capture_output=True, text=True,
-                   cwd="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t446", timeout=30)
+                   cwd="/tmp/cylab_eps/t446", timeout=30)
 print("=== LOCAL (fin) ===")
 print(p.stdout[-800:])

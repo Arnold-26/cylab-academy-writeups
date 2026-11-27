@@ -1,6 +1,6 @@
 import sys, zipfile, re, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\528_minions.apk")
+B = pathlib.Path(r"/tmp/cylab_eps\528_minions.apk")
 z = zipfile.ZipFile(B)
 for dex in ("classes3.dex", "classes2.dex"):
     data = z.read(dex)

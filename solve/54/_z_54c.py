@@ -1,8 +1,8 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\t54"
+B = r"/tmp/cylab_eps\t54"
 import os
-B = os.path.join(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps", "t54") if os.path.isdir(os.path.join(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps", "t54")) else "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t54"
+B = os.path.join(r"/tmp/cylab_eps", "t54") if os.path.isdir(os.path.join(r"/tmp/cylab_eps", "t54")) else "/tmp/cylab_eps/t54"
 for i in range(1, 6):
     pa = os.path.join(B, "encA0%d.bmp" % i)
     pb = os.path.join(B, "encB0%d.bmp" % i)

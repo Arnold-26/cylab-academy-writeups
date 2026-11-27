@@ -2,7 +2,7 @@ import sys, wave, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
 
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_m00n/message.wav"
+p = "/tmp/cylab_m00n/message.wav"
 w = wave.open(p, "rb")
 sr = w.getframerate()
 n = w.getnframes()

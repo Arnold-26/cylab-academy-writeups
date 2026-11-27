@@ -1,6 +1,6 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/219_riscy"
+p = "/tmp/cylab_eps/219_riscy"
 d = open(p, "rb").read()
 ct = d[0x210:0x210 + 52]
 print("chiffre:", ct.hex())

@@ -1,6 +1,6 @@
 import sys, struct, zlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-F = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\o141\duck.png"
+F = r"/tmp/cylab_eps\o141\duck.png"
 d = open(F, "rb").read()
 j = 8
 while j + 8 <= len(d):

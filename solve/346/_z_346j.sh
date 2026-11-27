@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t346 || exit 1
+cd /tmp/cylab_eps/t346 || exit 1
 echo "=== 100 droite ==="
 python3 -c "print('d'*100)" > m1.txt
 timeout 10 ./346_game < m1.txt 2>&1 | grep -E "Player position|End tile|You win" | head -3

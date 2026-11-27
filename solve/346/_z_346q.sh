@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== fonctions restantes ==="
 objdump -d -Mintel 346_game 2>/dev/null | grep -E "^[0-9a-f]+ <" | tail -12
 echo "=== solve_round / win region (0x8049600-0x8049760) ==="

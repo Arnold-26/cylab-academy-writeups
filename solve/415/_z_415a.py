@@ -1,6 +1,6 @@
 import sys, pathlib, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_z\415\challengefile")
+p = pathlib.Path(r"/tmp/cylab_z\415\challengefile")
 d = p.read_bytes()
 print("taille:", len(d))
 print("debut:", d[:32].hex())

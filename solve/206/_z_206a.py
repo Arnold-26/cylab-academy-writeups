@@ -1,6 +1,6 @@
 import sys, json, re, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 cy = CyLab(delay=1.2)
@@ -25,7 +25,7 @@ for cid in (206, 456):
             print("fichiers:", [u.rsplit('/',1)[-1] for u in urls][:3])
             for u in urls:
                 name = u.rsplit("/", 1)[-1]
-                dest = r"C:\Users\arnol\AppData\Local\Temp\cylab_bin" + "\\" + f"{cid}_{name}"
+                dest = r"/tmp/cylab_bin" + "\\" + f"{cid}_{name}"
                 import pathlib, requests
                 requests.packages.urllib3.disable_warnings()
                 p = pathlib.Path(dest)

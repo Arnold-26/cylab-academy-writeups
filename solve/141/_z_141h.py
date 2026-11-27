@@ -3,7 +3,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
 from PIL import Image
 
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\o141\evil_duck.png"
+p = r"/tmp/cylab_eps\o141\evil_duck.png"
 im = Image.open(p).convert("RGB")
 a = np.asarray(im).astype(np.uint16)
 h, w, _ = a.shape
@@ -21,7 +21,7 @@ for order in ("BG", "GB"):
             payload = by[4:4 + L].tobytes()
             txt = payload.decode("utf-8", "replace")
             print("  extrait:", txt[:300].replace("\n", " ")[:300])
-            open(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\o141\ps_%s%s.bin" % (order, "be" if endian == ">" else "le"), "wb").write(payload)
+            open(r"/tmp/cylab_eps\o141\ps_%s%s.bin" % (order, "be" if endian == ">" else "le"), "wb").write(payload)
     # aussi tenter sans entete
     txt = by[:2000].tobytes().decode("latin-1", "replace")
     m = re.search(r"[ -~]{20,}", txt)

@@ -9,7 +9,7 @@ except ModuleNotFoundError:
 
 BLOCK = 16
 UMAX = int(math.pow(256, BLOCK))
-path = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_cr/76_body.enc.ppm"
+path = "/tmp/cylab_cr/76_body.enc.ppm"
 data = open(path, "rb").read()
 # entete PPM : 3 lignes
 idx = 0

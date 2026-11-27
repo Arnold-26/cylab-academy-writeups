@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/d/ctf-index/_z_55
+cd ./_z_55
 gcc -shared -fPIC -o hookfree.so hookfree.c -ldl 2>&1 | head -5
 ls -la hookfree.so
 cat > _z_55_dbg5.py <<'PY'

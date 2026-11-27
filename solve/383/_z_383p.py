@@ -1,6 +1,6 @@
 import sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\383_disk.img"
+p = r"/tmp/cylab_eps\383_disk.img"
 OFF = 731136 * 512
 with open(p, "rb") as f:
     f.seek(OFF + 56274 * 4096)

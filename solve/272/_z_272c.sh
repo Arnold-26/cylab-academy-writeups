@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf t272 && mkdir t272 && cd t272 || exit 1
 cp ../272_vuln .
 echo "academy{LOCAL_TEST_272}" > flag.txt

@@ -1,6 +1,6 @@
 import sys, json, re, time, socket, random
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 cy = CyLab(delay=0.8)
@@ -73,4 +73,4 @@ print("fin:", bool(found))
 if found:
     f = re.search(r"(?:academy|picoCTF)\{[^}]*\}", found[1])
     print("FLAG:", f.group(0) if f else None)
-    open(r"D:\ctf-index\_z_468flag.txt", "w").write(f.group(0) if f else "")
+    open(r"./_z_468flag.txt", "w").write(f.group(0) if f else "")

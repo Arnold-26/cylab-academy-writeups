@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 tshark -r 84_shark-on-wire-2-capture.pcap -Y "udp.dstport==8888 && data.data && frame.len < 100" \
   -T fields -e frame.number -e ip.id -e ip.ttl -e udp.length -e ip.len -e data.data 2>/dev/null > /tmp/84p8888.txt
 wc -l /tmp/84p8888.txt

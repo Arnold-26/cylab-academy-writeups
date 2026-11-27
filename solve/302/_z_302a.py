@@ -1,9 +1,9 @@
 import sys, re, json, time, requests, urllib3, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 cy = CyLab(delay=0.5)
 cy.login()
 for cid in (302, 317):

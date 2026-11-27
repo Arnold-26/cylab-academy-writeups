@@ -1,8 +1,8 @@
 import sys, os, ctypes, ctypes.wintypes as wt, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import pefile
-SRC = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win430\WinAntiDbg0x200.exe"
-DST = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win430\patched.exe"
+SRC = r"/tmp/cylab_eps\win430\WinAntiDbg0x200.exe"
+DST = r"/tmp/cylab_eps\win430\patched.exe"
 pe = pefile.PE(SRC)
 iat = {}
 for entry in pe.DIRECTORY_ENTRY_IMPORT:

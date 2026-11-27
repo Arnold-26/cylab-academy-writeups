@@ -12,6 +12,6 @@ class BP(gdb.Breakpoint):
         return hits[0] >= 2
 BP("gets")
 end
-run < /mnt/d/ctf-index/_z_441/input1.bin
+run < ./_z_441/input1.bin
 info proc mappings
 x/8gx $fs_base-0x100

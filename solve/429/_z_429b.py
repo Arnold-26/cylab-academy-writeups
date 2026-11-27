@@ -1,6 +1,6 @@
 import sys, zipfile, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 z = B / "429_WinAntiDbg0x100.zip"
 for pw in (b"picoctf", b"infected", b"password", b"malware", None):
     try:

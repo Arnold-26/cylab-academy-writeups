@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_bin || exit 1
+cd /tmp/cylab_bin || exit 1
 echo "=== offsets libc ==="
 python3 - <<'EOF'
 import subprocess, re

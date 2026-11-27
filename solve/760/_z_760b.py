@@ -1,7 +1,7 @@
 import sys, requests, pathlib, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 requests.packages.urllib3.disable_warnings()
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 files = {
     "760_IntOverflowBank.sol": "https://challenge-files.cylabacademy.net/library/42fdf938c25aa01fabfedf48630ec171d19acfd1bf2d9abd130ff86ad51a9068/IntOverflowBank.sol",
     "723_AccessControl.sol": "https://challenge-files.cylabacademy.net/library/4ace2f9c4b176be6fd783cffab3351b8de943d802146d3d77adaa487d93ed78a/AccessControl.sol",

@@ -1,6 +1,6 @@
 // 478 Pachinko — run the /check program long enough to finish, log where PC goes
 // and any non-zero value on the candidate out_val bus (35..50).
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 const fs = require('fs');
 const N = 100000;
@@ -10,7 +10,7 @@ const ADDR = rng(51), INP = rng(19), OUT = rng(35);
 function getVal(s, bits) { let r = 0; for (let i = 0; i < bits.length; i++) r |= ((s[bits[i]] >> 7) & 1) << i; return r; }
 function setVal(s, bits, v) { for (let i = 0; i < bits.length; i++) s[bits[i]] = ((v >> i) & 1) ? 255 : 0; }
 
-const program = fs.readFileSync('D:\\ctf-index\\_z_pachinko\\server\\programs\\nand_checker.bin');
+const program = fs.readFileSync('./_z_pachinko\\server\\programs\\nand_checker.bin');
 const mem = new Uint8Array(65536);
 mem.set(program);
 const nGates = Number(process.argv[2] || 1);

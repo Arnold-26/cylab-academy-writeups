@@ -1,12 +1,12 @@
 import sys, json, re, time, pathlib, requests
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 requests.packages.urllib3.disable_warnings()
 cy = CyLab(delay=1.2)
 cy.login()
-BASE = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_cr")
+BASE = pathlib.Path(r"/tmp/cylab_cr")
 BASE.mkdir(exist_ok=True)
 for cid in (148, 297):
     st, b = cy.req("GET", f"/api/challenges/{cid}/instance/")

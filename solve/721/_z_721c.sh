@@ -1,5 +1,5 @@
 #!/bin/bash
-SRC="/mnt/c/Users/arnol/.dsh/attachments/v1/files/85/850cf33d11061c06a3b849bf55f9c9a9e4902cda76dcd4e532f58acc2519389f/timeline-1-partition4.img.gz"
+SRC="~/.dsh/attachments/v1/files/85/850cf33d11061c06a3b849bf55f9c9a9e4902cda76dcd4e532f58acc2519389f/timeline-1-partition4.img.gz"
 cd /tmp || exit 1
 if [ ! -f t721.img ]; then
   echo "=== decompression ==="

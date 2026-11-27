@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/m528/528_minions 2>/dev/null || cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/m528 || exit 1
+cd /tmp/cylab_eps/m528/528_minions 2>/dev/null || cd /tmp/cylab_eps/m528 || exit 1
 echo "=== MainActivity.smali ==="
 find . -name "MainActivity*.smali" | head -5
 F=$(find . -name "MainActivity.smali" | head -1)

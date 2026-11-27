@@ -1,7 +1,7 @@
 import sys, re, time, socket, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 HOST, PORT = "chatelaine.cylabacademy.net", 24956
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps")
+B = pathlib.Path(r"/tmp/cylab_eps")
 names = [l.strip() for l in (B / "474_cheese_list.txt").read_text(errors="replace").splitlines() if l.strip()]
 UP = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 

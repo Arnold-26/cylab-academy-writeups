@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== type ==="
 file 87_suspicious.dd.sda1 | cut -c1-150
 echo "=== flag direct ==="

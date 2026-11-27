@@ -1,6 +1,6 @@
 import sys, re, base64
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-IMG = "/mnt/c/Users/arnol/Downloads/partition4.img"
+IMG = "~/Downloads/partition4.img"
 rx = re.compile(rb"[A-Za-z0-9+/]{16,120}={0,2}")
 seen = set()
 out = []

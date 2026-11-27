@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/pb529/dec || exit 1
+cd /tmp/cylab_eps/pb529/dec || exit 1
 for F in smali_classes3/com/example/picobank/OTP\$1.smali smali_classes3/com/example/picobank/Notification\$1.smali smali_classes3/com/example/picobank/MainActivity\$1.smali; do
   [ -f "$F" ] || continue
   echo "########## $F ##########"

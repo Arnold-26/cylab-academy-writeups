@@ -2,7 +2,7 @@
 // flag.bin = 4x LDI, then 0x000e, then 0x000f. Substituting 0x000e with 0x0000
 // (same instruction length) keeps control flow identical and removes only the
 // flag-raising side effect, so the diff of the final states is the flag + fanout.
-const W = 'D:\\ctf-index\\_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
+const W = './_z_pachinko\\server\\wasm\\pkg\\verilog_ctf_wasm.js';
 const { process: wasmProcess } = require(W);
 const fs = require('fs');
 const N = 100000;
@@ -29,7 +29,7 @@ function run(mem, cycles) {
   return { s, pcs };
 }
 
-const flagBin = fs.readFileSync('D:\\ctf-index\\_z_pachinko\\server\\programs\\flag.bin');
+const flagBin = fs.readFileSync('./_z_pachinko\\server\\programs\\flag.bin');
 const A = new Uint8Array(65536); A.set(flagBin);
 const B = Uint8Array.from(A); B[0x10] = 0; B[0x11] = 0;   // neutralise the 0x000e instruction
 

@@ -1,6 +1,6 @@
 import socket, sys, time, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-host, port = open(r"D:\ctf-index\_z_107url.txt").read().split()
+host, port = open(r"./_z_107url.txt").read().split()
 port = int(port)
 s = socket.create_connection((host, port), timeout=20)
 s.settimeout(2.5)
@@ -58,7 +58,7 @@ t = tbl['academy{']
 print("  startswith enc('a')?", t.startswith(tbl['a']))
 print("  startswith enc('ac')?", t[:len(enc('ac'))] if False else '-')
 print("  len:", len(t))
-open(r"D:\ctf-index\_z_107_data1.txt", "w").write("%s\n%d\n%d\n" % (flag_ct, n, e))
+open(r"./_z_107_data1.txt", "w").write("%s\n%d\n%d\n" % (flag_ct, n, e))
 import json
-json.dump({"flag_ct": flag_ct, "n": str(n), "e": e, "tbl": tbl}, open(r"D:\ctf-index\_z_107_data1.json", "w"))
+json.dump({"flag_ct": flag_ct, "n": str(n), "e": e, "tbl": tbl}, open(r"./_z_107_data1.json", "w"))
 s.close()

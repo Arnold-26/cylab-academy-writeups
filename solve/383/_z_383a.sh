@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 if [ ! -f 383_disk.img ]; then
   echo "decompression..."
   gunzip -c 383_disk.flag.img.gz > 383_disk.img

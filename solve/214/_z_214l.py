@@ -47,6 +47,6 @@ def go(chain_stage2):
 # verifier la GOT de write/read dans le binaire d'abord
 import subprocess
 r = subprocess.run(["wsl", "-d", "kali-linux", "--", "bash", "-lc",
-                    "cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps && objdump -R 214_horse | grep -E 'write|read|asprintf'"],
+                    "cd /tmp/cylab_eps && objdump -R 214_horse | grep -E 'write|read|asprintf'"],
                    capture_output=True, text=True)
 print(r.stdout)

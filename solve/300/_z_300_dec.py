@@ -1,7 +1,7 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-cfg = open(r"D:\ctf-index\_z_wad300\config.bin", "rb").read()
+cfg = open(r"./_z_wad300\config.bin", "rb").read()
 L = int.from_bytes(cfg[:4], "little")
 first = cfg[4:4 + L]
 second = cfg[4 + L + 1:4 + L + 1 + L + 1]

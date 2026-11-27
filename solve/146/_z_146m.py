@@ -1,6 +1,6 @@
 import sys, json, re, time, socket
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 cy = CyLab(delay=0.8)
@@ -17,7 +17,7 @@ for _ in range(15):
             host, port = m.group(1), int(m.group(2))
             break
 print("cible:", host, port)
-open(r"D:\ctf-index\_z_146url.txt", "w").write(f"{host} {port}")
+open(r"./_z_146url.txt", "w").write(f"{host} {port}")
 # verification de connectivite
 try:
     s = socket.create_connection((host, port), timeout=5)

@@ -1,6 +1,6 @@
 import socket, sys, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-HOST, PORT = open("/mnt/d/ctf-index/_z_379url.txt").read().split()
+HOST, PORT = open("./_z_379url.txt").read().split()
 s = socket.create_connection((HOST, int(PORT)), timeout=30)
 s.settimeout(10)
 buf = b""
@@ -16,7 +16,7 @@ m2 = re.search(r"envy = (\d+)", txt)
 ct = int(m1.group(1)); dval = int(m2.group(1))
 K = 65537 * dval - 1
 print("ct bits:", ct.bit_length(), "d bits:", dval.bit_length(), "K bits:", K.bit_length())
-open("/mnt/d/ctf-index/_z_379_data.txt", "w").write("%d\n%d\n" % (ct, dval))
+open("./_z_379_data.txt", "w").write("%d\n%d\n" % (ct, dval))
 # trial division rapide
 import sympy
 rem = K

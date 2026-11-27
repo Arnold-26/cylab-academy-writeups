@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 printf 'reverseengineericanbarelyforward\nabc\n' | timeout 10 ./171_enter_password 2>&1 | head -20
 echo "=== symboles main ==="
 go tool nm 171_enter_password 2>/dev/null | grep -E " main\." 

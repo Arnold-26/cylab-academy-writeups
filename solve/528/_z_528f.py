@@ -1,6 +1,6 @@
 import sys, zipfile, re, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\528_minions.apk")
+B = pathlib.Path(r"/tmp/cylab_eps\528_minions.apk")
 z = zipfile.ZipFile(B)
 LIB = ("abc_", "m3_", "mtrl_", "design_", "notification_", "material_", "preference_", "tooltip",
        "btn_", "ic_", "common_", "browser_", "exo_", "media3_", "sidebar", "nav_", "action_",

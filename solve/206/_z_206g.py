@@ -1,7 +1,7 @@
 import sys, subprocess, random
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-PCAP = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_206/capture.pcapng"
+PCAP = "/tmp/cylab_206/capture.pcapng"
 r = subprocess.run(["tshark", "-r", PCAP, "-Y", "udp", "-T", "fields",
                     "-e", "frame.number", "-e", "frame.time_epoch", "-e", "udp.srcport", "-e", "udp.payload", "-e", "eth.src"],
                    capture_output=True, text=True, timeout=900)
@@ -62,6 +62,6 @@ if found:
         j = js[idx]
         out[i], out[j] = out[j], out[i]
     res = bytes(out)
-    open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_206/recovered.bin", "wb").write(res)
+    open("/tmp/cylab_206/recovered.bin", "wb").write(res)
     print("recovered:", len(res))
     print("debut:", res[:300])

@@ -9,5 +9,5 @@ ops = [
 out = b""
 for size, payload in ops:
     out += p64(size) + payload + b"\n"
-open('/mnt/d/ctf-index/_z_441/input4.bin','wb').write(out)
+open('./_z_441/input4.bin','wb').write(out)
 print(out.hex())

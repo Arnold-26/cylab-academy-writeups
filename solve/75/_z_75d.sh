@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 objdump -d -Mintel --start-address=0x400d3c --stop-address=0x400de0 75_zero_to_hero 2>/dev/null | grep -vE "^$"
 echo "=== chaines utilisees ==="
 python3 - <<'EOF'

@@ -10,7 +10,7 @@ T129 = 1 << 129
 E = 65537
 LIMIT = 1 << 129
 CHARS = set((ascii_letters + digits).encode())
-HOST, PORT = open("/mnt/d/ctf-index/_z_379url.txt").read().split()
+HOST, PORT = open("./_z_379url.txt").read().split()
 PORT = int(PORT)
 
 
@@ -179,5 +179,5 @@ for it in range(1, 61):
         m = re.search(r"academy\{[^}]*\}", res)
         if m:
             log("FLAG:", m.group(0))
-            open("/mnt/d/ctf-index/_z_379_flag.txt", "w").write(m.group(0))
+            open("./_z_379_flag.txt", "w").write(m.group(0))
             break

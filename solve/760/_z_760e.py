@@ -1,6 +1,6 @@
 import sys, json, re, time, requests, html
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 requests.packages.urllib3.disable_warnings()
@@ -48,4 +48,4 @@ for attempt in range(6):
         time.sleep(5)
 print("\ncontract:", info.get("contract"))
 print("pk:", info.get("pk"))
-json.dump({"eth": eth, **info}, open(r"D:\ctf-index\_z_760info.json", "w"))
+json.dump({"eth": eth, **info}, open(r"./_z_760info.json", "w"))

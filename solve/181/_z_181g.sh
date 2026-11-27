@@ -1,9 +1,9 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 cat > /tmp/ro181.py <<'PYEOF'
 import subprocess, re
-d = open('/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/181_vuln','rb').read()
-out = subprocess.run(['readelf','-SW','/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/181_vuln'],
+d = open('/tmp/cylab_eps/181_vuln','rb').read()
+out = subprocess.run(['readelf','-SW','/tmp/cylab_eps/181_vuln'],
                      capture_output=True, text=True).stdout
 for line in out.splitlines():
     if '] .rodata' in line:

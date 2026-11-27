@@ -166,7 +166,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--host", default="xebec.cylabacademy.net")
     ap.add_argument("--port", type=int, default=22709)
-    ap.add_argument("--so", default=r"D:\ctf-index\_z_302\solve.so")
+    ap.add_argument("--so", default=r"./_z_302\solve.so")
     ap.add_argument("--mode", type=int, default=0)
     ap.add_argument("--amount", type=lambda x: int(x, 0), default=0x10000)
     ap.add_argument("--index", type=lambda x: int(x, 0), default=0x280)

@@ -1,5 +1,5 @@
 import random, sys
-exec(open('/mnt/d/ctf-index/_z_136_solve.py').read().split('# ------------------------------------------------------------------ client')[0])
+exec(open('./_z_136_solve.py').read().split('# ------------------------------------------------------------------ client')[0])
 
 seed = 1
 random.seed(seed)

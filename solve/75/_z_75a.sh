@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 75_zero_to_hero
 file 75_zero_to_hero | cut -c1-110
 readelf -h 75_zero_to_hero | grep Type

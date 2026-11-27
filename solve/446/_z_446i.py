@@ -1,6 +1,6 @@
 import sys, re, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-CWD = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t446"
+CWD = "/tmp/cylab_eps/t446"
 # juste l'exploit des vies, puis on regarde le compteur
 seq = "w" * 4 + "a" * 11 + "d" * 3
 p = subprocess.run(["./game"], input=seq.encode() + b"\n", capture_output=True, cwd=CWD, timeout=60)

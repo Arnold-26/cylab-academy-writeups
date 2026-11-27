@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/d/ctf-index/_z_164
+cd ./_z_164
 cat > g164.gdb <<'GDB'
 set pagination off
 set confirm off

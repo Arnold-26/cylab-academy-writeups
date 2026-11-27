@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== toutes les chaines imprimables de .rodata ==="
 objdump -s -j .rodata 276_keygenme 2>/dev/null | head -30
 echo "=== chaines courtes ==="

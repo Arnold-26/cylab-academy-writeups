@@ -1,6 +1,6 @@
 import sys, zipfile, io, re, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-src = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_iw\output.bmp")
+src = pathlib.Path(r"/tmp/cylab_iw\output.bmp")
 data = src.read_bytes()
 out = bytearray()
 i = 0x8C
@@ -11,7 +11,7 @@ while i + 1 < len(data):
     out += chunk
     i += 4
 print("zip taille:", len(out), "debut:", bytes(out[:8]))
-zpath = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_iw\extracted.zip")
+zpath = pathlib.Path(r"/tmp/cylab_iw\extracted.zip")
 zpath.write_bytes(bytes(out))
 try:
     z = zipfile.ZipFile(io.BytesIO(bytes(out)))

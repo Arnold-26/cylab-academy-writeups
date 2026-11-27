@@ -101,7 +101,7 @@ _st = list(_r.getstate()[1][:3])
 assert [untemper(v) for v in _raw] == _st, 'untemper broken'
 print('untemper ok')
 
-bounds = json.load(open('/mnt/d/ctf-index/_z_496_bounds.json'))
+bounds = json.load(open('./_z_496_bounds.json'))
 print('n boundaries', len(bounds))
 u = U()
 t0 = time.time()
@@ -113,4 +113,4 @@ print('submitted in %.1fs twists=%d index=%d' % (time.time() - t0, u.twists, u.i
 r = u.get_random()
 preds = [r.getrandbits(63) for _ in range(24)]
 print('PRED', preds)
-json.dump(preds, open('/mnt/d/ctf-index/_z_496_pred.json', 'w'))
+json.dump(preds, open('./_z_496_pred.json', 'w'))

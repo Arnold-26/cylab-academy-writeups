@@ -1,6 +1,6 @@
 import sys, json, re, time, requests, io
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 requests.packages.urllib3.disable_warnings()
@@ -62,7 +62,7 @@ if url:
             im = Image.open(io.BytesIO(data))
             im.load()
             print("VALID key:", "".join(str(k) for k in key), "size:", im.size)
-            out = r"C:\Users\arnol\AppData\Local\Temp\cylab_hid\29_valid.png"
+            out = r"/tmp/cylab_hid\29_valid.png"
             open(out, "wb").write(data)
             print("ecrit:", out)
             break

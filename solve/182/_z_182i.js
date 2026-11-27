@@ -1,5 +1,5 @@
 const fs = require('fs');
-const buf = fs.readFileSync('C:/Users/arnol/AppData/Local/Temp/cylab_eps/182_ZoRd23o0wd.wasm');
+const buf = fs.readFileSync('/tmp/cylab_eps/182_ZoRd23o0wd.wasm');
 (async () => {
   const { instance } = await WebAssembly.instantiate(buf, {});
   const ex = instance.exports;

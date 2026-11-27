@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== sections ==="
 readelf -S 276_keygenme | grep -E '\.data|\.rodata|\.text|\.bss|rel'
 echo "=== relocations ==="

@@ -1,6 +1,6 @@
 import sys, struct, datetime, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\432_original.jpg"
+p = r"/tmp/cylab_eps\432_original.jpg"
 d = open(p, "rb").read()
 # 2023-11-20 20:46:21 UTC (21:46:21 +01:00)
 dt = datetime.datetime(2023, 11, 20, 20, 46, 21, tzinfo=datetime.UTC)

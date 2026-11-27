@@ -1,6 +1,6 @@
 import sys, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/220_breadth.v1"
+p = "/tmp/cylab_eps/220_breadth.v1"
 d = open(p, "rb").read()
 # contexte autour de 0x253753 (probable chaine de version)
 s = d[0x253740:0x253780]

@@ -1,6 +1,6 @@
 import struct, re, sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-path = r"D:\ctf-index\_z_wad300u\WinAntiDbg0x300.exe"
+path = r"./_z_wad300u\WinAntiDbg0x300.exe"
 d = open(path, "rb").read()
 pe = struct.unpack_from("<I", d, 0x3C)[0]
 nsec = struct.unpack_from("<H", d, pe + 6)[0]

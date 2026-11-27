@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 F=m528/528_minions/res/drawable/minion.jpg
 ls -la "$F"
 echo "=== exiftool ==="
@@ -8,7 +8,7 @@ echo "=== strings ==="
 strings -n 5 "$F" | head -20
 echo "=== donnees apres EOI (FFD9) ==="
 python3 - <<'EOF'
-d = open('/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/m528/528_minions/res/drawable/minion.jpg','rb').read()
+d = open('/tmp/cylab_eps/m528/528_minions/res/drawable/minion.jpg','rb').read()
 print("taille:", len(d), "| debut:", d[:4].hex())
 i = d.rfind(b'\xff\xd9')
 print("EOI a:", i, "| octets apres:", len(d) - i - 2)

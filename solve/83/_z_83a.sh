@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 83_investigative-reversing-3-mystery 2>/dev/null
 file 83_investigative-reversing-3-mystery | cut -c1-100
 echo "=== chaines ==="

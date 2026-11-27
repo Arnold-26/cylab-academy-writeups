@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== occurrences des chaines ==="
 python3 - <<'EOF'
 d = open('122_brute','rb').read()

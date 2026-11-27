@@ -1,6 +1,6 @@
 import sys, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-B = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\notepad204")
+B = pathlib.Path(r"/tmp/cylab_eps\notepad204")
 print("=== Dockerfile ===")
 print((B / "Dockerfile").read_text(encoding="utf-8", errors="replace"))
 print("=== static ===")

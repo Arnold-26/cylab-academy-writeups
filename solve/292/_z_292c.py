@@ -1,6 +1,6 @@
 import sys, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-F = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\292_vuln"
+F = r"/tmp/cylab_eps\292_vuln"
 d = open(F, "rb").read()
 # segment executable : file off 0x1000, vaddr 0x08049000, size 0x663b0
 OFF, VA, SZ = 0x1000, 0x08049000, 0x663b0

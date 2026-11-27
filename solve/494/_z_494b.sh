@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/pach/server || exit 1
+cd /tmp/cylab_eps/pach/server || exit 1
 echo "=== flag.bin ==="
 ls -la programs/flag.bin
 xxd programs/flag.bin 2>/dev/null | head -10 || python3 -c "d=open('programs/flag.bin','rb').read(); print(d[:200].hex()); print(d[:200])"

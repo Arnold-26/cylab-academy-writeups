@@ -1,5 +1,5 @@
 #!/bin/bash
-IMG=/mnt/c/Users/arnol/Downloads/partition4.img
+IMG=~/Downloads/partition4.img
 echo "=== recherche base64 de 'academy{' (YWNhZGVte) ==="
 timeout 300 grep -aob "YWNhZGVte" "$IMG" | head -10
 echo "=== recherche base64 de 'picoCTF{' ==="

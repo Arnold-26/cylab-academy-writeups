@@ -13,7 +13,7 @@ def build(ops):
         out += struct.pack("<Q", size) + payload + b"\n"
     return out
 
-open("/mnt/d/ctf-index/_z_441/input.bin", "wb").write(build(OPS))
+open("./_z_441/input.bin", "wb").write(build(OPS))
 
 def wq(addr, val):
     gdb.execute("set *(unsigned long*)%#x = %#x" % (addr, val & 0xffffffffffffffff))
@@ -63,6 +63,6 @@ class GetsBP(gdb.Breakpoint):
 hits = [0]
 GetsBP("gets")
 try:
-    gdb.execute("run < /mnt/d/ctf-index/_z_441/input.bin")
+    gdb.execute("run < ./_z_441/input.bin")
 except gdb.error as e:
     gdb.write("run ended: %s\n" % e)

@@ -1,11 +1,11 @@
 import sys, struct, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-P = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\133_libc-2.27.so"
+P = r"/tmp/cylab_eps\133_libc-2.27.so"
 d = open(P, "rb").read()
 # localiser la section .text (vaddr, offset, taille) via une lecture ELF simplifiee
 import subprocess
 out = subprocess.run(["wsl", "-d", "kali-linux", "--", "readelf", "-SW",
-                      "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/133_libc-2.27.so"],
+                      "/tmp/cylab_eps/133_libc-2.27.so"],
                      capture_output=True, text=True).stdout
 import re as _re
 text = None

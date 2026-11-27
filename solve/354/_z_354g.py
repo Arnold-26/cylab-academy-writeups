@@ -1,7 +1,7 @@
 import sys, re
 import numpy as np
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-p = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_iw/output.bmp"
+p = "/tmp/cylab_iw/output.bmp"
 d = open(p, "rb").read()
 import struct
 offset = struct.unpack_from("<I", d, 10)[0]

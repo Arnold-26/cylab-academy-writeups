@@ -12,7 +12,7 @@ def req(method, path, obj=None, token=None):
     with urllib.request.urlopen(r, timeout=120) as f:
         return json.loads(f.read().decode())
 
-cfg = json.load(open(r'D:\ctf-index\_z_496_remote.json'))
+cfg = json.load(open(r'./_z_496_remote.json'))
 tok = cfg['tok']
 if cfg.get('base') != BASE:
     print('WARN base mismatch', cfg.get('base'))

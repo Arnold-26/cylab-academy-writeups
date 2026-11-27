@@ -2,7 +2,7 @@ import socket, time, re, sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.set_int_max_str_digits(0)
 
-txt = open(r"D:\ctf-index\_z_107_banner.txt", encoding="utf-8").read()
+txt = open(r"./_z_107_banner.txt", encoding="utf-8").read()
 n = int(re.search(r"n:\s*(\d+)", txt).group(1))
 e = int(re.search(r"e:\s*(\d+)", txt).group(1))
 

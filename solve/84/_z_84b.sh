@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== extraction (dstport, payload) ==="
 tshark -r 84_shark-on-wire-2-capture.pcap -Y "udp && data.data" -T fields -e frame.number -e udp.dstport -e data.data 2>/dev/null > /tmp/84pkts.txt
 wc -l /tmp/84pkts.txt

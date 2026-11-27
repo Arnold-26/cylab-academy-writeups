@@ -54,7 +54,11 @@ Le dépackage statique est donc la bonne voie, et il rend l'énoncé Frida inuti
 
 ## Scripts
 
-- `_z_bi_dl.sh` — télécharge et extrait les deux zips.
-- `_z_bi_pe.py` — sections + entropie (repère le blob).
-- `_z_bi_unlzma.py` — **décompresse `.ATOM`** (`FORMAT_ALONE`) et écrit le payload.
-- `_z_bi_b64.py` — extrait les flags base64 des payloads.
+- [`_z_bi_b64.py`](../../solve/451/_z_bi_b64.py)
+- [`_z_bi_dl.py`](../../solve/451/_z_bi_dl.py)
+- [`_z_bi_dl.sh`](../../solve/451/_z_bi_dl.sh)
+- [`_z_bi_dump.py`](../../solve/451/_z_bi_dump.py)
+- [`_z_bi_funcs.py`](../../solve/451/_z_bi_funcs.py)
+- [`_z_bi_inspect.sh`](../../solve/451/_z_bi_inspect.sh)
+- [`_z_bi_pe.py`](../../solve/451/_z_bi_pe.py)
+- [`_z_bi_unlzma.py`](../../solve/451/_z_bi_unlzma.py)

@@ -1,6 +1,6 @@
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-F = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\292_vuln"
+F = r"/tmp/cylab_eps\292_vuln"
 d = open(F, "rb").read()
 OFF, VA, SZ = 0x1000, 0x08049000, 0x663b0
 t = d[OFF:OFF + SZ]

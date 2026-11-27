@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 chmod +x 214_horse
 echo "=== strings ==="
 strings -n 5 214_horse | grep -aviE "glibc|gcc|\.so|gnu" | head -22

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== GOT (relocations) ==="
 objdump -R 215_chall 2>/dev/null | grep -E 'printf|atoi|snprintf|puts|read'
 echo "=== PLT ==="

@@ -2,7 +2,7 @@ import os, sys, struct
 from pwn import *
 context.log_level = 'info'
 context.arch = 'amd64'
-HERE = '/mnt/d/ctf-index/_z_441'
+HERE = './_z_441'
 io = process(os.path.join(HERE, 'hft'), env={})
 
 def rd(addr, n):

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== protocoles ==="
 tshark -r 84_shark-on-wire-2-capture.pcap -q -z io,phs 2>/dev/null | head -12
 echo "=== paquets UDP : payload + champs ==="

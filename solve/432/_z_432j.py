@@ -1,6 +1,6 @@
 import sys, json, re, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 
 cy = CyLab(delay=0.8)
@@ -17,4 +17,4 @@ for _ in range(15):
             break
 print("=== DESC 432 ===")
 print(desc[:1200])
-open(r"D:\ctf-index\_z_432desc.txt", "w").write(desc)
+open(r"./_z_432desc.txt", "w").write(desc)

@@ -2,7 +2,7 @@ import sys, requests, pathlib, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 requests.packages.urllib3.disable_warnings()
 url = "https://challenge-files.cylabacademy.net/picoMini+by+redpwn/Forensics/scrambled-bytes/capture.pcapng"
-dest = pathlib.Path(r"C:\Users\arnol\AppData\Local\Temp\cylab_206\capture.pcapng")
+dest = pathlib.Path(r"/tmp/cylab_206\capture.pcapng")
 dest.parent.mkdir(parents=True, exist_ok=True)
 total = None
 try:

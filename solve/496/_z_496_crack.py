@@ -2,7 +2,7 @@ import sys, json, time
 sys.path.insert(0, '/tmp/smc')
 from main import Untwister
 
-bounds = json.load(open('/mnt/d/ctf-index/_z_496_bounds.json'))
+bounds = json.load(open('./_z_496_bounds.json'))
 print('n boundaries', len(bounds))
 t0 = time.time()
 ut = Untwister()
@@ -16,4 +16,4 @@ r = ut.get_random()
 print('solved in %.1fs' % (time.time() - t0), flush=True)
 preds = [r.getrandbits(63) for _ in range(6)]
 print('PRED', preds)
-json.dump(preds, open('/mnt/d/ctf-index/_z_496_pred.json', 'w'))
+json.dump(preds, open('./_z_496_pred.json', 'w'))

@@ -2,7 +2,7 @@ import sys, ctypes, ctypes.wintypes as wt, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 k32 = ctypes.WinDLL("kernel32", use_last_error=True)
 ntdll = ctypes.WinDLL("ntdll")
-EXE = r"C:\Users\arnol\AppData\Local\Temp\cylab_eps\win429\WinAntiDbg0x100.exe"
+EXE = r"/tmp/cylab_eps\win429\WinAntiDbg0x100.exe"
 DBG = 0x00000002
 
 

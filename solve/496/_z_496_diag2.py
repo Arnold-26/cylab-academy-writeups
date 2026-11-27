@@ -5,13 +5,13 @@ Everything (warmup, crack, probe, diag mail, one bot run) in one go.
 """
 import sys, os, json, re, time, subprocess, http.client
 from urllib.parse import urlparse
-sys.path.insert(0, r'D:\ctf-index')
+sys.path.insert(0, r'.')
 from _z_496_spec import make_D, ews, PWN
 
 BASE = sys.argv[1].rstrip('/')
 TARGET = sys.argv[2] if len(sys.argv) > 2 else 'user@ses'
 WARM = int(sys.argv[3]) if len(sys.argv) > 3 else 700
-EML = r'D:\ctf-index\_z_496_emls'
+EML = r'./_z_496_emls'
 u = urlparse(BASE)
 HOST, PORT = u.hostname, u.port or 80
 conn = http.client.HTTPConnection(HOST, PORT, timeout=60)
@@ -44,7 +44,7 @@ def req(method, path, obj=None, token=None):
 
 
 try:
-    cfg = json.load(open(r'D:\ctf-index\_z_496_remote.json'))
+    cfg = json.load(open(r'./_z_496_remote.json'))
 except Exception:
     cfg = {}
 if cfg.get('base') == BASE and cfg.get('tok'):
@@ -53,7 +53,7 @@ if cfg.get('base') == BASE and cfg.get('tok'):
 else:
     pw = req('GET', '/api/password')
     tok = req('POST', '/api/login', {'username': 'user@ses', 'password': pw})
-    json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'D:\ctf-index\_z_496_remote.json', 'w'))
+    json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'./_z_496_remote.json', 'w'))
 print('[i] pw', pw, 'me', req('GET', '/api/me', None, tok), flush=True)
 
 # ---- warmup ----
@@ -72,16 +72,16 @@ for eid in ids:
             rows.append((e['time'], int(m.group(1))))
 rows.sort()
 print('[i] rows %d dup %d' % (len(rows), len(rows) - len(set(t for t, _ in rows))))
-json.dump([b for _, b in rows], open(r'D:\ctf-index\_z_496_bounds.json', 'w'))
+json.dump([b for _, b in rows], open(r'./_z_496_bounds.json', 'w'))
 
 # ---- crack ----
 t0 = time.time()
-r = subprocess.run(['wsl', '-d', 'kali-linux', '--', 'python3', '/mnt/d/ctf-index/_z_496_crack2.py'],
+r = subprocess.run(['wsl', '-d', 'kali-linux', '--', 'python3', './_z_496_crack2.py'],
                    capture_output=True, text=True)
 print('[i] crack rc=%d %.1fs' % (r.returncode, time.time() - t0), r.stdout[-300:])
 if r.returncode != 0:
     print(r.stderr[-800:]); sys.exit(1)
-preds = json.load(open(r'D:\ctf-index\_z_496_pred.json'))
+preds = json.load(open(r'./_z_496_pred.json'))
 
 # ---- probe ----
 pid = req('POST', '/api/send', {'to': 'user@ses', 'subject': 'probe', 'body': 'b'}, tok)

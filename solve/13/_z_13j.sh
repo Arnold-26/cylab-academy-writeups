@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 rm -rf t13 && mkdir t13 && cd t13 || exit 1
 cp ../13_investigative-reversing-2-encoded.bmp original.bmp
 chmod +x ../13_investigative-reversing-2-mystery

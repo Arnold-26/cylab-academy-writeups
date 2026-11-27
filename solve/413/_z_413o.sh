@@ -1,13 +1,13 @@
 #!/bin/bash
 cd /tmp || exit 1
-SRC=/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/413_disk.flag.img.gz
+SRC=/tmp/cylab_eps/413_disk.flag.img.gz
 echo "=== integrite du gz ==="
 ls -la "$SRC"
 gzip -t "$SRC" 2>&1 && echo "gz OK" || echo "gz CORROMPU/TRONQUE"
 echo "=== taille attendue vs reelle ==="
 python3 - <<'PYEOF'
 import gzip, struct
-src = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/413_disk.flag.img.gz"
+src = "/tmp/cylab_eps/413_disk.flag.img.gz"
 # la taille decompressee est dans les 4 derniers octets (ISIZE)
 d = open(src,'rb').read()
 print("ISIZE (mod 2^32):", struct.unpack('<I', d[-4:])[0])

@@ -18,7 +18,7 @@ for idx in range(len(js) - 1, -1, -1):
     y[i], y[j] = y[j], y[i]
 print("test inversion OK:", y == orig)
 
-PCAP = "/mnt/c/Users/arnol/AppData/Local/Temp/cylab_206/capture.pcapng"
+PCAP = "/tmp/cylab_206/capture.pcapng"
 r = subprocess.run(["tshark", "-r", PCAP, "-Y", "udp", "-T", "fields",
                     "-e", "frame.time_epoch", "-e", "udp.srcport", "-e", "udp.payload"],
                    capture_output=True, text=True, timeout=900)
@@ -75,7 +75,7 @@ if seed_found:
         j = js[idx]
         out[i], out[j] = out[j], out[i]
     res = bytes(out)
-    open("/mnt/c/Users/arnol/AppData/Local/Temp/cylab_206/recovered.bin", "wb").write(res)
+    open("/tmp/cylab_206/recovered.bin", "wb").write(res)
     print("taille:", len(res))
     print("debut:", res[:200])
     import re

@@ -18,7 +18,7 @@ if pw == 'already seen':
     print('PASSWORD ALREADY SEEN'); sys.exit(1)
 tok = req('POST', '/api/login', {'username': 'user@ses', 'password': pw})
 print('pw', pw); print('tok', tok)
-json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'D:\ctf-index\_z_496_remote.json', 'w'))
+json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'./_z_496_remote.json', 'w'))
 
 ids = []
 t0 = time.time()
@@ -39,6 +39,6 @@ for eid in ids:
     m = re.search(r'boundary="=+(\d+)=+"', data)
     bounds.append(int(m.group(1)) if m else None)
 print('parsed', sum(1 for b in bounds if b is not None), 'of', len(bounds))
-json.dump(bounds, open(r'D:\ctf-index\_z_496_bounds.json', 'w'))
+json.dump(bounds, open(r'./_z_496_bounds.json', 'w'))
 print('first3', bounds[:3])
 print('last3', bounds[-3:])

@@ -1,6 +1,6 @@
 import sys, re, json, time, socket, requests, html, urllib3
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 urllib3.disable_warnings()
 

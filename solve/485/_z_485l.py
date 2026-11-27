@@ -1,7 +1,7 @@
 import sys, socket, time, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import json
-sys.path.insert(0, r"D:\ctf-index")
+sys.path.insert(0, r".")
 from cylab2 import CyLab
 from cylab2 import CyLab as C
 

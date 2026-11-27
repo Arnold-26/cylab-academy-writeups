@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps || exit 1
+cd /tmp/cylab_eps || exit 1
 echo "=== mitations ==="
 readelf -l 222_not-crypto 2>/dev/null | grep -E 'GNU_RELRO|GNU_STACK'
 readelf -d 222_not-crypto 2>/dev/null | grep -E 'BIND_NOW'

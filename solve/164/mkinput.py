@@ -1,8 +1,8 @@
 import sys
-sys.path.insert(0, '/mnt/d/ctf-index')
+sys.path.insert(0, '.')
 sys.argv = ['x', 'local']
 import importlib.util
-spec = importlib.util.spec_from_file_location('e', '/mnt/d/ctf-index/_z_164_exploit.py')
+spec = importlib.util.spec_from_file_location('e', './_z_164_exploit.py')
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod) if False else None
 # on ne veut que build() : recopier la logique
@@ -30,4 +30,4 @@ def build(stonk_arg, rbp_arg):
 
 pl = build(10, 12)
 print(pl, len(pl))
-open('/mnt/d/ctf-index/_z_164/in_exploit.txt', 'wb').write(b"1\n" + pl + b"\n")
+open('./_z_164/in_exploit.txt', 'wb').write(b"1\n" + pl + b"\n")

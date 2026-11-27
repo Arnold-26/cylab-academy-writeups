@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/arnol/AppData/Local/Temp/cylab_eps/t346 || exit 1
+cd /tmp/cylab_eps/t346 || exit 1
 echo "=== 4 x w puis 2720 x d ==="
 python3 -c "
 import sys
