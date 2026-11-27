@@ -24,11 +24,6 @@ academy{Sm4r7_OverFL0ws_ExI5t_bfaa16cd}
 
 ## Scripts
 
-- [`_z_760a.py`](../../solve/760/_z_760a.py)
-- [`_z_760b.py`](../../solve/760/_z_760b.py)
-- [`_z_760c.py`](../../solve/760/_z_760c.py)
-- [`_z_760d.sh`](../../solve/760/_z_760d.sh)
-- [`_z_760e.py`](../../solve/760/_z_760e.py)
-- [`_z_760f.py`](../../solve/760/_z_760f.py)
+- [`solve.py`](../../solve/760/solve.py)
 - [`_z_760info.json`](../../solve/760/_z_760info.json)
-- [`_z_760solve.py`](../../solve/760/_z_760solve.py)
+- *6 variantes intermediaires dans `solve/760/archive/`*

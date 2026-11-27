@@ -49,8 +49,5 @@ academy{An0tha_1_1730fa2f}
 
 ## Scripts
 
-- [`_z_27a.sh`](../../solve/27/_z_27a.sh)
-- [`_z_27b.py`](../../solve/27/_z_27b.py)
-- [`_z_27c.sh`](../../solve/27/_z_27c.sh)
-- [`_z_27d.sh`](../../solve/27/_z_27d.sh)
-- [`_z_7027.py`](../../solve/27/_z_7027.py)
+- [`solve.sh`](../../solve/27/solve.sh)
+- *4 variantes intermediaires dans `solve/27/archive/`*

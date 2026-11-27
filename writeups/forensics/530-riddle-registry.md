@@ -24,4 +24,4 @@ academy{puzzl3d_m3tadata_f0und!_3cc7cea9}
 
 ## Scripts
 
-- [`_z_530.py`](../../solve/530/_z_530.py)
+- [`solve.py`](../../solve/530/solve.py)

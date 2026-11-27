@@ -75,4 +75,4 @@ Le même émulateur valide `0x200` (même code, autres adresses de globales).
 
 ## Scripts
 
-- [`_z_431a.py`](../../solve/431/_z_431a.py)
+- [`solve.py`](../../solve/431/solve.py)

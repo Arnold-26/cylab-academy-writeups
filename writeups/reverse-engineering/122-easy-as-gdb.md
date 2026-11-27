@@ -71,9 +71,5 @@ academy{I_5D3_A11DA7_f73c8ead}
 
 ## Scripts
 
-- [`_z_122a.py`](../../solve/122/_z_122a.py)
-- [`_z_122b.sh`](../../solve/122/_z_122b.sh)
-- [`_z_122c.sh`](../../solve/122/_z_122c.sh)
-- [`_z_122d.sh`](../../solve/122/_z_122d.sh)
-- [`_z_122e.py`](../../solve/122/_z_122e.py)
-- [`_z_122f.py`](../../solve/122/_z_122f.py)
+- [`solve.py`](../../solve/122/solve.py)
+- *5 variantes intermediaires dans `solve/122/archive/`*

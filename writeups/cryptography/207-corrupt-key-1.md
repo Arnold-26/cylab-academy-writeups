@@ -24,7 +24,5 @@ picoCTF{d741543f172970457e6a9aaa890935b8}
 
 ## Scripts
 
-- [`_z_207a.py`](../../solve/207/_z_207a.py)
-- [`_z_207b.py`](../../solve/207/_z_207b.py)
-- [`_z_207c.py`](../../solve/207/_z_207c.py)
-- [`_z_207d.sh`](../../solve/207/_z_207d.sh)
+- [`solve.py`](../../solve/207/solve.py)
+- *3 variantes intermediaires dans `solve/207/archive/`*

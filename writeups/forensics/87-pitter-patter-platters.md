@@ -24,11 +24,5 @@ academy{b3_5t111_mL|_<3_d18a1e1e}
 
 ## Scripts
 
-- [`_z_87a.py`](../../solve/87/_z_87a.py)
-- [`_z_87b.sh`](../../solve/87/_z_87b.sh)
-- [`_z_87c.sh`](../../solve/87/_z_87c.sh)
-- [`_z_87d.sh`](../../solve/87/_z_87d.sh)
-- [`_z_87e.sh`](../../solve/87/_z_87e.sh)
-- [`_z_87f.py`](../../solve/87/_z_87f.py)
-- [`_z_87g.py`](../../solve/87/_z_87g.py)
-- [`_z_87h.py`](../../solve/87/_z_87h.py)
+- [`solve.py`](../../solve/87/solve.py)
+- *7 variantes intermediaires dans `solve/87/archive/`*

@@ -24,4 +24,4 @@ academy{c0ngr4ts_0n_y0ur_s4n1ty}
 
 ## Scripts
 
-- [`_z_91.py`](../../solve/91/_z_91.py)
+- [`solve.py`](../../solve/91/solve.py)

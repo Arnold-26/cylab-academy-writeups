@@ -24,6 +24,5 @@ academy{g34r5_0f_m0r3_c95d6542}
 
 ## Scripts
 
-- [`_z_385a.py`](../../solve/385/_z_385a.py)
-- [`_z_385b.py`](../../solve/385/_z_385b.py)
-- [`_z_385c.py`](../../solve/385/_z_385c.py)
+- [`solve.py`](../../solve/385/solve.py)
+- *2 variantes intermediaires dans `solve/385/archive/`*

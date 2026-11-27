@@ -51,4 +51,4 @@ sol, le fragment suivant du flag **rastérisé en glyphes `#`** avec une police 
 
 ## Scripts
 
-- [`_z_318a.sh`](../../solve/318/_z_318a.sh)
+- [`solve.sh`](../../solve/318/solve.sh)

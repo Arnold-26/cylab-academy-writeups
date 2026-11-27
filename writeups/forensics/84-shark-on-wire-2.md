@@ -24,19 +24,5 @@ academy{p1LLf3r3d_data_v1a_st3g0}
 
 ## Scripts
 
-- [`_z_84a.py`](../../solve/84/_z_84a.py)
-- [`_z_84a.sh`](../../solve/84/_z_84a.sh)
-- [`_z_84b.sh`](../../solve/84/_z_84b.sh)
-- [`_z_84c.py`](../../solve/84/_z_84c.py)
-- [`_z_84c.sh`](../../solve/84/_z_84c.sh)
-- [`_z_84d.py`](../../solve/84/_z_84d.py)
-- [`_z_84d.sh`](../../solve/84/_z_84d.sh)
-- [`_z_84e.sh`](../../solve/84/_z_84e.sh)
-- [`_z_84f.py`](../../solve/84/_z_84f.py)
-- [`_z_84f.sh`](../../solve/84/_z_84f.sh)
-- [`_z_84g.py`](../../solve/84/_z_84g.py)
-- [`_z_84g.sh`](../../solve/84/_z_84g.sh)
-- [`_z_84h.py`](../../solve/84/_z_84h.py)
-- [`_z_84i.py`](../../solve/84/_z_84i.py)
-- [`_z_84j.sh`](../../solve/84/_z_84j.sh)
-- [`_z_84k.py`](../../solve/84/_z_84k.py)
+- [`solve.py`](../../solve/84/solve.py)
+- *15 variantes intermediaires dans `solve/84/archive/`*

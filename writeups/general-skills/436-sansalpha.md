@@ -24,8 +24,5 @@ academy{7h15_mu171v3r53_15_m4dn355_0abcd64b}
 
 ## Scripts
 
-- [`_z_436a.py`](../../solve/436/_z_436a.py)
-- [`_z_436b.py`](../../solve/436/_z_436b.py)
-- [`_z_436c.sh`](../../solve/436/_z_436c.sh)
-- [`_z_436d.sh`](../../solve/436/_z_436d.sh)
-- [`_z_436e.py`](../../solve/436/_z_436e.py)
+- [`solve.py`](../../solve/436/solve.py)
+- *4 variantes intermediaires dans `solve/436/archive/`*

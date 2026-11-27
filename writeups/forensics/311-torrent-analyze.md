@@ -24,24 +24,5 @@ academy{ubuntu-19.10-desktop-amd64.iso}
 
 ## Scripts
 
-- [`_z_311a.py`](../../solve/311/_z_311a.py)
-- [`_z_311a.sh`](../../solve/311/_z_311a.sh)
-- [`_z_311b.py`](../../solve/311/_z_311b.py)
-- [`_z_311b.sh`](../../solve/311/_z_311b.sh)
-- [`_z_311c.py`](../../solve/311/_z_311c.py)
-- [`_z_311c.sh`](../../solve/311/_z_311c.sh)
-- [`_z_311d.py`](../../solve/311/_z_311d.py)
-- [`_z_311d.sh`](../../solve/311/_z_311d.sh)
-- [`_z_311e.py`](../../solve/311/_z_311e.py)
-- [`_z_311e.sh`](../../solve/311/_z_311e.sh)
-- [`_z_311f.py`](../../solve/311/_z_311f.py)
-- [`_z_311f.sh`](../../solve/311/_z_311f.sh)
-- [`_z_311g.sh`](../../solve/311/_z_311g.sh)
-- [`_z_311h.py`](../../solve/311/_z_311h.py)
-- [`_z_311h.sh`](../../solve/311/_z_311h.sh)
-- [`_z_311i.py`](../../solve/311/_z_311i.py)
-- [`_z_311i.sh`](../../solve/311/_z_311i.sh)
-- [`_z_311j.sh`](../../solve/311/_z_311j.sh)
-- [`_z_311k.sh`](../../solve/311/_z_311k.sh)
-- [`_z_311l.sh`](../../solve/311/_z_311l.sh)
-- [`_z_311m.sh`](../../solve/311/_z_311m.sh)
+- [`solve.py`](../../solve/311/solve.py)
+- *20 variantes intermediaires dans `solve/311/archive/`*

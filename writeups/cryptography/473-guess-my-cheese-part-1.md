@@ -24,11 +24,5 @@ academy{ChEeSy8b0897b1}
 
 ## Scripts
 
-- [`_z_473a.py`](../../solve/473/_z_473a.py)
-- [`_z_473b.py`](../../solve/473/_z_473b.py)
-- [`_z_473c.py`](../../solve/473/_z_473c.py)
-- [`_z_473d.py`](../../solve/473/_z_473d.py)
-- [`_z_473e.py`](../../solve/473/_z_473e.py)
-- [`_z_473f.py`](../../solve/473/_z_473f.py)
-- [`_z_473g.py`](../../solve/473/_z_473g.py)
-- [`_z_473h.py`](../../solve/473/_z_473h.py)
+- [`solve.py`](../../solve/473/solve.py)
+- *7 variantes intermediaires dans `solve/473/archive/`*

@@ -24,5 +24,5 @@ academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}
 
 ## Scripts
 
-- [`_z_415a.py`](../../solve/415/_z_415a.py)
-- [`_z_415b.py`](../../solve/415/_z_415b.py)
+- [`solve.py`](../../solve/415/solve.py)
+- *1 variantes intermediaires dans `solve/415/archive/`*

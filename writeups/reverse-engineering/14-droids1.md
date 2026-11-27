@@ -24,4 +24,4 @@ academy{pining.for.the.fjords}
 
 ## Scripts
 
-- [`_z_14a.py`](../../solve/14/_z_14a.py)
+- [`solve.py`](../../solve/14/solve.py)

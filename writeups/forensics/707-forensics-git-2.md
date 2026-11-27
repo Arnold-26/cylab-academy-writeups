@@ -24,15 +24,5 @@ academy{g17_r35cu3_16ac6bf3}
 
 ## Scripts
 
-- [`_z_707a.sh`](../../solve/707/_z_707a.sh)
-- [`_z_707b.sh`](../../solve/707/_z_707b.sh)
-- [`_z_707c.sh`](../../solve/707/_z_707c.sh)
-- [`_z_707d.sh`](../../solve/707/_z_707d.sh)
-- [`_z_707e.sh`](../../solve/707/_z_707e.sh)
-- [`_z_707f.sh`](../../solve/707/_z_707f.sh)
-- [`_z_707g.sh`](../../solve/707/_z_707g.sh)
-- [`_z_707h.sh`](../../solve/707/_z_707h.sh)
-- [`_z_707i.sh`](../../solve/707/_z_707i.sh)
-- [`_z_707j.sh`](../../solve/707/_z_707j.sh)
-- [`_z_707k.py`](../../solve/707/_z_707k.py)
-- [`_z_707l.py`](../../solve/707/_z_707l.py)
+- [`solve.py`](../../solve/707/solve.py)
+- *11 variantes intermediaires dans `solve/707/archive/`*

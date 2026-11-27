@@ -24,10 +24,5 @@ picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}
 
 ## Scripts
 
-- [`_z_222a.sh`](../../solve/222/_z_222a.sh)
-- [`_z_222b.sh`](../../solve/222/_z_222b.sh)
-- [`_z_222c.sh`](../../solve/222/_z_222c.sh)
-- [`_z_222d.sh`](../../solve/222/_z_222d.sh)
-- [`_z_222e.sh`](../../solve/222/_z_222e.sh)
-- [`_z_222f.sh`](../../solve/222/_z_222f.sh)
-- [`_z_222g.py`](../../solve/222/_z_222g.py)
+- [`solve.sh`](../../solve/222/solve.sh)
+- *6 variantes intermediaires dans `solve/222/archive/`*

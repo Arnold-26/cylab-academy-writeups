@@ -24,25 +24,5 @@ steghide exige une passphrase : elle est souvent dans les metadonnees.
 
 ## Scripts
 
-- [`_z_383a.py`](../../solve/383/_z_383a.py)
-- [`_z_383a.sh`](../../solve/383/_z_383a.sh)
-- [`_z_383b.sh`](../../solve/383/_z_383b.sh)
-- [`_z_383c.sh`](../../solve/383/_z_383c.sh)
-- [`_z_383d.sh`](../../solve/383/_z_383d.sh)
-- [`_z_383e.py`](../../solve/383/_z_383e.py)
-- [`_z_383e.sh`](../../solve/383/_z_383e.sh)
-- [`_z_383f.py`](../../solve/383/_z_383f.py)
-- [`_z_383f.sh`](../../solve/383/_z_383f.sh)
-- [`_z_383g.py`](../../solve/383/_z_383g.py)
-- [`_z_383g.sh`](../../solve/383/_z_383g.sh)
-- [`_z_383h.sh`](../../solve/383/_z_383h.sh)
-- [`_z_383i.py`](../../solve/383/_z_383i.py)
-- [`_z_383i.sh`](../../solve/383/_z_383i.sh)
-- [`_z_383j.sh`](../../solve/383/_z_383j.sh)
-- [`_z_383k.py`](../../solve/383/_z_383k.py)
-- [`_z_383l.sh`](../../solve/383/_z_383l.sh)
-- [`_z_383m.py`](../../solve/383/_z_383m.py)
-- [`_z_383n.py`](../../solve/383/_z_383n.py)
-- [`_z_383o.py`](../../solve/383/_z_383o.py)
-- [`_z_383p.py`](../../solve/383/_z_383p.py)
-- [`_z_383q.py`](../../solve/383/_z_383q.py)
+- [`solve.py`](../../solve/383/solve.py)
+- *21 variantes intermediaires dans `solve/383/archive/`*

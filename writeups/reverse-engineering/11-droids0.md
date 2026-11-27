@@ -24,4 +24,4 @@ academy{a.moose.once.bit.my.sister}
 
 ## Scripts
 
-- [`_z_11a.py`](../../solve/11/_z_11a.py)
+- [`solve.py`](../../solve/11/solve.py)

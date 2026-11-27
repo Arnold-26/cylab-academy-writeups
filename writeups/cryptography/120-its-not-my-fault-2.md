@@ -68,15 +68,7 @@ p+q envoye -> academy{p0lyn0m14l_...}
 
 ## Scripts
 
-- [`_z_120_flag.txt`](../../solve/120/_z_120_flag.txt)
-- [`_z_120_log.txt`](../../solve/120/_z_120_log.txt)
-- [`_z_120_ne.txt`](../../solve/120/_z_120_ne.txt)
-- [`_z_120_pow.py`](../../solve/120/_z_120_pow.py)
-- [`_z_120_scale.sh`](../../solve/120/_z_120_scale.sh)
-- [`_z_120_scale2.sh`](../../solve/120/_z_120_scale2.sh)
-- [`_z_120_scale3.sh`](../../solve/120/_z_120_scale3.sh)
-- [`_z_120_solve.py`](../../solve/120/_z_120_solve.py)
-- [`_z_120_solve2.py`](../../solve/120/_z_120_solve2.py)
-- [`_z_120_src.py`](../../solve/120/_z_120_src.py)
-- [`_z_120_toy.py`](../../solve/120/_z_120_toy.py)
+- [`solve.py`](../../solve/120/solve.py)
 - [`_z_120url.txt`](../../solve/120/_z_120url.txt)
+- [`_z_120_flag.txt`](../../solve/120/_z_120_flag.txt)
+- *9 variantes intermediaires dans `solve/120/archive/`*

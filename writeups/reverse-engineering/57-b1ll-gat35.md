@@ -79,10 +79,5 @@ academy{These are the access codes to the vault: 1063340}
 
 ## Scripts
 
-- [`_z_57a.sh`](../../solve/57/_z_57a.sh)
-- [`_z_57b.py`](../../solve/57/_z_57b.py)
-- [`_z_57c.sh`](../../solve/57/_z_57c.sh)
-- [`_z_57d.py`](../../solve/57/_z_57d.py)
-- [`_z_57e.sh`](../../solve/57/_z_57e.sh)
-- [`_z_57f.py`](../../solve/57/_z_57f.py)
-- [`_z_57g.py`](../../solve/57/_z_57g.py)
+- [`solve.sh`](../../solve/57/solve.sh)
+- *6 variantes intermediaires dans `solve/57/archive/`*

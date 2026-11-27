@@ -24,4 +24,4 @@ academy{tis.but.a.scratch}
 
 ## Scripts
 
-- [`_z_23a.py`](../../solve/23/_z_23a.py)
+- [`solve.py`](../../solve/23/solve.py)

@@ -24,14 +24,5 @@ academy{h4ppy_b1rthd4y_2_m3_8248ffdd}
 
 ## Scripts
 
-- [`_z_169a.py`](../../solve/169/_z_169a.py)
-- [`_z_169b.py`](../../solve/169/_z_169b.py)
-- [`_z_169c.py`](../../solve/169/_z_169c.py)
-- [`_z_169d.py`](../../solve/169/_z_169d.py)
-- [`_z_169e.py`](../../solve/169/_z_169e.py)
-- [`_z_169f.py`](../../solve/169/_z_169f.py)
-- [`_z_169g.py`](../../solve/169/_z_169g.py)
-- [`_z_169h.py`](../../solve/169/_z_169h.py)
-- [`_z_169i.py`](../../solve/169/_z_169i.py)
-- [`_z_169j.py`](../../solve/169/_z_169j.py)
-- [`_z_169k.py`](../../solve/169/_z_169k.py)
+- [`solve.py`](../../solve/169/solve.py)
+- *10 variantes intermediaires dans `solve/169/archive/`*

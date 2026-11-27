@@ -90,20 +90,5 @@ academy{r011ing_y0ur_0wn_crypt0_15_h4rd!_13670f39}
 
 ## Scripts
 
-- [`_z_151a.py`](../../solve/151/_z_151a.py)
-- [`_z_151a.sh`](../../solve/151/_z_151a.sh)
-- [`_z_151b.py`](../../solve/151/_z_151b.py)
-- [`_z_151b.sh`](../../solve/151/_z_151b.sh)
-- [`_z_151c.sh`](../../solve/151/_z_151c.sh)
-- [`_z_151d.sh`](../../solve/151/_z_151d.sh)
-- [`_z_151e.sh`](../../solve/151/_z_151e.sh)
-- [`_z_151f.py`](../../solve/151/_z_151f.py)
-- [`_z_151f.sh`](../../solve/151/_z_151f.sh)
-- [`_z_151g.sh`](../../solve/151/_z_151g.sh)
-- [`_z_151h.sh`](../../solve/151/_z_151h.sh)
-- [`_z_151i.sh`](../../solve/151/_z_151i.sh)
-- [`_z_151j.sh`](../../solve/151/_z_151j.sh)
-- [`_z_151k.sh`](../../solve/151/_z_151k.sh)
-- [`_z_151l.py`](../../solve/151/_z_151l.py)
-- [`_z_151m.py`](../../solve/151/_z_151m.py)
-- [`_z_151n.sh`](../../solve/151/_z_151n.sh)
+- [`solve.sh`](../../solve/151/solve.sh)
+- *16 variantes intermediaires dans `solve/151/archive/`*

@@ -24,23 +24,5 @@ academy{br1ng_y0ur_0wn_k3y_bb724f88}
 
 ## Scripts
 
-- [`_z_276a.sh`](../../solve/276/_z_276a.sh)
-- [`_z_276b.sh`](../../solve/276/_z_276b.sh)
-- [`_z_276c.sh`](../../solve/276/_z_276c.sh)
-- [`_z_276d.py`](../../solve/276/_z_276d.py)
-- [`_z_276e.py`](../../solve/276/_z_276e.py)
-- [`_z_276f.py`](../../solve/276/_z_276f.py)
-- [`_z_276g.sh`](../../solve/276/_z_276g.sh)
-- [`_z_276h.py`](../../solve/276/_z_276h.py)
-- [`_z_276i.py`](../../solve/276/_z_276i.py)
-- [`_z_276j.sh`](../../solve/276/_z_276j.sh)
-- [`_z_276k.sh`](../../solve/276/_z_276k.sh)
-- [`_z_276l.sh`](../../solve/276/_z_276l.sh)
-- [`_z_276m.sh`](../../solve/276/_z_276m.sh)
-- [`_z_276n.sh`](../../solve/276/_z_276n.sh)
-- [`_z_276o.sh`](../../solve/276/_z_276o.sh)
-- [`_z_276p.sh`](../../solve/276/_z_276p.sh)
-- [`_z_276q.sh`](../../solve/276/_z_276q.sh)
-- [`_z_276r.sh`](../../solve/276/_z_276r.sh)
-- [`_z_276s.sh`](../../solve/276/_z_276s.sh)
-- [`_z_276t.py`](../../solve/276/_z_276t.py)
+- [`solve.py`](../../solve/276/solve.py)
+- *19 variantes intermediaires dans `solve/276/archive/`*

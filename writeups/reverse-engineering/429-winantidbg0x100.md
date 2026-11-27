@@ -24,18 +24,5 @@ academy{d3bug_f0r_th3_Win_0x100_411bc019}
 
 ## Scripts
 
-- [`_z_429a.py`](../../solve/429/_z_429a.py)
-- [`_z_429b.py`](../../solve/429/_z_429b.py)
-- [`_z_429c.py`](../../solve/429/_z_429c.py)
-- [`_z_429d.py`](../../solve/429/_z_429d.py)
-- [`_z_429e.py`](../../solve/429/_z_429e.py)
-- [`_z_429f.py`](../../solve/429/_z_429f.py)
-- [`_z_429g.py`](../../solve/429/_z_429g.py)
-- [`_z_429h.py`](../../solve/429/_z_429h.py)
-- [`_z_429i.py`](../../solve/429/_z_429i.py)
-- [`_z_429j.py`](../../solve/429/_z_429j.py)
-- [`_z_429k.py`](../../solve/429/_z_429k.py)
-- [`_z_429l.py`](../../solve/429/_z_429l.py)
-- [`_z_429m.py`](../../solve/429/_z_429m.py)
-- [`_z_429n.py`](../../solve/429/_z_429n.py)
-- [`_z_429o.py`](../../solve/429/_z_429o.py)
+- [`solve.py`](../../solve/429/solve.py)
+- *14 variantes intermediaires dans `solve/429/archive/`*

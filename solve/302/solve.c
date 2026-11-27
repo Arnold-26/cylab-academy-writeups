@@ -1,3 +1,8 @@
+// 302 - solfire  (Binary Exploitation, picoCTF 2022)
+// Flag: academy{c9d4c62a}
+// Write-up: ../../../writeups/binary-exploitation/302-solfire.md
+// This is the script that produced the flag; historical variants are in archive/.
+//
 // solfire exploit - picoCTF 2022 (CyLab Academy 302)
 //
 // Method (from the public writeup, verified by measurement):

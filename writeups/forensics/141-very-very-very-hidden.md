@@ -24,15 +24,5 @@ academy{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}
 
 ## Scripts
 
-- [`_z_141a.sh`](../../solve/141/_z_141a.sh)
-- [`_z_141b.sh`](../../solve/141/_z_141b.sh)
-- [`_z_141c.py`](../../solve/141/_z_141c.py)
-- [`_z_141c.sh`](../../solve/141/_z_141c.sh)
-- [`_z_141d.py`](../../solve/141/_z_141d.py)
-- [`_z_141e.py`](../../solve/141/_z_141e.py)
-- [`_z_141f.py`](../../solve/141/_z_141f.py)
-- [`_z_141g.py`](../../solve/141/_z_141g.py)
-- [`_z_141h.py`](../../solve/141/_z_141h.py)
-- [`_z_141i.py`](../../solve/141/_z_141i.py)
-- [`_z_141j.py`](../../solve/141/_z_141j.py)
-- [`_z_141k.py`](../../solve/141/_z_141k.py)
+- [`solve.py`](../../solve/141/solve.py)
+- *11 variantes intermediaires dans `solve/141/archive/`*

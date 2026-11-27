@@ -24,25 +24,5 @@ academy{1_533_n4m35_a1eed517}
 
 ## Scripts
 
-- [`_z_413a.py`](../../solve/413/_z_413a.py)
-- [`_z_413b.py`](../../solve/413/_z_413b.py)
-- [`_z_413c.sh`](../../solve/413/_z_413c.sh)
-- [`_z_413d.sh`](../../solve/413/_z_413d.sh)
-- [`_z_413e.sh`](../../solve/413/_z_413e.sh)
-- [`_z_413f.py`](../../solve/413/_z_413f.py)
-- [`_z_413g.sh`](../../solve/413/_z_413g.sh)
-- [`_z_413h.sh`](../../solve/413/_z_413h.sh)
-- [`_z_413i.sh`](../../solve/413/_z_413i.sh)
-- [`_z_413j.sh`](../../solve/413/_z_413j.sh)
-- [`_z_413k.sh`](../../solve/413/_z_413k.sh)
-- [`_z_413l.py`](../../solve/413/_z_413l.py)
-- [`_z_413m.py`](../../solve/413/_z_413m.py)
-- [`_z_413n.sh`](../../solve/413/_z_413n.sh)
-- [`_z_413o.sh`](../../solve/413/_z_413o.sh)
-- [`_z_413p.py`](../../solve/413/_z_413p.py)
-- [`_z_413q.sh`](../../solve/413/_z_413q.sh)
-- [`_z_413r.sh`](../../solve/413/_z_413r.sh)
-- [`_z_413s.py`](../../solve/413/_z_413s.py)
-- [`_z_413t.py`](../../solve/413/_z_413t.py)
-- [`_z_413u.py`](../../solve/413/_z_413u.py)
-- [`_z_413v.py`](../../solve/413/_z_413v.py)
+- [`solve.py`](../../solve/413/solve.py)
+- *21 variantes intermediaires dans `solve/413/archive/`*

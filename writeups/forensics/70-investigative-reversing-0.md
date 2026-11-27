@@ -49,16 +49,5 @@ academy{f0und_1t_924af30d}
 
 ## Scripts
 
-- [`_z_7027.py`](../../solve/70/_z_7027.py)
-- [`_z_70a.py`](../../solve/70/_z_70a.py)
-- [`_z_70b.sh`](../../solve/70/_z_70b.sh)
-- [`_z_70c.sh`](../../solve/70/_z_70c.sh)
-- [`_z_70d.sh`](../../solve/70/_z_70d.sh)
-- [`_z_70e.py`](../../solve/70/_z_70e.py)
-- [`_z_70f.py`](../../solve/70/_z_70f.py)
-- [`_z_70g.py`](../../solve/70/_z_70g.py)
-- [`_z_70h.py`](../../solve/70/_z_70h.py)
-- [`_z_70i.py`](../../solve/70/_z_70i.py)
-- [`_z_70j.py`](../../solve/70/_z_70j.py)
-- [`_z_70k.py`](../../solve/70/_z_70k.py)
-- [`_z_70m.py`](../../solve/70/_z_70m.py)
+- [`solve.py`](../../solve/70/solve.py)
+- *12 variantes intermediaires dans `solve/70/archive/`*

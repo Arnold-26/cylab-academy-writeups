@@ -24,5 +24,5 @@ academy{i_c4n_b3_0wn3r_7a45d669}
 
 ## Scripts
 
-- [`_z_723b.py`](../../solve/723/_z_723b.py)
-- [`_z_723solve.py`](../../solve/723/_z_723solve.py)
+- [`solve.py`](../../solve/723/solve.py)
+- *1 variantes intermediaires dans `solve/723/archive/`*

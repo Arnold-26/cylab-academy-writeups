@@ -24,11 +24,5 @@ academy{d3m0n_3xpung3r_36e6efa4}
 
 ## Scripts
 
-- [`_z_370a.py`](../../solve/370/_z_370a.py)
-- [`_z_370b.py`](../../solve/370/_z_370b.py)
-- [`_z_370b.sh`](../../solve/370/_z_370b.sh)
-- [`_z_370c.py`](../../solve/370/_z_370c.py)
-- [`_z_370c.sh`](../../solve/370/_z_370c.sh)
-- [`_z_370d.sh`](../../solve/370/_z_370d.sh)
-- [`_z_370e.py`](../../solve/370/_z_370e.py)
-- [`_z_370e.sh`](../../solve/370/_z_370e.sh)
+- [`solve.py`](../../solve/370/solve.py)
+- *7 variantes intermediaires dans `solve/370/archive/`*

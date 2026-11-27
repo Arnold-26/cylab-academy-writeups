@@ -79,24 +79,5 @@ academy{t1mingS1deChann3l_c55b1a90e29d2f}
 
 ## Scripts
 
-- [`_z_149a.py`](../../solve/149/_z_149a.py)
-- [`_z_149a.sh`](../../solve/149/_z_149a.sh)
-- [`_z_149b.sh`](../../solve/149/_z_149b.sh)
-- [`_z_149c.sh`](../../solve/149/_z_149c.sh)
-- [`_z_149d.sh`](../../solve/149/_z_149d.sh)
-- [`_z_149e.py`](../../solve/149/_z_149e.py)
-- [`_z_149f.py`](../../solve/149/_z_149f.py)
-- [`_z_149f.sh`](../../solve/149/_z_149f.sh)
-- [`_z_149g.py`](../../solve/149/_z_149g.py)
-- [`_z_149g.sh`](../../solve/149/_z_149g.sh)
-- [`_z_149h.py`](../../solve/149/_z_149h.py)
-- [`_z_149h.sh`](../../solve/149/_z_149h.sh)
-- [`_z_149i.sh`](../../solve/149/_z_149i.sh)
-- [`_z_149j.py`](../../solve/149/_z_149j.py)
-- [`_z_149k.sh`](../../solve/149/_z_149k.sh)
-- [`_z_149l.py`](../../solve/149/_z_149l.py)
-- [`_z_149m.py`](../../solve/149/_z_149m.py)
-- [`_z_149n.py`](../../solve/149/_z_149n.py)
-- [`_z_149o.py`](../../solve/149/_z_149o.py)
-- [`_z_149p.py`](../../solve/149/_z_149p.py)
-- [`_z_149q.py`](../../solve/149/_z_149q.py)
+- [`solve.py`](../../solve/149/solve.py)
+- *20 variantes intermediaires dans `solve/149/archive/`*

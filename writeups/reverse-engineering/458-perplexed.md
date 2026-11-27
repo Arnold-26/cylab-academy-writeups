@@ -24,16 +24,5 @@ academy{0n3_bi7_4t_a_7im3}
 
 ## Scripts
 
-- [`_z_458a.py`](../../solve/458/_z_458a.py)
-- [`_z_458b.sh`](../../solve/458/_z_458b.sh)
-- [`_z_458c.sh`](../../solve/458/_z_458c.sh)
-- [`_z_458d.sh`](../../solve/458/_z_458d.sh)
-- [`_z_458e.sh`](../../solve/458/_z_458e.sh)
-- [`_z_458f.sh`](../../solve/458/_z_458f.sh)
-- [`_z_458g.sh`](../../solve/458/_z_458g.sh)
-- [`_z_458h.sh`](../../solve/458/_z_458h.sh)
-- [`_z_458i.py`](../../solve/458/_z_458i.py)
-- [`_z_458j.py`](../../solve/458/_z_458j.py)
-- [`_z_458k.sh`](../../solve/458/_z_458k.sh)
-- [`_z_458l.py`](../../solve/458/_z_458l.py)
-- [`_z_458m.py`](../../solve/458/_z_458m.py)
+- [`solve.py`](../../solve/458/solve.py)
+- *12 variantes intermediaires dans `solve/458/archive/`*

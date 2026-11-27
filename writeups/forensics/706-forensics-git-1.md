@@ -24,7 +24,5 @@ academy{g17_r3m3mb3r5_d4ddf904}
 
 ## Scripts
 
-- [`_z_706a.sh`](../../solve/706/_z_706a.sh)
-- [`_z_706b.sh`](../../solve/706/_z_706b.sh)
-- [`_z_706c.py`](../../solve/706/_z_706c.py)
-- [`_z_706d.py`](../../solve/706/_z_706d.py)
+- [`solve.py`](../../solve/706/solve.py)
+- *3 variantes intermediaires dans `solve/706/archive/`*

@@ -24,15 +24,5 @@ encodedofvzaojsrs
 
 ## Scripts
 
-- [`_z_47a.py`](../../solve/47/_z_47a.py)
-- [`_z_47b.sh`](../../solve/47/_z_47b.sh)
-- [`_z_47c.py`](../../solve/47/_z_47c.py)
-- [`_z_47d.sh`](../../solve/47/_z_47d.sh)
-- [`_z_47e.py`](../../solve/47/_z_47e.py)
-- [`_z_47f.py`](../../solve/47/_z_47f.py)
-- [`_z_47g.py`](../../solve/47/_z_47g.py)
-- [`_z_47h.py`](../../solve/47/_z_47h.py)
-- [`_z_47i.py`](../../solve/47/_z_47i.py)
-- [`_z_47j.sh`](../../solve/47/_z_47j.sh)
-- [`_z_47k.py`](../../solve/47/_z_47k.py)
-- [`_z_47l.py`](../../solve/47/_z_47l.py)
+- [`solve.py`](../../solve/47/solve.py)
+- *11 variantes intermediaires dans `solve/47/archive/`*

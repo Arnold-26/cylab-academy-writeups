@@ -24,16 +24,5 @@ academy{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}
 
 ## Scripts
 
-- [`_z_456a.sh`](../../solve/456/_z_456a.sh)
-- [`_z_456b.py`](../../solve/456/_z_456b.py)
-- [`_z_456c.py`](../../solve/456/_z_456c.py)
-- [`_z_456d.py`](../../solve/456/_z_456d.py)
-- [`_z_456e.py`](../../solve/456/_z_456e.py)
-- [`_z_456f.py`](../../solve/456/_z_456f.py)
-- [`_z_456g.py`](../../solve/456/_z_456g.py)
-- [`_z_456h.py`](../../solve/456/_z_456h.py)
-- [`_z_456i.py`](../../solve/456/_z_456i.py)
-- [`_z_456j.py`](../../solve/456/_z_456j.py)
-- [`_z_456k.py`](../../solve/456/_z_456k.py)
-- [`_z_456l.py`](../../solve/456/_z_456l.py)
-- [`_z_456m.py`](../../solve/456/_z_456m.py)
+- [`solve.py`](../../solve/456/solve.py)
+- *12 variantes intermediaires dans `solve/456/archive/`*

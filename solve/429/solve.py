@@ -1,0 +1,115 @@
+# 429 - WinAntiDbg0x100  (Reverse Engineering, picoCTF 2024)
+# Flag: academy{d3bug_f0r_th3_Win_0x100_411bc019}
+# Write-up: ../../../writeups/reverse-engineering/429-winantidbg0x100.md
+# This is the script that produced the flag; historical variants are in archive/.
+#
+import sys, ctypes, ctypes.wintypes as wt, time
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+k32 = ctypes.WinDLL("kernel32", use_last_error=True)
+ntdll = ctypes.WinDLL("ntdll")
+EXE = r"/tmp/cylab_eps\win429\WinAntiDbg0x100.exe"
+DEBUG_ONLY_THIS_PROCESS = 0x00000002
+DBG_CONTINUE = 0x00010002
+DBG_EXCEPTION_NOT_HANDLED = 0x80010001
+
+
+class STARTUPINFO(ctypes.Structure):
+    _fields_ = [("cb", wt.DWORD), ("lpReserved", wt.LPWSTR), ("lpDesktop", wt.LPWSTR),
+                ("lpTitle", wt.LPWSTR), ("dwX", wt.DWORD), ("dwY", wt.DWORD),
+                ("dwXSize", wt.DWORD), ("dwYSize", wt.DWORD), ("dwXCountChars", wt.DWORD),
+                ("dwYCountChars", wt.DWORD), ("dwFillAttribute", wt.DWORD), ("dwFlags", wt.DWORD),
+                ("wShowWindow", wt.WORD), ("cbReserved2", wt.WORD), ("lpReserved2", ctypes.c_void_p),
+                ("hStdInput", wt.HANDLE), ("hStdOutput", wt.HANDLE), ("hStdError", wt.HANDLE)]
+
+
+class PROCESS_INFORMATION(ctypes.Structure):
+    _fields_ = [("hProcess", wt.HANDLE), ("hThread", wt.HANDLE),
+                ("dwProcessId", wt.DWORD), ("dwThreadId", wt.DWORD)]
+
+
+class DEBUG_EVENT(ctypes.Structure):
+    _fields_ = [("dwDebugEventCode", wt.DWORD), ("dwProcessId", wt.DWORD),
+                ("dwThreadId", wt.DWORD), ("pad", wt.DWORD), ("u", ctypes.c_byte * 160)]
+
+
+class PBI(ctypes.Structure):
+    _fields_ = [("ExitStatus", ctypes.c_long), ("PebBaseAddress", ctypes.c_void_p),
+                ("AffinityMask", ctypes.c_void_p), ("BasePriority", ctypes.c_long),
+                ("UniqueProcessId", ctypes.c_void_p), ("Inherited", ctypes.c_void_p)]
+
+
+def rd(h, addr, n):
+    buf = ctypes.create_string_buffer(n)
+    got = ctypes.c_size_t(0)
+    k32.ReadProcessMemory(h, ctypes.c_void_p(addr), buf, n, ctypes.byref(got))
+    return buf.raw[:got.value]
+
+
+def wr(h, addr, data):
+    got = ctypes.c_size_t(0)
+    return k32.WriteProcessMemory(h, ctypes.c_void_p(addr), data, len(data), ctypes.byref(got))
+
+
+def patch(h):
+    pbi = PBI()
+    rl = ctypes.c_ulong(0)
+    ntdll.NtQueryInformationProcess(wt.HANDLE(h), 0, ctypes.byref(pbi), ctypes.sizeof(pbi), ctypes.byref(rl))
+    peb = pbi.PebBaseAddress
+    if not peb:
+        print("pas de PEB")
+        return
+    print("PEB=0x%x" % peb)
+    wr(h, peb + 2, b"\x00")                     # BeingDebugged
+    wr(h, peb + 0xBC, b"\x00\x00\x00\x00")      # NtGlobalFlag (x64)
+    heap = int.from_bytes(rd(h, peb + 0x30, 8), "little")   # ProcessHeap
+    print("heap=0x%x" % heap)
+    if heap:
+        wr(h, heap + 0x70, b"\x00\x00\x00\x00")  # Flags
+        wr(h, heap + 0x74, b"\x00\x00\x00\x00")  # ForceFlags
+    print("PEB + heap patches appliques")
+
+
+si = STARTUPINFO()
+si.cb = ctypes.sizeof(si)
+pi = PROCESS_INFORMATION()
+if not k32.CreateProcessW(EXE, None, None, None, False, DEBUG_ONLY_THIS_PROCESS, None, None,
+                          ctypes.byref(si), ctypes.byref(pi)):
+    print("echec", ctypes.get_last_error())
+    sys.exit(1)
+ev = DEBUG_EVENT()
+t0 = time.time()
+done = False
+while time.time() - t0 < 20:
+    if not k32.WaitForDebugEvent(ctypes.byref(ev), 2000):
+        continue
+    code = ev.dwDebugEventCode
+    cont = DBG_CONTINUE
+    if code == 8:
+        data = bytes(ev.u)
+        ptr = int.from_bytes(data[0:8], "little")
+        uni = int.from_bytes(data[8:10], "little")
+        ln = int.from_bytes(data[10:12], "little")
+        if ptr and ln:
+            size = ln * (2 if uni else 1) + 2
+            buf = ctypes.create_string_buffer(size)
+            n = ctypes.c_size_t(0)
+            k32.ReadProcessMemory(pi.hProcess, ctypes.c_void_p(ptr), buf, size, ctypes.byref(n))
+            raw = buf.raw[:n.value]
+            txt = raw.decode("utf-16le", "replace") if uni else raw.decode("latin-1", "replace")
+            txt = txt.replace("\xab\xab", "").replace("\x00", "")
+            if txt.strip():
+                print("DEBUG:", txt[:400])
+    elif code == 1:
+        ex = int.from_bytes(bytes(ev.u)[0:4], "little", signed=False)
+        if ex == 0x80000003:
+            if not done:
+                patch(pi.hProcess)
+                done = True
+            cont = DBG_CONTINUE
+        else:
+            cont = DBG_EXCEPTION_NOT_HANDLED
+    elif code == 5:
+        k32.ContinueDebugEvent(ev.dwProcessId, ev.dwThreadId, cont)
+        break
+    k32.ContinueDebugEvent(ev.dwProcessId, ev.dwThreadId, cont)
+k32.TerminateProcess(pi.hProcess, 0)

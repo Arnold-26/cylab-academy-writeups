@@ -24,9 +24,5 @@ academy{mU21C_1s_1337_63f2299a}
 
 ## Scripts
 
-- [`_z_117a.py`](../../solve/117/_z_117a.py)
-- [`_z_117b.py`](../../solve/117/_z_117b.py)
-- [`_z_117c.py`](../../solve/117/_z_117c.py)
-- [`_z_117d.py`](../../solve/117/_z_117d.py)
-- [`_z_117e.py`](../../solve/117/_z_117e.py)
-- [`_z_117f.py`](../../solve/117/_z_117f.py)
+- [`solve.py`](../../solve/117/solve.py)
+- *5 variantes intermediaires dans `solve/117/archive/`*

@@ -80,26 +80,5 @@ décodage de l'ASM était bon.
 
 ## Scripts
 
-- [`_z_430_caller.sh`](../../solve/430/_z_430_caller.sh)
-- [`_z_430_const.py`](../../solve/430/_z_430_const.py)
-- [`_z_430_crack.py`](../../solve/430/_z_430_crack.py)
-- [`_z_430_dec.sh`](../../solve/430/_z_430_dec.sh)
-- [`_z_430_dec2.sh`](../../solve/430/_z_430_dec2.sh)
-- [`_z_430_dump.sh`](../../solve/430/_z_430_dump.sh)
-- [`_z_430_emu.py`](../../solve/430/_z_430_emu.py)
-- [`_z_430_exact.py`](../../solve/430/_z_430_exact.py)
-- [`_z_430_final.py`](../../solve/430/_z_430_final.py)
-- [`_z_430_final2.py`](../../solve/430/_z_430_final2.py)
-- [`_z_430_find.sh`](../../solve/430/_z_430_find.sh)
-- [`_z_430_key.py`](../../solve/430/_z_430_key.py)
-- [`_z_430_pdb.sh`](../../solve/430/_z_430_pdb.sh)
-- [`_z_430_pdb2.sh`](../../solve/430/_z_430_pdb2.sh)
-- [`_z_430_r2.sh`](../../solve/430/_z_430_r2.sh)
-- [`_z_430_scanN.py`](../../solve/430/_z_430_scanN.py)
-- [`_z_430_static.sh`](../../solve/430/_z_430_static.sh)
-- [`_z_430_thunk.py`](../../solve/430/_z_430_thunk.py)
-- [`_z_430_upx.sh`](../../solve/430/_z_430_upx.sh)
-- [`_z_430_variants.py`](../../solve/430/_z_430_variants.py)
-- [`_z_430_xref.sh`](../../solve/430/_z_430_xref.sh)
-- [`_z_430a.py`](../../solve/430/_z_430a.py)
-- [`_z_430b.py`](../../solve/430/_z_430b.py)
+- [`solve.py`](../../solve/430/solve.py)
+- *22 variantes intermediaires dans `solve/430/archive/`*

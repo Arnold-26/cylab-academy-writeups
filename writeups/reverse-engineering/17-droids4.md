@@ -24,4 +24,4 @@ academy{not.particularly.silly}
 
 ## Scripts
 
-- [`_z_17a.py`](../../solve/17/_z_17a.py)
+- [`solve.py`](../../solve/17/solve.py)

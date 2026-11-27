@@ -24,23 +24,5 @@ academy{573417h13r_7h4n_7h3_1457_58527bb222}
 
 ## Scripts
 
-- [`_z_721a.py`](../../solve/721/_z_721a.py)
-- [`_z_721a.sh`](../../solve/721/_z_721a.sh)
-- [`_z_721b.py`](../../solve/721/_z_721b.py)
-- [`_z_721b.sh`](../../solve/721/_z_721b.sh)
-- [`_z_721c.sh`](../../solve/721/_z_721c.sh)
-- [`_z_721d.sh`](../../solve/721/_z_721d.sh)
-- [`_z_721e.sh`](../../solve/721/_z_721e.sh)
-- [`_z_721f.py`](../../solve/721/_z_721f.py)
-- [`_z_721f.sh`](../../solve/721/_z_721f.sh)
-- [`_z_721g.py`](../../solve/721/_z_721g.py)
-- [`_z_721g.sh`](../../solve/721/_z_721g.sh)
-- [`_z_721h.py`](../../solve/721/_z_721h.py)
-- [`_z_721i.sh`](../../solve/721/_z_721i.sh)
-- [`_z_721j.py`](../../solve/721/_z_721j.py)
-- [`_z_721k.py`](../../solve/721/_z_721k.py)
-- [`_z_721l.sh`](../../solve/721/_z_721l.sh)
-- [`_z_721m.py`](../../solve/721/_z_721m.py)
-- [`_z_721n.sh`](../../solve/721/_z_721n.sh)
-- [`_z_721o.py`](../../solve/721/_z_721o.py)
-- [`_z_721p.py`](../../solve/721/_z_721p.py)
+- [`solve.py`](../../solve/721/solve.py)
+- *19 variantes intermediaires dans `solve/721/archive/`*

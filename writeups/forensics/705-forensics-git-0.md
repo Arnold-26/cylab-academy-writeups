@@ -24,6 +24,5 @@ academy{g17_1n_7h3_d15k_041217d8}
 
 ## Scripts
 
-- [`_z_705a.sh`](../../solve/705/_z_705a.sh)
-- [`_z_705b.py`](../../solve/705/_z_705b.py)
-- [`_z_705c.py`](../../solve/705/_z_705c.py)
+- [`solve.py`](../../solve/705/solve.py)
+- *2 variantes intermediaires dans `solve/705/archive/`*

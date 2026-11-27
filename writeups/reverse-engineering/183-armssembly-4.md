@@ -24,4 +24,4 @@ academy{3988daab}
 
 ## Scripts
 
-- [`_z_183a.py`](../../solve/183/_z_183a.py)
+- [`solve.py`](../../solve/183/solve.py)

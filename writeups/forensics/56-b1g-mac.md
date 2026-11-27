@@ -24,13 +24,5 @@ academy{M4cTim35!}
 
 ## Scripts
 
-- [`_z_56a.py`](../../solve/56/_z_56a.py)
-- [`_z_56b.py`](../../solve/56/_z_56b.py)
-- [`_z_56b.sh`](../../solve/56/_z_56b.sh)
-- [`_z_56c.sh`](../../solve/56/_z_56c.sh)
-- [`_z_56d.py`](../../solve/56/_z_56d.py)
-- [`_z_56d.sh`](../../solve/56/_z_56d.sh)
-- [`_z_56e.py`](../../solve/56/_z_56e.py)
-- [`_z_56f.py`](../../solve/56/_z_56f.py)
-- [`_z_56g.py`](../../solve/56/_z_56g.py)
-- [`_z_56h.py`](../../solve/56/_z_56h.py)
+- [`solve.py`](../../solve/56/solve.py)
+- *9 variantes intermediaires dans `solve/56/archive/`*

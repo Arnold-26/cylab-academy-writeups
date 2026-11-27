@@ -24,6 +24,5 @@ academy{b1g_numb3rs_f5b03a75}
 
 ## Scripts
 
-- [`_z_297a.py`](../../solve/297/_z_297a.py)
-- [`_z_297b.py`](../../solve/297/_z_297b.py)
-- [`_z_297c.py`](../../solve/297/_z_297c.py)
+- [`solve.py`](../../solve/297/solve.py)
+- *2 variantes intermediaires dans `solve/297/archive/`*
