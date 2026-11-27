@@ -1,7 +1,7 @@
 # 133 - Binary Gauntlet 3  (Binary Exploitation, picoCTF 2021)
 # Flag: not archived
 # Write-up: ../../../writeups/binary-exploitation/133-binary-gauntlet-3.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, time, socket, struct, json
 

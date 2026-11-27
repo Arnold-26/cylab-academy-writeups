@@ -1,7 +1,7 @@
 # 204 - notepad  (Web Exploitation, picoMini by redpwn)
 # Flag: picoCTF{styl1ng_susp1c10usly_s1m1l4r_t0_p4steb1n}
 # Write-up: ../../../writeups/web-exploitation/204-notepad.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, requests, re, html as H
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

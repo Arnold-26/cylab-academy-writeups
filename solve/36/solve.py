@@ -1,7 +1,7 @@
 # 36 - investigation_encoded_2  (Forensics, picoCTF 2019)
 # Flag: academy{...}
 # Write-up: ../../../writeups/forensics/36-investigation-encoded-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, subprocess, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -2,7 +2,7 @@
 # 218 - vr-school  (Binary Exploitation, picoMini by redpwn)
 # Flag: picoCTF{0nl1ne_d3bat3_sux}
 # Write-up: ../../../writeups/binary-exploitation/218-vr-school.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 cd /tmp/cylab_eps || exit 1
 echo "=== 218 file ==="

@@ -1,7 +1,7 @@
 # 354 - Invisible WORDs  (Forensics, picoCTF 2023)
 # Flag: academy{w0rd_d4wg_y0u_f0und_5h3113ys_m4573rp13c3_2a058da1}
 # Write-up: ../../../writeups/forensics/354-invisible-words.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

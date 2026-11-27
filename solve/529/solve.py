@@ -1,7 +1,7 @@
 # 529 - Pico Bank  (Reverse Engineering, picoMini by CMU-Africa)
 # Flag: academy{1_l13d_4b0ut_b31ng_s3cur3d_m0b1l3_l0g1n_7f1dd571}
 # Write-up: ../../../writeups/reverse-engineering/529-pico-bank.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, requests, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

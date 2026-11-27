@@ -2,7 +2,7 @@
 # 496 - secure-email-service  (Web Exploitation, picoCTF 2024)
 # Flag: academy{always_a_step_ahead_fb2a1a8c}
 # Write-up: ../../../writeups/web-exploitation/496-secure-email-service.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 """496 secure-email-service : run complet.
 

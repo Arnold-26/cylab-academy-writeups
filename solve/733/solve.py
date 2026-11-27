@@ -1,7 +1,7 @@
 # 733 - offset-cycle  (Binary Exploitation, picoCTF 2026)
 # Flag: academy{u_Us3d_pwNt00L5_af37c96d}
 # Write-up: ../../../writeups/binary-exploitation/733-offset-cycle.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, subprocess, re, os, glob, time
 

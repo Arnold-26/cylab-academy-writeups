@@ -1,7 +1,7 @@
 # 705 - Forensics Git 0  (Forensics, picoCTF 2026)
 # Flag: academy{g17_1n_7h3_d15k_041217d8}
 # Write-up: ../../../writeups/forensics/705-forensics-git-0.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

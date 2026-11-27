@@ -1,7 +1,7 @@
 # 23 - droids3  (Reverse Engineering, picoCTF 2019)
 # Flag: academy{tis.but.a.scratch}
 # Write-up: ../../../writeups/reverse-engineering/23-droids3.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

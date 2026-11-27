@@ -1,7 +1,7 @@
 # 430 - WinAntiDbg0x200  (Reverse Engineering, picoCTF 2024)
 # Flag: academy{0x200_debug_f0r_Win_0d811b88}
 # Write-up: ../../../writeups/reverse-engineering/430-winantidbg0x200.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys
 data = open("/tmp/winadb/config.bin", "rb").read()

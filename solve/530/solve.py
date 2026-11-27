@@ -1,7 +1,7 @@
 # 530 - Riddle Registry  (Forensics, picoMini by CMU-Africa)
 # Flag: academy{puzzl3d_m3tadata_f0und!_3cc7cea9}
 # Write-up: ../../../writeups/forensics/530-riddle-registry.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

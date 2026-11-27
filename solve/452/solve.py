@@ -1,7 +1,7 @@
 # 452 - Binary Instrumentation 2  (Reverse Engineering, picoCTF 2025)
 # Flag: academy{fr1da_f0r_b1n_in5trum3nt4tion!_b21aef39}
 # Write-up: ../../../writeups/reverse-engineering/452-binary-instrumentation-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import struct, math, collections, sys
 

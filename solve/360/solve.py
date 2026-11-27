@@ -1,7 +1,7 @@
 # 360 - msfroggenerator2  (Web Exploitation, picoCTF 2023)
 # Flag: academy{th3_fsf_mak3s_th3_b3st_s0ftwar3_1dced559}
 # Write-up: ../../../writeups/web-exploitation/360-msfroggenerator2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import requests, re, sys, time, urllib.parse, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

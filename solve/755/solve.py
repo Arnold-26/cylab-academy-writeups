@@ -1,7 +1,7 @@
 # 755 - Echo Escape 1  (Binary Exploitation, picoCTF 2026)
 # Flag: academy{3ch0_s3rv1c3_br34k5_7fcd4fec}
 # Write-up: ../../../writeups/binary-exploitation/755-echo-escape-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, pathlib, requests
 

@@ -1,7 +1,7 @@
 # 456 - Event-Viewing  (Forensics, picoCTF 2025)
 # Flag: academy{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}
 # Write-up: ../../../writeups/forensics/456-event-viewing.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

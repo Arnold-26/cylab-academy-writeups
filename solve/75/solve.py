@@ -1,7 +1,7 @@
 # 75 - zero_to_hero  (Binary Exploitation, picoCTF 2019)
 # Flag: academy{i_th0ught_2.29_f1x3d_d0ubl3_fr33?_aCb7bCF5}
 # Write-up: ../../../writeups/binary-exploitation/75-zero-to-hero.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, time, socket, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

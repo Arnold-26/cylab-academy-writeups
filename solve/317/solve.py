@@ -1,7 +1,7 @@
 # 317 - wine  (Binary Exploitation, picoCTF 2022)
 # Flag: academy{Un_v3rr3_d3_v1n_4029b90b}
 # Write-up: ../../../writeups/binary-exploitation/317-wine.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import socket, re, struct, sys, time
 

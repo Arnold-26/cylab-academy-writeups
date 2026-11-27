@@ -1,7 +1,7 @@
 # 474 - Guess My Cheese (Part 2)  (Cryptography, picoCTF 2025)
 # Flag: academy{cHeEsY1e5a870a}
 # Write-up: ../../../writeups/cryptography/474-guess-my-cheese-part-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, time, socket, hashlib, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

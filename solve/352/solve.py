@@ -1,7 +1,7 @@
 # 352 - hijacking  (Binary Exploitation, picoCTF 2023)
 # Flag: academy{pYth0nn_libraryH!j@CK!n9_15d0fa80}
 # Write-up: ../../../writeups/binary-exploitation/352-hijacking.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

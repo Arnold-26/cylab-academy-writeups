@@ -1,7 +1,7 @@
 # 429 - WinAntiDbg0x100  (Reverse Engineering, picoCTF 2024)
 # Flag: academy{d3bug_f0r_th3_Win_0x100_411bc019}
 # Write-up: ../../../writeups/reverse-engineering/429-winantidbg0x100.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, ctypes, ctypes.wintypes as wt, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

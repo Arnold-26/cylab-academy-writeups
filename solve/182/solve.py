@@ -1,7 +1,7 @@
 # 182 - Some Assembly Required 4  (Web Exploitation, picoCTF 2021)
 # Flag: academy{e69e121eab55f85293c89b9082255ed7}
 # Write-up: ../../../writeups/web-exploitation/182-some-assembly-required-4.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

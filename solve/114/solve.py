@@ -1,7 +1,7 @@
 # 114 - Play Nice  (Cryptography, picoCTF 2021)
 # Flag: not archived
 # Write-up: ../../../writeups/cryptography/114-play-nice.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, json, time, socket
 

@@ -1,7 +1,7 @@
 # 494 - Pachinko  (Web Exploitation, picoCTF 2025)
 # Flag: academy{p4ch1nk0_f146_0n3_e947b9d7}
 # Write-up: ../../../writeups/web-exploitation/494-pachinko.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

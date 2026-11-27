@@ -1,7 +1,7 @@
 # 24 - Forky  (Reverse Engineering, picoCTF 2019)
 # Flag: academy{-721750240}
 # Write-up: ../../../writeups/reverse-engineering/24-forky.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

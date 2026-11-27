@@ -1,7 +1,7 @@
 # 220 - breadth  (Reverse Engineering, picoMini by redpwn)
 # Flag: picoCTF{...}
 # Write-up: ../../../writeups/reverse-engineering/220-breadth.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

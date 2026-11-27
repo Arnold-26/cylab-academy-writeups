@@ -1,7 +1,7 @@
 # 13 - Investigative Reversing 2  (Forensics, picoCTF 2019)
 # Flag: academy{n3xt_0n30000000000000000000000000c4bf77ad}
 # Write-up: ../../../writeups/forensics/13-investigative-reversing-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

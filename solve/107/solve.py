@@ -1,7 +1,7 @@
 # 107 - Scrambled: RSA  (Cryptography, picoCTF 2021)
 # Flag: academy{bad_1d3a5_73efa9c}
 # Write-up: ../../../writeups/cryptography/107-scrambled-rsa.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import socket, sys, time, re, json, string
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

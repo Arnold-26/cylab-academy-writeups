@@ -1,7 +1,7 @@
 # 483 - YaraRules0x100  (General Skills, picoCTF 2025)
 # Flag: academy{yara_rul35_r0ckzzz_790c7af6}
 # Write-up: ../../../writeups/general-skills/483-yararules0x100.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

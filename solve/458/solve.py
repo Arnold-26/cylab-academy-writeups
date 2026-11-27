@@ -1,7 +1,7 @@
 # 458 - perplexed  (Reverse Engineering, picoCTF 2025)
 # Flag: academy{0n3_bi7_4t_a_7im3}
 # Write-up: ../../../writeups/reverse-engineering/458-perplexed.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

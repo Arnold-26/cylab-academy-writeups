@@ -1,7 +1,7 @@
 # 518 - byp4ss3d  (Web Exploitation, picoMini by CMU-Africa)
 # Flag: academy{s3rv3r_byp4ss_350bad65}
 # Write-up: ../../../writeups/web-exploitation/518-byp4ss3d.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, requests
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

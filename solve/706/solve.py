@@ -1,7 +1,7 @@
 # 706 - Forensics Git 1  (Forensics, picoCTF 2026)
 # Flag: academy{g17_r3m3mb3r5_d4ddf904}
 # Write-up: ../../../writeups/forensics/706-forensics-git-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

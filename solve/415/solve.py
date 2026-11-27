@@ -1,7 +1,7 @@
 # 415 - endianness-v2  (Forensics, picoCTF 2024)
 # Flag: academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}
 # Write-up: ../../../writeups/forensics/415-endianness-v2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

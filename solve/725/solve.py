@@ -1,7 +1,7 @@
 # 725 - North-South  (Web Exploitation, picoCTF 2026)
 # Flag: academy{g30_b453d_r0u71n9_5e58725f}
 # Write-up: ../../../writeups/web-exploitation/725-north-south.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -2,7 +2,7 @@
 # 446 - babygame03  (Binary Exploitation, picoCTF 2024)
 # Flag: academy{gamer_leveluP_8fb078e2}
 # Write-up: ../../../writeups/binary-exploitation/446-babygame03.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 # picoCTF 2024 babygame03 (CyLab instance 446)
 #

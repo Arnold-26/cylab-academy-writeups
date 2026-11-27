@@ -1,7 +1,7 @@
 # 179 - Here's a LIBC  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{1_l0v3_sm4sh_st4cking_a768fad93c216715}
 # Write-up: ../../../writeups/binary-exploitation/179-here-s-a-libc.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, re, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

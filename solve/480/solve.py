@@ -1,7 +1,7 @@
 # 480 - WebSockFish  (Web Exploitation, picoCTF 2025)
 # Flag: academy{c1i3nt_s1d3_w3b_s0ck3t5_2327663e}
 # Write-up: ../../../writeups/web-exploitation/480-websockfish.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, requests
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

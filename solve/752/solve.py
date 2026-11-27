@@ -1,7 +1,7 @@
 # 752 - ORDER ORDER  (Web Exploitation, picoCTF 2026)
 # Flag: academy{s3c0nd_0rd3r_1t_1s_b7405f26}
 # Write-up: ../../../writeups/web-exploitation/752-order-order.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, json, time, requests, urllib3
 

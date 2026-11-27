@@ -1,7 +1,7 @@
 # 101 - Weird File  (Forensics, picoCTF 2021)
 # Flag: academy{m4cr0s_r_d4ng3r0us}
 # Write-up: ../../../writeups/forensics/101-weird-file.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, subprocess, pathlib, requests
 

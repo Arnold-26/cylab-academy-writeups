@@ -1,7 +1,7 @@
 # 528 - M1n10n'5_53cr37  (Reverse Engineering, picoMini by CMU-Africa)
 # Flag: academy{1t_w4sn7_h4rd_unr4v3l1n9_th3_m0b1l3_c0d3}
 # Write-up: ../../../writeups/reverse-engineering/528-m1n10n-5-53cr37.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

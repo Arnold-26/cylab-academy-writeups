@@ -1,7 +1,7 @@
 # 180 - Super Serial  (Web Exploitation, picoCTF 2021)
 # Flag: academy{1_c4nn0t_s33_y0u_cf804c42}
 # Write-up: ../../../writeups/web-exploitation/180-super-serial.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

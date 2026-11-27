@@ -2,7 +2,7 @@
 # 222 - not crypto  (Reverse Engineering, picoMini by redpwn)
 # Flag: picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}
 # Write-up: ../../../writeups/reverse-engineering/222-not-crypto.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 cd /tmp/cylab_eps || exit 1
 cat > /tmp/hook.c <<'EOF'

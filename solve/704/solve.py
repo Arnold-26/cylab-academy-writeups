@@ -1,7 +1,7 @@
 # 704 - DISKO 4  (Forensics, picoCTF 2026)
 # Flag: academy{d3l_d0n7_h1d3_w3ll_9748d144}
 # Write-up: ../../../writeups/forensics/704-disko-4.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 714 - Rogue Tower  (Forensics, picoCTF 2026)
 # Flag: not archived
 # Write-up: ../../../writeups/forensics/714-rogue-tower.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, base64, itertools, re, subprocess
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

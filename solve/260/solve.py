@@ -1,7 +1,7 @@
 # 260 - buffer overflow 3  (Binary Exploitation, picoCTF 2022)
 # Flag: academy{Stat1C_c4n4r13s_4R3_b4D_b379746b}
 # Write-up: ../../../writeups/binary-exploitation/260-buffer-overflow-3.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, struct
 

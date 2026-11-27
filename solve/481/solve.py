@@ -1,7 +1,7 @@
 # 481 - flags are stepic  (Forensics, picoCTF 2025)
 # Flag: academy{fl4g_h45_fl4ga947c25f}
 # Write-up: ../../../writeups/forensics/481-flags-are-stepic.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, requests, pathlib
 

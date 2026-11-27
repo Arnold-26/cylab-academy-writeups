@@ -1,7 +1,7 @@
 # 215 - fermat-strings  (Binary Exploitation, picoMini by redpwn)
 # Flag: picoCTF{f3rm4t_pwn1ng_s1nc3_th3_17th_c3ntury}
 # Write-up: ../../../writeups/binary-exploitation/215-fermat-strings.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, struct, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

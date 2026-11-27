@@ -1,7 +1,7 @@
 # 436 - SansAlpha  (General Skills, picoCTF 2024)
 # Flag: academy{7h15_mu171v3r53_15_m4dn355_0abcd64b}
 # Write-up: ../../../writeups/general-skills/436-sansalpha.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

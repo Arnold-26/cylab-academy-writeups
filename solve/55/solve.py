@@ -2,7 +2,7 @@
 # 55 - sice_cream  (Binary Exploitation, picoCTF 2019)
 # Flag: academy{th3_r3al_questi0n_is_why_1s_libc_2.23_still_4_th1ng_Bb8E80eA}
 # Write-up: ../../../writeups/binary-exploitation/55-sice-cream.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 # sice_cream (CyLab 55) — FSOP final
 #

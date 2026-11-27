@@ -1,7 +1,7 @@
 # 277 - Live Art  (Web Exploitation, picoCTF 2022)
 # Flag: academy{beam_me_up_reacty_9a1c5ed9}
 # Write-up: ../../../writeups/web-exploitation/277-live-art.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

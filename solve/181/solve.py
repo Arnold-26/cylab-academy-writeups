@@ -1,7 +1,7 @@
 # 181 - Bizz Fuzz  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{y0u_found_m3}
 # Write-up: ../../../writeups/binary-exploitation/181-bizz-fuzz.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import re, sys, json
 

@@ -2,7 +2,7 @@
 # 57 - B1ll_Gat35  (Reverse Engineering, picoCTF 2019)
 # Flag: academy{These are the access codes to the vault: 1063340}
 # Write-up: ../../../writeups/reverse-engineering/57-b1ll-gat35.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 cd /tmp/cylab_eps || exit 1
 file 57_win-exec-1.exe | cut -c1-150

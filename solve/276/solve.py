@@ -1,7 +1,7 @@
 # 276 - Keygenme  (Reverse Engineering, picoCTF 2022)
 # Flag: academy{br1ng_y0ur_0wn_k3y_bb724f88}
 # Write-up: ../../../writeups/reverse-engineering/276-keygenme.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

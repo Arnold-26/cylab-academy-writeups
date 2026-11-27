@@ -1,7 +1,7 @@
 # 119 - Powershelly  (Reverse Engineering, picoCTF 2021)
 # Flag: academy{2018highw@y_2_pow3r$hel!}
 # Write-up: ../../../writeups/reverse-engineering/119-powershelly.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

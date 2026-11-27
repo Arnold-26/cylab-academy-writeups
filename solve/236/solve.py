@@ -1,7 +1,7 @@
 # 236 - JAuth  (Web Exploitation, ?)
 # Flag: academy{succ3ss_@u7h3nt1c@710n_3fa1c59d}
 # Write-up: ../../../writeups/web-exploitation/236-jauth.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import base64, json, hmac, hashlib, requests, sys, re, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

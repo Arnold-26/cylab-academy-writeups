@@ -1,7 +1,7 @@
 # 353 - Horsetrack  (Binary Exploitation, picoCTF 2023)
 # Flag: academy{t_cache_4ll_th3_w4y_2_th4_b4nk_e3433f26}
 # Write-up: ../../../writeups/binary-exploitation/353-horsetrack.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 $ErrorActionPreference = "Continue"
 $ProgressPreference = "SilentlyContinue"

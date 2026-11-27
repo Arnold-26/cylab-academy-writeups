@@ -1,7 +1,7 @@
 # 190 - Bithug  (Web Exploitation, picoCTF 2021)
 # Flag: academy{good_job_at_gitting_good}
 # Write-up: ../../../writeups/web-exploitation/190-bithug.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, json, time, requests, urllib3
 

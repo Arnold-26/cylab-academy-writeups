@@ -1,7 +1,7 @@
 # 387 - VNE  (Binary Exploitation, picoCTF 2023)
 # Flag: academy{Power_t0_man!pul4t3_3nv_72f8870f}
 # Write-up: ../../../writeups/binary-exploitation/387-vne.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

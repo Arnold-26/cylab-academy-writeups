@@ -1,7 +1,7 @@
 # 358 - More SQLi  (Web Exploitation, picoCTF 2023)
 # Flag: academy{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_b5ff84c8}
 # Write-up: ../../../writeups/web-exploitation/358-more-sqli.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 167 - Binary Gauntlet 0  (Binary Exploitation, picoCTF 2021)
 # Flag: not archived
 # Write-up: ../../../writeups/binary-exploitation/167-binary-gauntlet-0.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

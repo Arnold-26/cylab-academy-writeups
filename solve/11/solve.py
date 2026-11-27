@@ -1,7 +1,7 @@
 # 11 - droids0  (Reverse Engineering, picoCTF 2019)
 # Flag: academy{a.moose.once.bit.my.sister}
 # Write-up: ../../../writeups/reverse-engineering/11-droids0.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

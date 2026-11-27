@@ -1,7 +1,7 @@
 # 219 - riscy business  (Reverse Engineering, picoMini by redpwn)
 # Flag: picoCTF{4ny0n3_g0t_r1scv_h4rdw4r3?_LGUfwl8xyMUlpgvz}
 # Write-up: ../../../writeups/reverse-engineering/219-riscy-business.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

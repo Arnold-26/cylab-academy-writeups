@@ -1,7 +1,7 @@
 # 29 - Java Script Kiddie  (Web Exploitation, picoCTF 2019)
 # Flag: academy{899f655514ccb5662bac39d1f53ec6bd}
 # Write-up: ../../../writeups/web-exploitation/29-java-script-kiddie.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, requests, io
 

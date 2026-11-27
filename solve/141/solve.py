@@ -1,7 +1,7 @@
 # 141 - Very very very Hidden  (Forensics, picoCTF 2021)
 # Flag: academy{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}
 # Write-up: ../../../writeups/forensics/141-very-very-very-hidden.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

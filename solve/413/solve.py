@@ -1,7 +1,7 @@
 # 413 - Dear Diary  (Forensics, picoCTF 2024)
 # Flag: picoCTF{1_533_n4m35_a1eed517}
 # Write-up: ../../../writeups/forensics/413-dear-diary.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -2,7 +2,7 @@
 # 26 - m00nwalk  (Forensics, picoCTF 2019)
 # Flag: picoCTF{beep_boop_im_in_space}
 # Write-up: ../../../writeups/forensics/26-m00nwalk.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, wave
 import numpy as np

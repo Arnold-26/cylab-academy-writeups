@@ -1,7 +1,7 @@
 # 164 - Stonk Market  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{explo1t_m1t1gashuns_dc771ac8}
 # Write-up: ../../../writeups/binary-exploitation/164-stonk-market.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket
 

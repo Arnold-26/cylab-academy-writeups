@@ -1,7 +1,7 @@
 # 478 - Pachinko Revisited  (Web Exploitation, picoCTF 2025)
 # Flag: academy{p4ch1nk0_r3v15173d_flag_two_a6c19d0d}
 # Write-up: ../../../writeups/web-exploitation/478-pachinko.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 """478 Pachinko Revisited : exploit.
 

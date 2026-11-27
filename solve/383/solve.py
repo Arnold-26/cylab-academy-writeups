@@ -1,7 +1,7 @@
 # 383 - UnforgottenBits  (Forensics, picoCTF 2023)
 # Flag: academy{f473_53413d_e0c91991}
 # Write-up: ../../../writeups/forensics/383-unforgottenbits.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

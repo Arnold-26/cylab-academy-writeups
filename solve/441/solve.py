@@ -2,7 +2,7 @@
 # 441 - high frequency troubles  (Binary Exploitation, picoCTF 2024)
 # Flag: academy{mm4p_mm4573r_bd53dae0}
 # Write-up: ../../../writeups/binary-exploitation/441-high-frequency-troubles.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 # CyLab Academy #441 "high frequency troubles" (glibc 2.35-0ubuntu3.3) exploit
 #

@@ -1,7 +1,7 @@
 # 213 - SaaS  (Binary Exploitation, picoMini by redpwn)
 # Flag: picoCTF{f0ll0w_th3_m4p_t0_g3t_th3_fl4g}
 # Write-up: ../../../writeups/binary-exploitation/213-saas.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket
 

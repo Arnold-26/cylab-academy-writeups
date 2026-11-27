@@ -1,7 +1,7 @@
 # 346 - babygame02  (Binary Exploitation, picoCTF 2023)
 # Flag: academy{gamer_jump1ng_4r0unD_d5f75f07}
 # Write-up: ../../../writeups/binary-exploitation/346-babygame02.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, threading, queue
 

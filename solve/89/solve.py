@@ -1,7 +1,7 @@
 # 89 - Guessing Game 2  (Binary Exploitation, picoCTF 2020 Mini-Competition)
 # Flag: academy{p0p_r0p_4nd_dr0p_1t_57265dd1560e0e20}
 # Write-up: ../../../writeups/binary-exploitation/89-guessing-game-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, struct
 

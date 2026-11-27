@@ -1,7 +1,7 @@
 # 169 - It is my Birthday 2  (Cryptography, picoCTF 2021)
 # Flag: academy{h4ppy_b1rthd4y_2_m3_8248ffdd}
 # Write-up: ../../../writeups/cryptography/169-it-is-my-birthday-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

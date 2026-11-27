@@ -2,7 +2,7 @@
 # 318 - Wizardlike  (Reverse Engineering, picoCTF 2022)
 # Flag: academy{ur_4_w1z4rd_e14455ad}
 # Write-up: ../../../writeups/reverse-engineering/318-wizardlike.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 cd /tmp/cylab_eps || exit 1
 echo "=== file 318 ==="

@@ -1,7 +1,7 @@
 # 120 - It's Not My Fault 2  (Cryptography, picoCTF 2021)
 # Flag: academy{p0lyn0m14l_4r17hm371c_73chn1qu35_4r3_u53ful_1n_m4ny_f13ld5!!!}
 # Write-up: ../../../writeups/cryptography/120-its-not-my-fault-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import socket, sys, time, re, hashlib, random, os
 import multiprocessing as mp

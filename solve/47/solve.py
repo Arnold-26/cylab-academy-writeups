@@ -1,7 +1,7 @@
 # 47 - investigation_encoded_1  (Forensics, picoCTF 2019)
 # Flag: academy{...}
 # Write-up: ../../../writeups/forensics/47-investigation-encoded-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, struct, json
 

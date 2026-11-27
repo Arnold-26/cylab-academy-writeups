@@ -1,7 +1,7 @@
 # 298 - SideChannel  (Forensics, picoCTF 2022)
 # Flag: academy{t1m1ng_4tt4ck_55dcfc0f}
 # Write-up: ../../../writeups/forensics/298-sidechannel.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

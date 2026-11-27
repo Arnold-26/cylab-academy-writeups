@@ -1,7 +1,7 @@
 # 54 - Investigative Reversing 4  (Forensics, picoCTF 2019)
 # Flag: academy{N1c3_R3ver51ng_5k1115_000000000002e911fb5}
 # Write-up: ../../../writeups/forensics/54-investigative-reversing-4.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

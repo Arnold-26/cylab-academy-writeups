@@ -1,7 +1,7 @@
 # 485 - Echo Valley  (Binary Exploitation, picoCTF 2025)
 # Flag: academy{f1ckl3_f0rmat_f1asc0}
 # Write-up: ../../../writeups/binary-exploitation/485-echo-valley.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, re, struct, json
 

@@ -1,7 +1,7 @@
 # 723 - Access_Control  (Blockchain, picoCTF 2026)
 # Flag: academy{i_c4n_b3_0wn3r_7a45d669}
 # Write-up: ../../../writeups/blockchain/723-access-control.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, time
 sys.path.insert(0, ".")

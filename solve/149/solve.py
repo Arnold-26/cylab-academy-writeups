@@ -1,7 +1,7 @@
 # 149 - Checkpass  (Reverse Engineering, picoCTF 2021)
 # Flag: academy{...}
 # Write-up: ../../../writeups/reverse-engineering/149-checkpass.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, subprocess, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

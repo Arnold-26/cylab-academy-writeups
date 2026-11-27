@@ -1,7 +1,7 @@
 # 146 - Cache Me Outside  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{7ca0515c9a0ee5226a98fa761eac776c}
 # Write-up: ../../../writeups/binary-exploitation/146-cache-me-outside.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, re, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

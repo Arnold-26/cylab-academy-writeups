@@ -1,7 +1,7 @@
 # 487 - hash-only-1  (Binary Exploitation, picoCTF 2025)
 # Flag: academy{sy5teM_b!n@riEs_4r3_5c@red_0f_yoU_8e21ab6c}
 # Write-up: ../../../writeups/binary-exploitation/487-hash-only-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

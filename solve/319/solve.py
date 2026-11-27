@@ -1,7 +1,7 @@
 # 319 - x-sixty-what  (Binary Exploitation, picoCTF 2022)
 # Flag: academy{b1663r_15_b3773r_d84eb852}
 # Write-up: ../../../writeups/binary-exploitation/319-x-sixty-what.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, re, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

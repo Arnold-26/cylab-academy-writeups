@@ -1,7 +1,7 @@
 # 39 - Need For Speed  (Reverse Engineering, picoCTF 2019)
 # Flag: academy{Good job keeping bus #31326f14 speeding along!}
 # Write-up: ../../../writeups/reverse-engineering/39-need-for-speed.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

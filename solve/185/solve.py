@@ -1,7 +1,7 @@
 # 185 - X marks the spot  (Web Exploitation, picoCTF 2021)
 # Flag: academy{h0p3fully_u_t0ok_th3_r1ght_xp4th_b61f3d39}
 # Write-up: ../../../writeups/web-exploitation/185-x-marks-the-spot.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, json, time, requests, urllib3, string, threading, queue
 

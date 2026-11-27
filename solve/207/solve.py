@@ -1,7 +1,7 @@
 # 207 - corrupt-key-1  (Cryptography, picoMini by redpwn)
 # Flag: picoCTF{d741543f172970457e6a9aaa890935b8}
 # Write-up: ../../../writeups/cryptography/207-corrupt-key-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, base64
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

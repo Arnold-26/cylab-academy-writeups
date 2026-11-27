@@ -1,7 +1,7 @@
 # 131 - Some Assembly Required 2  (Web Exploitation, picoCTF 2021)
 # Flag: academy{217f0babdae45710109bb2e6ac1b134a}
 # Write-up: ../../../writeups/web-exploitation/131-some-assembly-required-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, requests
 

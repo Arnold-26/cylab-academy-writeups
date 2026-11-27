@@ -1,7 +1,7 @@
 # 221 - MATRIX  (Reverse Engineering, picoMini by redpwn)
 # Flag: picoCTF{y0uv3_3sc4p3d_th3_m4ze...f0r_n0w-hYkq2D9PmrA5GpEq}
 # Write-up: ../../../writeups/reverse-engineering/221-matrix.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

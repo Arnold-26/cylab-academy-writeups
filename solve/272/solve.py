@@ -1,7 +1,7 @@
 # 272 - function overwrite  (Binary Exploitation, picoCTF 2022)
 # Flag: academy{0v3rwrit1ng_P01nt3rs_2ba33ab3}
 # Write-up: ../../../writeups/binary-exploitation/272-function-overwrite.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

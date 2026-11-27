@@ -1,7 +1,7 @@
 # 184 - filtered-shellcode  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{th4t_w4s_fun_0f1be5fd2eb499cd}
 # Write-up: ../../../writeups/binary-exploitation/184-filtered-shellcode.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

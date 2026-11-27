@@ -1,7 +1,7 @@
 # 468 - Chronohack  (Reverse Engineering, picoCTF 2025)
 # Flag: academy{UseSecure#$_Random@j3n3r@T0rs02d049c1}
 # Write-up: ../../../writeups/reverse-engineering/468-chronohack.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, random
 

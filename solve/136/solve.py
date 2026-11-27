@@ -2,7 +2,7 @@
 # 136 - Clouds  (Cryptography, picoCTF 2021)
 # Flag: 0b48d5adb3074b90  (ce challenge n'utilise pas l'enveloppe academy{})
 # Write-up: ../../../writeups/cryptography/136-clouds.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 # Cible : service TCP "Clouds" (notes chiffrees par le chiffre Nimbus), 5 tours, blocs de 8 octets
 # Dépendances : stdlib uniquement (maths entieres), z3 non requis

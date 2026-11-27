@@ -1,7 +1,7 @@
 # 187 - Unsubscriptions Are Free  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{d0ubl3_j30p4rdy_7d637ab1}
 # Write-up: ../../../writeups/binary-exploitation/187-unsubscriptions-are-free.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, struct
 

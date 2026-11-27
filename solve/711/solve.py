@@ -1,7 +1,7 @@
 # 711 - Not TRUe  (Cryptography, picoCTF 2026)
 # Flag: academy{th4ts_s0_N0t_TRU3_f5e1dd98}
 # Write-up: ../../../writeups/cryptography/711-no-no-that-s-not-true.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, ast, itertools
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

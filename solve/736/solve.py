@@ -1,7 +1,7 @@
 # 736 - Echo Escape 2  (Binary Exploitation, picoCTF 2026)
 # Flag: academy{fgets_0v3rfl0w42_1ce413d9}
 # Write-up: ../../../writeups/binary-exploitation/736-echo-escape-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, re, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

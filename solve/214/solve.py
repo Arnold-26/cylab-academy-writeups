@@ -1,7 +1,7 @@
 # 214 - lockdown-horses  (Binary Exploitation, picoMini by redpwn)
 # Flag: picoCTF{n0_sh3ll_v3ry_flag_xdd}
 # Write-up: ../../../writeups/binary-exploitation/214-lockdown-horses.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 122 - Easy as GDB  (Reverse Engineering, picoCTF 2021)
 # Flag: academy{I_5D3_A11DA7_f73c8ead}
 # Write-up: ../../../writeups/reverse-engineering/122-easy-as-gdb.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, json, time, requests, urllib3, pathlib
 

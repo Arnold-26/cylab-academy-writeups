@@ -1,7 +1,7 @@
 # 269 - flag leak  (Binary Exploitation, picoCTF 2022)
 # Flag: academy{L34k1ng_Fl4g_0ff_St4ck_9f22d2dd}
 # Write-up: ../../../writeups/binary-exploitation/269-flag-leak.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, pathlib, requests
 

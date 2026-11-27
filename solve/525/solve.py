@@ -1,7 +1,7 @@
 # 525 - Input Injection 1  (Binary Exploitation, picoMini by CMU-Africa)
 # Flag: academy{0v3rfl0w_c0mm4nd_d0e158ad}
 # Write-up: ../../../writeups/binary-exploitation/525-input-injection-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

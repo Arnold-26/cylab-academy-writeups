@@ -1,7 +1,7 @@
 # 721 - Timeline 1  (Forensics, picoCTF 2026)
 # Flag: academy{573417h13r_7h4n_7h3_1457_58527bb222}
 # Write-up: ../../../writeups/forensics/721-timeline-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

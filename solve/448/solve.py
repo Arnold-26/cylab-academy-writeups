@@ -1,7 +1,7 @@
 # 448 - format string 2  (Binary Exploitation, picoCTF 2024)
 # Flag: academy{f0rm47_57r?_f0rm47_m3m_18b9edd8}
 # Write-up: ../../../writeups/binary-exploitation/448-format-string-2.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, re, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 91 - Nothing Up My Sleeve  (General Skills, picoCTF 2020 Mini-Competition)
 # Flag: academy{c0ngr4ts_0n_y0ur_s4n1ty}
 # Write-up: ../../../writeups/general-skills/91-nothing-up-my-sleeve.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, requests, subprocess, pathlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

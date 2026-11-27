@@ -2,7 +2,7 @@
 # 495 - Ricochet  (Cryptography, picoCTF 2022)
 # Flag: academy{r1gh7_84ck_47_y4_38227532}
 # Write-up: ../../../writeups/cryptography/495-ricochet.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 """495 Ricochet : exploit one-shot.
 

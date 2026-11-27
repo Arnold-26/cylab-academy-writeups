@@ -1,7 +1,7 @@
 # 171 - gogo  (Reverse Engineering, picoCTF 2021)
 # Flag: academy{LOCAL_TEST_213}
 # Write-up: ../../../writeups/reverse-engineering/171-gogo.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 87 - Pitter, Patter, Platters  (Forensics, picoCTF 2020 Mini-Competition)
 # Flag: not archived
 # Write-up: ../../../writeups/forensics/87-pitter-patter-platters.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 507 - DISKO 3  (Forensics, ?)
 # Flag: academy{n3v3r_z1p_2_h1d3_2f899900}
 # Write-up: ../../../writeups/forensics/507-disko-3.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -1,7 +1,7 @@
 # 206 - scrambled-bytes  (Forensics, picoMini by redpwn)
 # Flag: picoCTF{n0_t1m3_t0_w4st3_5hufflin9_ar0und}
 # Write-up: ../../../writeups/forensics/206-scrambled-bytes.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, subprocess, re, random, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

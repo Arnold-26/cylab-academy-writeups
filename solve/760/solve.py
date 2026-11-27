@@ -1,7 +1,7 @@
 # 760 - Smart_Overflow  (Blockchain, picoCTF 2026)
 # Flag: academy{Sm4r7_OverFL0ws_ExI5t_bfaa16cd}
 # Write-up: ../../../writeups/blockchain/760-smart-overflow.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, time
 sys.path.insert(0, ".")

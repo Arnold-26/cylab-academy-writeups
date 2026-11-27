@@ -1,7 +1,7 @@
 # 746 - tea-cash  (Binary Exploitation, picoCTF 2026)
 # Flag: academy{3332fad6faebb3893d505e8880e32abe}
 # Write-up: ../../../writeups/binary-exploitation/746-tea-cash.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

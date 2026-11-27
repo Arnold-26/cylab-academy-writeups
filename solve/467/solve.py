@@ -1,7 +1,7 @@
 # 467 - Apriti sesamo  (Web Exploitation, picoCTF 2025)
 # Flag: academy{w3Ll_d3sErV3d_Ch4mp_4b876558}
 # Write-up: ../../../writeups/web-exploitation/467-apriti-sesamo.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

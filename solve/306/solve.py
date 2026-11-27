@@ -1,7 +1,7 @@
 # 306 - stack cache  (Binary Exploitation, picoCTF 2022)
 # Flag: academy{Cle4N_uP_M3m0rY_0761b234}
 # Write-up: ../../../writeups/binary-exploitation/306-stack-cache.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

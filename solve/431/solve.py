@@ -1,7 +1,7 @@
 # 431 - WinAntiDbg0x300  (Reverse Engineering, picoCTF 2024)
 # Flag: academy{Wind0ws_antid3bg_0x300_f57a6e29}
 # Write-up: ../../../writeups/reverse-engineering/431-winantidbg0x300.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, requests, pathlib, zipfile
 

@@ -1,7 +1,7 @@
 # 216 - clutter-overflow  (Binary Exploitation, picoMini by redpwn)
 # Flag: picoCTF{c0ntr0ll3d_clutt3r_1n_my_buff3r}
 # Write-up: ../../../writeups/binary-exploitation/216-clutter-overflow.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

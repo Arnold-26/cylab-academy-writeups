@@ -1,7 +1,7 @@
 # 172 - The Office  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{339ca89d4d4dc0746b5b1853d5811fcf}
 # Write-up: ../../../writeups/binary-exploitation/172-the-office.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, time, struct
 from pwn import context, process, remote

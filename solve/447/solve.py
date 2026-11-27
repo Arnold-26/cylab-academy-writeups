@@ -1,7 +1,7 @@
 # 447 - elements  (Web Exploitation, picoCTF 2024)
 # Flag: academy{little_alchemy_was_the_0g_game_does_anyone_rememb3r_9889fd4a}
 # Write-up: ../../../writeups/web-exploitation/447-elements.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

@@ -2,7 +2,7 @@
 # 151 - Rolling My Own  (Reverse Engineering, picoCTF 2021)
 # Flag: academy{r011ing_y0ur_0wn_crypt0_15_h4rd!_13670f39}
 # Write-up: ../../../writeups/reverse-engineering/151-rolling-my-own.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 cd /tmp/cylab_eps || exit 1
 readelf -h 151_remote 2>/dev/null | grep -i entry

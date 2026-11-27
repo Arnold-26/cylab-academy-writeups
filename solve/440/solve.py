@@ -1,7 +1,7 @@
 # 440 - heap 3  (Binary Exploitation, picoCTF 2024)
 # Flag: academy{now_thats_free_real_estate_95cc82ff}
 # Write-up: ../../../writeups/binary-exploitation/440-heap-3.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket
 

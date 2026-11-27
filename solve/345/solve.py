@@ -1,7 +1,7 @@
 # 345 - babygame01  (Binary Exploitation, picoCTF 2023)
 # Flag: academy{gamer_m0d3_enabled_77d1c3e4}
 # Write-up: ../../../writeups/binary-exploitation/345-babygame01.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

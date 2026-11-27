@@ -1,7 +1,7 @@
 # 432 - Blast from the past  (Forensics, picoCTF 2024)
 # Flag: academy{71m3_7r4v311ng_p1c7ur3_9490a52b}
 # Write-up: ../../../writeups/forensics/432-blast-from-the-past.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

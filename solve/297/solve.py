@@ -1,7 +1,7 @@
 # 297 - Sequences  (Cryptography, picoCTF 2022)
 # Flag: academy{b1g_numb3rs_f5b03a75}
 # Write-up: ../../../writeups/cryptography/297-sequences.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import hashlib, sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

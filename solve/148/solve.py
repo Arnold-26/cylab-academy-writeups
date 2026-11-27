@@ -1,7 +1,7 @@
 # 148 - New Vignere  (Cryptography, picoCTF 2021)
 # Flag: academy{468293b06253c715005873e333d98dbc}
 # Write-up: ../../../writeups/cryptography/148-new-vignere.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, string, itertools
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

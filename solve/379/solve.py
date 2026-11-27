@@ -1,7 +1,7 @@
 # 379 - SRA  (Cryptography, picoCTF 2023)
 # Flag: academy{7h053_51n5_4r3_n0_m0r3_4e3d469b}
 # Write-up: ../../../writeups/cryptography/379-sra.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, time, re, subprocess, socket
 import sympy

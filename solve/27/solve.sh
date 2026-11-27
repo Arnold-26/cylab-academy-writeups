@@ -2,7 +2,7 @@
 # 27 - Investigative Reversing 1  (Forensics, picoCTF 2019)
 # Flag: academy{An0tha_1_1730fa2f}
 # Write-up: ../../../writeups/forensics/27-investigative-reversing-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 cd /tmp/cylab_eps || exit 1
 chmod +x 27_investigative-reversing-1-mystery 2>/dev/null

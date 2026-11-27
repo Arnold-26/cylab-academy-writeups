@@ -1,7 +1,7 @@
 # 138 - What's your input?  (Binary Exploitation, picoCTF 2021)
 # Flag: academy{v4lua4bl3_1npu7_6fd920cb}
 # Write-up: ../../../writeups/binary-exploitation/138-what-s-your-input.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, socket, time, re
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

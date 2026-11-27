@@ -1,7 +1,7 @@
 # 126 - Binary Gauntlet 1  (Binary Exploitation, picoCTF 2021)
 # Flag: not archived
 # Write-up: ../../../writeups/binary-exploitation/126-binary-gauntlet-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

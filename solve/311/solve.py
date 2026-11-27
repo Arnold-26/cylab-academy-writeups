@@ -1,7 +1,7 @@
 # 311 - Torrent Analyze  (Forensics, picoCTF 2022)
 # Flag: academy{ubuntu-19.10-desktop-amd64.iso}
 # Write-up: ../../../writeups/forensics/311-torrent-analyze.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

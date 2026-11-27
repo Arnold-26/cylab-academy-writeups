@@ -1,7 +1,7 @@
 # 217 - homework  (Binary Exploitation, picoMini by redpwn)
 # Flag: picoCTF{LOC4L_T3ST_abcdefghijklmnopqrstuvwxyz0123456789}
 # Write-up: ../../../writeups/binary-exploitation/217-homework.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, re, json, time, socket, requests, html, urllib3
 

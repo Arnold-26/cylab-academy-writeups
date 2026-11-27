@@ -1,7 +1,7 @@
 # 385 - Virtual Machine 0  (Reverse Engineering, picoCTF 2023)
 # Flag: academy{g34r5_0f_m0r3_c95d6542}
 # Write-up: ../../../writeups/reverse-engineering/385-virtual-machine-0.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

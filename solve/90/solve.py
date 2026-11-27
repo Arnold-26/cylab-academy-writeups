@@ -1,7 +1,7 @@
 # 90 - Guessing Game 1  (Binary Exploitation, picoCTF 2020 Mini-Competition)
 # Flag: academy{r0p_y0u_l1k3_4_hurr1c4n3_99c099b7facb4875}
 # Write-up: ../../../writeups/binary-exploitation/90-guessing-game-1.md
-# This is the script that produced the flag; historical variants are in archive/.
+# Script exact utilise pour produire le flag.
 #
 import sys, json, re, time, socket, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
