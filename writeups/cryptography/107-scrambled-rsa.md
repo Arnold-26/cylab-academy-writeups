@@ -68,4 +68,5 @@ academy{bad_1d3a5_73efa9c}
 
 - [`solve.py`](../../solve/107/solve.py)
 - [`_z_107_flag.txt`](../../solve/107/_z_107_flag.txt)
+- [`_z_107url.txt`](../../solve/107/_z_107url.txt)
 - *48 variantes intermediaires dans `solve/107/archive/`*

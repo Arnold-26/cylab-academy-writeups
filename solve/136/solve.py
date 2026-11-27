@@ -56,6 +56,11 @@ def dec_block(c, key):
         x = g((x * pow(k | 1, -1, 1 << 64)) & MASK64) ^ k
     return x
 
+# --------------------------------------------------------------------------
+# Etape 2/5 : o_i par le mode de l'histogramme
+#   o_i mod 2^63 = ((y+y')/2) * inv(DELTA/2) ; on compte les votes et on rejette la
+#   valeur polluee par le couple A + A' = 2^63 qui vote en boucle pour 2^62
+# --------------------------------------------------------------------------
 def best_oi(pairs):
     """o_i mod 2^63 from the mode of ((y+y')/2)*inv(DELTA/2).
     Pairs whose multiplicand a_i is ODD satisfy a+a' = 2^63 (=DELTA+2) instead of DELTA,
@@ -74,6 +79,11 @@ def best_oi(pairs):
     b = max(hist, key=hist.get)
     return b, hist[b]
 
+# --------------------------------------------------------------------------
+# Etape 3/5 : descente tour par tour
+#   4 branches par tour (bit de poids fort et bit 0 de o_i inconnus), on garde un faisceau
+#   de candidats, on dechiffre les blocs de proche en proche et on elague sur les votes
+# --------------------------------------------------------------------------
 def recover_key(blocks, cts, pairs_idx, comp_idx, verbose=True, beam=8, mincnt=6):
     ct_pairs = [(cts[i], cts[j]) for i, j in pairs_idx]
     frontier = [([], ct_pairs)]                       # ([k5..k_i], pairs at current level)
@@ -90,7 +100,9 @@ def recover_key(blocks, cts, pairs_idx, comp_idx, verbose=True, beam=8, mincnt=6
                            for y, y2 in pr]
                     cand.append(([k] + keys, np_))
         if level == 2:
-            # the pairs are now round-1 outputs, where the histogram is degenerate
+            # apres ce tour les paires sont des sorties du tour 1, ou l'histogramme est degenere
+# (voir la remarque sur k1 en tete) : on garde toutes les branches, on ne score plus
+# rien, c'est la verification sur blocs generiques qui tranche
             # (see the k1 remark at the top): keep every branch, score nothing.
             frontier = cand
             if verbose:
@@ -127,8 +139,8 @@ def recover_key(blocks, cts, pairs_idx, comp_idx, verbose=True, beam=8, mincnt=6
                     continue
                 cand = [k1, k2, k3, k4, k5]
                 kb = b''.join(k.to_bytes(8, 'big') for k in cand)
-                # blocks 0..2 are 0 / DELTA / 2^63: too structured, several key variants
-                # agree on them.  Check a spread of generic blocks instead.
+                # les blocs 0 a 2 valent 0 / DELTA / 2^63 : trop structures, plusieurs variantes de cle
+# s'y accordent. On verifie donc sur un eventail de blocs generiques.
                 chk = sorted({0, 1, len(blocks) // 7, len(blocks) // 3, len(blocks) // 2,
                               2 * len(blocks) // 3, len(blocks) - 1})
                 if all(enc_block(blocks[t].to_bytes(8, 'big'), kb) == cts[t] for t in chk):
@@ -138,7 +150,12 @@ def recover_key(blocks, cts, pairs_idx, comp_idx, verbose=True, beam=8, mincnt=6
                     break
     return results
 
-# ------------------------------------------------------------------ data layout
+# ------------------------------------------------------------------ disposition des blocs
+# --------------------------------------------------------------------------
+# Etape 1/5 : collecte
+#   chaque unite j fournit 4 blocs A, A^DELTA, A^TOP, (A^TOP)^DELTA, soit le meme
+#   nombre d'echantillons dans les quatre configurations utiles
+# --------------------------------------------------------------------------
 def build_blocks(npairs, maxnote=512):
     """4 plaintext blocks per unit j: A, A^DELTA, A^TOP, (A^TOP)^DELTA   (A = j<<2)"""
     blocks, pairs_idx, comp_idx = [], [], []
@@ -157,7 +174,12 @@ def notes_from_blocks(blocks, maxnote=512):
     per = maxnote // 8
     return [blocks[i:i + per] for i in range(0, len(blocks), per)]
 
-# ------------------------------------------------------------------ client
+# ------------------------------------------------------------------ client (protocole du service)
+# --------------------------------------------------------------------------
+# Etape 4/5 : session avec le service
+#   on envoie les clairs sous forme de notes, on relit les chiffres, puis on applique
+#   la recuperation de cle et on dechiffre la note 0 (le flag)
+# --------------------------------------------------------------------------
 def run_client(host, port, npairs, verbose=True):
     from pwn import remote, process, context
     context.log_level = 'error'
@@ -167,7 +189,7 @@ def run_client(host, port, npairs, verbose=True):
         p = remote(host, int(port))
 
     def store(hexstr):
-        # the menu prompt "Selection? " has already been consumed by the previous action
+        # le prompt "Selection? " a deja ete consomme par l'action precedente
         p.sendline(b'1')
         p.recvuntil(b'Give me a note to encrypt: ')
         p.sendline(hexstr.encode())
@@ -227,7 +249,7 @@ def run_client(host, port, npairs, verbose=True):
     print("FLAG: %s" % out.decode('latin1'))
     return out
 
-# ------------------------------------------------------------------ local server
+# ------------------------------------------------------------------ serveur local (auto-test)r
 def serve():
     key = bytes(random.randrange(256) for _ in range(40))
     open('/tmp/key', 'wb').write(key)

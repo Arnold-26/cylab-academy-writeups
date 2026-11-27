@@ -28,6 +28,13 @@ P2 = {i: "empty" for i in (0, 2, 4, 6, 8, 10)}              # -> east @1..13
 P3 = {0: "empty", 2: "empty", 4: "gm", 6: "gm", 8: "gm"}   # -> west @9
 
 
+# --------------------------------------------------------------------------
+# Etape 3/5 : injection du dialogue
+#   une trame par pas de la trajectoire, MAC calculee avec la cle DH qu'on
+#   vient d'imposer ; on emet sans attendre, le buffer de reception du robot
+#   absorbe tout et wait_message ne verifie pas l'emetteur
+# --------------------------------------------------------------------------
+
 def blast(r, plan, length, ctlf=0x99):
     A.TBL  # noqa
     for i in range(length):
@@ -43,6 +50,13 @@ def blast(r, plan, length, ctlf=0x99):
         A.drain(r)
         time.sleep(0.05)
 
+
+# --------------------------------------------------------------------------
+# Etape 2/5 : passes d'oracle
+#   le controller est un oracle de MAC pour les quatre directions ; on lui
+#   fait signer les messages manquants, puis on remplace sa cle par le point
+#   d'ordre faible tout a zero, dont on connait la cle partagee
+# --------------------------------------------------------------------------
 
 def pass_(r, plan, length, need):
     r.stop(); time.sleep(0.3)
@@ -61,6 +75,12 @@ def pass_(r, plan, length, need):
     print("   pass ->", got, flush=True)
     return all(x[1] for x in got)
 
+
+# --------------------------------------------------------------------------
+# Etape 4/5 : rejeu complet
+#   on rejoue le chemin du controller d'un seul coup puis on lit l'etat final
+#   du robot : la position atteinte et le flag apparait dans state()
+# --------------------------------------------------------------------------
 
 def serve(r, cmds):
     r.stop(); time.sleep(0.3)
@@ -90,6 +110,12 @@ def serve(r, cmds):
         print("   ", l)
     return s
 
+
+# --------------------------------------------------------------------------
+# Etape 1/5 : demarrage de l'instance et etat initial
+#   on charge la table de MAC statique (_z_495_macs.json) et on liste les
+#   couples (direction, nonce) qui manquent encore a l'appel
+# --------------------------------------------------------------------------
 
 def main():
     url = A.launch()

