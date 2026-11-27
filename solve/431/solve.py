@@ -4,18 +4,20 @@
 # This is the script that produced the flag; historical variants are in archive/.
 #
 import sys, json, re, time, requests, pathlib, zipfile
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 
 requests.packages.urllib3.disable_warnings()
-cy = CyLab(delay=0.5)
-cy.login()
 B = pathlib.Path(r"/tmp/cylab_eps")
-cy.req("PUT", "/api/challenges/431/instance/?source=library")
 desc = ""
 for _ in range(10):
-    st, b = cy.req("GET", "/api/challenges/431/instance/")
     d = json.loads(b) if b.startswith("{") else {}
     desc = d.get("description") or ""
     if "challenge-files" in desc:

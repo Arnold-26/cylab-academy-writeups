@@ -25,4 +25,3 @@ steghide exige une passphrase : elle est souvent dans les metadonnees.
 ## Scripts
 
 - [`solve.py`](../../solve/383/solve.py)
-- *21 variantes intermediaires dans `solve/383/archive/`*

@@ -21,4 +21,3 @@ picoCTF{d741543f172970457e6a9aaa890935b8}
 ## Scripts
 
 - [`solve.py`](../../solve/207/solve.py)
-- *3 variantes intermediaires dans `solve/207/archive/`*

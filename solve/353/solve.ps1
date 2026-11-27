@@ -10,7 +10,7 @@ $log = "/tmp/ht\_z_ht_attempts.log"
 
 for ($i = 1; $i -le 12; $i++) {
     Write-Host "--- attempt $i ---"
-    $start = python ./_z_start2.py 353 2>&1 | Out-String
+# instance : a demarrer depuis la plateforme du challenge
     $info = python ./_z_ht_inst.py 353 2>&1 | Out-String
     if ($info -notmatch 'nc ([A-Za-z0-9\.\-]+) (\d+)') {
         Write-Host "no port; instance output:"; Write-Host $info.Substring(0, [Math]::Min(600, $info.Length))
@@ -25,7 +25,7 @@ for ($i = 1; $i -le 12; $i++) {
     if ($out -match 'academy\{[^}\r\n]+\}') {
         $flag = $Matches[0]
         Write-Host "FLAG=$flag"
-        python ./_z_submit.py "353=$flag" 2>&1 | Out-String | Write-Host
+# flag : a soumettre depuis la plateforme
         break
     }
     Write-Host "attempt failed"

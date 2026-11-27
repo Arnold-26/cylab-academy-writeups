@@ -21,4 +21,3 @@ academy{UseSecure#$_Random@j3n3r@T0rs02d049c1}
 ## Scripts
 
 - [`solve.py`](../../solve/468/solve.py)
-- *6 variantes intermediaires dans `solve/468/archive/`*

@@ -23,4 +23,3 @@ academy{cert!f1Ed_iNd!4n_s0rrY_3nDian_5b37ea4e}
 ## Scripts
 
 - [`solve.py`](../../solve/415/solve.py)
-- *1 variantes intermediaires dans `solve/415/archive/`*

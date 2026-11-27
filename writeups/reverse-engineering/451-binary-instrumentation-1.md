@@ -62,4 +62,3 @@ Le dépackage statique est donc la bonne voie, et il rend l'énoncé Frida inuti
 ## Scripts
 
 - [`solve.py`](../../solve/451/solve.py)
-- *7 variantes intermediaires dans `solve/451/archive/`*

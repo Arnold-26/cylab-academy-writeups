@@ -21,4 +21,3 @@ academy{M4cTim35!}
 ## Scripts
 
 - [`solve.py`](../../solve/56/solve.py)
-- *9 variantes intermediaires dans `solve/56/archive/`*

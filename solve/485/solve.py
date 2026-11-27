@@ -4,19 +4,23 @@
 # This is the script that produced the flag; historical variants are in archive/.
 #
 import sys, socket, time, re, struct, json
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 
 PF_OFF = 0x1269
 MAIN_OFF = 0x1401
 
 
 def get_port(cy):
-    cy.req("PUT", "/api/challenges/485/instance/?source=library")
     for _ in range(15):
         time.sleep(2)
-        st, b = cy.req("GET", "/api/challenges/485/instance/")
         d = json.loads(b) if b.startswith("{") else {}
         if d.get("status") == "RUNNING":
             m = re.search(r"nc\s+([A-Za-z0-9.\-]+)\s+(\d+)", d.get("description") or "")
@@ -25,8 +29,6 @@ def get_port(cy):
     return None
 
 
-cy = CyLab(delay=1.2)
-cy.login()
 for delta in (0x88, 0x80, 0x90, 0x98, 0xA0):
     port = get_port(cy)
     if not port:

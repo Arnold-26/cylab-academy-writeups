@@ -4,9 +4,15 @@
 # This is the script that produced the flag; historical variants are in archive/.
 #
 import sys, struct, json
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 BIN = r"/tmp/cylab_eps\47_investigation-encoded-1-mystery"
 OUT = r"/tmp/cylab_eps\47_investigation-encoded-1-output"
 d = open(BIN, "rb").read()
@@ -49,8 +55,6 @@ for name, bs in variants.items():
     print("%-10s -> %r (reste %d)" % (name, s, left))
     variants[name + "_str"] = s
 
-cy = CyLab(delay=1.2)
-cy.login()
 seen = set()
 for name, s in variants.items():
     if not isinstance(s, str):
@@ -61,7 +65,6 @@ for name, s in variants.items():
             continue
         seen.add(cand)
         f = "academy{%s}" % cand
-        st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 47, "flag": f})
         try:
             ok = json.loads(b).get("correct")
         except Exception:

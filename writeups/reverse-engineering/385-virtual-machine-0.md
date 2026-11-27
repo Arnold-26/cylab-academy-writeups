@@ -25,4 +25,3 @@ academy{g34r5_0f_m0r3_c95d6542}
 ## Scripts
 
 - [`solve.py`](../../solve/385/solve.py)
-- *2 variantes intermediaires dans `solve/385/archive/`*

@@ -22,4 +22,3 @@ academy{2018highw@y_2_pow3r$hel!}
 ## Scripts
 
 - [`solve.py`](../../solve/119/solve.py)
-- *7 variantes intermediaires dans `solve/119/archive/`*

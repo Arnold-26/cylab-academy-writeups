@@ -21,4 +21,3 @@ academy{m0r3_g34r5_3g4d_c3dc2830}
 ## Scripts
 
 - [`solve.py`](../../solve/386/solve.py)
-- *4 variantes intermediaires dans `solve/386/archive/`*

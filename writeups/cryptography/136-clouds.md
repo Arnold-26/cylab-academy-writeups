@@ -82,4 +82,3 @@ le protocole de bout en bout, et `local` pour le test complet).
 ## Scripts
 
 - [`solve.py`](../../solve/136/solve.py)
-- *9 variantes intermediaires dans `solve/136/archive/`*

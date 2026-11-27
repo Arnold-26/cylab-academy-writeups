@@ -5,19 +5,21 @@
 #
 import sys, json, re, time, requests
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 import wu
 
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
+
 requests.packages.urllib3.disable_warnings()
-cy = CyLab(delay=1.2)
-cy.login()
 FLAG = re.compile(r"(?:academy|picoCTF|PICOCTF)\{[^}]*\}")
-cy.req("PUT", "/api/challenges/518/instance/?source=library")
 url = None
 for _ in range(25):
     time.sleep(2)
-    st, b = cy.req("GET", "/api/challenges/518/instance/")
     d = json.loads(b) if b.startswith("{") else {}
     if d.get("status") == "RUNNING":
         desc = d.get("description") or ""
@@ -47,7 +49,6 @@ if url:
         if m:
             f = m.group(0)
             print("FLAG:", f)
-            st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 518, "flag": f})
             ok = json.loads(b).get("correct") if b.startswith("{") else None
             print("518 ->", ok)
             if ok:

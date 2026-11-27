@@ -21,4 +21,3 @@ academy{ubuntu-19.10-desktop-amd64.iso}
 ## Scripts
 
 - [`solve.py`](../../solve/311/solve.py)
-- *20 variantes intermediaires dans `solve/311/archive/`*

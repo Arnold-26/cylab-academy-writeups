@@ -21,4 +21,3 @@ academy{d3bug_f0r_th3_Win_0x100_411bc019}
 ## Scripts
 
 - [`solve.py`](../../solve/429/solve.py)
-- *14 variantes intermediaires dans `solve/429/archive/`*

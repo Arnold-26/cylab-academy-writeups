@@ -21,4 +21,3 @@ academy{yara_rul35_r0ckzzz_790c7af6}
 ## Scripts
 
 - [`solve.py`](../../solve/483/solve.py)
-- *11 variantes intermediaires dans `solve/483/archive/`*

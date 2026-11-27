@@ -120,4 +120,3 @@ signature de fichier).
 ## Scripts
 
 - [`solve.py`](../../solve/714/solve.py)
-- *11 variantes intermediaires dans `solve/714/archive/`*

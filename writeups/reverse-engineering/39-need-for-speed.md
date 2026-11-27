@@ -21,4 +21,3 @@ academy{Good job keeping bus #31326f14 speeding along!}
 ## Scripts
 
 - [`solve.py`](../../solve/39/solve.py)
-- *7 variantes intermediaires dans `solve/39/archive/`*

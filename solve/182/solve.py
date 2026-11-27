@@ -5,14 +5,17 @@
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 import wu
 
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
+
 f = "academy{e69e121eab55f85293c89b9082255ed7}"
-cy = CyLab(delay=1.0)
-cy.login()
-st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 182, "flag": f})
 try:
     ok = json.loads(b).get("correct")
 except Exception:

@@ -5,19 +5,21 @@
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 import wu
 
-cy = CyLab(delay=1.2)
-cy.login()
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
+
 body = "Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9"
 cands = [f"picoCTF{{{body}}}", f"academy{{{body}}}",
          "picoCTF{Ev3nt_vi3wv3r_1s_a_pr3tty_us3ful_t00l_81ba3fe9}"]
 for cand in cands:
-    st, b = cy.req("GET", "/api/challenges/456/")
     already = json.loads(b).get("solved_by_user")
-    st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 456, "flag": cand})
     ok = json.loads(b).get("correct") if b.startswith("{") else None
     print(f"456 {cand} -> {ok}")
     if ok:

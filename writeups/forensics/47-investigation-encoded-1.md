@@ -21,4 +21,3 @@ encodedofvzaojsrs
 ## Scripts
 
 - [`solve.py`](../../solve/47/solve.py)
-- *11 variantes intermediaires dans `solve/47/archive/`*

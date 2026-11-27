@@ -4,9 +4,15 @@
 # This is the script that produced the flag; historical variants are in archive/.
 #
 import sys, re, time, socket, json
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 
 UP = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -20,13 +26,9 @@ def dec(ct, a, b):
     return "".join(UP[(ai * (UP.index(c) - b)) % 26] for c in ct.upper() if c in UP)
 
 
-cy = CyLab(delay=0.8)
-cy.login()
-cy.req("PUT", "/api/challenges/473/instance/?source=library")
 host = port = None
 for _ in range(12):
     time.sleep(2)
-    st, b = cy.req("GET", "/api/challenges/473/instance/")
     d = json.loads(b) if b.startswith("{") else {}
     if d.get("status") == "RUNNING":
         m = re.search(r"([A-Za-z0-9][A-Za-z0-9.\-]*\.net)\s+`?(\d{4,5})", d.get("description") or "")

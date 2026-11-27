@@ -94,4 +94,3 @@ décodage de l'ASM était bon.
 ## Scripts
 
 - [`solve.py`](../../solve/430/solve.py)
-- *22 variantes intermediaires dans `solve/430/archive/`*

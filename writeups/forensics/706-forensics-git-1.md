@@ -22,4 +22,3 @@ academy{g17_r3m3mb3r5_d4ddf904}
 ## Scripts
 
 - [`solve.py`](../../solve/706/solve.py)
-- *3 variantes intermediaires dans `solve/706/archive/`*

@@ -223,8 +223,6 @@ def phaseC(r, cmds):
 
 
 def launch():
-    from cylab2 import CyLab
-    cy = CyLab(delay=1.5)
     cy.login()
     cy.req("PUT", "/api/challenges/495/instance/?source=library")
     for _ in range(8):

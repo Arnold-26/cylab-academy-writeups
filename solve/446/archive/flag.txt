@@ -1,2 +1,0 @@
-FLAG{TEST}
-academy{gamer_leveluP_8fb078e2}

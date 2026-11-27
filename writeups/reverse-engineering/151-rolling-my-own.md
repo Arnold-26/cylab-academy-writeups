@@ -87,4 +87,3 @@ academy{r011ing_y0ur_0wn_crypt0_15_h4rd!_13670f39}
 ## Scripts
 
 - [`solve.sh`](../../solve/151/solve.sh)
-- *16 variantes intermediaires dans `solve/151/archive/`*

@@ -21,4 +21,3 @@ t1m3f1i3500000000000a8bbc8ed
 ## Scripts
 
 - [`solve.py`](../../solve/36/solve.py)
-- *10 variantes intermediaires dans `solve/36/archive/`*

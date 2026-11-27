@@ -21,4 +21,3 @@ academy{N1c3_R3ver51ng_5k1115_000000000002e911fb5}
 ## Scripts
 
 - [`solve.py`](../../solve/54/solve.py)
-- *5 variantes intermediaires dans `solve/54/archive/`*

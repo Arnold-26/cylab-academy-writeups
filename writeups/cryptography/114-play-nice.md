@@ -21,4 +21,3 @@ Le service imprime en clair l'**alphabet** (36 caractères, carré 6x6) qui sert
 ## Scripts
 
 - [`solve.py`](../../solve/114/solve.py)
-- *1 variantes intermediaires dans `solve/114/archive/`*

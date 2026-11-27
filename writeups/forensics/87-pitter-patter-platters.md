@@ -21,4 +21,3 @@ academy{b3_5t111_mL|_<3_d18a1e1e}
 ## Scripts
 
 - [`solve.py`](../../solve/87/solve.py)
-- *7 variantes intermediaires dans `solve/87/archive/`*

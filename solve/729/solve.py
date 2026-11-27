@@ -5,9 +5,15 @@
 #
 import sys, json, time
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 import wu
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 
 cands = [
     "academy{i5_tH15_s3cr3T_k3Y_5tbax3er}",
@@ -16,14 +22,10 @@ cands = [
     "academy{tH15_lS_n0T_s3cr3T_k3Y_vbr1qa43}",
     "academy{tH15_lS_n0T_f!@G_5rwdf731q}",
 ]
-cy = CyLab(delay=1.2)
-cy.login()
-st, b = cy.req("GET", "/api/challenges/729/")
 already = json.loads(b).get("solved_by_user")
 print("deja resolu:", already)
 good = None
 for c in cands:
-    st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 729, "flag": c})
     ok = json.loads(b).get("correct") if b.startswith("{") else None
     print(f"  {c[:60]:62} -> {ok}")
     if ok:

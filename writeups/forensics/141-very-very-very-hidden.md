@@ -21,4 +21,3 @@ academy{n1c3_job_f1nd1ng_th3_s3cr3t_in_the_im@g3}
 ## Scripts
 
 - [`solve.py`](../../solve/141/solve.py)
-- *11 variantes intermediaires dans `solve/141/archive/`*

@@ -21,4 +21,3 @@ academy{573417h13r_7h4n_7h3_1457_58527bb222}
 ## Scripts
 
 - [`solve.py`](../../solve/721/solve.py)
-- *19 variantes intermediaires dans `solve/721/archive/`*

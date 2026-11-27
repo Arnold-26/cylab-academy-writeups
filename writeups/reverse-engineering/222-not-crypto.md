@@ -21,4 +21,3 @@ picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}
 ## Scripts
 
 - [`solve.sh`](../../solve/222/solve.sh)
-- *6 variantes intermediaires dans `solve/222/archive/`*

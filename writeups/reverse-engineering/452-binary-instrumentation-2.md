@@ -50,4 +50,3 @@ n'aurait fait que confirmer.
 ## Scripts
 
 - [`solve.py`](../../solve/452/solve.py)
-- *7 variantes intermediaires dans `solve/452/archive/`*

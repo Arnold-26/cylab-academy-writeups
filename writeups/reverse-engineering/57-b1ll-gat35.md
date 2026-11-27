@@ -76,4 +76,3 @@ academy{These are the access codes to the vault: 1063340}
 ## Scripts
 
 - [`solve.sh`](../../solve/57/solve.sh)
-- *6 variantes intermediaires dans `solve/57/archive/`*

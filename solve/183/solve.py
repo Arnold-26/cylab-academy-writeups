@@ -5,8 +5,6 @@
 #
 import sys, json
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r".")
-from cylab2 import CyLab
 import wu
 
 a = 965270072
@@ -15,14 +13,18 @@ x = a + 100
 # func2: x>499 -> func5(x+13)
 x = x + 13
 # func5 -> func8(x) = x+2
+
+# Service : demarrer l'instance depuis la plateforme du challenge, puis passer
+# l'hote et le port (ou l'URL) en argument de ce script.
+_A = sys.argv[1:]
+HOST = _A[0] if len(_A) > 0 else ""
+PORT = int(_A[1]) if len(_A) > 1 else 0
+url = _A[0] if _A else ""
+
 x = x + 2
 print("resultat:", x, "hex:", format(x & 0xFFFFFFFF, "08x"))
 f = "academy{%s}" % format(x & 0xFFFFFFFF, "08x")
-cy = CyLab(delay=1.2)
-cy.login()
-st, b = cy.req("GET", "/api/challenges/183/")
 already = json.loads(b).get("solved_by_user")
-st, b = cy.req("POST", "/api/submissions/", {"source": "library", "challenge": 183, "flag": f})
 ok = json.loads(b).get("correct") if b.startswith("{") else None
 print(f"183 ARMssembly 4 (deja={already}) -> {ok}  ({f})")
 if ok and not already:

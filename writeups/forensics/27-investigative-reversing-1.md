@@ -46,4 +46,3 @@ academy{An0tha_1_1730fa2f}
 ## Scripts
 
 - [`solve.sh`](../../solve/27/solve.sh)
-- *4 variantes intermediaires dans `solve/27/archive/`*
